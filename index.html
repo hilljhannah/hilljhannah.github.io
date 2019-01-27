@@ -4,18 +4,21 @@
     <title>Portfolio | Hannah Hill</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 <body>
     <section class="container">
       <!-- Navbar header -->
       <header>
-        <img class="hLogo" src="images/personal-logo.png" alt="My Personal logo"/>
+        <div class="logo">
+          <img src="images/personal-logo.png" alt="My Personal logo" width="43px" height="50px"/>
+        </div>
         <h1>UX/UI Designer & Frontend Developer</h1>
-        <a href="project.html">
-          <button>My Work</button>
-        </a>
-        <button>About Me</button>
-        <button>Say Hello!</button>
+        <nav>
+          <a class="link" href="project.html">My Work</a>
+          <a class="link" href=" ">About Me</a>
+          <button class="outline">Say Hello!</button>
+        </nav>
       </header>
       <main>
         <!-- Homepage Hero section -->
@@ -24,30 +27,34 @@
           <h3>My name is</h3>
           <h2>HANNAH HILL</h2>
           <h2>&</h2>
-          <h4>I create limitless user experiences for the web utilizing UX/UI design & Frontend development in </h4>
-          <map class="mpls">
-            <img src="images/Mpls-map.png" alt="Minneapolis, MN map"/>
+          <h3>I create limitless user experiences for the web utilizing UX/UI design & Frontend development in </h3>
+          <!--large map image-->
+          <map>
+            <img src="images/mpls_map.png" alt="Minneapolis, MN map"/>
           </map>
         </section>
+
+
         <!-- My work case study preview section -->
         <section class="myWork">
-          <img class="icon" src="images/myWork.icon.png" alt="my work icon"/>
+          <img class="icon" src="images/My_work.icon.png" alt="my work icon"/>
           <h2>My Work</h2>
           <div class="casePreview">
             <p> UI / UX / Branding </p>
-            <img class="dreamersLogo" src="images/dreamersLogo.png" alt="Dreamers logo"/>
+            <img class="projectLogo" src="images/dreamersLogo.png" alt="Dreamers logo"/>
             <h3>Upload and edit any file, anywhere, anytime.</h3>
             <p>Dreamers cloud storage makes it easy to create, edit, upload, and collaborate on the go no matter where your dreams take you.</p>
             <button>VIEW CASE STUDY</button>
-            <img class="previewFrame" src="images/home-preview-DF.png" alt="gold macbook device frame"/>
+            <img class="myWorkFrame" src="images/home-preview-DF.png" alt="gold macbook device frame"/>
           </div>
         </section>
+
         <!--Skillset list-->
         <section class="homeToolkit">
           <div class"col2">
-            <img class="icon" src="images/Roles.icon.jpg" alt="skillset icon"/>
+            <img class="icon" src="images/Roles.icon.png" alt="skillset icon"/>
             <h2>Skillset</h2>
-            <ul>
+            <ul class="b">
               <li>Visual Design</li>
               <li> UX / UI Design</li>
               <li>User Research & Testing</li>
@@ -62,11 +69,12 @@
               <li>Remote project management</li>
             </ul>
           </div>
+
           <!--tookkit list-->
           <div class="col2">
-            <img class="icon" src="images/tools.icon.jpg" alt="toolkit icon"/>
+            <img class="icon" src="images/tools.icon.png" alt="toolkit icon"/>
             <h2>Toolkit</h2>
-            <ul>
+            <ul class="b">
               <li>InVision</li>
               <li>Figma</li>
               <li>Sketch</li>

@@ -2,52 +2,78 @@
 <html>
   <head>
     <title>Case Study | Dreamers</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <section class="container">
     <!--Navbar section-->
     <header>
-      <img class="hLogo" src="images/personal-logo.png" alt="My Personal logo"/>
+      <div class="logo">
+        <img src="images/personal-logo.png" alt="My Personal logo" width="43px" height="50px"/>
+      </div>
       <h1>UX/UI Designer & Frontend Developer</h1>
-      <a href="index.html">
-        <button>Home</button>
-      </a>
-      <button>About Me</button>
-      <button>Say Hello!</button>
+      <nav>
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href=" ">About Me</a>
+        <button class="nav_bttn">Say Hi!</button>
+      </nav>
     </header>
+
     <!-- Hero Section -->
     <section class="hero">
-      <img class="dreamLogo" src="images/dreamersLogo.png" alt="dreamers brand logo"/>
-      <img class="hero-device" src="images/hero-image.jpg" alt="Gold macbook device frame"/>
-      <h2>Upload Any File, Anywhere, Anytime with Dreamers Cloud Storage</h2>
+      <img id="dream-Logo" src="images/dreamersLogo.png" alt="dreamers brand logo"/>
+      <img class="hero_device" src="images/hero-image.png" alt="Gold macbook device frame"/>
+      <h2 class="display">Upload Any File, Anywhere, Anytime with Dreamers Cloud Storage</h2>
       <button>LIVE PROTOTYPE</button>
     </section>
-    <!-- Project toolkit lists -->
+    <!-- 3-col lists (roles, deliverables, tools) -->
     <section class="role">
       <!--roles-->
       <div class="col3">
-        <img class="icon" src="images/Roles.icon.jpg" alt="roles icon"/>
+        <img class="icon" src="images/Roles.icon.png" alt="roles icon"/>
         <h2>Roles</h2>
-        <p>UX design<br>Visual design<br>Brand identity</p>
+        <ul class="b">
+          <li>UX design</li>
+          <li>Visual design</li>
+          <li>Brand identity</li>
+        </ul>
       </div>
       <!--deliverables-->
       <div class="col3">
-        <img class="icon" src="images/deliverables.icon.jpg" alt="deliverables icon"/>
+        <img class="icon" src="images/deliverables.icon.png" alt="deliverables icon"/>
         <h2>Deliverables</h2>
-        <p>User survey<br>User personas<br>Competitve analysis<br>User stories<br>User flows<br>Wireframes<br>Wirerame prototype<br>Testing prototype<br>Final prototype<br>Branding<br>Usability testing<br>High fidelity mockups</p>
+        <ul class="b">
+          <li>User survey</li>
+          <li>User personas</li>
+          <li>Competitve analysis</li>
+          <li>User stories</li>
+          <li>User flows</li>
+          <li>Wireframes</li>
+          <li>Wirerame prototype</li>
+          <li>Testing prototype</li>
+          <li>Final prototype</li>
+          <li>Branding</li>
+          <li>Usability testing</li>
+          <li>High fidelity mockups</li>
+        </ul>
       </div>
       <!--tools-->
       <div class="col3">
-        <img class="icon" src="images/tools.icon.jpg" alt="toolkit icon"/>
+        <img class="icon" src="images/tools.icon.png" alt="toolkit icon"/>
         <h2>Tools</h2>
-        <p>Figma<br>Invision</p>
+        <ul class="b">
+          <li>Figma</li>
+          <li>Invision</li>
+        </ul>
       </div>
     </section>
     <!-- line -->
     <hr>
     <!--project overview-->
     <section class=”overview”>
-      <img class="icon" src="images/overview.icon.jpg" alt="overview icon"/>
+      <img class="icon" src="images/overview.icon.png" alt="overview icon"/>
       <h2>Project Overview</h2>
       <p>There are many well-known cloud storage sites in use today but they are all designed for one set of tasks or user group and many are hard to use and lack a solid organizational users. So I was tasked to create a cloud storage site that would be intuitive to use as well as aesthetically pleasing and unique.</p>
     </section>
@@ -55,11 +81,11 @@
     <hr>
     <!--project problem-->
     <section class="problem">
-      <img class="icon" src="images/problem.icon.jpg" alt="problem icon"/>
+      <img class="icon" src="images/problem.icon.png" alt="problem icon"/>
       <h2>Problem</h2>
-      <p>My client came to me with a lot of excitement for the possibilities in the cloud storage industry market. They believed that the market is still young and that the right competitor, with the right features, could dominate the market.
+      <p>My client came to me with a lot of excitement for the possibilities in the cloud storage industry market. They believed that the market is still young and that the right competitor, with the right features, could dominate the market.</p>
         <br>
-        My client also requested these features be included
+        <p>My client also requested these features be included</p>
         <ul>
           <li>Saving content you find on the web (links, images, videos, etc.)</li>
           <li>Organizing that content (via categories, tags, groups, and/or folders)</li>
@@ -67,21 +93,20 @@
           <li>Uploading files (from a computer or mobile device)</li>
         </ul>
         <br>
-        They also said that they felt collaboration would an important aspect of the site to leverage growth and a requested feature by its users; and such these features were requested as well
+        <p>They also said that they felt collaboration would an important aspect of the site to leverage growth and a requested feature by its users; and such these features were requested as well</p>
         <ul>
           <li>Sharing a single item with someone else (and vice-versa)</li>
           <li>Sharing a folder or group of items with someone else (and vice-versa)</li>
           <li>Connecting with other users for real-time collaboration in notes or documents</li>
         </ul>
         <br>
-        My client also had no brand direction or identity.
-      </p>
+        <p>My client also had no brand direction or identity.</p>
     </section>
     <!--line-->
     <hr>
     <!--solution-->
     <section class=”solution>
-      <img class="icon" src="images/solution.icon.jpg" alt="Lightbulb icon"/>
+      <img class="icon" src="images/solution.icon.png" alt="Lightbulb icon"/>
       <h2>Solution</h2>
       <div class=”col2”>
         <p>Through user research and competitive analysis I discovered that there was a gap in the market for a competitor with a large amount of free, secure storage with a broad target audience of anyone who has a dream with three “dreamer” sub types. Then through the creation of user story and user personas; I discovered the features users actually wanted and needed. And so the concept of Dreamers was born; with 20GB of free secure cloud storage, the ability to upload files and images, download, edit, add and sort by folder, add and sort by label, create documents, spreadsheets, notes, presentations, as well as share content and collaborate via video conference. I then put it all into action with user flows, wireframes, mockups, branding, prototypes, and tested it all with mockup usability testing and analysis.</p>
@@ -91,18 +116,18 @@
       </div>
     </section>
 <!--Discovery section divider-->
-    <div class=”process”>Discovery Phase</div>
+    <div class="process">Discovery Phase</div>
     <!--user survey research-->
     <section class="research">
-      <img class="icon" src="images/user-research.icon-1" alt="Magnifying glass icon"/>
+      <img class="icon" src="images/user_research.icon.png" alt="Magnifying glass icon"/>
       <h2>User Survey Research</h2>
-      <h5>Goals:</h5>
+      <p class="bold">Goals:</p>
       <ul>
         <li>To Determine if there is a current userbase for cloud storage service sites</li>
         <li>Discover how current users would organize their content</li>
         <li>Identify user interest in collaboration, organization, and file saving features</li>
       </ul>
-      <h5>Results:</h5>
+      <p class="bold">Results:</p>
       <ul>
         <li>88% of users reported using cloud storage services</li>
         <li>95.2% reported wanting to use folders to organize their content</li>
@@ -115,7 +140,7 @@
     <hr>
     <!--user personas-->
     <section class="personas">
-      <img class="icon" src="images/user-persona.icon.jpg" alt="user personas icon"/>
+      <img class="icon" src="images/user_persona.icon.png" alt="user personas icon"/>
       <h2>User Personas</h2>
       <p>I interviewed three respondants from my survey and used their data, as well as the survey data, to craft these three user groups which I would later reference in the user stories.</p>
       <!--image carousel-->
@@ -135,7 +160,7 @@
     <hr>
     <!--competitive analysis-->
     <section class="comp-analysis">
-        <img class="icon" src="images/comp-analysis.icon.jpg" alt="competitive analysis icon">
+        <img class="icon" src="images/comp_analysis.icon.png" alt="competitive analysis icon">
         <h2>Competitive Analysis<h2>
         <p>After the creation of my user personas I completed a competitive analysis on the three major players in the cloud storage and organization industry to determine the strengths and weaknesses of these three companies: Google Drive, Evernote, Dropbox.</p>
         <!--Evernote-->
@@ -143,28 +168,28 @@
           <img src="images/evernote.jpg" alt="Evernote dashboard"/>
           <h4>Evernote</h4>
           <p>Evernote is a convenient note-taking app with both a mobile and desktop presence. It allows for the transcription of handwritten notes to typed text and the recording of audio notes. It also offers in-text search for notes uploaded to the site. Evernote also offers the option of an unlimited uploads.
-            <br>However, in order to have access to the unlimited uploads feature you must purchase one of their plans. The user home dashboard is heavily cluttered, and very confusing for a first time user to navigate. It also uses Google cloud to store the files uploaded to Evernote and overall the site has poor security.</p>
+            <br><br>However, in order to have access to the unlimited uploads feature you must purchase one of their plans. The user home dashboard is heavily cluttered, and very confusing for a first time user to navigate. It also uses Google cloud to store the files uploaded to Evernote and overall the site has poor security.</p>
         </div>
         <!--dropbox-->
         <div class="competitor">
           <img src="images/dropbox.jpg" alt="Dropbox dashboard"/>
           <h4>Dropbox</h4>
           <p>Dropbox has a very clean and user-friendly interface. The blue used to highlight important parts of the page is very helpful and nice to have. The ability to “star” an item also allows for some organization and the file list is clear and easy to read. Dropbox also had the fastest file upload time of the three.
-            <br>However, Dropbox only gives 2gb of free storage to its users and has only one 1,000gb plan available. It also only has three compatible productivity apps and has been plagued with security breaches and questionable practices for the past several years.</p>
+            <br><br>However, Dropbox only gives 2gb of free storage to its users and has only one 1,000gb plan available. It also only has three compatible productivity apps and has been plagued with security breaches and questionable practices for the past several years.</p>
         </div>
         <!--google drive-->
         <div class="competitor">
           <img src="images/googledrive.jpg" alt="Google drive dashboard"/>
           <h4>Google Drive</h4>
           <p>Google Drive offered the largest amount of free storage, 15gb, for its users out of the other two I researched and its in-house productivity suite with a myriad of comparable apps was a nice feature. Google Drive also offered good collaboration features with the ability to share and collaborate on content in real time with other users. It also offered enhanced security via two-factor authentication methods.
-            <br>However, while Google Drive has a clean layout , it sacrificed an intuitive user-friendly interface in favor of a minimalist look. There is also no easy way to organize or sort files and there are a lot of small icons that look similar that must be hovered over/clicked on in order to figure out what they were for. Slow file upload and sync times send some users looking toward other alternatives amid security concerns over Google Drive scanning every file uploaded to its cloud servers.</p>
+            <br><br>However, while Google Drive has a clean layout , it sacrificed an intuitive user-friendly interface in favor of a minimalist look. There is also no easy way to organize or sort files and there are a lot of small icons that look similar that must be hovered over/clicked on in order to figure out what they were for. Slow file upload and sync times send some users looking toward other alternatives amid security concerns over Google Drive scanning every file uploaded to its cloud servers.</p>
         </div>
     </section>
 <!--Information Architecture section divider-->
-    <div class=”process”>Information Architecture</div>
+    <div class="process">Information Architecture</div>
     <!--User stories-->
     <section class="stories">
-        <img class="icon" src="images/user-stories.icon.jpg" alt="user stories icon"/>
+        <img class="icon" src="images/user_stories.icon.png" alt="user stories icon"/>
         <h2>User Stories</h2>
         <p>After the creation of my user personas I used the data I had previously gathered in my research to create a list of high, medium, and low priority user stories. For the sake of staying within the scope of the project I focused on mainly the high, with a few medium, priority user stories for the creation of my user flows.</p>
         <ul>
@@ -186,7 +211,7 @@
     <hr>
     <!--user flows-->
     <section class="flows">
-        <img class="icon" src="images/user-flows.icon.jpg" alt="Flows icon"/>
+        <img class="icon" src="images/user_flows.icon.png" alt="Flows icon"/>
         <h2>User Flows</h2>
         <p>I then crafted user flow diagrams utilizing my “high priority” user stories to help me visualize and map out all the screens my users would need.</p>
         <map class="flowchart">
@@ -199,7 +224,7 @@
     <hr>
     <!--branding & identity-->
     <section class="branding">
-        <img class="icon" src="images/branding.icon.jpg" alt="Branding icon"/>
+        <img class="icon" src="images/branding.icon.png" alt="Branding icon"/>
         <h2>Branding & Identity</h2>
         <img src="images/Moodboard.png" alt="Branding moodboard"/>
         <h4>Moodboard</h4>
@@ -244,7 +269,7 @@
     <hr>
     <!--content strategy-->
     <section class="content">
-        <img class="icon" src="images/content-strategy.icon.jpg" alt="content strategy icon"/>
+        <img class="icon" src="images/content_strategy.icon.png" alt="content strategy icon"/>
         <h2>Content Strategy</h2>
         <p>I then used all the information I collected to create a content strategy map to visualize individual page heierarchy within the site.</p>
         <img src="images/Sitemap.png" alt="content strategy map"/>
@@ -253,7 +278,7 @@
     <hr>
     <!--sketching-->
     <section class="sketching">
-        <img class="icon" src="images/sketching.icon.jpg" alt="sketching icon"/>
+        <img class="icon" src="images/sketching.icon.png" alt="sketching icon"/>
         <h2>Rough Sketching</h2>
         <p>After creating the content strategy for the Dreamers site I quickly hand-drafted rough page outlines with a pen and paper for the major pages I thought I was going to need for the site... little did I know this would not be NEARLY enough.</p>
         <img src="images/rough-sketching.jpg" alt="wireframing sketches"/>
@@ -262,7 +287,7 @@
     <hr>
     <!--wireframing-->
     <section class="wireframing">
-        <img class="icon" src="images/wireframing.icon.jpg" alt="wireframing icon"/>
+        <img class="icon" src="images/wireframing.icon.png" alt="wireframing icon"/>
         <h2>Wireframing</h2>
         <p>After creating quickly hand-drafting rough page outlines with a pen and paper for the major pages I thought I was going to need for the site I created digital wireframes for all the screens needed to complete each of my high priority user stories. Here is where I realized that I didnt sketch nearly enough frames so this part became lengthly and time consuming but important for the usability and design of the project.</p>
         <div class="wireframe gallery">
@@ -274,7 +299,7 @@
     <hr>
     <!--user testing-->
     <section class="testing">
-        <img class="icon" src="images/user-testing.icon.jpg" alt="user testing icon"/>
+        <img class="icon" src="images/user_testing.icon.png" alt="user testing icon"/>
         <h2>User Testing</h2>
         <p>I created a working prototype with my wireframes using InVision and tested it with two different types of users. I tested it both in-person and remotely using screen record and video calling using an identical testing script to help assure testing result accuracy. I asked each tester to complete three tasks on the site: sign up for an account, add a piece of content, and organize a piece of content. Neither user had any significant issues completing the tasks and did so with little to no input or help from me.</p>
         <h5>User comments</h5>
@@ -294,7 +319,7 @@
     <div class="process">Visual Design</div>
     <!--initial mockup-->
     <section class="initial">
-        <img class="icon" src="images/mockup.icon.jpg" alt=""/>
+        <img class="icon" src="images/mockup.icon.png" alt=""/>
         <h2>Initial Mockup</h2>
         <p>When I initially layered on the skins to my wire-frames I wanted to use a lot of bright colors for every page. When I first had the idea it seemed fun and colorful, in execution it was overwhelming. After going back over my design I realized that all of these colors didn't add anything to the design, in fact they took away from it significantly. The readability of the whole site was poor so before I even did any user testing I went back and revised the color scheme and design for the Dreamers site to tone it down. I also got carried away with my use of multiple background types and images. This step was a really big learning lesson about editing your work and really thinking about your design choice before executing it and evaluating later.</p>
         <img class="device-frame" src="images/initial.png" alt="white macbook device frame"/>
@@ -304,7 +329,7 @@
     <hr>
     <!--design iteration I-->
     <section class="iteration">
-      <img class="icon" src="images/iteration.icon.jpg"  alt="design iteration icon"/>
+      <img class="icon" src="images/iteration.icon.png"  alt="design iteration icon"/>
       <h2>Design Iteration I</h2>
       <p>After my initial high-fidelity mock-up it became very clear that I needed to tone down my color palate significantly and so I went back over and got rid of all the neon-esq colors and replaced them with a darker blue and dusty purple toned color palette. The buttons also took on a more rounded look and the file images were taking up too much space on the initial wireframes so I scaled down those as well.</p>
       <img class="device-frame" src="images/design-iteration-DF.png" alt="black macbook device frame"/>
@@ -314,7 +339,7 @@
     <hr>
     <!--preference test I-->
     <section class="preference-1">
-        <img class="icon" src="images/pref-test.icon.jpg" alt="preference test icon"/>
+        <img class="icon" src="images/pref-test.icon.png" alt="preference test icon"/>
         <h2>Preference Testing</h2>
         <p>I wanted to tweak a few elements of the design so I completed three user preference tests using Utest</p>
         <section class="test-bg">
@@ -361,7 +386,7 @@
     <hr>
     <!--design dilemma-->
     <section class="dilemma">
-        <img class="icon" src="images/delemma.icon.jpg" alt="sketching icon"/>
+        <img class="icon" src="images/delemma.icon.png" alt="sketching icon"/>
         <h2>Design Dilemma</h2>
         <p>Throughout the preference tests one thing still bothered me, the background and layout. I felt as if I had a lot of wasted space on the page by confining the page content into a box on the page. I knew I wanted to keep the star/space theme but I wanted to brighten it up and not make it feel so dark and gloomy and give the content room to breathe; & the revised Dreamers was born! </p>
     </section>
@@ -369,7 +394,7 @@
     <hr>
     <!--design iteration 2-->
     <section class="iteration-2">
-        <img class="icon" src="images/iteration.icon.jpg" alt="sketching icon"/>
+        <img class="icon" src="images/iteration.icon.png" alt="sketching icon"/>
         <h2>Design Iteration II</h2>
         <p>By eliminating the whole image background, more space could be given to the files and it allowed me to further visually separate the folders/buttons from the files on the user dashboard. I also utilized a blue tone color scheme throughout with the image as the header throughout. I also removed the boxes around the files and moved them closer together in order to fit more files on the screen and better utilize the space on the page.</p>
         <img class="device-frame" src="iteration-11.png" alt="silver macbook device frame"/>
@@ -379,7 +404,7 @@
     <hr>
     <!--usability testing-->
     <section class="usability">
-        <img class="icon" src="images/usability-testing.icon.jpg" alt="usability testing icon"/>
+        <img class="icon" src="images/usability_testing.icon.png" alt="usability testing icon"/>
         <h2>Usability Testing</h2>
         <p>For this second round of prototype testing I used an identical testing script and I tested three users. Overall I got good results from my user tests. All three users enjoyed the site as a whole and had no problems navigating around the site.</p>
         <h5>Issues & Changes</h5>
@@ -402,7 +427,7 @@
     <hr>
     <!--preference test II-->
     <section class="preference-2">
-        <img class="icon" src="images/pref-test.icon.jpg"  alt="preference testing icon"/>
+        <img class="icon" src="images/pref_test.icon.png"  alt="preference testing icon"/>
         <h2>Preference Testing II</h2>
         <p>From my usability testing I learned that the site was much too dark and didn’t have the visual appeal I wanted it to. The all blue color scheme felt a lot like several other well known brands so I decided to conduct this preference test to determine which color scheme would be best for the overall finished dreamers design. I recieved overwhelming support for option ‘C’ so Dreamers-refined was born.</p>
         <div class="image-carousel">
@@ -416,7 +441,7 @@
     <hr>
     <!--final design-->
     <section class="final">
-        <img class="icon" src="images/final-design.icon.jpg" alt="Final design icon"/>
+        <img class="icon" src="images/final_design.icon.png" alt="Final design icon"/>
         <h2>Final Design</h2>
         <p>The preference test further supported my belief in the need to change the color scheme to mauve/purple with yellow-orange as an accent color. Changing the colors gave the site a more luxurious and dreamy cloud feel which better represents the brand and its ideals.</p>
         <div>
@@ -432,7 +457,7 @@
     <hr>
     <!--design progression-dashboard-->
     <section class="progression">
-        <img class="icon" src="images/design-progression.icon.jpg" alt="design progression icon"/>
+        <img class="icon" src="images/design_progression.icon.png" alt="design progression icon"/>
         <h2>Design Progression - Dashboard</h2>
         <p>This is the design progression throughout all of my iterations visualized using the dashboard; for many of these I only designed the dashboard before iterating the design again; not every frame.</p>
         <!--image carousel-->
@@ -449,7 +474,7 @@
     <hr>
     <!--lessons learned-->
     <section class="takeaways">
-        <img class="icon" src="images/learning.icon.jpg" alt="Project takeways icon"/>
+        <img class="icon" src="images/learning.icon.png" alt="Project takeways icon"/>
         <h2>Project Takeways</h2>
         <p>While crafting the survey for this project I included too many short answer questions which lead to a lot of data, but most of it was muddled and had no consensus. When I was crafting the survey I was determined to believe that short-answer questions would give me the best range of data to work with. This project was a hard lesson on how wrong I was and how an unhelpful survey can cause significant scope creep, iterations, and an unfriendly user design. Partially due to the survey, but also partially due to my incessant need to attempt to overachieve and do more than was asked, I ended up creating a much larger project for myself by going beyond what my client asked for and offering many features that while they are neat; they only took time away from the rest of the design that mattered more to the client and users. While because I had made this project into something so much bigger i needed to make SIGNIFICANTLY more screens than I had anticipated or had time to make so many screens were rushed which is why the design was plagued with jumping elements until I eliminated some of the extra factors and brought Dreamers back into the scope of the project. After that I was able to give more attention to the layout and colors themselves and bring Dreamers back around to really create a design I was happy with and proud of.
         </p>

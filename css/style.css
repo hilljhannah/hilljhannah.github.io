@@ -4,49 +4,68 @@
 
 html {
   font-size: 10px;
-
 }
 
 body {
   background-color: white;
-
-}
-
-section{
-
 }
 
 .container{
   background-color: white;
   margin: 0 auto;
-  width: 50rem;
-
+  width: 100%;
 }
 
+section {
+  display: block;
+  font-weight: normal;
+  margin: 80%;
+}
 
 header {
-  background-color: #DFDFE0;
+  display: inline-block;
+  width: 100%;
+  background-color: lightgrey;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 
 .logo {
   display: inline-block;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border-right: 1px solid #66FCF1;
 }
 
-
-button {
-
+.icon {
+  display: block;
+  height: 10rem;
+  margin: auto;
+  width: 10rem;
 }
-
 
 h1 {
+  display: inline-block;
   font-size: 2.2rem;
+  padding-left: 6rem;
+  width: 40%;
 }
 
-
 h2{
+  display: block;
   font-size: 4.8rem;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
 
+h2.display{
+  display: block;
+  font-size: 5.2rem;
+  padding: 2rem;
+  text-align: center;
+  width: 60%;
 }
 
 h3 {
@@ -57,29 +76,134 @@ h4 {
   font-size: 2.8rem;
 }
 
-h5{
-
-}
-
-h6 {
-  font-size: 2.0rem;
-  color: white;
-
-}
 
 p {
   font-size: 1.8rem;
+  width: 50rem;
+  margin: auto;
+}
+
+.bold {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav{
+  display: inline-block;
+  float: right;
+  font-size: 1.6rem;
+
+}
+
+button{
+  border-radius: 10rem;
+  background-color: white;
+  border: .4rem solid #532051;
+  display: block;
+  font-size: 2.2rem;
+  margin: auto;
+  /*top, right, bottom, left*/
+  padding: 2rem, 4rem, ;
+}
+
+.nav_bttn{
+  background-color: white;
+  border-radius: 10rem;
+  border: .4rem solid #66FCF1;
+  margin: 2rem;
+  /*top, right, bottom, left*/
+  padding: 2rem, 4rem, 2rem, 4rem;
+}
+
+.link{
+  margin: 2rem;
 }
 
 .icon {
+  display: block;
+  height: 10rem;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
+}
 
+section {
+  display: block;
+  font-weight: normal;
+  margin: auto;
 }
 
 .casePreview {
   background-color: #EFFEFD;
 }
 
+.map {
+  max-width: 100%;
+}
 
+
+.process {
+  background-color: #04B5A8;
+  font-size: 6.4rem;
+  height: 20rem;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding-top: 6.5rem;
+}
+.b{
+  font-size: 2rem;
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+}
+
+ul{
+  margin: auto;
+  font-size: 1.8rem;
+  list-style-type: circle;
+  padding: 2rem;
+}
+
+li{
+  padding: 1rem;
+}
+
+
+.hero_device {
+  display: block;
+  padding: 2rem;
+  margin:auto;
+}
+#dream-Logo {
+  display: block;
+  margin: auto;
+}
+
+hr{
+  margin: 5rem;
+}
+
+br{
+  padding-top: 5rem;
+}
+h6 {
+  color: white;
+  font-size: 2.0rem;
+}
+img{
+  margin: auto;
+  width: 50%;
+}
+.small-device-frame{
+  width:50rem;
+  height: 28.8rem;
+}
 footer {
   background-color: #1F2333;
+}
+
+div{
+  font-weight: normal;
 }
