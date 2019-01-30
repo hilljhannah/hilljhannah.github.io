@@ -28,11 +28,17 @@ section {
 
 
 header {
-  display: grid;
   background-color: lightgrey;
   height: 10rem;
-  grid-column: repeat (4, 1fr);
   width: 100%;
+}
+
+.navbar {
+  display: grid;
+  grid-column: repeat (3, 1fr);
+  width: 144rem;
+  margin: 0 auto 0 auto;
+  padding: 2rem 0 2rem 0;
 }
 
 nav{
@@ -64,16 +70,15 @@ section.role {
 .logo {
   display: inline-block;
   border-right: 1px solid #66FCF1;
-  padding: 2rem 6rem;
 }
 
 /* non-link text in navbar*/
 h1 {
   display: inline-block;
   font-size: 2.2rem;
-  padding-left: 6rem;
-  width:50%;
-  
+  padding-left: 4rem;
+  grid-column: 1;
+
 }
 
 /* section header font */
@@ -212,7 +217,6 @@ button{
   width: 30%;
   height: auto;
   margin: 5rem 4rem 4rem 4rem;
-
 }
 /* large process-stage banner */
 .process {
@@ -286,19 +290,20 @@ dd {
 
 
 
-
 /*--- device frames -- */
 /* hero case study frame*/
 .hero_device {
   display: block;
   padding: 4rem;
-  margin:auto;
+  margin: 2rem auto;
+  max-width: 100% ;
+  height: auto;
 }
 
 .desktop-frame{
   display: block;
   margin: 4rem auto 4rem auto;
-  width: 80%
+  width: 80%;
 }
 
 .home_frame{
@@ -318,10 +323,11 @@ dd {
 #dream-Logo {
   display: block;
   margin: 2rem auto;
-  width: 40rem;
+  max-width: 25%;
   height: auto;
 }
-/*dreamers brand colors*/
+
+/*dreamers brand colors image*/
 .colors{
   display: block;
   height: auto;
@@ -376,101 +382,47 @@ margin: 1rem auto 1rem auto;
 /*----- image gallery styles start----->*/
 
 /* --- initial gallery --*/
-/* Center gallery */
+/* 4 column */
 .main {
-  max-width: 1000px;
-  margin: auto;
+  display: grid;
+  grid-column: 1fr 1fr 1fr 1fr;
+  max-width: 110rem;
+  margin: 0 auto;
+  grid-gap: 2rem;
+  padding: 2rem;
 }
-.row {
-  margin: 2rem;
+ .img1{
+   grid-column: 1
+ }
+.img2{
+  grid-column: 2;
 }
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 1rem;
+.img3{
+  grid-column: 3;
 }
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Content */
-.content {
-  background-color: white;
-  padding: 1rem;
-}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-/*----end 4 column-- begin 3 column styles--*/
-
-/* creates 3 equal columns that float next to each other */
-.column_three {
-  float: left;
-  width: 33.3%;
-}
-/* Clear floats */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* ------ end gallery styles ------- */
-
-.test {
-  padding: 1rem;
+.img4{
+  grid-column: 4;
 }
 
-.test_special {
-  padding: 1rem;
-  outline: red solid .1rem;
+
+.main_three{
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+  max-width: 110rem;
+  grid-gap: 4rem;
+  margin: 0 auto;
 }
-/*--responsive image grid styles--*/
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 .4rem;
+
+.option1{
+  grid-column: 1;
 }
-/* Creates four equal columns that sit next to eachother */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 .4rem;
+.option2{
+  grid-column: 2;
 }
-.column img {
-  margin-top: .8rem;
-  vertical-align: middle;
+.option3{
+  grid-column: 3
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-/*--end--*/
+
 
 .progress {
   width: 140rem;

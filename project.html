@@ -10,15 +10,19 @@
     <section class="container">
     <!--Navbar section-->
     <header>
-      <div class="logo">
-        <img src="images/personal-logo.png" alt="My Personal logo" width="43px" height="50px"/>
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/personal-logo.png" alt="My Personal logo" width="43px" height="50px"/>
+        </div>
+        <div>
+          <h1>UX/UI Designer & Frontend Developer</h1>
+        </div>
+        <nav>
+          <a class="link" href="index.html">Home</a>
+          <a class="link" href=" ">About Me</a>
+          <button class="outline">Say Hello!</button>
+        </nav>
       </div>
-      <h1>UX/UI Designer & Frontend Developer</h1>
-      <nav>
-        <a class="link" href="index.html">Home</a>
-        <a class="link" href=" ">About Me</a>
-        <button class="outline">Say Hi!</button>
-      </nav>
     </header>
 
     <!-- Hero Section -->
@@ -296,7 +300,9 @@
         <img class="icon" src="images/content_strategy.icon.png" alt="content strategy icon"/>
         <h2>Content Strategy</h2>
         <p>I then used all the information I collected to create a content strategy map to visualize individual page heierarchy within the site.</p>
-        <img class="sitemap" src="images/Sitemap.png" alt="content strategy map"/>
+        <div>
+          <img class="sitemap" src="images/Sitemap.png" alt="content strategy map"/>
+        </div>
     </section>
     <!-- line -->
     <hr>
@@ -369,73 +375,55 @@
         <section class="test-bg">
           <h4>First Test - Page Background</h4>
           <p>The results from this preference test was somewhat inconclusive because while there was a winner it was not a clear winner and the comments from the test takers were conflicting and muddled. This was the first indication that I might need to completely change my design.</p>
-          <!-- image Gallery Grid -->
-          <div class="row">
-            <div class="column_three">
-              <div class="content">
-                <img img class="test" src="images/T1-A.png" alt="Option A" style="width:100%">
-                <h4>A</h4>
-              </div>
+          <!-- 3 col image Gallery Grid -->
+          <div class="column_three">
+            <div class="option1">
+              <img img class="test" src="images/T1-A.png" alt="Option A" style="width:100%">
+              <h4>A</h4>
             </div>
-            <div class="column_three">
-              <div class="content">
-                <img img class="test" src="images/T1-B.png" alt="Option B" style="width:100%">
-                <h4>B</h4>
-              </div>
+            <div class="option2">
+              <img img class="test" src="images/T1-B.png" alt="Option B" style="width:100%">
+              <h4>B</h4>
             </div>
-            <div class="column_three">
-              <div class="content">
-                <img img class="test_special" src="images/T1-C.png" alt="Option C" style="width:100%">
-                <h4>C</h4>
-              </div>
+            <div class="option3">
+              <img img class="test_special" src="images/T1-C.png" alt="Option C" style="width:100%">
+              <h4>C</h4>
             </div>
           </div>
         </section>
         <section class="test-btn">
           <h4>Second Test - Button Color</h4>
           <p> The results from this test were much more conclusive with C earning 69% of the support and positive comments.</p>
-          <div class="row">
-            <div class="column_three">
-              <div class="content">
-                <img img class="test" src="images/T2-A.png" alt="Option A" style="width:100%">
-                <h4>A</h4>
-              </div>
+          <div class="main_three">
+            <div class="option1">
+              <img img class="test" src="images/T2-A.png" alt="Option A" style="width:100%">
+              <h4>A</h4>
             </div>
-            <div class="column_three">
-              <div class="content">
-                <img img class="test" src="images/T2-B.png" alt="Option B" style="width:100%">
-                <h4>B</h4>
-              </div>
+            <div class="option2">
+              <img img class="test" src="images/T2-B.png" alt="Option B" style="width:100%">
+              <h4>B</h4>
             </div>
-            <div class="column_three">
-              <div class="content">
-                <img img class="test_special" src="images/T2-C.png" alt="Option C" style="width:100%">
-                <h4>C</h4>
-              </div>
+            <div class="option3">
+              <img img class="test_special" src="images/T2-C.png" alt="Option C" style="width:100%">
+              <h4>C</h4>
             </div>
           </div>
         </section>
         <section class="images/test-nav">
           <h4>Third Test - Navbar Color</h4>
           <p>The results of this preference test was also not as helpful as I would have wished with both A and C being fairly close in votes and color to each-other.</p>
-          <div class="row">
-            <div class="column_three">
-              <div class="content">
-                <img class="test" src="images/T3-A.png" alt="Option A" style="width:100%">
-                <h4>A</h4>
-              </div>
+          <div class="main_three">
+            <div class="option1">
+              <img class="test" src="images/T3-A.png" alt="Option A" style="width:100%">
+              <h4>A</h4>
             </div>
-            <div class="column_three">
-              <div class="content">
-                <img class="test_special" src="images/T3-B.png" alt="Option B" style="width:100%">
-                <h4>B</h4>
-              </div>
+            <div class="option2">
+              <img class="test_special" src="images/T3-B.png" alt="Option B" style="width:100%">
+              <h4>B</h4>
             </div>
-            <div class="column_three">
-              <div class="content">
-                <img class="test" src="images/T3-C.png" alt="Option C" style="width:100%">
-                <h4>C</h4>
-              </div>
+            <div class="option3">
+              <img class="test" src="images/T3-C.png" alt="Option C" style="width:100%">
+              <h4>C</h4>
             </div>
           </div>
         </section>
@@ -489,34 +477,24 @@
         <h2>Preference Testing II</h2>
         <p>From my usability testing I learned that the site was much too dark and didn’t have the visual appeal I wanted it to. The all blue color scheme felt a lot like several other well known brands so I decided to conduct this preference test to determine which color scheme would be best for the overall finished dreamers design. I recieved overwhelming support for option ‘C’ so Dreamers-refined was born.</p>
         <div class="main">
-        <!-- Portfolio Gallery Grid -->
-        <div class="row">
-          <div class="column">
-            <div class="content">
-              <img src="images/Landing-2.png" alt="BlueGreen tones" style="width:100%">
-              <h4>A</h4>
-            </div>
+        <!-- 4 col Gallery Grid -->
+          <div class="img1">
+            <img src="images/Landing-2.png" alt="BlueGreen tones" style="width:100%">
+            <h4>A</h4>
           </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/Landing-3.png" alt="Teal tones" style="width:100%">
-              <h4>B</h4>
-            </div>
+          <div class="img2">
+            <img src="images/Landing-3.png" alt="Teal tones" style="width:100%">
+            <h4>B</h4>
           </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/Landing.png" alt="Mauve tones" style="width:100%">
-              <h4>C</h4>
-            </div>
+          <div class="img3">
+            <img src="images/Landing.png" alt="Mauve tones" style="width:100%">
+            <h4>C</h4>
           </div>
-          <div class="column">
-            <div class="content">
-              <img src="images/Landing-1.png" alt="Purple tones" style="width:100%">
-              <h4>D</h4>
-            </div>
+          <div class="img4">
+            <img src="images/Landing-1.png" alt="Purple tones" style="width:100%">
+            <h4>D</h4>
           </div>
         </div>
-      </div>
     </section>
     <!-- line -->
     <hr>
