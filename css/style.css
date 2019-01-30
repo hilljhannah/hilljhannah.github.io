@@ -28,20 +28,20 @@ section {
 
 
 header {
-  display: inline-block;
+  display: grid;
   background-color: lightgrey;
   height: 10rem;
+  grid-column: repeat (4, 1fr);
+  width: 100%;
 }
+
 nav{
   display: inline-block;
   font-size: 1.6rem;
-  float: right;
-  padding-right: 6rem;
-  padding-bottom: 5rem;
+  grid-column: 3/4;
+  grid-row: 1/1;
 }
-nav::after{
-  clear:right;
-}
+
 
 /* homepage Minneapolis map */
 map {
@@ -63,9 +63,8 @@ section.role {
 /* personal logo */
 .logo {
   display: inline-block;
-  padding-left: 6rem;
-  padding-right: 6rem;
   border-right: 1px solid #66FCF1;
+  padding: 2rem 6rem;
 }
 
 /* non-link text in navbar*/
@@ -73,7 +72,8 @@ h1 {
   display: inline-block;
   font-size: 2.2rem;
   padding-left: 6rem;
-  width: 40%;
+  width:50%;
+  
 }
 
 /* section header font */
@@ -109,7 +109,8 @@ h3 {
 h3.left{
   display: block;
   text-align: left;
-  width: 40%;
+  width: 55rem;
+  margin: 2rem 4rem 0rem 4rem;
 }
 h4 {
   font-size: 2.8rem;
@@ -135,20 +136,16 @@ p.bold {
 p.centered{
   display: block;
   text-align: center;
-  margin: 0 auto;
+  margin: 2rem auto;
+  width: 42rem;
 }
-
-button{
-  border-radius: 10rem;
-  background-color: white;
-  border: .4rem solid #532051;
+/* used for case study preview paragraph text*/
+p.b{
   display: block;
-  font-size: 2.2rem;
-  margin: 6rem auto 0 auto;
-  /*top, right, bottom, left*/
-  padding: 2rem 4rem 2rem 4rem ;
+  text-align: left;
+  margin: 2rem 4rem 0rem 4rem;
+  width: 50rem;
 }
-
 /* accent button from navbar */
 button.outline{
   background-color: white;
@@ -157,7 +154,19 @@ button.outline{
   display: inline-block;
   /*top, right, bottom, left*/
   padding: 1rem 2rem 1rem 2rem;
+  margin: 0;
 }
+button{
+  border-radius: 10rem;
+  background-color: white;
+  border: .4rem solid #532051;
+  display: block;
+  font-size: 2.2rem;
+  margin: 6rem auto 0 auto;
+  /*top, right, bottom, left*/
+  padding: 2rem 15rem 2rem 15rem;
+}
+
 
 /* navbar link text */
 .link{
@@ -172,6 +181,12 @@ button.outline{
   width: 10rem;
 }
 
+.homeHero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
 .homeToolkit{
   display: grid;
   width: 144rem;
@@ -182,9 +197,23 @@ button.outline{
 /* case study preview content box*/
 .casePreview {
   background-color: #EFFEFD;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5rem;
 }
 
+.box_content{
+  grid-column: 1;
+}
 
+.projectLogo{
+  display: block;
+  grid-column: 1;
+  width: 30%;
+  height: auto;
+  margin: 5rem 4rem 4rem 4rem;
+
+}
 /* large process-stage banner */
 .process {
   background-color: #04B5A8;
@@ -288,7 +317,7 @@ dd {
 /* dreamers case study logo*/
 #dream-Logo {
   display: block;
-  margin: auto;
+  margin: 2rem auto;
   width: 40rem;
   height: auto;
 }
@@ -344,10 +373,6 @@ height: auto;
 margin: 1rem auto 1rem auto;
 }
 
-.projectLogo{
-  width: 20%;
-  height: auto;
-}
 /*----- image gallery styles start----->*/
 
 /* --- initial gallery --*/
@@ -447,10 +472,12 @@ margin: 1rem auto 1rem auto;
 }
 /*--end--*/
 
-section.image_progress {
+.progress {
+  width: 140rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: .5rem;
+  margin: 2rem auto 2rem auto;
 }
 
 p.cap {
@@ -473,9 +500,22 @@ br{
 h6 {
   color: white;
   font-size: 2.0rem;
+  text-align: center;
+  grid-column: 2;
 }
 footer {
   background-color: #1F2333;
+  display: grid;
+  grid-column: repeat (3,1fr) ;
+  width: 100%;
+}
+.email{
+  display: block;
+  grid-column: 1;
+}
+.Linkedin{
+  display: block;
+  grid-column: 3;
 }
 div{
   font-weight: normal;
