@@ -50,7 +50,7 @@ nav{
 
 
 /* homepage Minneapolis map */
-map {
+.map {
   display: block;
   margin: 1rem auto 1rem auto;
 }
@@ -72,15 +72,15 @@ section.role {
   border-right: 1px solid #66FCF1;
 }
 
+/*-- text styles --*/
+
 /* non-link text in navbar*/
 h1 {
   display: inline-block;
   font-size: 2.2rem;
   padding-left: 4rem;
   grid-column: 1;
-
 }
-
 /* section header font */
 h2{
   display: block;
@@ -89,7 +89,6 @@ h2{
   padding: 2rem;
   text-align: center;
 }
-
 /* large project intro description font */
 h2.display{
   display: block;
@@ -98,46 +97,50 @@ h2.display{
   text-align: center;
   width: 60%;
 }
-
 /*left aligned h2*/
 h2.left{
   display: block;
   text-align: left;
   padding-left: 0;
+  width: 60rem;
 }
-
+/* h3 text */
 h3 {
  font-size: 3.4rem;
  text-align: center;
+}
+h3.b{
+  text-align: left;
+  grid-column: 1
 }
 /*left aligned h3*/
 h3.left{
   display: block;
   text-align: left;
-  width: 55rem;
-  margin: 2rem 4rem 0rem 4rem;
+  width: 60rem;
+  margin: 0 auto;
 }
+
 h4 {
   font-size: 2.8rem;
   text-align: center;
 }
-
 h5{
   font-size: 2rem;
 }
-
+/* paragraph text*/
 p {
   font-size: 1.8rem;
   width: 60rem;
   margin: 2rem auto 2rem auto;
   font-style: normal;
 }
-
+/* bold p text */
 p.bold {
   font-size: 2rem;
   font-weight: bold;
 }
-
+/* centered p text */
 p.centered{
   display: block;
   text-align: center;
@@ -148,19 +151,17 @@ p.centered{
 p.b{
   display: block;
   text-align: left;
-  margin: 2rem 4rem 0rem 4rem;
-  width: 50rem;
+  width: 60rem;
+  margin: 1rem auto;
 }
-/* accent button from navbar */
-button.outline{
-  background-color: white;
-  border-radius: 10rem;
-  border: .4rem solid #66FCF1;
-  display: inline-block;
-  /*top, right, bottom, left*/
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 0;
+p.cap {
+  padding-top: 4rem;
+  font-style: italic;
 }
+
+
+/*-- button styles --*/
+
 button{
   border-radius: 10rem;
   background-color: white;
@@ -171,13 +172,45 @@ button{
   /*top, right, bottom, left*/
   padding: 2rem 15rem 2rem 15rem;
 }
-
+/* content button */
+.button_ghost {
+background: #ffffff;
+border: .4rem solid #494949 !important;
+border-radius: 10rem;
+color: #494949 !important;
+display: inline-block;
+margin-top: 5rem;
+font-size: 2.2rem;
+text-transform: uppercase;
+padding: 2rem 8rem;
+}
+.button_ghost:hover {
+background: #f6b93b;
+border-color: #f6b93b !important;
+color: #ffffff !important;
+transition: all 0.4s ease 0s;
+}
+.outline{
+  background: lightgrey;
+  display: inline-block;
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 0;
+}
+.outline:hover {
+  background: #66FCF1;
+  border-color: #66FCF1 !important;
+  color: #000000 !important;
+  transition: all 0.4s ease 0s;
+}
+.large-btn{
+  padding: 2rem 10rem;
+  font-size: 2.4rem;
+}
 
 /* navbar link text */
 .link{
   margin: 2rem;
 }
-
 /* section heading icons */
 .icon {
   display: block;
@@ -185,40 +218,57 @@ button{
   margin: 0 auto 0 auto;
   width: 10rem;
 }
-
+/* homepage hero section grid */
 .homeHero{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
+  width: 80%;
+  margin: 4rem auto 0 auto;
 }
-
+.hero_content{
+  display: grid;
+  grid-row: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin: auto;
+}
+/* lists on homepage grid */
 .homeToolkit{
   display: grid;
   width: 144rem;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2rem;
 }
-
 /* case study preview content box*/
 .casePreview {
   background-color: #EFFEFD;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 5rem;
+  height: 80rem;
+  width: 100%;
 }
-
+/* text content in casePreview*/
 .box_content{
   grid-column: 1;
+  padding-left: :
 }
-
+/* dreamers logo in casePreview*/
 .projectLogo{
   display: block;
   grid-column: 1;
   width: 30%;
   height: auto;
-  margin: 5rem 4rem 4rem 4rem;
+  margin: 0 auto 2rem ;
 }
-/* large process-stage banner */
+/* device frame in casePreview*/
+.home_frame{
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 4rem auto;
+  grid-column: 2;
+}
+/* large process-stage banner in case study */
 .process {
   background-color: #04B5A8;
   font-size: 6.4rem;
@@ -228,7 +278,6 @@ button{
   margin: auto;
   padding-top: 6.5rem;
 }
-
 /*unordered list with bulletpoint */
 ul{
   font-size: 2rem;
@@ -236,7 +285,6 @@ ul{
   margin-left: auto;
   margin-right: auto;
 }
-
 /* no bullet-centered list format*/
 ul.b{
   list-style: none;
@@ -245,7 +293,6 @@ ul.b{
   padding-left: 0;
   text-align: center;
 }
-
 ul.ideals {
   list-style-type: disc;
   margin: 1rem auto 0 auto;
@@ -258,7 +305,6 @@ li{
   padding: .75rem;
   font-weight: normal;
 }
-
 /*list within a list styles*/
 dt {
   font-size: 1.8rem;
@@ -266,15 +312,12 @@ dt {
   margin: 2rem auto .75rem auto;
   font-weight: 600;
 }
-
 dd {
   font-size: 1.8rem;
   width: 50rem;
   margin: 0 auto 0 auto;
 }
 /*--end--*/
-
-
 
 /*background hero box in case study*/
 .hero{
@@ -287,10 +330,6 @@ dd {
   padding: 8rem;
   width: 100%;
 }
-
-
-
-/*--- device frames -- */
 /* hero case study frame*/
 .hero_device {
   display: block;
@@ -306,20 +345,22 @@ dd {
   width: 80%;
 }
 
-.home_frame{
-  display: inline-block;
-  width: 20%;
+.it2-frame{
+  display: block;
+  max-width: 100%;
   height: auto;
-  float: right;
-}
-.home_frame::after{
-  clear:both;
 }
 
+.device-frame{
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
+}
 /*---- single image / logo styles --- */
 
 
-/* dreamers case study logo*/
+/* dreamers logo in case study */
 #dream-Logo {
   display: block;
   margin: 2rem auto;
@@ -335,28 +376,54 @@ dd {
   width: 80%
 }
 
-div.logo_sketches {
+.logo_sketches {
   display: block;
   height: auto;
   margin: 1rem auto 1rem auto;
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
 }
 
+/* competitor analysis styles */
 .competitor {
-  display: block;
+  display: grid;
+  grid-column: 1fr;
   height: auto;
   margin: 1rem auto 1rem auto;
   text-align: left;
-  width: 80%;
+  width: 100%;
 }
-
-.logo-dev-images {
+.comp_img{
   display: block;
-  height: auto;
-  max-width: 75%;
-  margin: 1rem auto;
+  margin: auto;
 }
+/*--*/
+
+/* logo development image grid*/
+.logo-dev-images {
+  display: grid;
+  grid-column: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  width: 100%;
+  margin: 4rem auto 0 auto;
+  grid-gap: 4rem;
+}
+/*logo dev image styles start*/
+.dev-img{
+  display: block;
+  width: 50rem;
+  margin: auto;
+}
+.dev-2{
+  grid-column: 2;
+}
+p.img_cap{
+  font-size: 1.6rem;
+  text-align: center;
+}
+/* end */
+
+
 .flowchart {
   display: block;
   height: auto;
@@ -364,24 +431,30 @@ div.logo_sketches {
   padding-bottom: 4rem;
   width: 80%;
 }
-
-img.sitemap, .rough-sketch {
+/* content strat sitemap image styles*/
+.sitemap {
   display: block;
   max-width: 75%;
   height: auto;
   margin: 1rem auto 1rem auto;
 }
-
+/* rough sketching image styles*/
+.rough-sketch{
+  display: block;
+  max-width: 75%;
+  height: auto;
+  margin: 1rem auto 1rem auto;
+}
 .wireframe_gallery {
 display: block;
-max-width: 75%;
+max-width: 80%;
 height: auto;
 margin: 1rem auto 1rem auto;
 }
 
-/*----- image gallery styles start----->*/
 
-/* --- initial gallery --*/
+/* --- image gallery  styles --*/
+
 /* 4 column */
 .main {
   display: grid;
@@ -403,39 +476,44 @@ margin: 1rem auto 1rem auto;
 .img4{
   grid-column: 4;
 }
+/*--*/
 
-
+/* three col */
 .main_three{
   display: grid;
   grid-column: 1fr 1fr 1fr;
-  max-width: 110rem;
-  grid-gap: 4rem;
+  max-width: 80%;
+  grid-gap: 2rem;
   margin: 0 auto;
+  padding-top: .8rem;
 }
-
 .option1{
+  display: block;
   grid-column: 1;
 }
 .option2{
+  display: block;
   grid-column: 2;
 }
 .option3{
-  grid-column: 3
+  display: block;
+  grid-column: 3;
 }
+/*--*/
 
-
+/* design progression image gallery*/
 .progress {
-  width: 140rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: .5rem;
   margin: 2rem auto 2rem auto;
+  padding-top: 2rem;
+  width: 100%;
+}
+.progress.img{
+  display: block;
 }
 
-p.cap {
-  padding-top: 4rem;
-  font-style: italic;
-}
 /* section dividing line */
 hr{
   width: 80%
