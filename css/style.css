@@ -105,6 +105,7 @@ h2.left{
   text-align: left;
   padding-left: 0;
   width: 60rem;
+  font-size: 6.4rem;
 }
 /* h3 text */
 h3 {
@@ -115,16 +116,21 @@ h3 {
 }
 h3.b{
   text-align: left;
-  grid-column: 1
+  grid-column: 1;
+  font-size: 3.6;
+  font-weight: 100;
 }
 /*left aligned h3*/
 h3.left{
   display: block;
+  color: #45A29E;
   text-align: left;
   max-width: 60rem;
   margin: 0 auto;
 }
-
+h3.left:hover{
+  color: #66FCF1;
+}
 h4 {
   font-family: 'Lato';
   font-size: 2.8rem;
@@ -236,8 +242,7 @@ dd {
   display: block;
   margin: 0 auto;
   width: 60rem;
-  justify-content: middle;
-  align-items: center;
+  text-align: center;
 }
 .button_cont{
   display: inline-block;
@@ -299,20 +304,23 @@ dd {
 .homeHero{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
-  margin: 4rem auto 0 auto;
+  width: 144rem;
+  margin: 0 auto;
+  padding-top:4rem;
 }
 .hero_content{
   display: grid;
   grid-row: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
-  margin: auto;
+  margin: 1 auto;
   width: 80%;
 }
 /* homepage Minneapolis map */
 .map {
   display: block;
   margin: 1rem auto 1rem auto;
+  max-width: 75rem;
+  height: auto;
 }
 /* case study preview content box*/
 .casePreview {
@@ -325,7 +333,7 @@ dd {
 .column2{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5rem;
+  width: 144rem;
 }
 /* text content in casePreview*/
 .box_content{
@@ -354,8 +362,7 @@ dd {
 .homeToolkit{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1rem;
-  width: 80%;
+  width: 144rem;
 }
 
 /* 3 col layout for roles, deliverables, and tools*/
