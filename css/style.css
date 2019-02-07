@@ -59,14 +59,14 @@ nav{
 .logo {
   display: inline-block;
   vertical-align: middle;
-  border-right: 1px solid #FDFFFC;
+  border-right: 1px solid #333;
   padding-right: 2rem;
   width: 30%;
   max-width: 50px;
 }
 /* non-link text in navbar*/
 h1 {
-  color: black;
+  color: #333;
   display: inline-block;
   vertical-align: middle;
   font-family: 'Lato';
@@ -86,17 +86,22 @@ h1 {
 /*-- navbar link text -- */
 .link{
   display: inline-block;
-  font-family: 'lato';
+  font-family: 'Lato';
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.6rem;
+  font-weight: 400;
+  font-size: 1.4rem;
   color: #333;
   text-transform: uppercase;
   margin: 0 1.5rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid black;
 }
 /* hides large links on smallest screens*/
 @media only screen and (max-width: 768px){
-  nav{display: none;}
+  h1{display: none;}
+  header{margin: 0 auto;}
+  nav{margin: 0 auto;}
+
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -347,6 +352,7 @@ a {
   text-decoration: none;
   margin: 0 auto;
   font-size: 1.2rem;
+  color:#333;
 }
 .button {
     margin: 2rem auto;
@@ -358,22 +364,25 @@ a {
 }
 .button_outline{
   margin: 0 1.5rem;
-  border: 2px solid #CD5D67;
-  border-radius: 100px;
-  padding: 20px 4rem;
+  border: 3px solid #E93148;
+  border-radius: 50px;
+  padding: 1.5rem 4rem;
   font-family: "Lato";
   font-size: 1.6rem;
-  font-weight: 500;
-  color: black;
+  font-weight: 400;
+  color: #333;
+}
+@media only screen and (max-width: 600px){
+  .button_outline{padding: 1rem 2rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (max-width : 1224px) {
   .button_outline{font-size: 1.8rem;}
 }
 .button_outline:hover{
-  background-color: #CD5D67;
+  background-color: #E93148;
+  color: white;
   transition: .4s ;
-
 }
 /* content button */
 .button_ghost {
@@ -584,7 +593,7 @@ ul.b{
 #dream-Logo {
   display: block;
   margin: 2rem auto;
-  width: 30vw;
+  width: 40vw;
   max-width: 500px;
   height: auto;
 }
@@ -599,7 +608,8 @@ ul.b{
 }
 /* individual persona */
 .persona{
-  max-width: 80%;
+  width: 80vw;
+  max-width: 100%;
 }
 /*-- competitive analysis container --*/
 .SWOT{
@@ -646,6 +656,7 @@ ul.b{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 80vw;
   max-width: 100%;
   margin: 0 auto;
 }
