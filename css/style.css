@@ -20,7 +20,6 @@ body{
   display: grid;
   grid-template-columns: 1fr ;
   width: 100%;
-  max-width: 100vw;
   margin: 0 auto;
   justify-content: center;
   padding: 0;
@@ -31,15 +30,15 @@ section {
   display: block;
   font-weight: normal;
   align-items: center;
-  width: 80%;
   justify-content: center;
-  margin: 0 auto;
+  margin: 16% auto;
+  width: 90%;
 }
 /*--header styles--*/
 header {
   align-items: center;
   justify-content: space-around;
-  background-color: #2EC4B6;
+  background-color: #191919;
   display: flex;
   flex-wrap: wrap;
   height: 100px;
@@ -75,7 +74,7 @@ nav{
 .logo {
   display: inline-block;
   vertical-align: middle;
-  border-right: 1px solid #333;
+  border-right: 1px solid #76EAE1;
   padding-right: 2rem;
   width: 100%;
   max-width: 50px;
@@ -83,14 +82,15 @@ nav{
 }
 /* non-link text in navbar*/
 h1 {
-  color: #333;
+  color: white;
   display: inline-block;
   vertical-align: middle;
   font-family: 'Lato';
-  font-weight: 200;
-  font-size: 0;
+  font-weight: 300;
+  font-size: 1.6rem;
+  font-style: normal;
   margin: 0 auto;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -103,10 +103,10 @@ h1 {
 /*-- navbar link text -- */
 .link{
   display: inline-block;
-  color: #333;
+  color: white;
   font-family: 'Lato';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.6rem;
   text-transform: uppercase;
   margin: 0 auto;
@@ -114,7 +114,7 @@ h1 {
   padding: 2px;
   border-bottom: 1px solid black;
 }
-.link:hover{border-bottom: 1px dotted white;transition: .2s;}
+.link:hover{border-bottom: 1px solid #76EAE1;transition: .4s;}
 /* hides large links on smallest screens*/
 @media only screen and (max-width: 768px){
   h1{margin: none;}
@@ -123,10 +123,6 @@ h1 {
   .links{display: none;}
 }
 
-/* Desktops and laptops ----------- */
-@media only screen  and (max-width : 1224px) {
-  .link{font-size: 1.8rem;}
-}
 /*--- typography styles ---*/
 /* section headers */
 h2{
@@ -134,9 +130,11 @@ h2{
   font-family: 'Megrim';
   font-size: 3.2rem;
   margin: 0 auto;
-  padding: 1rem ;
+  padding: 2rem 0 3rem 0 ;
   text-align: center;
   color: black;
+  width: 90vw;
+  max-width: 100%;
 }
 /* large project intro description font */
 h2.display{
@@ -145,8 +143,9 @@ h2.display{
   font-size: 3.6rem;
   padding: 2rem;
   text-align: center;
-  width: 100%;
-  max-width: 600px;
+  width: 90vw;
+  max-width: 100%;
+  margin: 0 auto;
 }
 /*left aligned h2*/
 h2.left{
@@ -174,21 +173,21 @@ h3 {
   color: black;
   font-family: 'Lato';
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 400;
   text-align: center;
-  width: 100%;
+  width: 90vw;
   max-width: 600px;
 }
 h3.b{
   text-align: left;
-  font-weight: 100;
+  font-weight: 300;
 }
 /*left aligned h3*/
 h3.left{
   display: block;
   color: #45A29E;
   margin: 2rem auto;
-  width: 100%;
+  width: 90vw;
   max-width: 500px;
 
 }
@@ -205,8 +204,11 @@ h4 {
   color: black;
   font-family: 'Lato';
   font-size: 1.8rem;
+  font-weight: 400;
   text-align: center;
+  text-decoration: underline;
   padding: 0;
+  margin: 10% auto 0 auto;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -224,7 +226,7 @@ h5{
   margin: 0 auto;
   text-align: left;
   padding-top: 2rem;
-  width: 100%;
+  width: 90vw;
   max-width: 600px;
 }
 /*-- paragraph text --*/
@@ -235,20 +237,21 @@ p {
   margin: 2.5rem auto;
   font-style: normal;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   padding: 0 ;
-  line-height: 1.5em;
+  line-height: 150%;
 }
 /* bold p text */
 p.bold {
   font-weight: bold;
+  margin: 0 auto;
 }
 /* centered p text */
 p.centered{
   color: #333;
   display: block;
   font-family: "Lato";
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   margin:  0 auto 2rem auto;
   font-stretch: extra-expanded;
@@ -277,23 +280,24 @@ p.cap {
 /* large process-stage banners in case study (for spacing)*/
 .process {
   align-content: center;
-  background-color: #77EAC2;
-  border: 1px solid black;
+  background-color: #2EC4B6;
   display: flex;
   flex-wrap: wrap;
   font-family: "Megrim";
   font-size: 5rem;
   height: 25rem;
   justify-content: center;
-  margin: 25% auto;
+  margin: 20% auto;
+  text-align: center;
+  text-shadow: -.8px 0 black, 0 .8px black, .8px 0 black, 0 -.8px black;
   width: 100%;
-  max-width: 100vw;
   padding: 1rem;
 }
 /*-- section dividing line (for spacing)--*/
 hr{
   width: 85vw;
-  margin: 25% auto;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px lightgrey;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -305,45 +309,39 @@ hr{
 }
 /*-- unordered list bullet --*/
 ul{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   list-style-type: circle;
   margin: 0 auto;
-  padding: 1rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
 }
 /* centered no-bullet */
 ul.middle{
   list-style-type: none;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding: 2rem 4rem ;
   margin: 0 auto;
-  width: 100%;
-  max-width: 600px;
 }
 /* brand ideals list */
 ul.ideals {
   align-content: center;
   list-style-type: circle;
   margin: 0 auto ;
-  width: 100%;
-  max-width: 600px;
   font-weight: bold;
   list-style-position: inside;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  ul{font-size: 1.8rem;}
+  ul{font-size: 1.6rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-  ul{font-size: 2rem;}
+  ul{font-size: 1.8rem;}
 }
 /*-- list items --*/
 li{
   font-size: 1.4rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   font-weight: normal;
 }
 /*-- list within a list --*/
@@ -352,13 +350,13 @@ dt {
   font-family: "Open Sans";
   font-size: 1.4rem;
   font-weight: 600;
-  width: 100%;
+  width: 90vw;
   max-width: 600px;
   margin: 2rem auto .75rem auto;
 }
 dd {
   font-size: 1.4rem;
-  width: 100%;
+  width: 90vw;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -387,17 +385,23 @@ a {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    height: auto;
 }
+
 .button_outline{
   margin: 0 2.3rem;
-  border: 3px solid #E93148;
+  border: 3px solid #76EAE1;
   border-radius: 5px;
   padding: 1.5rem 4rem;
   font-family: "Lato";
   font-size: 1.6rem;
   font-weight: 400;
-  color: #333;
+  color: white;
+}
+.button_outline:hover{
+  background-color: #76EAE1;
+  color: black;
+  transition: .4s ;
+  border-radius: 50px;
 }
 @media only screen and (max-width: 600px){
   .button_outline{margin: 0 1rem; padding: 1rem 2rem; font-size: 1.2rem;}
@@ -407,16 +411,12 @@ a {
 @media only screen  and (max-width : 1224px) {
   .button_outline{font-size: 1.8rem;}
 }
-.button_outline:hover{
-  background-color: #E93148;
-  color: white;
-  transition: .4s ;
-}
+
 /* content button */
 .button_ghost {
-  background: #ffffff;
-  border: .4rem solid #494949 !important;
-  border-radius: 50px;
+
+  border: 4px solid #E93148 !important;
+  border-radius: 40px;
   color: #494949 !important;
   display: inline-block;
   margin: 8rem auto;
@@ -425,20 +425,24 @@ a {
   padding: 2rem 6rem;
 }
 .button_ghost:hover {
-  background: #f6b93b;
-  border-color: #f6b93b !important;
+  background: #E93148;
+  border-color: #E93148 !important;
+  border-radius: 5px;
   color: #ffffff !important;
   transition: all 0.4s ease 0s;
 }
 
-/*--- rainbow onhover button ---*/
+/*--- rainbow onhover button styles start---*/
 .rainbow{
   background-color: #343A40;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
   padding: 1.5rem 3rem;
-  margin: 4rem auto;
+  margin: 0 auto;
+}
+.rainbow-1{
+  margin: 2rem auto;
 }
 .rainbow-1:hover{
    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
@@ -448,13 +452,14 @@ a {
   to { background-position:20vw; }
 }
 .follow{
-  margin-top: 40px;
+margin-top: 40px;
 }
 .follow a{
   color: black;
   padding: 8px 16px;
   text-decoration: none;
 }
+/* end rainbow button styles*/
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .button{font-size: 1.6rem;}
@@ -485,8 +490,8 @@ a {
 .homeHero{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 100%;
+  margin: 10rem auto 0 auto;
+  width: 100vw;
   padding: 4rem 2rem;
 }
 .hero_content{
@@ -505,10 +510,10 @@ a {
 /*-- homepage case study preview background-box --*/
 .casePreview {
   display: block;
-  background-color: #EFFEFD;
+  background-color: #F4FEFE;
   height: auto;
   padding: 4rem;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
 }
 /*- case study preview content box -*/
@@ -566,18 +571,19 @@ a {
 .hero{
   display: block;
   align-content: center;
-  background-color: #EFFEFD;
+  background-color: #F4FEFE;
   height: auto;
   margin: 0 auto;
-  padding: 4rem;
-  width: 100%;
+  padding: 6rem 1rem;
+  width: 100vw;
 }
 /* hero case study frame*/
 .hero_device {
   display: block;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: 6rem auto;
   width: 100%;
+  max-width: 1000px;
   height: auto;
 }
 @media only screen and (min-width: 600px){
@@ -585,25 +591,27 @@ a {
 }
 /*--  roles, deliverables, and tools flexbox --*/
 .role {
-  justify-content: center;
+  justify-content: top;
   align-content: center;
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  max-width: 100vw;
+  width: 80vw;
+
 }
 /* individual column */
 .col3{
   display: block;
   padding: 4rem;
   margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
 }
 /* roles list format*/
 ul.b{
   list-style: none;
   padding: .2rem 0 .5rem 0;
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 /* solution section*/
 .solu{
@@ -615,9 +623,9 @@ ul.b{
 /* all device frames*/
 .device-frame{
   display: block;
-  margin: 4rem auto;
-  width: 80vw;
-  max-width: 1400px;
+  margin: 10% auto;
+  width: 100%;
+  max-width: 1100px;
   height: auto;
 }
 /* iPads (portrait and landscape) ----------- */
@@ -631,8 +639,8 @@ ul.b{
 /* dreamers logo in case study */
 #dream-Logo {
   display: block;
-  margin: 2rem auto;
-  width: 40vw;
+  margin: 4rem auto;
+  width: 60vw;
   max-width: 500px;
   height: auto;
 }
@@ -648,14 +656,15 @@ ul.b{
 /* individual persona */
 .persona{
   width: 80vw;
-  max-width: 100%;
+  max-width: 800px;
 }
 /*-- competitive analysis container --*/
 .SWOT{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 100vh;
+  width: 90vw;
+  max-width: 100%;
 }
 /* individual competitor */
 .competitor {
@@ -665,7 +674,9 @@ ul.b{
 /* competitor img */
 .comp_img{
   display: block;
-  max-width: 100%;
+  width: 90vw;
+  max-width: 800px;
+  height: auto;
   padding: 4rem;
 }
 /*-- user flow image --*/
@@ -673,13 +684,16 @@ ul.b{
   display: block;
   height: auto;
   margin: 0 auto ;
-  max-width: 100%;
+  width: 90vw;
+  max-width: 1400px;
   padding: 2rem;
 }
 /*-- branding --*/
 .moodboard{
   display: block;
+  width: 100vw;
   max-width: 100%;
+  margin: 2rem auto;
 }
 /* logo sketching img */
 .logo_sketches {
@@ -734,7 +748,7 @@ p.img_cap{
   margin: 0 auto;
   max-width: 100%;
   padding: 1rem;
-  width: 80vw;
+  width: 90vw;
 }
 /*-- wireframe images --*/
 .wireframe_gallery {
@@ -843,15 +857,12 @@ p.img_cap{
   .portrait{padding: 2rem;}
 }
 
-/*break spacing within a paragraph*/
-br{
-  padding-top: 2rem;
-}
+
 
 /*-- footer styles --*/
 footer {
   background-color: #1F2333;
-  height: auto;
+  height: 300px;
   width: 100%;
   padding: 2rem 4rem;
   margin: 8rem auto 0 auto;
@@ -863,7 +874,7 @@ h6 {
   font-family: 'Lato';
   font-size: 1.8rem;
   text-align: center;
-  margin: 2rem auto;
+  margin: 6rem auto 4rem auto;
 
 }
 /* iPads (portrait and landscape) ----------- */
@@ -876,11 +887,12 @@ h6 {
 }
 /* contact footer button*/
 .contact{
+  align-content: center;
   justify-content: center;
   display: flex;
-  width: 100%;
-  max-width: 1400px;
+  width: 80vw;
+  max-width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
-  height: auto;
+  height: 10rem;
 }
