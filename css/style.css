@@ -149,13 +149,14 @@ h2.display{
 /*left aligned h2*/
 h2.left{
   display: block;
+  text-shadow: -.4px 0, 0 .4px, .4px 0, 0 -.4px;
   text-align: left;
   padding: 0;
   font-size: 3.6rem;
   margin: 0 ;
 }
 h2.left:hover{
-  color: #66FCF1;
+  color: #45A29E;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -185,10 +186,12 @@ h3.b{
 h3.left{
   display: block;
   color: #45A29E;
+  font-weight: 400;
   margin: 2rem auto;
-  width: 90vw;
-  max-width: 100%;
+  padding: 2rem 0 0 0;
   text-align: center;
+  width: 90vw;
+  max-width: 500px;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -196,7 +199,7 @@ h3.left{
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h3, h3.left{font-size: 2.4rem;text-align: left;}
+  h3, h3.left{font-size: 2.4rem;}
 }
 /*-- headers within sections --*/
 h4 {
@@ -248,13 +251,14 @@ p.bold {
 }
 /* centered p text */
 p.centered{
-  color: #333;
+  color: black;
   display: block;
   font-family: "Lato";
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 100;
   text-align: center;
   margin:  2% auto ;
-  word-spacing: 20px;
+  word-spacing: 750%;
 }
 /* used for case study preview paragraph text*/
 p.b{
@@ -262,7 +266,7 @@ p.b{
   text-align: center;
   margin: 2rem auto;
   width: 90vw;
-  max-width: 100%;
+  max-width: 500px;
 }
 p.cap {
   padding-top: 2rem;
@@ -275,7 +279,7 @@ p.cap {
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h5, p , p.b{font-size: 1.8rem;text-align: left;}
+  h5, p ,{font-size: 1.8rem;}
 }
 /* large process-stage banners in case study (for spacing)*/
 .process {
@@ -419,7 +423,6 @@ a {
   background: white;
   border: 4px solid #E93148 !important;
   border-radius: 8px;
-  filter: drop-shadow(0 10px 10px #333);
   color: #494949 !important;
   display: inline-block;
   font-size: 1.6rem;
@@ -508,19 +511,20 @@ margin-top: 40px;
 .map {
   display: block;
   height: auto;
-  filter: drop-shadow(0 0 30px #333);
+  filter: drop-shadow(0 0 30px #1F2833);
   width: 90%;
   max-width: 600px;
   margin: 2rem;
 }
+
 /*-- homepage case study preview background-box --*/
 .casePreview {
   display: block;
-  background-color: #F4FEFE;
+  background-color: rgba(244,254,254,.7);
   height: auto;
   padding: 4rem;
   width: 100%;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 /*- case study preview content box -*/
 .prevBox{
@@ -579,7 +583,7 @@ margin-top: 40px;
 .hero{
   display: block;
   align-content: center;
-  background-color: #F4FEFE;
+  background-color: rgba(244,254,254,.7);
   height: auto;
   margin: 0 auto;
   padding: 6rem 1rem;
@@ -670,6 +674,7 @@ ul.b{
   width: 100%;
   max-width: 700px;
   padding: 2rem;
+  margin: 2rem auto;
 }
 /*-- competitive analysis container --*/
 .SWOT{
@@ -691,7 +696,7 @@ ul.b{
   max-width: 800px;
   height: auto;
   padding: 4rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 /*-- user flow image --*/
 .flow_img {
