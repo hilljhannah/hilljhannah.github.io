@@ -31,8 +31,8 @@ section {
   font-weight: normal;
   align-items: center;
   justify-content: center;
-  margin: 10% auto;
-  width: 100vw;
+  margin: 20vh auto;
+  width: 90vw;
 }
 /*--header styles--*/
 header {
@@ -151,7 +151,7 @@ h2.left{
   display: block;
   text-align: left;
   padding: 0;
-  font-size: 3rem;
+  font-size: 3.6rem;
   margin: 0 ;
 }
 h2.left:hover{
@@ -239,6 +239,7 @@ p {
   max-width: 700px;
   padding: 0 ;
   line-height: 150%;
+  align-items: center;
 }
 /* bold p text */
 p.bold {
@@ -252,7 +253,7 @@ p.centered{
   font-family: "Lato";
   font-weight: 300;
   text-align: center;
-  margin:  2rem auto 0 auto;
+  margin:  2% auto ;
   word-spacing: 20px;
 }
 /* used for case study preview paragraph text*/
@@ -299,7 +300,6 @@ hr{
   margin: 15% auto;
   box-shadow: 0px 8px 15px;
 }
-
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .process{font-size: 6rem; height: 350px;}
@@ -347,7 +347,6 @@ li{
 }
 /*-- list within a list --*/
 dt {
-
   font-family: "Open Sans";
   font-size: 1.4rem;
   font-weight: 600;
@@ -383,9 +382,13 @@ a {
     margin: 0 auto;
     font-family: "Lato";
     font-weight: 500;
+    height: 100%;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+}
+.button-footer{
+  height:80px;
 }
 .button_outline{
   margin: 0 2.3rem;
@@ -411,27 +414,27 @@ a {
 @media only screen  and (max-width : 1224px) {
   .button_outline{font-size: 1.8rem;}
 }
-
 /* content button */
 .button_ghost {
+  background: white;
   border: 4px solid #E93148 !important;
   border-radius: 8px;
+  filter: drop-shadow(0 10px 10px #333);
   color: #494949 !important;
   display: inline-block;
-  margin: 8rem auto 0 auto;
   font-size: 1.6rem;
+  margin: 5vw auto;
   text-transform: uppercase;
+  transition: all .4s ease 0s;
   padding: 2rem 4rem;
-  box-shadow: 0px 8px 15px;
 }
 .button_ghost:hover {
   background: #E93148;
   border-color: #E93148 !important;
   border-radius: 40px;
   color: #ffffff !important;
-  transition: all 0.4s ease 0s;
+  transform: all;
 }
-
 /*--- rainbow onhover button styles start---*/
 .rainbow{
   background-color: #343A40;
@@ -490,10 +493,9 @@ margin-top: 40px;
 .homeHero{
   display: flex;
   flex-wrap: wrap;
-  margin: 10rem auto 0 auto;
   width: 90%;
   max-width: 100vw;
-  padding: 4rem 2rem;
+  padding: 0 2rem;
 }
 .hero_content{
   width: 100%;
@@ -506,7 +508,8 @@ margin-top: 40px;
 .map {
   display: block;
   height: auto;
-  width: 100%;
+  filter: drop-shadow(0 0 30px #333);
+  width: 90%;
   max-width: 600px;
   margin: 2rem;
 }
@@ -517,7 +520,7 @@ margin-top: 40px;
   height: auto;
   padding: 4rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 /*- case study preview content box -*/
 .prevBox{
@@ -526,12 +529,13 @@ margin-top: 40px;
   margin: 0 auto ;
   width: 100%;
   max-width: 90vw;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 /* text content in casePreview */
 .preview_content{
-  align-items: center;
+  justify-content: center;
+  align-content: center;
   width: 100%;
   max-width: 600px;
   padding: 0;
@@ -540,10 +544,11 @@ margin-top: 40px;
 /* dreamers logo in casePreview */
 .projectLogo{
   display: block;
+  filter: drop-shadow(0 0 30px white);
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
 /* device frame in casePreview */
@@ -552,7 +557,7 @@ margin-top: 40px;
   width: 80%;
   max-width: 600px;
   height: auto;
-  margin: 4rem auto 0 auto;
+  margin: 4rem auto;
   padding: 0;
 }
 /*-- lists on homepage - flexbox --*/
@@ -565,7 +570,7 @@ margin-top: 40px;
 }
 /* individual list styles */
 .col-2{
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 10% auto;
   width: 100%;
   max-width: 400px;
   padding: 0 2rem;
@@ -620,26 +625,28 @@ ul.b{
 }
 /* solution section*/
 .solu{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 100%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 100%;
+  width: 90vw;
 }
 /* all device frames*/
 .device-frame{
   display: block;
+  height: auto;
   margin: 10% auto 0 auto;
   width: 80%;
   max-width: 1000px;
-  height: auto;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .device-frame{margin: 6rem auto;}
+  .solu{grid-template-columns: 50% 50%;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
   .device-frame{margin: 8rem auto;}
+  .solu{grid-template-columns: 50% 50%;}
 }
 /* dreamers logo in case study */
 #dream-Logo {
@@ -716,12 +723,11 @@ ul.b{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80vw;
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 2rem auto;
 }
 .dev-content{
-  width: 80%;
+  width: 100%;
   margin: 2rem;
 }
 /*individual image styles*/
@@ -869,7 +875,7 @@ p.img_cap{
 /*-- footer styles --*/
 footer {
   background-color: #1F2333;
-  height: 300px;
+  height: 100%;
   width: 100%;
   padding: 2rem 4rem;
   margin: 8rem auto 0 auto;
@@ -881,7 +887,7 @@ h6 {
   font-family: 'Lato';
   font-size: 1.8rem;
   text-align: center;
-  margin: 6rem auto 4rem auto;
+  margin: 8rem auto ;
 
 }
 /* iPads (portrait and landscape) ----------- */
@@ -901,5 +907,4 @@ h6 {
   max-width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
-  height: 10rem;
 }
