@@ -37,36 +37,34 @@ section {
 /*--header styles--*/
 header {
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #191919;
   display: flex;
   flex-wrap: wrap;
   height: 100px;
   width: 100vw;
-  max-width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 /*header div1 (logo+h1)*/
 .h1Logo{
   display: block;
-  max-width: 100%;
-  margin: 0 ;
+  margin: 0 5% ;
 }
 .links{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  margin: 0 auto;
 }
-
 /*second header div (nav links +button)*/
 nav{
   align-items: center;
-  display: flex;
+  display: grid;
   justify-content: center;
-  margin: 0 ;
-  max-width: 100%;
+  grid-template-columns: 25% 25% 50%;
+  margin-right: 5%;
+  width: 100%;
+  max-width: 450px;
   padding: 0 ;
+  grid-gap: 5%;
+
 }
 /*-- my logo --*/
 .logo {
@@ -93,6 +91,7 @@ h1 {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h1{font-size: 1.6rem;}
+  nav{max-width: 500px;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
@@ -100,26 +99,28 @@ h1 {
 }
 /*-- navbar link text -- */
 .link{
-  display: inline-block;
+  border-bottom: 1px solid black;
+  display: block;
   color: white;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  justify-content: center;
+  padding: 0;
   text-transform: uppercase;
-  margin: 0 2.3rem;
-  padding: 2px;
-  border-bottom: 1px solid black;
 }
 .link:hover{border-bottom: 1px dotted #76EAE1;transition: .4s;}
+@media only screen and (max-width: 600px){
+    .links{ display: none;}
+    nav{grid-template-columns: 40% 60%; width: 100%; max-width: 220px;}
+}
 /* hides large links on smallest screens*/
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1024px){
   h1{display: none;}
   header{margin: 0 auto;}
-  nav{margin: 0 ;}
-  .button_outline{display: none;}
   .logo{margin: 0;}
-  .link{font-size: 1.6rem;}
+
 }
 
 /*--- typography styles ---*/
@@ -175,7 +176,7 @@ h3 {
   font-size: 1.8rem;
   font-weight: 300;
   text-align: center;
-  width: 90vw;
+  width: 100%;
   max-width: 600px;
 }
 h3.b{
@@ -190,16 +191,8 @@ h3.left{
   margin: 2rem auto;
   padding: 2rem 0 0 0;
   text-align: center;
-  width: 90vw;
+  width: 100%;
   max-width: 500px;
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h3, h3.left{font-size: 2.2rem;}
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1024px) {
-  h3, h3.left{font-size: 2.4rem;}
 }
 /*-- headers within sections --*/
 h4 {
@@ -214,11 +207,11 @@ h4 {
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h4{font-size: 2.2rem;}
+  h3, h3.left, h4{font-size: 2.2rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h4{font-size: 2.4rem;}
+  h3, h3.left, h4{font-size: 2.4rem;}
 }
 /*-- headers inside text --*/
 h5{
@@ -265,7 +258,7 @@ p.b{
   display: block;
   text-align: center;
   margin: 2rem auto;
-  width: 90vw;
+  width: 100%;
   max-width: 500px;
 }
 p.cap {
@@ -395,7 +388,7 @@ a {
   height:80px;
 }
 .button_outline{
-  margin: 0 2.3rem;
+  margin: 0 auto;
   border: 3px solid #76EAE1;
   border-radius: 5px;
   padding: 1.5rem 4rem;
@@ -411,11 +404,11 @@ a {
   border-radius: 50px;
 }
 @media only screen and (max-width: 600px){
-  .button_outline{margin: 0 1rem; padding: 1rem 2rem; font-size: 1.2rem;}
+  .button_outline{margin: 0 auto; padding: 1rem 2rem; font-size: 1.4rem; }
   .link, .links{font-size: 1.4rem; margin: 0 auto;}
 }
 /* Desktops and laptops ----------- */
-@media only screen  and (max-width : 1224px) {
+@media only screen  and (min-width : 1224px) {
   .button_outline{font-size: 1.8rem;}
 }
 /* content button */
@@ -523,7 +516,7 @@ margin-top: 40px;
   background-color: rgba(244,254,254,.7);
   height: auto;
   padding: 4rem;
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
 }
 /*- case study preview content box -*/
