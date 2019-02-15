@@ -387,20 +387,20 @@ a {
 .button-footer{
   height:80px;
 }
-.button_outline{
+.outline{
   margin: 0 auto;
-  border: 3px solid #76EAE1;
+  border: 3px solid #66FCF1;
   border-radius: 5px;
   padding: 1.5rem 4rem;
   font-family: "Lato";
   font-size: 1.6rem;
   font-weight: 400;
   color: white;
-  transition: .8s ease ;
+  transition: .6s ease ;
 }
-.button_outline:hover{
+.outline:hover{
   animation-name: gradient, border;
-  animation-duration: 4s;
+  animation-duration: 1.0s;
   animation-iteration-count: infinite;
   background-color: #66FCF1;
   border: 0;
@@ -410,17 +410,51 @@ a {
 /* end rainbow button styles*/
 @keyframes  gradient{
   0% {background-color: inherit;}
-  25% {background-color: #ff6666}
-  50% {background-color: #ffff66}
-  75% {background-color: #66ffff}
-  100% {background-color: #ff66ff}
+  0% {background-color: #66fcf1;}
+  5% {background-color: #66fcf1;}
+  10% {background-color: #64d6fc;}
+  15% {background-color: #64b0fc;}
+  20% {background-color: #6464fc;}
+  25% {background-color: #8a64fc;}
+  30% {background-color: #b064fc;}
+  35% {background-color: #d664fc;}
+  40% {background-color: #fc64fc;}
+  45% {background-color:  #fc64d6;}
+  50% {background-color:  #fc64b0;}
+  55% {background-color:  #fc648a;}
+  60% {background-color:  #fc6464;}
+  65% {background-color:  #fc8a64;}
+  70% {background-color:  #fcb064;}
+  75% {background-color:  #fcfc64;}
+  80% {background-color:  #8afc64;}
+  85% {background-color:  #64fc64;}
+  90% {background-color:  #64fcb0;}
+  95% {background-color:  #64fcd6;}
+  100% {background-color:  #66fcf1;}
 }
 @keyframes  border{
   0% {border-color: inherit;}
-  25% {border-color: #ff6666}
-  50% {border-color: #ffff66}
-  75% {border-color: #66ffff}
-  100% {border-color: #ff66ff}
+  0% {border-color: #66fcf1;}
+  5% {border-color: #66fcf1;}
+  10% {border-color: #64d6fc;}
+  15% {border-color: #64b0fc;}
+  20% {border-color: #6464fc;}
+  25% {border-color: #8a64fc;}
+  30% {border-color: #b064fc;}
+  35% {border-color: #d664fc;}
+  40% {border-color: #fc64fc;}
+  45% {border-color:  #fc64d6;}
+  50% {border-color:  #fc64b0;}
+  55% {border-color:  #fc648a;}
+  60% {border-color:  #fc6464;}
+  65% {border-color:  #fc8a64;}
+  70% {border-color:  #fcb064;}
+  75% {border-color:  #fcfc64;}
+  80% {border-color:  #8afc64;}
+  85% {border-color:  #64fc64;}
+  90% {border-color:  #64fcb0;}
+  95% {border-color:  #64fcd6;}
+  100% {border-color:  #66fcf1;}
 }
 @media only screen and (max-width: 600px){
   .button_outline{margin: 0 auto; padding: 1rem 2rem; font-size: 1.4rem; }
@@ -449,33 +483,6 @@ a {
   border-radius: 40px;
   color: #ffffff !important;
   transform: all;
-}
-/*--- rainbow onhover button styles start---*/
-.rainbow{
-  background-color: #343A40;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  padding: 1.5rem 3rem;
-  margin: 0 auto;
-}
-@keyframes slidebg {
-  to { background-position:20vw; }
-}
-.rainbow-1{
-  margin: 2rem auto;
-}
-.rainbow-1:hover{
-   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-   animation:slidebg 2s linear infinite;
-}
-.follow{
-margin-top: 40px;
-}
-.follow a{
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -872,23 +879,16 @@ p.img_cap{
 .portrait{
   display: block;
   border-radius: 70%;
-  margin: 2rem auto 0 auto;
-  max-width: 400px;
-  width: 20vw;
   filter: drop-shadow(30px 10px 4px #333);
+  margin: 2vh auto;
+  max-width: 400px;
+  width: 50vw;
 }
-
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .portrait{padding: 2rem;}
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-  .portrait{padding: 2rem;}
+.portrait:hover{
+  filter: drop-shadow(30px 10px 4px #45A29E);
 }
 .about-content{
-  margin: 5% auto;
+  margin: 8vh auto;
   width: 90vw;
 }
 
@@ -899,7 +899,7 @@ footer {
   height: auto;
   width: 100%;
   padding: 8vh 8vw 4vh;
-  margin-top: 20% ;
+  margin-top: 20vh ;
 }
 /* footer font */
 h6 {
@@ -924,6 +924,11 @@ h6:hover{
 .button.a{
   display: block;
   height: 80px;
+}
+.button.a:hover{
+  animation-name: gradient, border;
+  animation-duration: 1.0s;
+  animation-iteration-count: infinite;
 }
 /* contact footer button*/
 .contact{
