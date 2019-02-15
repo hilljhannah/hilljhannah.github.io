@@ -396,12 +396,31 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   color: white;
+  transition: .8s ease ;
 }
 .button_outline:hover{
-  background-color: #76EAE1;
-  color: black;
-  transition: .4s ;
+  animation-name: gradient, border;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-color: #66FCF1;
+  border: 0;
   border-radius: 50px;
+  color: black;
+}
+/* end rainbow button styles*/
+@keyframes  gradient{
+  0% {background-color: inherit;}
+  25% {background-color: #ff6666}
+  50% {background-color: #ffff66}
+  75% {background-color: #66ffff}
+  100% {background-color: #ff66ff}
+}
+@keyframes  border{
+  0% {border-color: inherit;}
+  25% {border-color: #ff6666}
+  50% {border-color: #ffff66}
+  75% {border-color: #66ffff}
+  100% {border-color: #ff66ff}
 }
 @media only screen and (max-width: 600px){
   .button_outline{margin: 0 auto; padding: 1rem 2rem; font-size: 1.4rem; }
@@ -440,15 +459,15 @@ a {
   padding: 1.5rem 3rem;
   margin: 0 auto;
 }
+@keyframes slidebg {
+  to { background-position:20vw; }
+}
 .rainbow-1{
   margin: 2rem auto;
 }
 .rainbow-1:hover{
    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
    animation:slidebg 2s linear infinite;
-}
-@keyframes slidebg {
-  to { background-position:20vw; }
 }
 .follow{
 margin-top: 40px;
@@ -458,7 +477,7 @@ margin-top: 40px;
   padding: 8px 16px;
   text-decoration: none;
 }
-/* end rainbow button styles*/
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .button{font-size: 1.6rem;}
@@ -853,11 +872,12 @@ p.img_cap{
 .portrait{
   display: block;
   border-radius: 70%;
-  width: 20vw;
+  margin: 2rem auto 0 auto;
   max-width: 400px;
-  margin: 0 auto;
-  margin-top: 2rem;
+  width: 20vw;
+  filter: drop-shadow(30px 10px 4px #333);
 }
+
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -867,16 +887,19 @@ p.img_cap{
 @media only screen  and (min-width : 1224px) {
   .portrait{padding: 2rem;}
 }
-
+.about-content{
+  margin: 5% auto;
+  width: 90vw;
+}
 
 
 /*-- footer styles --*/
 footer {
   background-color: #1F2333;
-  height: 100%;
+  height: auto;
   width: 100%;
-  padding: 2rem 4rem;
-  margin: 8rem auto 0 auto;
+  padding: 8vh 8vw 4vh;
+  margin-top: 20% ;
 }
 /* footer font */
 h6 {
@@ -885,8 +908,10 @@ h6 {
   font-family: 'Lato';
   font-size: 1.8rem;
   text-align: center;
-  margin: 8rem auto ;
-
+  margin: 0 auto ;
+}
+h6:hover{
+  animation-name: gradient;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -896,13 +921,16 @@ h6 {
 @media only screen  and (min-width : 1224px) {
   h6{font-size: 2.2rem;}
 }
+.button.a{
+  display: block;
+  height: 80px;
+}
 /* contact footer button*/
 .contact{
   align-content: center;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
-  width: 80vw;
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 5vh auto 0 auto;
   flex-wrap: wrap;
 }
