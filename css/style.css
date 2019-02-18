@@ -251,7 +251,7 @@ p.centered{
   font-weight: 100;
   text-align: center;
   margin:  2% auto ;
-  word-spacing: 750%;
+  word-spacing: 3rem;
 }
 /* used for case study preview paragraph text*/
 p.b{
@@ -272,7 +272,7 @@ p.cap {
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h5, p ,{font-size: 1.8rem;}
+  h5, p {font-size: 1.8rem;}
 }
 /* large process-stage banners in case study (for spacing)*/
 .process {
@@ -386,10 +386,11 @@ a {
 }
 .button-footer{
   height:80px;
+  text-transform: uppercase;
 }
 .outline{
   margin: 0 auto;
-  border: 3px solid #66FCF1;
+  border: 2px solid #66FCF1;
   border-radius: 5px;
   padding: 1.5rem 4rem;
   font-family: "Lato";
@@ -457,12 +458,12 @@ a {
   100% {border-color:  #66fcf1;}
 }
 @media only screen and (max-width: 600px){
-  .button_outline{margin: 0 auto; padding: 1rem 2rem; font-size: 1.4rem; }
+  .outline{margin: 0 auto; padding: 1rem 2rem; font-size: 1.4rem; }
   .link, .links{font-size: 1.4rem; margin: 0 auto;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-  .button_outline{font-size: 1.8rem;}
+  .button_outline{font-size: 1.8rem;border: 3px;}
 }
 /* content button */
 .button_ghost {
@@ -474,7 +475,6 @@ a {
   font-size: 1.6rem;
   margin: 5vw auto;
   text-transform: uppercase;
-  transition: all .4s ease 0s;
   padding: 2rem 4rem;
 }
 .button_ghost:hover {
@@ -482,7 +482,7 @@ a {
   border-color: #E93148 !important;
   border-radius: 40px;
   color: #ffffff !important;
-  transform: all;
+  transition: all .4s ease 0s;
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -541,8 +541,8 @@ a {
   display: block;
   background-color: rgba(244,254,254,.7);
   height: auto;
-  padding: 4rem;
-  width: 100vw;
+  padding: 8%;
+  width: 100%;
   margin: 0 auto;
 }
 /*- case study preview content box -*/
