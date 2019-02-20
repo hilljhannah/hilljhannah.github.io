@@ -31,7 +31,7 @@ section {
   font-weight: normal;
   align-items: center;
   justify-content: center;
-  margin: 20vh auto;
+  margin: 8vw auto;
   width: 90vw;
 }
 /*--header styles--*/
@@ -98,6 +98,9 @@ h1 {
   h1{font-size: 1.8rem;}
 }
 /*-- navbar link text -- */
+.linkBox{
+  margin: 0 auto;
+}
 .link{
   border-bottom: 1px solid black;
   display: block;
@@ -106,13 +109,16 @@ h1 {
   font-style: normal;
   font-weight: 300;
   font-size: 1.6rem;
+  margin: 0 auto;
   justify-content: center;
-  padding: 0;
+  padding: 0 0 5px 0;
   text-transform: uppercase;
+  transition: .4s;
+  width: 100%;
 }
-.link:hover{border-bottom: 1px dotted #76EAE1;transition: .4s;}
+.link:hover{border-bottom: 1px dotted #76EAE1;}
 @media only screen and (max-width: 600px){
-    .links{ display: none;}
+    #hidden{ display: none;}
     nav{grid-template-columns: 40% 60%; width: 100%; max-width: 220px;}
 }
 /* hides large links on smallest screens*/
@@ -128,13 +134,13 @@ h1 {
 h2{
   display: block;
   font-family: 'Megrim';
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   margin: 0 auto;
-  padding: 2rem 0 3rem 0 ;
+  padding: 2rem 0;
   text-align: center;
-  color: black;
-  width: 90vw;
-  max-width: 100%;
+  color: #45A29E;
+  width: 100%;
+  max-width: 900px;
 }
 /* large project intro description font */
 h2.display{
@@ -145,7 +151,7 @@ h2.display{
   text-align: center;
   width: 90vw;
   max-width: 100%;
-  margin: 0 auto;
+  margin: .3rem auto 1rem auto;
 }
 /*left aligned h2*/
 h2.left{
@@ -153,27 +159,26 @@ h2.left{
   text-shadow: -.4px 0, 0 .4px, .4px 0, 0 -.4px;
   text-align: left;
   padding: 0;
-  font-size: 3.6rem;
+  font-size: 5.8rem;
   margin: 0 ;
-}
-h2.left:hover{
-  color: #45A29E;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h2, h2.left{font-size: 3.8rem;}
+  h2{font-size: 4.2rem;}
+  h2.left{font-size: 6.8rem; }
   h2.display{font-size: 4.2rem; max-width: 900px;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h2, h2.left{font-size: 4.2rem;}
+  h2{font-size: 4.8rem;}
+  h2.left{font-size: 7.8rem; }
   h2.display{font-size: 5rem; max-width: 1000px;}
 }
 /* h3 text */
 h3 {
   color: black;
   font-family: 'Lato';
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 300;
   text-align: center;
   width: 100%;
@@ -198,52 +203,61 @@ h3.left{
 h4 {
   color: black;
   font-family: 'Lato';
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 700;
   text-align: center;
-  text-decoration: underline;
-  padding: 0;
-  margin: 10% auto 0 auto;
+  padding-top: 4rem;
+  margin: 0 auto;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h3, h3.left, h4{font-size: 2.2rem;}
+  h3, h3.left {font-size: 2.4rem;}
+  h4{font-size: 2.2rem; }
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h3, h3.left, h4{font-size: 2.4rem;}
+  h3, h3.left, h4{font-size: 2.6rem;}
+  h4{font-size: 2.4rem; }
 }
 /*-- headers inside text --*/
 h5{
   color: black;
   font-family: 'Lato';
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 0 auto;
-  text-align: left;
-  padding-top: 2rem;
-  width: 90vw;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  width: 100%;
   max-width: 600px;
+}
+h5#left{
+  text-align: left;
+  padding: 0 ;
+  max-width: 700px;
 }
 /*-- paragraph text --*/
 p {
   color: #333;
   font-family: 'Open Sans';
   font-size: 1.4rem;
-  margin: 2.5rem auto;
+  margin: 2rem auto;
   font-style: normal;
   width: 100%;
   max-width: 700px;
-  padding: 0 ;
+  padding-top: 10px ;
   line-height: 150%;
   align-items: center;
 }
+
 /* bold p text */
-p.bold {
+p.quote {
+  font-size: 1.6rem;
   font-weight: bold;
+  font-style: italic;
   margin: 0 auto;
 }
 /* centered p text */
-p.centered{
+p.centered, #b{
   color: black;
   display: block;
   font-family: "Lato";
@@ -252,6 +266,11 @@ p.centered{
   text-align: center;
   margin:  2% auto ;
   word-spacing: 3rem;
+}
+p#b{
+  margin: 0;
+  font-size: 1.6rem;
+  padding: 0;
 }
 /* used for case study preview paragraph text*/
 p.b{
@@ -265,45 +284,63 @@ p.cap {
   padding-top: 2rem;
   font-style: italic;
 }
+p#info{
+  margin-top: 0;
+  width: 100%;
 
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h5, p{font-size: 1.6rem;}
+  h5{font-size: 1.8rem;}
+  p{font-size: 1.6rem;}
+
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h5, p {font-size: 1.8rem;}
+  h5{font-size: 2rem;}
+  p {font-size: 1.8rem;}
 }
 /* large process-stage banners in case study (for spacing)*/
 .process {
   align-content: center;
-  background-color: #2EC4B6;
+  border: 4px solid #2EC4B6;
+  border-radius: 30px;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   font-family: "Megrim";
-  font-size: 5rem;
-  height: 25rem;
-  justify-content: center;
-  margin: 15% auto;
+  font-size: 5.4rem;
+  margin: 8vw auto;
   text-align: center;
-  text-shadow: -.8px 0 black, 0 .8px black, .8px 0 black, 0 -.8px black;
-  width: 100%;
-  padding: 1rem;
-  box-shadow: 0px 8px 15px;
+  padding: 20px 40px ;
+  justify-content: center;
+  position: relative;
 }
+.process::after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white ;
+  left: 40px;
+  bottom: -40px;
+}
+
 /*-- section dividing line (for spacing)--*/
 hr{
+  display: block;
+  color: #333;
   width: 85vw;
   margin: 15% auto;
-  box-shadow: 0px 8px 15px;
+  box-shadow: 0 0 30px #333;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .process{font-size: 6rem; height: 350px;}
+  #divider{font-size: 6rem; }
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  .process{font-size: 6.8rem; height: 350px;}
+  #divider{font-size: 6.8rem;}
 }
 /*-- unordered list bullet --*/
 ul{
@@ -312,6 +349,18 @@ ul{
   margin: 0 auto;
   width: 100%;
   max-width: 700px;
+  padding-right: 4rem;
+}
+ul.color{
+  margin: 2rem auto 4rem auto;
+  list-style-position: inside;
+  padding: 0 ;
+}
+ul.color li:nth-of-type(odd){
+  background: rgba(244,254,254,.7);
+}
+ul.middle, #narrow li:nth-of-type(odd){
+  color:#45A29E;
 }
 /* centered no-bullet */
 ul.middle{
@@ -319,6 +368,13 @@ ul.middle{
   text-align: center;
   padding: 0;
   margin: 0 auto;
+}
+ul#narrow{
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
 }
 /* brand ideals list */
 ul.ideals {
@@ -339,23 +395,24 @@ ul.ideals {
 /*-- list items --*/
 li{
   font-size: 1.4rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-weight: normal;
 }
 /*-- list within a list --*/
 dt {
   font-family: "Open Sans";
   font-size: 1.4rem;
-  font-weight: 600;
   width: 90vw;
-  max-width: 600px;
+  max-width: 700px;
   margin: 2rem auto .75rem auto;
 }
 dd {
   font-size: 1.4rem;
   width: 90vw;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
+  background:rgba(244,254,254,.7);
+  padding: 1.5rem;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -384,10 +441,6 @@ a {
     text-transform: uppercase;
     text-decoration: none;
 }
-.button-footer{
-  height:80px;
-  text-transform: uppercase;
-}
 .outline{
   margin: 0 auto;
   border: 2px solid #66FCF1;
@@ -397,13 +450,12 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   color: white;
-  transition: .6s ease ;
+  transition: .5s ease ;
 }
 .outline:hover{
-  animation-name: gradient, border;
+  animation-name: gradient , border;
   animation-duration: 1.0s;
   animation-iteration-count: infinite;
-  background-color: #66FCF1;
   border: 0;
   border-radius: 50px;
   color: black;
@@ -475,20 +527,20 @@ a {
   font-size: 1.6rem;
   margin: 5vw auto;
   text-transform: uppercase;
-  padding: 2rem 4rem;
+  transition: all .5s ease 0s;
+  padding: 2.5rem 6rem;
 }
 .button_ghost:hover {
   background: #E93148;
   border-color: #E93148 !important;
   border-radius: 40px;
   color: #ffffff !important;
-  transition: all .4s ease 0s;
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .button{font-size: 1.6rem;}
-  .button_ghost{font-size: 2.2rem; padding: 2rem 6rem;}
+  .button_ghost{font-size: 2.2rem; padding: 2.5rem 7rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
@@ -530,12 +582,15 @@ a {
 .map {
   display: block;
   height: auto;
-  filter: drop-shadow(0 0 30px #1F2833);
   width: 90%;
   max-width: 600px;
   margin: 2rem;
+  transition: .5s all;
 }
-
+.map:hover{
+  filter: drop-shadow(0 0 30px #45A29E);
+  transform: translateY(-20px);
+}
 /*-- homepage case study preview background-box --*/
 .casePreview {
   display: block;
@@ -616,9 +671,7 @@ a {
   width: 100%;
   max-width: 1000px;
   height: auto;
-}
-@media only screen and (min-width: 600px){
-  .hero_device{max-width: 1000px;}
+  filter: drop-shadow(0 0 30px #333)
 }
 /*--  roles, deliverables, and tools flexbox --*/
 .role {
@@ -626,17 +679,16 @@ a {
   align-items: start;
   display: flex;
   flex-wrap: wrap;
-  width: 80vw;
-  max-width: 100%;
-
+  width: 100%;
+  max-width: 1100px;
 }
 /* individual column */
 .col3{
   display: block;
-  padding: 4rem;
+  padding: 3rem 0;
   margin: 0 auto;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   height: auto;
 }
 /* roles list format*/
@@ -652,6 +704,7 @@ ul.b{
   display: grid;
   grid-template-columns: 100%;
   width: 90vw;
+  margin: 0 auto;
 }
 /* all device frames*/
 .device-frame{
@@ -659,7 +712,8 @@ ul.b{
   height: auto;
   margin: 10% auto 0 auto;
   width: 80%;
-  max-width: 1000px;
+  max-width: 900px;
+  filter: drop-shadow(0 0 30px #333)
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -683,17 +737,58 @@ ul.b{
 .main_three{
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 4rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 5vw auto;
+  padding: 0;
   justify-content: center;
 }
-/* individual persona */
-.persona{
+.main_three .persona-container:nth-child(even){
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 2rem;
+}
+.persona-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  align-content: center;
+  height: 1400px;
   width: 100%;
-  max-width: 700px;
+  max-width: 400px;
+}
+@media screen only (min-width: 1024px){
+  .main_three{
+    grid-template-columns: 1fr;
+  }
+}
+.persona-section{
+  align-self: center;
   padding: 2rem;
-  margin: 2rem auto;
+  padding-top: 0;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  margin: 0 auto;
+}
+#motivations{
+  max-height: 550px;
+}
+#frustrations{
+  max-height: 450px;
+  padding: 15% 0;
+}
+/* individual persona */
+.persona-img{
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+
+}
+#images{
+  height: 250px;
+  justify-content: center;
+
 }
 /*-- competitive analysis container --*/
 .SWOT{
@@ -712,10 +807,10 @@ ul.b{
 .comp_img{
   display: block;
   width: 90vw;
-  max-width: 800px;
+  max-width: 340px;
   height: auto;
   padding: 4rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 /*-- user flow image --*/
 .flow_img {
@@ -723,14 +818,14 @@ ul.b{
   height: auto;
   margin: 0 auto ;
   width: 90vw;
-  max-width: 1400px;
+  max-width: 900px;
   padding: 2rem;
 }
 /*-- branding --*/
 .moodboard{
   display: block;
-  width: 100vw;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1100px;
   margin: 2rem auto;
 }
 /* logo sketching img */
@@ -758,22 +853,23 @@ ul.b{
 .dev-img{
   display: block;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   max-width: 600px;
 }
 /* img caption for logos */
 p.img_cap{
   font-size: 1.4rem;
-  margin: .5rem auto;
-  text-align: center;
-  width: 80%;
+  margin: 2rem auto;
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
 }
 /*-- content strat sitemap image styles --*/
 .sitemap {
   display: block;
   height: auto;
-  max-width: 1400px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 4rem;
   width: 80vw;
@@ -783,24 +879,33 @@ p.img_cap{
   display: block;
   height: auto;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1100px;
   padding: 1rem;
   width: 90vw;
 }
-/*-- wireframe images --*/
-.wireframe_gallery {
-  display: block;
-  max-width: 100%;
-  height: auto;
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1rem;
 }
+.gallery-img{
+  align-self: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem;
+  padding-top: 1rem;
+  filter: drop-shadow(0 0 15px #333)
+}
+
 /*-- user testing example image --*/
 .changes-img{
   display: block;
-  justify-content: center;
   max-width: 100%;
-  margin: 4rem auto;
+  margin: 5rem auto;
   padding: 0 2rem;
 }
 .test-section{
@@ -812,7 +917,7 @@ p.img_cap{
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  margin: 1rem auto;
+  margin: 4rem auto;
 }
 /* choices content */
  .main_content{
@@ -837,17 +942,21 @@ p.img_cap{
 .colors{
   display: block;
   height: auto;
-  margin: 1rem auto;
+  margin: 4rem auto 1rem auto;
   width: 80vw;
-  max-width: 100%;
-  padding: 0 1rem;
+  max-width: 900px;
+  padding: 0 ;
 }
 /* device frame in final design */
 .desktop-frame{
   display: block;
-  width: 80vw;
-  max-width: 100%;
+  width: 100%;
+  max-width: 900px;
   margin: 1rem auto;
+}
+.desktop-frame:hover{
+  filter: drop-shadow(0 0 30px #333)
+
 }
 /*-- design progression image flex container --*/
 .progress {
@@ -855,23 +964,25 @@ p.img_cap{
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem auto 2rem auto;
-  width: 80vw;
-  max-width: 100%;
+  margin: 4rem auto 2rem auto;
+  width: 100%;
+  max-width: 1800px;
   padding: 0 2rem ;
 }
 .progress > * {
   flex: 1 1 250px;
   margin: 10px;
 }
-/* individual img styles */
-.progress.img{
-  display: block;
-  width: 40%;
-  max-width: 100%;
-
+.progress-container{
+  max-width: 250px;
 }
-/*-- about me page styles --*/
+/* individual img styles */
+.progress-img{
+  display: block;
+  max-width: 250px;
+  height: auto;
+}
+/*---- about me page styles -----*/
 .about-me{
   margin: 4rem auto;
 }
@@ -879,19 +990,19 @@ p.img_cap{
 .portrait{
   display: block;
   border-radius: 70%;
-  filter: drop-shadow(30px 10px 4px #333);
-  margin: 2vh auto;
+  margin: 5% auto;
   max-width: 400px;
   width: 50vw;
+  transition: all .5s;
 }
 .portrait:hover{
-  filter: drop-shadow(30px 10px 4px #45A29E);
+  filter: drop-shadow(0 0 30px #45A29E);
+  transform: translateY(-10px);
 }
 .about-content{
   margin: 8vh auto;
   width: 90vw;
 }
-
 
 /*-- footer styles --*/
 footer {
@@ -910,9 +1021,6 @@ h6 {
   text-align: center;
   margin: 0 auto ;
 }
-h6:hover{
-  animation-name: gradient;
-}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h6{font-size: 2rem;}
@@ -921,21 +1029,77 @@ h6:hover{
 @media only screen  and (min-width : 1224px) {
   h6{font-size: 2.2rem;}
 }
-.button.a{
-  display: block;
-  height: 80px;
+/* contact footer button*/
+.contact{
+  align-content: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin: 5vh auto 0 auto;
+  flex-wrap: wrap;
 }
-.button.a:hover{
+#foot{
+  display: block;
+  height: 70px;
+  margin: 4rem auto;
+  transition: all .5s;
+  padding: 2.5rem 3.5rem;
+  width: 250px;
+}
+#foot:hover{
   animation-name: gradient, border;
   animation-duration: 1.0s;
   animation-iteration-count: infinite;
 }
-/* contact footer button*/
-.contact{
-  align-content: center;
-  justify-content: space-around;
-  display: flex;
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+ width: 75%;
+ padding: 1.4rem;
+ border: 1px solid #ccc; /* Gray border */
+ border-radius: 4px; /* Rounded borders */
+ box-sizing: border-box; /* Make sure that padding and width stays in place */
+ margin-top: 1rem; /* Add a top margin */
+ margin-bottom: 2rem; /* Bottom margin */
+ font-size: 1.4rem;
+ font-family: "open+sans";
+ resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+textarea {
   width: 100%;
-  margin: 5vh auto 0 auto;
-  flex-wrap: wrap;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email]{
+  width: 50%;
+  padding: 1.4rem;
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  font-size: 1.4rem;
+  font-family: "open+sans";
+  margin-top: 1rem; /* Add a top margin */
+  margin-bottom: 2rem; /* Bottom margin */
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+ background-color: #2EC4B6;
+ border: none;
+ border-radius: 4px;
+ color: #333;
+ cursor: pointer;
+ margin: 2rem auto;
+ padding: 2rem 4.5rem;
+ width: 100%;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+ background-color: #45A29E;
+}
+/* Add a background color and some padding around the form */
+#formContainer {
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 2rem;
+ margin: 2rem auto;
+ max-width: 700px;
 }
