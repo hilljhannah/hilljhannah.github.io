@@ -134,10 +134,11 @@ h1 {
 h2{
   display: block;
   font-family: 'Megrim';
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   margin: 0 auto;
   padding: 2rem 0;
   text-align: center;
+  text-shadow: -.2px 0, 0 .2px, .2px 0, 0 -.2px;
   color: #45A29E;
   width: 100%;
   max-width: 900px;
@@ -170,7 +171,7 @@ h2.left{
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h2{font-size: 4.8rem;}
+  h2{font-size: 5.2rem;}
   h2.left{font-size: 7.8rem; }
   h2.display{font-size: 5rem; max-width: 1000px;}
 }
@@ -301,7 +302,7 @@ p#info{
   p {font-size: 1.8rem;}
 }
 /* large process-stage banners in case study (for spacing)*/
-.process {
+h2.process {
   align-content: center;
   border: 4px solid #2EC4B6;
   border-radius: 30px;
@@ -310,7 +311,7 @@ p#info{
   flex-wrap: wrap;
   font-family: "Megrim";
   font-size: 5.4rem;
-  margin: 8vw auto;
+  margin: 15% auto;
   text-align: center;
   padding: 20px 40px ;
   justify-content: center;
@@ -336,11 +337,11 @@ hr{
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  #divider{font-size: 6rem; }
+  h2.process{font-size: 6rem; }
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  #divider{font-size: 6.8rem;}
+  h2.process{font-size: 6.8rem;}
 }
 /*-- unordered list bullet --*/
 ul{
