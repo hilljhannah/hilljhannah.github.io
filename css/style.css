@@ -146,6 +146,7 @@ h2{
 /* large project intro description font */
 h2.display{
   display: block;
+  color:
   font-family: 'Megrim';
   font-size: 3.6rem;
   padding: 2rem;
@@ -304,18 +305,20 @@ p#info{
 /* large process-stage banners in case study (for spacing)*/
 h2.process {
   align-content: center;
-  border: 4px solid #2EC4B6;
+  border: 5px solid #38DFD2;
   border-radius: 30px;
   color: black;
   display: flex;
   flex-wrap: wrap;
   font-family: "Megrim";
-  font-size: 5.4rem;
+  font-size: 4.8rem;
   margin: 15% auto;
   text-align: center;
-  padding: 20px 40px ;
+  padding: 3% 4% ;
   justify-content: center;
   position: relative;
+  width: 100%;
+  max-width: 90vw;
 }
 .process::after{
   content: "";
@@ -333,7 +336,7 @@ hr{
   color: #333;
   width: 85vw;
   margin: 15% auto;
-  box-shadow: 0 0 30px #333;
+  filter: drop-shadow(0 0 15px #333)
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -353,14 +356,17 @@ ul{
   padding-right: 4rem;
 }
 ul.color{
-  margin: 2rem auto 4rem auto;
+  margin: 3rem auto;
   list-style-position: inside;
   padding: 0 ;
 }
 ul.color li:nth-of-type(odd){
-  background: rgba(244,254,254,.7);
+  background: rgba(244,254,254,1);
 }
-ul.middle, #narrow li:nth-of-type(odd){
+ul.color li:nth-of-type(even){
+  background: rgba(244,254,254,.2);
+}
+ul.middle li:nth-of-type(odd){
   color:#45A29E;
 }
 /* centered no-bullet */
@@ -396,7 +402,7 @@ ul.ideals {
 /*-- list items --*/
 li{
   font-size: 1.4rem;
-  padding: 1.5rem 0;
+  padding: 2rem .5rem ;
   font-weight: normal;
 }
 /*-- list within a list --*/
@@ -521,7 +527,7 @@ a {
 /* content button */
 .button_ghost {
   background: white;
-  border: 4px solid #E93148 !important;
+  border: 4px solid #FC6671 !important;
   border-radius: 8px;
   color: #494949 !important;
   display: inline-block;
@@ -532,10 +538,10 @@ a {
   padding: 2.5rem 6rem;
 }
 .button_ghost:hover {
-  background: #E93148;
-  border-color: #E93148 !important;
+  background: #FC6671;
+  border-color: #FC6671 !important;
   border-radius: 40px;
-  color: #ffffff !important;
+  color: white !important;
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -589,8 +595,8 @@ a {
   transition: .5s all;
 }
 .map:hover{
-  filter: drop-shadow(0 0 30px #45A29E);
-  transform: translateY(-20px);
+  filter: drop-shadow(0 0 20px #333);
+  transform: translateY(-25px);
 }
 /*-- homepage case study preview background-box --*/
 .casePreview {
@@ -606,8 +612,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto ;
-  width: 100%;
-  max-width: 90vw;
+  width: 90%;
+  max-width: 100vw;
   align-items: center;
   justify-content: center;
 }
@@ -623,7 +629,7 @@ a {
 /* dreamers logo in casePreview */
 .projectLogo{
   display: block;
-  filter: drop-shadow(0 0 30px white);
+  filter: drop-shadow(0 0 15px white);
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -638,6 +644,7 @@ a {
   height: auto;
   margin: 4rem auto;
   padding: 0;
+  /*filter: drop-shadow(0 0 15px #333);*/
 }
 /*-- lists on homepage - flexbox --*/
 .homeToolkit{
@@ -672,7 +679,7 @@ a {
   width: 100%;
   max-width: 1000px;
   height: auto;
-  filter: drop-shadow(0 0 30px #333)
+  transition: .5s all;
 }
 /*--  roles, deliverables, and tools flexbox --*/
 .role {
@@ -692,29 +699,27 @@ a {
   max-width: 350px;
   height: auto;
 }
-/* roles list format*/
-ul.b{
-  list-style: none;
-  padding: .2rem 0 .5rem 0;
-  text-align: center;
-  width: 100%;
-}
 /* solution section*/
 .solu{
   align-items: center;
   display: grid;
   grid-template-columns: 100%;
-  width: 90vw;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 /* all device frames*/
 .device-frame{
   display: block;
   height: auto;
-  margin: 10% auto 0 auto;
-  width: 80%;
-  max-width: 900px;
-  filter: drop-shadow(0 0 30px #333)
+  margin: 10% auto;
+  width: 100%;
+  max-width: 600px;
+  transition: .5s all;
+}
+.hero_device,.device-frame:hover{
+  filter: drop-shadow(0 0 20px #333);
+  transform: translateY(-5px);
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -736,26 +741,28 @@ ul.b{
 }
 /* user personas container*/
 .main_three{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   max-width: 1400px;
   margin: 5vw auto;
-  padding: 0;
+  padding: 0 ;
   justify-content: center;
 }
 .main_three .persona-container:nth-child(even){
   border-left: 1px solid black;
   border-right: 1px solid black;
-  padding: 0 2rem;
+  padding: 0;
 }
 .persona-container{
+  align-items: start;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  align-content: center;
-  height: 1400px;
-  width: 100%;
-  max-width: 400px;
+  grid-template-rows: 12% 12% 40% 24% 8%;
+  justify-content: center;
+  height: auto;
+  width: 400px;
+  padding: 0 2rem;
+
 }
 @media screen only (min-width: 1024px){
   .main_three{
@@ -763,32 +770,28 @@ ul.b{
   }
 }
 .persona-section{
-  align-self: center;
+  align-items: start;
   padding: 2rem;
   padding-top: 0;
-  width: 100%;
-  max-width: 350px;
+  width: 90%;
+  max-width: 400px;
   text-align: center;
   margin: 0 auto;
 }
-#motivations{
-  max-height: 550px;
-}
-#frustrations{
-  max-height: 450px;
-  padding: 15% 0;
-}
+
 /* individual persona */
 .persona-img{
   display: block;
   width: 100%;
   max-width: 200px;
   margin: 0 auto;
+  height: 180px;
 
 }
+
 #images{
-  height: 250px;
-  justify-content: center;
+  max-width: 200px;
+  margin: 0 auto;
 
 }
 /*-- competitive analysis container --*/
@@ -808,20 +811,30 @@ ul.b{
 .comp_img{
   display: block;
   width: 90vw;
-  max-width: 340px;
+  max-width: 300px;
   height: auto;
-  padding: 4rem;
-  margin: 1rem auto;
+  padding: 0;
+  margin: 2rem auto 0 auto;
+}
+.flow-container{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 /*-- user flow image --*/
 .flow_img {
   display: block;
   height: auto;
-  margin: 0 auto ;
-  width: 90vw;
-  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
   padding: 2rem;
+  transition: all .5s;
 }
+.flow_img:hover{
+    filter: drop-shadow(0 0 20px #333);
+    transform: translateY(-5px);
+  }
 /*-- branding --*/
 .moodboard{
   display: block;
@@ -833,8 +846,8 @@ ul.b{
 .logo_sketches {
   display: block;
   margin: 1rem auto;
-  width: 80vw;
-  max-width: 100%;
+  width: 100%;
+  max-width: 900px;
   height: auto;
   padding: 1rem;
 }
@@ -910,19 +923,22 @@ p.img_cap{
   padding: 0 2rem;
 }
 .test-section{
-  margin: 6rem auto 0 auto;
+  margin: 3rem auto 0 auto;
 }
 /*-- test container --*/
 .main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 100%;
-  margin: 4rem auto;
+  align-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 1.5rem auto;
 }
 /* choices content */
  .main_content{
-   max-width: 320px;
+   width: 100%;
+   max-width: 300px;
    margin: 2rem 2rem 0 2rem;
  }
  .main > * {
