@@ -958,11 +958,6 @@ p.img_cap{
   max-width: 100%;
   margin: 5rem auto;
   padding: 0 2rem;
-  transition: all .5s;
-}
-.changes-img:hover{
-filter: drop-shadow(0 0 20px #333);
-transform: translateY(-25px);
 }
 .test-section{
   margin: 3rem auto 0 auto;
