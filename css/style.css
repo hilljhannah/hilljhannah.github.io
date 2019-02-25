@@ -234,7 +234,7 @@ h5{
   width: 100%;
   max-width: 600px;
 }
-h5#left{
+h5.left{
   text-align: left;
   padding: 0 ;
   max-width: 700px;
@@ -270,7 +270,7 @@ p.centered, #b{
   margin:  2% auto ;
   word-spacing: 3rem;
 }
-p#b{
+p.occupation{
   margin: 0;
   font-size: 1.6rem;
   padding: 0;
@@ -287,7 +287,7 @@ p.cap {
   padding-top: 2rem;
   font-style: italic;
 }
-p#info{
+p.info{
   margin-top: 0;
   width: 100%;
 }
@@ -377,10 +377,10 @@ ul.middle{
   max-width: 350px;
 }
 ul.middle li:nth-of-type(odd){
-  background: rgba(3, 125, 117,.08);
+  background: rgba(135, 206, 250,.09);
 }
 ul.middle li:nth-of-type(even){
-  background: rgba(178, 253, 248,.1);
+  background: rgba(135, 206, 250,.02);
 }
 ul#narrow{
   width: 100%;
@@ -689,7 +689,6 @@ a {
 .hero_device:hover{
     filter: drop-shadow(0 0 30px #333);
     transform: translateY(-10px);
-
 }
 /*--  roles, deliverables, and tools flexbox --*/
 .role {
@@ -730,7 +729,7 @@ a {
 .device-frame:hover{
     filter: drop-shadow(0 0 30px #333);
     transform: translateY(-10px);
-  }
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .device-frame{margin: 6rem auto;}
@@ -796,7 +795,7 @@ a {
   height: 180px;
 }
 /*persona image div*/
-#images{
+.images{
   max-width: 200px;
   margin: 0 auto;
 }
@@ -1121,7 +1120,7 @@ h6 {
   margin: 5vh auto 0 auto;
   flex-wrap: wrap;
 }
-#foot{
+.foot{
   display: block;
   height: 70px;
   margin: 4rem auto;
@@ -1129,7 +1128,7 @@ h6 {
   padding: 2.5rem 3.5rem;
   width: 250px;
 }
-#foot:hover{
+.foot:hover{
   animation-name: gradient, border;
   animation-duration: 1.0s;
   animation-iteration-count: infinite;
