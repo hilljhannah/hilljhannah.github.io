@@ -134,11 +134,11 @@ h1 {
 h2{
   display: block;
   font-family: 'Megrim';
-  font-size: 3.4rem;
+  font-size: 4.2rem;
   margin: 0 auto;
   padding: 2rem 0;
   text-align: center;
-  text-shadow: -.2px 0, 0 .2px, .2px 0, 0 -.2px;
+  text-shadow: -.1px 0, 0 .1px, .1px 0, 0 -.1px;
   color: #45A29E;
   width: 100%;
   max-width: 900px;
@@ -167,13 +167,13 @@ h2.left{
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h2{font-size: 4.2rem;}
+  h2{font-size: 4.8rem;}
   h2.left{font-size: 6.8rem; }
   h2.display{font-size: 4.2rem; max-width: 900px;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h2{font-size: 5.2rem;}
+  h2{font-size: 5.6rem;}
   h2.left{font-size: 7.8rem; }
   h2.display{font-size: 5rem; max-width: 1000px;}
 }
@@ -460,7 +460,7 @@ a {
   border-radius: 5px;
   padding: 1.5rem 4rem;
   font-family: "Lato";
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: white;
   transition: all .5s ;
@@ -523,7 +523,7 @@ a {
   100% {border-color:  #66fcf1;}
 }
 @media only screen and (max-width: 600px){
-  .outline{margin: 0 auto; padding: 1rem 2rem; font-size: 1.4rem; }
+  .outline{margin: 0 auto; padding: 1rem 2rem; font-size: 1.6rem; }
   .link, .links{font-size: 1.4rem; margin: 0 auto;}
 }
 /* Desktops and laptops ----------- */
@@ -549,7 +549,6 @@ a {
   border-radius: 40px;
   color: white !important;
 }
-
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .button{font-size: 1.6rem;}
@@ -599,10 +598,6 @@ a {
   max-width: 600px;
   margin: 2rem;
   transition: .5s all;
-}
-.map:hover{
-  filter: drop-shadow(0 0 20px #333);
-  transform: translateY(-25px);
 }
 /*-- homepage case study preview background-box --*/
 .casePreview {
@@ -656,16 +651,16 @@ a {
   align-items: start;
   display: flex;
   flex-wrap: wrap;
-  width: 80vw;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1400px;
 }
 /* individual list styles */
 .col-2{
-  margin: 0 auto 10% auto;
   width: 100%;
   max-width: 400px;
   padding: 0 2rem;
 }
+
 /*--background hero box in case study--*/
 .hero{
   display: block;
@@ -685,10 +680,6 @@ a {
   max-width: 1000px;
   height: auto;
   transition: all .5s;
-}
-.hero_device:hover{
-    filter: drop-shadow(0 0 30px #333);
-    transform: translateY(-10px);
 }
 /*--  roles, deliverables, and tools flexbox --*/
 .role {
@@ -726,10 +717,7 @@ a {
   max-width: 600px;
   transition: all .5s;
 }
-.device-frame:hover{
-    filter: drop-shadow(0 0 30px #333);
-    transform: translateY(-10px);
-}
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .device-frame{margin: 6rem auto;}
@@ -750,55 +738,56 @@ a {
 }
 /* user personas container*/
 .main_three{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 5vw auto;
   padding: 0 ;
   justify-content: center;
 }
-.main_three .persona-container:nth-child(even){
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  padding: 0;
-}
+
 .persona-container{
-  align-items: start;
+  align-items: left;
   display: grid;
-  grid-template-rows: 12% 12% 40% 24% 8%;
-  justify-content: center;
+  grid-template-rows:  180px 175px 600px 400px auto;
+  grid-gap: 0;
+  margin: 3rem auto;
+  text-align: left;
   height: auto;
-  width: 400px;
-  padding: 0 2rem;
+  width: 350px;
+  padding: 2rem;
+  transition: all .5s ;
+}
+h4.left{
+  text-align: left;
 }
 @media screen only (min-width: 1024px){
-  .main_three{
-    grid-template-columns: 100%;
-  }
+  .main_three{max-width: 500px;}
 }
 .persona-section{
   align-items: start;
-  padding: 2rem;
-  padding-top: 0;
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
+  background-color: white;
+  height: auto;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
   margin: 0 auto;
 }
 /* persona img */
 .persona-img{
   display: block;
-  width: 100%;
-  max-width: 200px;
-  margin: 0 auto;
+  width: auto;
+  margin: 0 ;
   height: 180px;
 }
 /*persona image div*/
 .images{
   max-width: 200px;
-  margin: 0 auto;
+  margin: 0 ;
 }
+
 /*-- competitive analysis container --*/
 .SWOT{
   display: flex;
@@ -829,7 +818,7 @@ a {
   display: block;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 /*-- user flow image --*/
 .flow_img {
@@ -841,10 +830,6 @@ a {
   padding: 2rem;
   transition: all .5s;
 }
-.flow_img:hover{
-    filter: drop-shadow(0 0 30px #333);
-    transform: translateY(-10px);
-  }
 /*-- branding --*/
 .moodboard{
   display: block;
@@ -853,10 +838,6 @@ a {
   margin: 2rem auto;
   transition: all .5s;
 }
-.moodboard:hover{
-    filter: drop-shadow(0 0 30px #333);
-    transform: translateY(-10px);
-  }
 /* logo sketching img */
 .logo_sketches {
   display: block;
@@ -867,10 +848,6 @@ a {
   padding: 1rem;
   transition: all .5s;
 }
-.logo_sketches:hover{
-    filter: drop-shadow(0 0 30px #333);
-    transform: translateY(-10px);
-  }
 /* project logo images*/
 .logo-dev-images {
   display: flex;
@@ -910,10 +887,7 @@ p.img_cap{
   width: 80vw;
   transition: all .5s;
 }
-.sitemap:hover{
-    filter: drop-shadow(0 0 30px #333);
-    transform: translateY(-10px);
-  }
+
 /*-- rough sketching image styles --*/
 .rough-sketch{
   display: block;
@@ -924,10 +898,7 @@ p.img_cap{
   width: 90vw;
   transition: all .5s;
   }
-.rough-sketch:hover{
-    filter: drop-shadow(0 0 30px #333);
-    transform: translateY(-10px);
-  }
+
   /* 3 image bottom container under device frame */
 .gallery {
   display: flex;
@@ -947,11 +918,6 @@ p.img_cap{
   padding-top: 1rem;
   transition: all .5s;
 }
-.gallery-img:hover{
-    filter: drop-shadow(0 0 30px #333);
-    transform: translateY(-10px);
-  }
-
 /*-- user testing example image --*/
 .changes-img{
   display: block;
@@ -962,7 +928,7 @@ p.img_cap{
 .test-section{
   margin: 3rem auto 0 auto;
 }
-/*-- test container --*/
+/*-- 4 img test container --*/
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -985,29 +951,17 @@ p.img_cap{
  .main_img{
    transition: .5s all;
 }
-  .main_img:hover{
-  filter: drop-shadow(0 0 20px #333);
-  transform: translateY(-25px);
-}
 /* choice img */
 .option{
   max-width: 100%;
   padding: 1rem;
   transition: .5s all;
 }
-  .option:hover{
-  filter: drop-shadow(0 0 20px #333);
-  transform: translateY(-25px);
-}
 /* highlighted winner */
 .special{
   border: 1px solid red;
   padding: 1rem;
   transition: .5s all;
-}
-  .special:hover{
-  filter: drop-shadow(0 0 20px #333);
-  transform: translateY(-25px);
 }
 /*-- brand colors img in final design-- */
 .colors{
@@ -1025,10 +979,6 @@ p.img_cap{
   max-width: 900px;
   margin: 1rem auto;
   transition: .5s all;
-}
-  .desktop-frame:hover{
-  filter: drop-shadow(0 0 20px #333);
-  transform: translateY(-25px);
 }
 /*-- design progression image flex container --*/
 .progress {
@@ -1055,10 +1005,6 @@ p.img_cap{
   height: auto;
   transition: .5s all;
 }
-  .progress-img:hover{
-  filter: drop-shadow(0 0 20px #333);
-  transform: translateY(-25px);
-}
 /*---- about me page styles -----*/
 .about-me{
   margin: 4rem auto;
@@ -1072,13 +1018,14 @@ p.img_cap{
   width: 50vw;
   transition: all .5s;
 }
-.portrait:hover{
-  filter: drop-shadow(0 0 30px #45A29E);
-  transform: translateY(-25px);
-}
 .about-content{
   margin: 8vh auto;
   width: 90vw;
+}
+/*---- teal image hover ------*/
+.img_hover:hover{
+  filter: drop-shadow(0 0 30px #45A29E);
+  transform: translateY(-25px);
 }
 /*-- footer styles --*/
 footer {
@@ -1111,14 +1058,15 @@ h6 {
   justify-content: space-between;
   display: flex;
   width: 100%;
-  max-width: 700px;
+  max-width: 1400px;
   margin: 5vh auto 0 auto;
   flex-wrap: wrap;
 }
+/* footer button margin and padding styles */
 .foot{
   display: block;
-  height: 70px;
-  margin: 4rem auto;
+  height: auto;
+  margin: 2rem auto 5rem auto;
   transition: all .5s;
   padding: 2.5rem 3.5rem;
   width: 250px;
@@ -1128,33 +1076,41 @@ h6 {
   animation-duration: 1.0s;
   animation-iteration-count: infinite;
 }
+
+/*----- contact form start--- */
+/* form container */
+#formContainer {
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 1.5rem;
+ margin: 11rem auto;
+ width: 95vw;
+ max-width: 500px;
+}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], textarea {
- width: 75%;
- padding: 1.4rem;
- border: 1px solid #ccc; /* Gray border */
- border-radius: 4px; /* Rounded borders */
- box-sizing: border-box; /* Make sure that padding and width stays in place */
- margin-top: 1rem; /* Add a top margin */
- margin-bottom: 2rem; /* Bottom margin */
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ margin-top: 1rem;
+ margin-bottom: 2rem;
  font-size: 1.4rem;
- font-family: "open+sans";
- resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+ resize: vertical ;/* Allow the user to vertically resize the textarea (not horizontally) */
+ padding: 1.4rem;
+ width: 100%;
 }
 textarea {
   width: 100%;
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  height: 300px;
 }
 input[type=email]{
-  width: 50%;
-  padding: 1.4rem;
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font-size: 1.4rem;
-  font-family: "open+sans";
-  margin-top: 1rem; /* Add a top margin */
-  margin-bottom: 2rem; /* Bottom margin */
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+  width: 100%;
 }
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
@@ -1163,7 +1119,10 @@ input[type=submit] {
  border-radius: 4px;
  color: #333;
  cursor: pointer;
+ font-size: 1.6rem;
+ font-family: "Lato";
  margin: 2rem auto;
+ text-transform: uppercase;
  padding: 2rem 4.5rem;
  width: 100%;
 }
@@ -1171,11 +1130,5 @@ input[type=submit] {
 input[type=submit]:hover {
  background-color: #45A29E;
 }
-/* Add a background color and some padding around the form */
-#formContainer {
- border-radius: 5px;
- background-color: #f2f2f2;
- padding: 2rem;
- margin: 2rem auto;
- max-width: 700px;
-}
+
+/*contact styles end*/
