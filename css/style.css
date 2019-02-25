@@ -684,6 +684,12 @@ a {
   width: 100%;
   max-width: 1000px;
   height: auto;
+  transition: all .5s;
+}
+.hero_device:hover{
+    filter: drop-shadow(0 0 30px #333);
+    transform: translateY(-10px);
+
 }
 /*--  roles, deliverables, and tools flexbox --*/
 .role {
