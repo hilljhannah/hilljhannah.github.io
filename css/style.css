@@ -138,7 +138,7 @@ h2{
   margin: 1rem auto 4rem auto;
   text-align: center;
   text-shadow: -.2px 0, 0 .2px, .1px 0, 0 -.1px;
-  color: #45A29E;
+  color: #1B9D9D;
   width: 100%;
   max-width: 900px;
 }
@@ -311,7 +311,7 @@ b{
 /* large process-stage banners in case study (for spacing)*/
 .process {
   align-content: center;
-  border: 5px solid #38DFD2;
+  border: 5px solid #76EAE1;
   border-radius: 30px;
   color: black;
   display: flex;
@@ -382,10 +382,10 @@ ul.middle{
   max-width: 350px;
 }
 ul.middle li:nth-of-type(odd){
-  background: rgba(135, 206, 250,.09);
+  background: rgba(197, 245, 241,.09);
 }
 ul.middle li:nth-of-type(even){
-  background: rgba(135, 206, 250,.02);
+  background: rgba(197, 245, 241,.02);
 }
 /* brand ideals list */
 ul.ideals {
@@ -456,7 +456,7 @@ a {
 }
 .outline{
   margin: 0 auto;
-  border: 2px solid #66FCF1;
+  border: 2px solid #76EAE1;
   border-radius: 5px;
   padding: 1.5rem 4rem;
   font-family: "Lato";
@@ -1026,7 +1026,7 @@ p.img_cap{
 }
 /*---- teal image hover ------*/
 .img_hover:hover{
-  filter: drop-shadow(0 0 30px #45A29E);
+  filter: drop-shadow(0 0 30px #75E8DE);
   transform: translateY(-25px);
 }
 /*-- footer styles --*/
@@ -1042,17 +1042,17 @@ h6 {
   justify-content: center;
   color: white;
   font-family: 'Lato';
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   text-align: center;
   margin: 0 auto ;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h6{font-size: 2rem;}
+  h6{font-size: 1.4rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-  h6{font-size: 2.2rem;}
+  h6{font-size: 1.6rem;}
 }
 /* contact footer button*/
 .contact{
@@ -1061,7 +1061,7 @@ h6 {
   display: flex;
   width: 100%;
   max-width: 1400px;
-  margin: 5vh auto 0 auto;
+  margin: 0 auto 5rem auto;
   flex-wrap: wrap;
 }
 /* footer button margin and padding styles */
@@ -1070,7 +1070,7 @@ h6 {
   height: auto;
   margin: 2rem auto 5rem auto;
   transition: all .5s;
-  padding: 2.5rem 3.5rem;
+  padding: 2rem 3.5rem;
   width: 250px;
 }
 .foot:hover{
@@ -1078,15 +1078,30 @@ h6 {
   animation-duration: 1.0s;
   animation-iteration-count: infinite;
 }
-
+.contact-section{
+  justify-content: center;
+  display: grid;
+  grid-column: 1fr 1fr;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+.contact-icon{
+  height: auto;
+  max-width: 50px;
+  display: block;
+  margin: 0 4rem;
+}
+.gridcol2{
+  grid-column: 2;
+}
 /*----- contact form start--- */
 /* form container */
 #formContainer {
  border-radius: 5px;
  background-color: #f2f2f2;
- padding: 1.5rem;
+ padding: 3rem 5rem ;
  margin: 11rem auto;
- width: 95vw;
+ width: 100%;
  max-width: 500px;
 }
 /* Style inputs with type="text", select elements and textareas */
@@ -1123,9 +1138,10 @@ input[type=submit] {
  cursor: pointer;
  font-size: 1.6rem;
  font-family: "Lato";
+ font-weight: 700;
  margin: 2rem auto;
  text-transform: uppercase;
- padding: 2rem 4.5rem;
+ padding: 2.5rem 4.5rem;
  width: 100%;
 }
 /* When moving the mouse over the submit button, add a darker green color */
