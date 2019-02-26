@@ -82,7 +82,7 @@ h1 {
   display: inline-block;
   vertical-align: middle;
   font-family: 'Lato';
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.6rem;
   font-style: normal;
   margin: 0 auto;
@@ -157,7 +157,7 @@ h2.display{
 /*left aligned h2*/
 h2.left{
   display: block;
-  color: #45A29E;
+  color: #1B9D9D;
   text-shadow: -.4px 0, 0 .4px, .4px 0, 0 -.4px;
   text-align: left;
   padding: 0;
@@ -193,7 +193,7 @@ h3.b{
 /*left aligned h3*/
 h3.left{
   display: block;
-  color: #45A29E;
+  color: #191919;
   font-weight: 400;
   margin: 2rem auto;
   padding: 2rem 0 0 0;
