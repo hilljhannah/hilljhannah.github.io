@@ -31,7 +31,7 @@ section {
   font-weight: normal;
   align-items: center;
   justify-content: center;
-  margin: 8vw auto;
+  margin: 10rem auto;
   width: 90vw;
 }
 /*--header styles--*/
@@ -135,10 +135,9 @@ h2{
   display: block;
   font-family: 'Megrim';
   font-size: 4.2rem;
-  margin: 0 auto;
-  padding: 2rem 0;
+  margin: 1rem auto 4rem auto;
   text-align: center;
-  text-shadow: -.1px 0, 0 .1px, .1px 0, 0 -.1px;
+  text-shadow: -.2px 0, 0 .2px, .1px 0, 0 -.1px;
   color: #45A29E;
   width: 100%;
   max-width: 900px;
@@ -206,21 +205,27 @@ h3.left{
 h4 {
   color: black;
   font-family: 'Lato';
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
   padding-top: 4rem;
-  margin: 0 auto;
+  margin: 2rem auto;
+}
+h4.left{
+  margin: .5rem 0;
+  padding: 0;
+  font-size: 3.6rem;
+  font-weight: 300;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h3, h3.left {font-size: 2.4rem;}
-  h4{font-size: 2rem; }
+  h4{font-size: 2.2rem; }
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h3, h3.left, h4{font-size: 2.6rem;}
-  h4{font-size: 2.2rem; }
+  h3, h3.left, {font-size: 2.6rem;}
+  h4{font-size: 2.4rem; }
 }
 /*-- headers inside text --*/
 h5{
@@ -230,13 +235,12 @@ h5{
   font-weight: 700;
   margin: 0 auto;
   text-align: center;
-  padding: 2rem 0 1rem 0;
   width: 100%;
   max-width: 600px;
 }
 h5.left{
   text-align: left;
-  padding: 0 ;
+  margin-top: 3rem ;
   max-width: 700px;
 }
 /*-- paragraph text --*/
@@ -244,11 +248,10 @@ p {
   color: #333;
   font-family: 'Open Sans';
   font-size: 1.4rem;
-  margin: 2rem auto;
+  margin: 1rem auto 2rem auto;
   font-style: normal;
   width: 100%;
   max-width: 700px;
-  padding-top: 10px ;
   line-height: 150%;
   align-items: center;
 }
@@ -272,7 +275,6 @@ p.centered, #b{
 }
 p.occupation{
   margin: 0;
-  font-size: 1.6rem;
   padding: 0;
 }
 /* used for case study preview paragraph text*/
@@ -284,7 +286,6 @@ p.b{
   max-width: 500px;
 }
 p.cap {
-  padding-top: 2rem;
   font-style: italic;
 }
 p.info{
@@ -302,10 +303,13 @@ p.info{
   h5{font-size: 2rem;}
   p {font-size: 1.8rem;}
 }
+b{
+  font-weight: bold;
+}
 /*---- end typography styles ----*/
 
 /* large process-stage banners in case study (for spacing)*/
-h2.process {
+.process {
   align-content: center;
   border: 5px solid #38DFD2;
   border-radius: 30px;
@@ -339,25 +343,26 @@ hr{
   margin: 15% auto;
   filter: drop-shadow(0 0 15px #333)
 }
-/* iPads (portrait and landscape) ----------- */
+/* h2 - iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h2.process{font-size: 6rem; }
 }
-/* Desktops and laptops ----------- */
+/* h2 - Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
   h2.process{font-size: 6.8rem;}
 }
+
 /*-- unordered list bullet --*/
 ul{
   font-size: 1.4rem;
   list-style-type: circle;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   width: 100%;
   max-width: 700px;
   padding-right: 4rem;
 }
+/* list with background color */
 ul.color{
-  margin: 3rem auto;
   list-style-position: inside;
   padding: 0 ;
 }
@@ -367,7 +372,7 @@ ul.color li:nth-of-type(odd){
 ul.color li:nth-of-type(even){
   background: rgba(135, 206, 250,.02);
 }
-/* centered no-bullet */
+/* centered no-bullet (for lists) */
 ul.middle{
   list-style-type: none;
   text-align: center;
@@ -382,13 +387,6 @@ ul.middle li:nth-of-type(odd){
 ul.middle li:nth-of-type(even){
   background: rgba(135, 206, 250,.02);
 }
-ul#narrow{
-  width: 100%;
-  max-width: 300px;
-  text-align: center;
-  list-style-type: none;
-  padding: 0;
-}
 /* brand ideals list */
 ul.ideals {
   align-content: center;
@@ -397,11 +395,11 @@ ul.ideals {
   font-weight: bold;
   list-style-position: inside;
 }
-/* iPads (portrait and landscape) ----------- */
+/* ul - iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   ul{font-size: 1.6rem;}
 }
-/* Desktops and laptops ----------- */
+/* ul - Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
   ul{font-size: 1.8rem;}
 }
@@ -413,19 +411,21 @@ li{
 }
 /*-- list within a list --*/
 dt {
+  background: rgba(135, 206, 250,.09);
   font-family: "Open Sans";
   font-size: 1.4rem;
+  margin: 2rem auto 0 auto;
   width: 90vw;
-  max-width: 700px;
-  margin: 2rem auto .75rem auto;
+  max-width: 600px;
+  padding: 1rem;
 }
 dd {
   font-size: 1.4rem;
   width: 90vw;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
-  background:rgba(244,254,254,.7);
-  padding: 1.5rem;
+  background: rgba(135, 206, 250,.02);
+  padding: 1rem;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -538,7 +538,7 @@ a {
   color: #494949 !important;
   display: inline-block;
   font-size: 1.6rem;
-  margin: 5vw auto;
+  margin: 4rem auto;
   text-transform: uppercase;
   transition: all .5s ease 0s;
   padding: 2.5rem 6rem;
@@ -564,16 +564,16 @@ a {
   display: block;
   height: auto;
   margin: 0 auto;
-  width: 70px;
+  width: 80px;
   height: auto;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .icon{width: 80px;}
+  .icon{width: 90px;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-  .icon{width: 90px;}
+  .icon{width: 100px;}
 }
 /*-- homepage hero section flexbox --*/
 .homeHero{
@@ -644,7 +644,6 @@ a {
   height: auto;
   margin: 4rem auto;
   padding: 0;
-  /*filter: drop-shadow(0 0 15px #333);*/
 }
 /*-- lists on homepage - flexbox --*/
 .homeToolkit{
@@ -712,20 +711,45 @@ a {
 .device-frame{
   display: block;
   height: auto;
-  margin: 10% auto;
+  margin: 10rem auto 6rem auto;
   width: 100%;
   max-width: 600px;
   transition: all .5s;
 }
-
+  /* device frame in final design */
+  .desktop-frame{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: .5s all;
+  }
+  /* 3 image bottom container under device frame */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin:  4rem auto;
+  justify-content: center;
+}
+/* individual image in gallery */
+.gallery-img{
+  align-self: center;
+  filter: drop-shadow(0 0 5px #333);
+  margin: 0 1rem;
+  padding: 1rem;
+  width: 250px;
+  max-width: 250px;
+  transition: all .5s;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .device-frame{margin: 6rem auto;}
   .solu{grid-template-columns: 50% 50%;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-  .device-frame{margin: 8rem auto;}
+
   .solu{grid-template-columns: 50% 50%;}
 }
 /* dreamers logo in case study */
@@ -741,8 +765,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1100px;
-  margin: 5vw auto;
+  max-width: 1400px;
+  margin: 4rem auto;
   padding: 0 ;
   justify-content: center;
 }
@@ -750,44 +774,42 @@ a {
 .persona-container{
   align-items: left;
   display: grid;
-  grid-template-rows:  180px 175px 600px 400px auto;
+  grid-template-rows: .5fr .2fr 1.5fr 1fr .5fr;
   grid-gap: 0;
-  margin: 3rem auto;
+  margin: 2rem;
   text-align: left;
   height: auto;
-  width: 350px;
-  padding: 2rem;
+  width: 300px;
+  padding: 0;
   transition: all .5s ;
 }
 h4.left{
   text-align: left;
 }
-@media screen only (min-width: 1024px){
+@media screen only (min-width 1024px){
   .main_three{max-width: 500px;}
 }
 .persona-section{
-  align-items: start;
+  align-content:  center;
   background-color: white;
   height: auto;
   padding: 0 1rem;
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   text-align: left;
   margin: 0 auto;
 }
 /* persona img */
 .persona-img{
   display: block;
-  width: auto;
+  width: 150px;
   margin: 0 ;
-  height: 180px;
+  height: auto;
 }
 /*persona image div*/
 .images{
-  max-width: 200px;
   margin: 0 ;
 }
-
 /*-- competitive analysis container --*/
 .SWOT{
   display: flex;
@@ -795,7 +817,7 @@ h4.left{
   justify-content: center;
   width: 100%;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 4rem auto;
 }
 /* individual competitor block */
 .competitor {
@@ -818,7 +840,8 @@ h4.left{
   display: block;
   width: 100%;
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 6rem auto ;
+  padding: 2rem;
 }
 /*-- user flow image --*/
 .flow_img {
@@ -827,7 +850,11 @@ h4.left{
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
-  padding: 2rem;
+  transition: all .5s;
+}
+.flow_img_b{
+  max-width: 1000px;
+  margin: 0 auto;
   transition: all .5s;
 }
 /*-- branding --*/
@@ -835,7 +862,7 @@ h4.left{
   display: block;
   width: 100%;
   max-width: 1100px;
-  margin: 2rem auto;
+  margin: 0 auto;
   transition: all .5s;
 }
 /* logo sketching img */
@@ -848,7 +875,7 @@ h4.left{
   padding: 1rem;
   transition: all .5s;
 }
-/* project logo images*/
+/* dreamers logo images*/
 .logo-dev-images {
   display: flex;
   flex-wrap: wrap;
@@ -859,7 +886,7 @@ h4.left{
 /* image + content logo div */
 .dev-content{
   width: 100%;
-  margin: 2rem;
+  margin: 2rem auto;
 }
 /*individual logo image styles*/
 .dev-img{
@@ -872,7 +899,7 @@ h4.left{
 /* img caption for logos */
 p.img_cap{
   font-size: 1.4rem;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   text-align: left;
   width: 100%;
   max-width: 600px;
@@ -892,56 +919,37 @@ p.img_cap{
 .rough-sketch{
   display: block;
   height: auto;
-  margin: 0 auto;
+  margin: 4rem auto;
   max-width: 1100px;
-  padding: 1rem;
   width: 90vw;
   transition: all .5s;
   }
 
-  /* 3 image bottom container under device frame */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-/* individual image in gallery */
-.gallery-img{
-  align-self: center;
-  filter: drop-shadow(0 0 5px #333);
-  margin: 2rem;
-  width: 100%;
-  max-width: 300px;
-  padding-top: 1rem;
-  transition: all .5s;
-}
 /*-- user testing example image --*/
 .changes-img{
   display: block;
   max-width: 100%;
-  margin: 5rem auto;
+  margin: 4rem auto;
   padding: 0 2rem;
 }
+/* preference container test section */
 .test-section{
-  margin: 3rem auto 0 auto;
+  margin: 6rem auto 0 auto;
 }
-/*-- 4 img test container --*/
+/*-- pref-test flex container --*/
 .main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   width: 100%;
-  max-width: 900px;
-  margin: 1.5rem auto;
+  max-width: 1100px;
+  margin: 4rem auto;
 }
 /* choices content */
  .main_content{
    width: 100%;
-   max-width: 300px;
+   max-width: 280px;
    margin: 2rem 2rem 0 2rem;
  }
  .main > * {
@@ -949,6 +957,7 @@ p.img_cap{
    margin: 10px;
  }
  .main_img{
+   max-width: 280px;
    transition: .5s all;
 }
 /* choice img */
@@ -967,19 +976,12 @@ p.img_cap{
 .colors{
   display: block;
   height: auto;
-  margin: 4rem auto 1rem auto;
+  margin: 2rem auto;
   width: 80vw;
-  max-width: 900px;
+  max-width: 700px;
   padding: 0 ;
 }
-/* device frame in final design */
-.desktop-frame{
-  display: block;
-  width: 100%;
-  max-width: 900px;
-  margin: 1rem auto;
-  transition: .5s all;
-}
+
 /*-- design progression image flex container --*/
 .progress {
   align-content: center;
@@ -988,7 +990,7 @@ p.img_cap{
   flex-wrap: wrap;
   margin: 4rem auto 2rem auto;
   width: 100%;
-  max-width: 1800px;
+  max-width: 1400px;
   padding: 0 2rem ;
 }
 .progress > * {
