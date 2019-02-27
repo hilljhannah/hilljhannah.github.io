@@ -324,9 +324,9 @@ b{
   justify-content: center;
   position: relative;
   width: 100%;
-  max-width: 90vw;
+  max-width: 80vw;
 }
-.process::after{
+.process:first-of-type::after{
   content: "";
   position: absolute;
   width: 60px;
@@ -334,6 +334,24 @@ b{
   background: white ;
   left: 40px;
   bottom: -40px;
+}
+h2.process::after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white ;
+  left: 1140px;
+  bottom: -40px;
+}
+h2.process:last-of-type::after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white ;
+  left: 40px;
+  bottom: 140px;
 }
 /*-- section dividing line (for spacing)--*/
 hr{
