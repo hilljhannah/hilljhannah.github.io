@@ -9,6 +9,7 @@ html {
   font-family: "Open Sans";
   max-width: 100vw;
 }
+
 body{
   align-items: center;
   height: 100%;
@@ -82,7 +83,7 @@ h1 {
   display: inline-block;
   vertical-align: middle;
   font-family: 'Lato';
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.6rem;
   font-style: normal;
   margin: 0 auto;
@@ -133,11 +134,12 @@ h1 {
 /* section headers */
 h2{
   display: block;
-  font-family: 'Megrim';
+  font-family: 'Oswald', sans-serif;
   font-size: 4.2rem;
   margin: 1rem auto 4rem auto;
   text-align: center;
-  text-shadow: -.2px 0, 0 .2px, .1px 0, 0 -.1px;
+  text-transform: uppercase;
+  font-weight: 200;
   color: #1B9D9D;
   width: 100%;
   max-width: 900px;
@@ -145,9 +147,10 @@ h2{
 /* large project intro description font */
 h2.display{
   display: block;
-  color: #333;
-  font-family: 'Megrim';
-  font-size: 3.6rem;
+  color: #191919;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 3.8rem;
   padding: 2rem;
   text-align: center;
   width: 90vw;
@@ -157,7 +160,7 @@ h2.display{
 /*left aligned h2*/
 h2.left{
   display: block;
-  color: #1B9D9D;
+  color: #233746;
   text-shadow: -.4px 0, 0 .4px, .4px 0, 0 -.4px;
   text-align: left;
   padding: 0;
@@ -172,7 +175,7 @@ h2.left{
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h2{font-size: 5.6rem;}
+  h2{font-size: 5.2rem;}
   h2.left{font-size: 7.8rem; }
   h2.display{font-size: 5rem; max-width: 1000px;}
 }
@@ -193,8 +196,8 @@ h3.b{
 /*left aligned h3*/
 h3.left{
   display: block;
-  color: #191919;
-  font-weight: 400;
+  color: black;
+  font-weight: 300;
   margin: 2rem auto;
   padding: 2rem 0 0 0;
   text-align: center;
@@ -246,7 +249,7 @@ h5.left{
 /*-- paragraph text --*/
 p {
   color: #333;
-  font-family: 'Open Sans';
+  font-family: 'Open+Sans';
   font-size: 1.4rem;
   margin: 1rem auto 2rem auto;
   font-style: normal;
@@ -257,7 +260,6 @@ p {
 }
 /* bold p text */
 p.quote {
-  font-size: 1.6rem;
   font-weight: bold;
   font-style: italic;
   margin: 0 auto;
@@ -266,8 +268,8 @@ p.quote {
 p.centered, #b{
   color: #333;
   display: block;
-  font-family: "Lato";
-  font-size: 2rem;
+  font-family: 'Lato';
+  font-size: 1.6rem;
   font-weight: 300;
   text-align: center;
   margin:  2% auto ;
@@ -296,12 +298,14 @@ p.info{
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h5{font-size: 1.8rem;}
   p{font-size: 1.6rem;}
+  p.centered{font-size: 1.8rem;}
 
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
   h5{font-size: 2rem;}
   p {font-size: 1.8rem;}
+  p.centered{font-size: 2rem;}
 }
 b{
   font-weight: bold;
@@ -313,24 +317,26 @@ b{
   align-content: center;
   border: 5px solid #76EAE1;
   border-radius: 30px;
-  color: black;
+  color: #191919;
   display: flex;
   flex-wrap: wrap;
-  font-family: "Megrim";
-  font-size: 4.8rem;
-  margin: 15% auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.8rem;
+  margin: 15rem auto;
   text-align: center;
-  padding: 3% 4% ;
+  padding: 3% 4%;
   justify-content: center;
   position: relative;
   width: 100%;
-  max-width: 80vw;
+  max-width: 90vw;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .process:first-of-type::after{
   content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: white ;
   left: 40px;
   bottom: -40px;
@@ -338,36 +344,36 @@ b{
 h2.process::after{
   content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: white ;
-  left: 1140px;
-  bottom: -40px;
+  left: 80%;
+  bottom: 80px;
 }
 h2.process:last-of-type::after{
   content: "";
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: white ;
   left: 40px;
-  bottom: 140px;
+  bottom: 70%;
 }
 /*-- section dividing line (for spacing)--*/
 hr{
   display: block;
-  color: #333;
+  color: #233746;
   width: 85vw;
   margin: 15% auto;
-  filter: drop-shadow(0 0 15px #333)
+  filter: drop-shadow(0 0 15px #233746)
 }
 /* h2 - iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h2.process{font-size: 6rem; }
+  h2.process{font-size: 7.2rem; }
 }
 /* h2 - Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h2.process{font-size: 6.8rem;}
+  h2.process{font-size: 7.8rem;}
 }
 
 /*-- unordered list bullet --*/
@@ -385,10 +391,10 @@ ul.color{
   padding: 0 ;
 }
 ul.color li:nth-of-type(odd){
-  background: rgba(135, 206, 250,.09);
+  background: rgba(135, 206, 250,.08);
 }
 ul.color li:nth-of-type(even){
-  background: rgba(135, 206, 250,.02);
+  background: white;
 }
 /* centered no-bullet (for lists) */
 ul.middle{
@@ -398,12 +404,6 @@ ul.middle{
   margin: 0 auto;
   width: 100%;
   max-width: 350px;
-}
-ul.middle li:nth-of-type(odd){
-  background: rgba(197, 245, 241,.09);
-}
-ul.middle li:nth-of-type(even){
-  background: rgba(197, 245, 241,.02);
 }
 /* brand ideals list */
 ul.ideals {
@@ -662,6 +662,7 @@ a {
   height: auto;
   margin: 4rem auto;
   padding: 0;
+  transition: all .5s;
 }
 /*-- lists on homepage - flexbox --*/
 .homeToolkit{
@@ -794,7 +795,7 @@ a {
   display: grid;
   grid-template-rows: .5fr .2fr 1.5fr 1fr .5fr;
   grid-gap: 0;
-  margin: 2rem;
+  margin: 2rem 4vw;
   text-align: left;
   height: auto;
   width: 300px;
@@ -866,12 +867,13 @@ h4.left{
   display: block;
   height: auto;
   margin: 0 auto;
-  width: 100%;
-  max-width: 800px;
+  width: 80%;
+  max-width: 900px;
   transition: all .5s;
 }
 .flow_img_b{
-  max-width: 1000px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   transition: all .5s;
 }
@@ -1045,7 +1047,6 @@ p.img_cap{
 /*---- teal image hover ------*/
 .img_hover:hover{
   filter: drop-shadow(0 0 30px #75E8DE);
-  transform: translateY(-25px);
 }
 /*-- footer styles --*/
 footer {
