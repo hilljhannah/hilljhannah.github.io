@@ -646,14 +646,20 @@ a {
   margin: 0 auto;
 }
 /* dreamers logo in casePreview */
-.projectLogo{
+.dreamers-logo{
   display: block;
   filter: drop-shadow(0 0 15px white);
   width: 100%;
   max-width: 300px;
-  height: auto;
   margin: 2rem auto;
 }
+.mood-logo{
+  display: block;
+  height: 100%;
+  max-height: 250px;
+  margin: 2rem auto;
+}
+
 /* device frame in casePreview */
 .home_frame{
   display: block;
@@ -698,6 +704,9 @@ a {
   max-width: 1000px;
   height: auto;
   transition: all .5s;
+}
+.mobile-device{
+  max-width: 800px;
 }
 /*--  roles, deliverables, and tools flexbox --*/
 .role {
@@ -771,8 +780,8 @@ a {
 
   .solu{grid-template-columns: 50% 50%;}
 }
-/* dreamers logo in case study */
-#dream-Logo {
+/* project logo in case study */
+.project-Logo {
   display: block;
   margin: 4rem auto;
   width: 60vw;
