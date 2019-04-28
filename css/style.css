@@ -752,7 +752,7 @@ a {
     margin: 0 auto;
     transition: .5s all;
   }
-  /* 3 image bottom container under device frame */
+  /* project frames image gallery container */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -761,8 +761,9 @@ a {
   margin:  4rem auto;
   justify-content: center;
 }
-/* individual image in gallery */
+/* individual frame image in gallery */
 .gallery-img{
+  display: block;
   align-self: center;
   filter: drop-shadow(0 0 5px #333);
   margin: 0 1rem;
