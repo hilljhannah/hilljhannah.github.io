@@ -28,10 +28,9 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <img class="mood-logo" src="images/mood/mood-logo-color.png" alt="Mood logo"/>
-      <img class="hero_device mobile-device" src="images/mood/mood-summary-mobile.png" alt="Mood preview frames"/>
-      <h2 class="display">What's your Mood?</h2>
-      <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FKafKLqGzsiWGkOScJrb3Kc%2FMood-Prototype-Final%3Fnode-id%3D129%253A4%26viewport%3D1540%252C222%252C0.27309%26scaling%3Dscale-down" allowfullscreen></iframe>
+      <img class="hero_img" src="images/mood-display.jpg" alt="Hero Image">
+      <h2 class="display">Mood</h2>
+      <h3>A colorful, free way to journal and track your emotional health; for everyone.</h3>
       <div class="button"><a class="button_ghost" href="https://www.figma.com/proto/KafKLqGzsiWGkOScJrb3Kc/Mood-Prototype-Final?node-id=129%3A4&viewport=1540%2C222%2C0.27309&scaling=scale-down">Live Prototype</a></div>
     </section>
     <!-- 3-col lists (roles, deliverables, tools) -->
@@ -42,7 +41,7 @@
           <img class="icon" src="images/icon-roles.png" alt="roles icon">
         </div>
         <h2>Roles</h2>
-        <ul class="middle">
+        <ul class="middle color">
           <li>UX design</li>
           <li>User Interface Design</li>
           <li>Visual design</li>
@@ -53,7 +52,7 @@
       <div class="col3">
         <img class="icon" src="images/icon-deliverables.png" alt="deliverables icon"/>
         <h2>Deliverables</h2>
-        <ul class="middle">
+        <ul class="middle color">
           <li>User survey</li>
           <li>User personas</li>
           <li>Competitive analysis</li>
@@ -73,7 +72,7 @@
       <div class="col3">
         <img class="icon" src="images/icon-toolbox.png" alt="toolkit icon"/>
         <h2>Tools</h2>
-        <ul class="middle">
+        <ul class="middle color">
           <li>Figma</li>
           <li>Invision</li>
           <li>Usability Hub</li>
@@ -114,7 +113,7 @@
           <p>After extensive user research, personas, wireframing, testing, prototyping, countless iterations, and branding the concept of Mood was born; a free, easy, and colorful way to track and record your moods and emotional health throughout the year. Featuring daily reminders with a customizable time so you never miss an entry, the ability to analyze yearly mood summary to receive a detailed breakdown of your emotional health, exportable journal for personal records or sharing with a mental health professional, and a short and sweet journal prompt so you end every journal on a happy and positive note.</p>
         </div>
         <div>
-          <img class="device-frame" src="images/" alt="Figma Prototype"/>
+          <img class="device-frame" src="images/mood/mood-summary-mobile.png" alt="Mood preview frames"/>
         </div>
       </div>
     </section>
@@ -124,23 +123,20 @@
     <section class="research">
       <img class="icon" src="images/icon-user-research.png" alt="Magnifying glass icon"/>
       <h2>User Survey Research</h2>
-      <p>A survey was created and sent out to fellow designers, friends, family, and a few subreddits to give the broadest possible pool of surveyors and responses to help discover target audience(s) and further our research. </p>
-      <h5 class="left">Goals:</h5>
+      <p>I crafted a user survey and sent it out to my fellow designers, friends, family, and a few subreddits to give me to broadest possible pool of surveyors and responses to help me discover my target audience and learn the following:</p>
       <ul class="color">
         <li>How well known are mental health/mood apps?</li>
-        <li>How widely used are they?</li>
         <li>Are they currently being used?</li>
+        <li>Is there a general interest in emotional journal apps?</li>
         <li>Are there any user concerns?</li>
-        <li>What are the general demographics without being too specific or revealing due to the nature of the survey and the anonymity of those surveyed?</li>
       </ul>
-      <h5 class="left">Results:</h5>
+      <h5 class="left">Key Findings:</h5>
       <ul class="color">
         <li><b>57%</b> said yes they were aware of mental health/ mood tracking and journal apps yet; <b>29%</b> have ever used a mental health/ mood app and only <b>11%</b> still use one.</li>
         <li><b>54%</b> said yes and <b>46%</b> said no when asked if they had concerns over mental health tracking and journal apps</li>
         <li><b>Privacy, Security, and Anonymity</b> were the top three concerns.</li>
       </ul>
-      <img src="images/mood/" alt="results chart 1">
-      <img src="images/mood/" alt="results chart 2">
+      <div class="button"><a class="button_ghost" href=" ">Full Summary</a></div>
     </section>
     <!--line-->
     <hr>
@@ -148,8 +144,8 @@
     <section class="personas">
       <img class="icon" src="images/icon-user-persona.png" alt="user personas icon"/>
       <h2>User Personas</h2>
-      <p></p>
-      <!--persona gallery-->
+      <p>After analyzing the discoveries from the user survey, the competitive analysis, and SWOT table I discovered three core user groups and created user personas for them. </p>
+      <!--persona gallery
         <div class="main_three">
           <div class="persona-container" >
             <div class="images"><img class="persona-img" src="images/mood/stressed-student-img.png" alt="Stressed Student img"></div>
@@ -221,6 +217,43 @@
             </div>
           </div>
         </div>
+        <!--  Image lightbox (user personas) -->
+        <div class="lightboxContainer">
+          <!--persona img1 -->
+          <a href="#personaimg1">
+              <img class="thumb" src="images/mood/persona-1.jpg">
+          </a>
+          <!-- first persona image box  -->
+          <div class="lightbox" id="personaimg1">
+              <a href="#personaimg3" class="light-btn btn-prev">prev</a>
+                  <a href="#_" class="btn-close">X</a>
+                  <img src="images/mood/persona-1.jpg">
+              <a href="#personaimg2" class="light-btn btn-next">next</a>
+          </div>
+          <!-- img2 -->
+          <a href="#personaimg2">
+            <img class="thumb" src="images/mood/persona-2.jpg">
+          </a>
+          <!-- second image box (img2) -->
+          <div class="lightbox" id="personaimg2">
+              <a href="#personaimg1" class="light-btn btn-prev">prev</a>
+                  <a href="#_" class="btn-close">X</a>
+                  <img src="images/mood/persona-2.jpg">
+              <a href="#personaimg3" class="light-btn btn-next">next</a>
+          </div>
+          <!-- img3 -->
+          <a href="#personaimg3">
+            <img class="thumb" src="images/mood/persona-3.jpg">
+          </a>
+          <!-- third image box  -->
+          <div class="lightbox" id="personaimg3">
+              <a href="#personaimg2" class="light-btn btn-prev">prev</a>
+                  <a href="#_" class="btn-close">X</a>
+                  <img src="images/mood/persona-3.jpg">
+              <a href="persona#img1" class="light-btn btn-next">next</a>
+          </div>
+        </div>
+        <!-- end lightbox -->
     </section>
     <!-- line-->
     <hr>
@@ -248,7 +281,7 @@
         </div>
       </div>
       <div class="takeways">
-        <h3>Key Takeways</h3>
+        <h4>Key Takeways</h4>
         <p>During this section of the process a lot was learned about what current apps are doing well and what they are doing very wrong. It was discovered that while Moodnotes was the most user intuitive and well designed app the paywall barrier was a huge setback and turnoff for many users. Year in Pixels had the best concept for a free app but the poor font choices and the constant adds at the bottom and throughout the app coupled with a poor UI were a huge problem. MoodTrack was not much better with an outdated UI and everything posted is public unless it was paid for.</p>
       </div>
     </section>
@@ -282,15 +315,10 @@
       <img class="icon" src="images/icon-user-flow.png" alt="Flows icon"/>
       <h2>User Flows</h2>
       <p>The user stories were utilized to create user flows to help map out what screens would be needed to satisfy the main needs of the different user personas.</p>
-      <div class="flow-container">
-        <p class="cap">“As a new or returning user, I want to <b>record a new journal entry</b>"</p>
-        <img class="flow_img" src="images/mood/add-journal-flow.png " alt=" New Entry flowchart"/>
+      <div>
+        <img class="flow_img" src="images/mood/flows.png " alt=" New Entry flowchart"/>
       </div>
-      <div class="flow-container">
-        <p class="cap">“As a new or returning user, I want to <b>view year summary</b>”</p>
-        <img class="flow_img_b " src="images/mood/view-summary-flow.png " alt=" View summary flowchart"/>
-      </div>
-      <div class="button"><a class="button_ghost" href=" ">All Flows</a></div>
+      <div class="button"><a class="button_ghost" href=" ">Individual Flows</a></div>
     </section>
     <!-- line -->
     <hr>
@@ -298,9 +326,15 @@
     <section class="content">
       <img class="icon" src="images/icon-content-strat.png" alt="content strategy icon"/>
       <h2>Sitemap & Content Strategy</h2>
-      <p>Then the sitemap and content strategy doc were drafted to detail how the pages within the application are going to be laid out as well as detail what is going to be on that page. The most challenging parts of the task were deciding what content should go on what page and how that page should be nested in the site. This was challenging because we wanted to stay within the project scope and MVP but still deliver an effective solution. We solved these problems by first creating a rough sitemap outline and then doing a few pre-wireframe sketches to help visualize page layout and necessary content. Using these tools a content strategy doc was completed and the sitemap drafted.</p>
-      <img class="sitemap" src="images/mood/ " alt="Sitemap"/>
-      <img class="sitemap" src="images/mood/pre-wireframe-sketches.jpg " alt="Pre-wireframe sketches"/>
+      <p>I then drafted the sitemap and content strategy doc to detail how the pages within the application are going to be laid out as well as detail what is going to be on that page. The most challenging parts of the task were deciding what content should go on what page and how that page should be nested in the site. This was challenging because We wanted to stay within the project scope and MVP but still deliver an effective solution. We solved these problems by first creating a rough sitemap outline and then doing a few pre-wireframe sketches to help visualize page layout and necessary content. Using these tools, a content strategy doc was completed and the sitemap drafted.</p>
+      <div class="flexContainer">
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/mood-sitemap.jpg" alt="Sitemap" style="width: 600px;"/>
+        </div>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/pre-wireframe-sketches.jpg" alt="pre-wireframe-sketches" style="width: 600px;"/>
+        </div>
+      </div>
     </section>
     <!-- line -->
     <hr>
@@ -313,12 +347,27 @@
       <div class="sketching-section">
         <h3>Initial (rough)</h3>
         <p>This first round of sketches was done very quickly and messily to get a first draft sketched out.</p>
-        <img class="rough-sketch " src="images/" alt="Initial sketches"/>
+        <div class="flexContainer">
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/sketching-1.jpeg" alt="Sketches" style="width: 600px;"/>
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/sketching-2.jpeg" alt="Sketches cont" style="width: 600px;"/>
+          </div>
+        </div>
       </div>
       <div class="sketching-section">
         <h3>Revised</h3>
         <p>After the first round of messy sketches cleaner and more detailed sketches were completed.</p>
-        <img class="rough-sketch " src="images/" alt="Iterative sketches"/>
+        <div class="flexContainer">
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/sketches-revised.jpg" alt="Revised Sketches" style="width: 600px;"/>
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/sketches-revised.jpg" alt="Revised Sketches cont" style="width: 600px;"/>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <!-- line -->
@@ -328,55 +377,22 @@
       <img class="icon" src="images/icon-wireframing.png" alt="wireframing icon"/>
       <h2>Wireframing - Initial</h2>
       <p>Upon iterative sketching and moving onto wireframing it became clear that one immediate iteration would be needed. After some additional confirmatory feedback it became clear that adding a series of on-boarding screens would ensure the most user friendly experience; and so on-boarding screens were added to explain the features of the application before signing up.</p>
-      <!--  Image lightbox (initial wireframe) -->
-      <div class="lightboxContainer">
-        <!-- img1 -->
-        <a href="#img1">
-            <img class="thumb" src="images/mood/wire-initial-moods.jpg">
-        </a>
-        <!-- first image box  -->
-        <div class="lightbox" id="img1">
-            <a href="#img3" class="light-btn btn-prev">prev</a>
-                <a href="#_" class="btn-close">X</a>
-                <img src="images/mood/wire-initial-moods.jpg">
-            <a href="#img2" class="light-btn btn-next">next</a>
+      <!--  FlexContainer - (initial wireframe) -->
+      <div class="flexContainer">
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/initial-onboardingframe.png" alt="onboarding" style="width:300px;">
         </div>
-        <!-- img2 -->
-        <a href="#img2">
-          <img class="thumb" src="images/mood/wire-initial-analysis.jpg">
-        </a>
-        <!-- second image box (img2) -->
-        <div class="lightbox" id="img2">
-            <a href="#img1" class="light-btn btn-prev">prev</a>
-                <a href="#_" class="btn-close">X</a>
-                <img src="images/mood/wire-initial-analysis.jpg">
-            <a href="#img3" class="light-btn btn-next">next</a>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/initial-summaryframe.png" alt="summary" style="width:300px;">
         </div>
-        <!-- img3 -->
-        <a href="#img3">
-          <img class="thumb" src="images/mood/wire-initial-security.jpg">
-        </a>
-        <!-- third image box  -->
-        <div class="lightbox" id="img3">
-            <a href="#img2" class="light-btn btn-prev">prev</a>
-                <a href="#_" class="btn-close">X</a>
-                <img src="images/mood/wire-initial-security.jpg">
-            <a href="#img4" class="light-btn btn-next">next</a>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/initial-newframe.png" alt="new entry" style="width:300px;">
         </div>
-        <!-- img3 -->
-        <a href="#img4">
-          <img class="thumb" src="images/mood/wire-initial-security.jpg">
-        </a>
-        <!-- fourth image box  -->
-        <div class="lightbox" id="img4">
-            <a href="#img3" class="light-btn btn-prev">prev</a>
-                <a href="#_" class="btn-close">X</a>
-                <img src="images/mood/wire-initial-security.jpg">
-            <a href="#img1" class="light-btn btn-next">next</a>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/initial-analysisframe.png" alt="mood analysis" style="width:300px;">
         </div>
       </div>
-      <!-- end lightbox -->
-      <div class="button"><a class="button_ghost" href=" ">All Frames</a></div>
+      <div class="button"><a class="button_ghost" href="https://www.figma.com/file/JaauC5FaYiuGVrmsmzuxd0/Mood-Frames-Public?node-id=0%3A1">All Frames</a></div>
     </section>
     <!-- line -->
     <hr>
@@ -385,63 +401,30 @@
       <img class="icon" src="images/icon-wireframing.png" alt="wireframing icon"/>
       <h2>Wireframing - Revised</h2>
       <p>After the first round of wireframes we realized that there were way too many on boarding screens for users to swipe through and many of these screens could be combined to create a more streamlined signup process. On-boarding images were also added and the drawer re-designed to better accommodate icons.</p>
-      <!--  Image lightbox (revised wireframe) -->
-      <div class="lightboxContainer">
-        <!-- img1 -->
-        <a href="#img1">
-            <img class="thumb" src="images/mood/.jpg">
-        </a>
-        <!-- first image box  -->
-        <div class="lightbox" id="img1">
-            <a href="#img3" class="light-btn btn-prev">prev</a>
-                <a href="#_" class="btn-close">X</a>
-                <img src="images/mood/.jpg">
-            <a href="#img2" class="light-btn btn-next">next</a>
+      <!--  FlexContainer - (revised wireframe) -->
+      <div class="flexContainer">
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/revised-onboardingframe.png" alt="onboarding" style="width:300px;">
         </div>
-        <!-- img2 -->
-        <a href="#img2">
-          <img class="thumb" src="images/mood/.jpg">
-        </a>
-        <!-- second image box (img2) -->
-        <div class="lightbox" id="img2">
-            <a href="#img1" class="light-btn btn-prev">prev</a>
-                <a href="#_" class="btn-close">X</a>
-                <img src="images/mood/.jpg">
-            <a href="#img3" class="light-btn btn-next">next</a>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/revised-summaryframe.png" alt="summary" style="width:300px;">
         </div>
-        <!-- img3 -->
-        <a href="#img3">
-          <img class="thumb" src="images/mood/.jpg">
-        </a>
-        <!-- third image box  -->
-        <div class="lightbox" id="img3">
-            <a href="#img2" class="light-btn btn-prev">prev</a>
-                <a href="#_" class="btn-close">X</a>
-                <img src="images/mood/.jpg">
-            <a href="#img4" class="light-btn btn-next">next</a>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/revised-newframe.png" alt="new entry" style="width:300px;">
         </div>
-        <!-- img3 -->
-        <a href="#img4">
-          <img class="thumb" src="images/mood/.jpg">
-        </a>
-        <!-- fourth image box  -->
-        <div class="lightbox" id="img4">
-            <a href="#img3" class="light-btn btn-prev">prev</a>
-                <a href="#_" class="btn-close">X</a>
-                <img src="images/mood/.jpg">
-            <a href="#img1" class="light-btn btn-next">next</a>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/revised-analysisframe.png" alt="mood analysis" style="width:300px;">
         </div>
       </div>
-      <!-- end lightbox -->
-      <div class="button"><a class="button_ghost" href=" ">Revised Frame Gallery</a></div>
+      <div class="button"><a class="button_ghost" href="https://www.figma.com/file/JaauC5FaYiuGVrmsmzuxd0/Mood-Frames-Public?node-id=28%3A2">Revised Frame Gallery</a></div>
     </section>
     <!-- line -->
     <hr>
     <!--wireframe user testing-->
     <section class="wireframe user testing">
         <img class="icon" src="images/icon-user-testing.png" alt="user testing icon"/>
-        <h2>Wireframe Usability Testing</h2>
-        <p>After the completion of the digital wireframes we did some quick informal user testing to assess the app’s usability. We tested the following tasks and made the proceeding changes:</p>
+        <h2>Testing the Wireframes</h2>
+        <p>After the completion of the digital wireframes some quick informal user testing was done to assess the app’s usability. I tested the following tasks and made the proceeding changes resulting in the revised wireframes.</p>
         <h5 class="left">Tasks Tested</h5>
         <ul class="color">
           <li>Sign up for an account</li>
@@ -455,7 +438,13 @@
           <li>There was a lot of confusion on how to navigate the on-boarding besides “skip”; <b>added a "next" button</li>
           <li>There was also some confusion and negative comments on the drawer layout; <b>redesigned the drawer to be full length instead of half-screen coming from the top.</b></p>
         </ul>
-        <img class="changes-img" src="images/" alt="Before and after img"/>
+        <div class="flexContainer">
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/onboarding-redesign.png" alt="Before and after img" style="width:600px;"/>
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/drawer-redesign.png" alt=" Drawer Redesign Before and after img" style="width:600px;"/>
+          </div>
     </section>
     <!--Visual design section divider-->
     <h2 class="process">Visual Design</h2>
@@ -463,128 +452,154 @@
     <section class="branding">
       <img class="icon" src="images/icon-brand.png" alt="Branding icon"/>
       <h2>Branding & Identity</h2>
-      <img class="mind-map" src="images/mood/ " alt="Branding mind map & thought list"/>
       <h4>Mind Map & Thought List</h4>
-      <p>I created a mind map and thought list while brainstorming the branding for this project to help visualize and create the Mood brand.</p>
+      <!-- mind-map and thought list -->
+      <div class="flexContainer">
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/mindmap-thoughtlist.jpg" alt="Branding mind map & thought list" style="width:600px;"/>
+        </div>
+        <div class="flexItem">
+          <p>I created a mind map and thought list while brainstorming the branding for this project to help visualize and create the Mood brand.</p>
+        </div>
+      </div>
       <div class="Brand">
         <h4>Brand Ideals</h4>
-        <p><strong>Calming</strong></p><br>
-        <p><strong>Modern</strong></p><br>
-        <p><strong>Secure</strong></p><br>
-        <p><strong>Creative</strong></p><br>
-        <p><strong>Colorful</strong></p><br>
+        <p><strong>Modern</strong> • With a minimalist interface, recognizable fonts, and a refined color palette Mood is a modern app built for the 21st century.</p><br>
+        <p><strong>Secure</strong> • All your private emotions and journals are stored within the application but your data never leaves your device so your private data stays private.</p><br>
+        <p><strong>Motivational</strong> • Motivates you to journal daily to record, analyze, and manage your emotional health.</p><br>
+        <p><strong>Colorful</strong> • Using preset or custom colors to represent associated emotions; visualize your moods in your yearly summary, monthly analysis, or daily journal.</p><br>
+        <p><strong>Calm</strong> • The use of a dark background and non-aggressive color scheme invoke calming feelings.</p><br>
       </div>
-      <div class="brand-colors">
-        <p>Using color palette of a soft rainbow gradient of colors for the logo and a bright turquoise as the highlight color paired with dark greys and white It gives the feeling of security, creativity, and refinement to the brand and app.</p>
-        <img src="images/mood/" alt="">
+      <h4>Brand Colors</h4>
+      <div class="FlexContainer">
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/colors.png" alt="brand colors" style="width:400px;"/>
+        </div>
+        <div class="flexItem">
+          <p>Using color palette of a soft rainbow gradient of colors for the logo and a bright turquoise as the highlight color paired with dark greys and white It gives the feeling of security, creativity, and refinement to the brand and app.</p>
+        </div>
       </div>
-        <div class="brand-typography">
+      <div class="flexContainer">
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/type.jpg" alt="typeography" style="width:400px;"/>
+        </div>
+        <div class="flexItem">
           <p>The use of “Lato” and “Raleway” as the two brand typefaces adds to the feeling of familiarity and security while still being unique; these typefaces also can both be found easily on google fonts.</p>
-        <img src="images/mood/" alt="">
+        </div>
       </div>
       <div class="dreamers-logo-development">
         <h4>Logo Development</h4>
-        <div>
-          <img src="images/ " alt="logo sketches"/>
+          <img class="logo_sketches" src="images/mood/logo-sketches.jpg" alt="Logo Sketches" style="width:600px;"/>
+          <p>After creating a mind map and thought list I couldn't let go of the name "Mood" for the project so I ran with that and started sketching out logo designs. After sketching out ideas I digitally re-created the best ones and quick preference test was done to determine which logo style would be further refined and developed to become the final Mood logo.</p>
         </div>
         <div>
-          <section class="preference-1">
-              <img class="icon" src="images/icon-pref-test.png"  alt="preference testing icon"/>
-              <h2>Preference Testing I</h2>
-                <p> </p>
-                <div class="main">
-                <!-- flexbox -->
-                  <div class="main_content">
-                    <img class="main_img " src="images/ " alt=" " style="width:100%">
-                    <h4>A</h4>
-                  </div>
-                  <div class="main_content">
-                    <img class="main_img " src="images/ " alt=" " style="width:100%">
-                    <h4>B</h4>
-                  </div>
-                  <div class="main_content">
-                    <img class="main_img " src="images/ " alt=" " style="width:100%">
-                    <h4>C</h4>
-                  </div>
-                  <div class="main_content">
-                    <img class="main_img" src="images/ " alt=" " style="width:100%">
-                    <h4>D</h4>
-                  </div>
-                </div>
-            </section>
-          </div>
-          <div>
-            <h5>Final Logo Design</h5>
-            <img>
-          </div>
+          <h5>Final Logo Design</h5>
+          <img>
+        </div>
         </div>
       </section>
+      <!-- line -->
+      <hr>
     <!-- mockup after branding-->
       <section class="initial">
         <img class="icon" src="images/icon-mockup.png" alt="mockup icon"/>
-        <h2>Hifi Mockup</h2>
+        <h2>Hifi Mockup I</h2>
         <p>After the completion of branding documents brand colors and logos were added into the mockup and a few other changes highlighted in the wireframe usability testing. First, the landing background gradient was changed to be more unique and modern to better fit the feel of the app. The images were changed to have the same highlight color to have a cohesive look and skip & next buttons were placed at the bottom so they are easy to find. The drawer was also changed back to a long drawer but it now takes up over 60% of the screen for better readability and usability.</p>
         <img class="device-frame" src="images/" alt=" device frame"/>
-        <div class="gallery">
-          <img class="gallery-img" src="images/" alt=" frame"/>
-          <img class="gallery-img" src="images/" alt=" frame"/>
-          <img class="gallery-img" src="images/" alt=" frame"/>
+        <!--  FlexContainer - (hifi 1) -->
+        <div class="flexContainer">
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-1-onboardingframe.png" alt="onboarding" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-1-summaryframe.png" alt="summary" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-1-newframe.png" alt="new entry" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-1-analysisframe.png" alt="mood analysis" style="width:300px;">
+          </div>
         </div>
         <div class="button"><a class="button_ghost" href="">Initial Frames</a></div>
       </section>
     <!-- line -->
       <hr>
-    <!--iteration I-->
+    <!--iteration II (hifi 2)-->
       <section class="iteration">
         <img class="icon" src="images/icon-iteration.png"  alt="design iteration icon"/>
-        <h2>Mockup - Iteration I</h2>
-        <p>We liked the look of the previous mockup but it didn’t invoke the feelings we wanted it to; something was missing. After some rethinking and brainstorming; we had an idea and Mood got a darker color scheme with a whole new feel. By eliminating the bright landing screen and changing the majority of the screen backgrounds to dark Mood took on a more sleek and modern look all while reducing eyestrain for short or extended periods of time. These frames made up the first formally script-tested prototype used in testing.</p>
-        <div class="gallery">
-          <img class="gallery-img" src="images/mood/.png" alt=" frame"/>
-          <img class="gallery-img" src="images/mood/.png" alt=" frame"/>
-          <img class="gallery-img" src="images/mood/.png" alt="frame"/>
-          <img class="gallery-img" src="images/mood/.png" alt="frame"/>
+        <h2>Hifi Mockup II</h2>
+        <p>We liked the look of the previous mockup but it didn’t invoke the feelings we wanted it to; something was missing. After some rethinking and brainstorming; we had an idea and Mood got a darker color scheme with a whole new feel. By eliminating the bright landing screen and changing the majority of the screen backgrounds to dark Mood took on a more sleek and modern look all while reducing eyestrain for short or extended periods of time.</p>
+        <!--  FlexContainer - (hifi 2) -->
+        <div class="flexContainer">
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-2-onboardingframe.png" alt="onboarding" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-2-summaryframe.png" alt="summary" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-2-newframe.png" alt="new entry" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-2-analysisframe.png" alt="mood analysis" style="width:300px;">
+          </div>
         </div>
         <div class="button"><a class="button_ghost" href="">All Frames</a></div>
       </section>
     <!-- line -->
       <hr>
-    <hr>
-    <!--preference test II-->
-    <section class="preference-2">
+      <!--Prototype I (hifi 3)-->
+      <section class="iteration">
+        <img class="icon" src="images/icon-iteration.png"  alt="design iteration icon"/>
+        <h2>Prototype I</h2>
+        <p>After completing a few minor changes and finalizing the previous frames I created a testing script and used Invision to create and test the first interactive prototype for a round of formal user testing.</p>
+          <!--  FlexContainer - (hifi 3) -->
+        <div class="flexContainer">
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-3-onboardingframe.png" alt="onboarding" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-3-summaryframe.png" alt="summary" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-3-newframe.png" alt="new entry" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-3-analysisframe.png" alt="mood analysis" style="width:300px;">
+          </div>
+        </div>
+        <div class="button"><a class="button_ghost" href="">Initial Prototype</a></div>
+      </section>
+      <!-- line -->
+      <hr>
+    <!--preference test I-->
+      <section class="preference">
         <img class="icon" src="images/icon-pref-test.png" alt="preference test icon"/>
         <h2>Preference Testing</h2>
-        <p></p>
+        <p>During iterations, I was conflicted on the colors for the splash and landing page designs so I created and deployed a preference test to get some feedback and finalize my decision.</p>
         <div class="test-section">
-          <h5>Preference Test - Landing Page</h5>
-          <p></p>
           <div class="main">
             <div class="main_content">
-              <img class="option" src="images/" alt="Option A" style="width:100%">
+              <img class="option" src="images/mood/option1.png" alt="Option A" style="width:100%">
               <p class="centered">A</p>
             </div>
             <div class="main_content">
-              <img class="option" src="images/" alt="Option B" style="width:100%">
+              <img class="special" src="images/mood/option2.png" alt="Option B" style="width:100%">
               <p class="centered">B</p>
             </div>
-            <div class="main_content">
-              <img class="special" src="images/" alt="Option C" style="width:100%">
-              <p class="centered"><b>C</b></p>
-            </div>
           </div>
+          <h5>Results</h5>
+          <p>The results were very conclusive with option B receiving 75% of responses. This turned out to be a very helpful and successful preference test because the majority of responses received aligned with the Mood brand and ideals as well as overall project design.</p>
         </div>
     </section>
-    <!-- line -->
-    <hr>
-    <!-- line -->
-    <hr>
     <!-- line -->
     <hr>
     <!-- Prototype and Testing -->
     <section class="prototype and testing">
         <img class="icon" src="images/icon-user-testing.png" alt="user testing icon"/>
         <h2>Usability Testing II</h2>
-        <p>Two formal in-person usability tests were done on two different types of potential users utilizing the prototype below and a testing script. </p>
+        <p>Two formal in-person usability tests were done on two different types of potential users utilizing the testing script below to create the same testing conditions for each user tested.</p>
         <h5 class="left">Tasks Tested</h5>
         <ul class="color">
           <li>Sign up for an account</li>
@@ -603,28 +618,54 @@
         </ul>
         <div class="button"><a class="button_ghost" href="">Testing Script</a></div>
     </section>
-    <!-- iteration 2 -->
-    <section class="iteration-2">
+    <!-- line -->
+    <hr>
+    <!-- prototype II -->
+    <section class="iteration-4">
       <img class="icon" src="images/icon-iteration.png"  alt="design iteration icon"/>
-      <h2>Mockup - Iteration II</h2>
+      <h2>Prototype II</h2>
       <p>After completing the changes and fixing the issues found during user testing a more detailed prototype was created; now with a demo feature to try the app before signing up and set daily reminder interactivity. </p>
-      <div class="gallery">
-        <img class="gallery-img" src="images/mood/.png" alt=" frame"/>
-        <img class="gallery-img" src="images/mood/.png" alt=" frame"/>
-        <img class="gallery-img" src="images/mood/.png" alt="frame"/>
-        <img class="gallery-img" src="images/mood/.png" alt="frame"/>
+      <!--  FlexContainer - (hifi 4) -->
+      <div class="flexContainer">
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/hifi-4-onboardingframe.png" alt="onboarding" style="width:300px;">
+        </div>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/hifi-4-summaryframe.png" alt="summary" style="width:300px;">
+        </div>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/hifi-4-newframe.png" alt="new entry" style="width:300px;">
+        </div>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/hifi-4-analysisframe.png" alt="mood analysis" style="width:300px;">
+        </div>
       </div>
       <div class="button"><a class="button_ghost" href="">Frames</a></div>
     </section>
-
+    <!-- line -->
+    <hr>
     <!--final design-->
     <section class="final">
         <img class="icon" src="images/icon-final.png" alt="Final design icon"/>
-        <h2>Mockup - Final Iteration</h2>
-        <p>After finishing the changes from the user testing the opportunity arose to further refine and develop an interactive prototype. This time around both the frames and the prototype were made using Figma to help aid in rapid refinement and testing. This additional time to refine and prototype immensely benefited the project and lead to changes in button coloring, new entry process, and app-wide interactivity.
-Meet Mood, Refined.</p>
+        <h2>Prototype III</h2>
+        <p>After finishing the changes from the user testing the opportunity arose to further refine and develop an interactive prototype. This time around both the frames and the prototype were made using Figma to help aid in rapid refinement and testing. This additional time to refine and prototype immensely benefited the project and lead to changes in button coloring, new entry process, and app-wide interactivity.</p>
         <div class="prototpe"></div>
         <img class="desktop-frame img_hover" src="images/mood-summary-mobile.png" alt=" "/>
+        <!--  FlexContainer - (hifi 5 - final) -->
+        <div class="flexContainer">
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-5-onboardingframe.png" alt="onboarding" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-5-summaryframe.png" alt="summary" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-5-newframe.png" alt="new entry" style="width:300px;">
+          </div>
+          <div class="flexItem">
+            <img class="flexImg" src="images/mood/hifi-5-analysisframe.png" alt="mood analysis" style="width:300px;">
+          </div>
+        </div>
         <div class="button"><a class="button_ghost" href=" ">Live Prototype</a></div>
     </section>
     <!-- line -->
@@ -632,14 +673,14 @@ Meet Mood, Refined.</p>
     <!--design progression-dashboard-->
     <section class="progression">
         <img class="icon" src="images/icon-design-progress.png" alt="design progression icon"/>
-        <h2>Design Progression - Dashboard</h2>
+        <h2>Design Progression - New Entry</h2>
         <p> </p>
         <div class="progress">
-            <div class="progress-container"><img class="progress-img" src="images/ " alt=" "></div>
-            <div class="progress-container"><img class="progress-img" src="images/ " alt=" "></div>
-            <div class="progress-container"><img class="progress-img" src="images/ " alt=" " ></div>
-            <div class="progress-container"><img class="progress-img" src="images/ " alt=" " ></div>
-            <div class="progress-container"><img class="progress-img" src="images/ " alt=" "></div>
+            <div class="progress-container"><img class="progress-img" src="images/mood/hifi-1-newframe.png" alt=" "></div>
+            <div class="progress-container"><img class="progress-img" src="images/mood/hifi-2-newframe.png" alt=" "></div>
+            <div class="progress-container"><img class="progress-img" src="images/mood/hifi-3-newframe.png" alt=" " ></div>
+            <div class="progress-container"><img class="progress-img" src="images/mood/hifi-4-newframe.png" alt=" " ></div>
+            <div class="progress-container"><img class="progress-img" src="images/mood/hifi-5-newframe.png" alt=" "></div>
       </div>
     </section>
     <!-- line -->
