@@ -625,7 +625,7 @@ a {
 /*-- homepage case study preview background-box --*/
 .casePreview {
   display: block;
-  background-color: rgba(199, 255, 251,.1);
+  background-color: rgba(204, 219, 220,.1);
   height: auto;
   padding: 8%;
   width: 100%;
@@ -1151,9 +1151,12 @@ p.img_cap{
 
 .flexImg{
   height: auto;
+  width:200px;
   max-width: 100%;
 }
-
+.mini-section{
+  margin: 2rem auto;
+}
 /*---- about me page styles -----*/
 .about-me{
   margin: 4rem auto;
