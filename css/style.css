@@ -33,6 +33,10 @@ section {
   align-items: center;
   justify-content: center;
   margin: 10rem auto;
+  width: 90vw;
+}
+/* full width section container */
+section.projects{
   width: 100vw;
 }
 /*--header styles--*/
@@ -275,13 +279,11 @@ p.occupation{
   margin: 0;
   padding: 0;
 }
-/* used for case study preview paragraph text*/
+/* used for case study preview center text*/
 p.b{
   display: block;
   text-align: center;
-  margin: 2rem auto;
-  width: 100%;
-  max-width: 500px;
+  margin: 4rem auto;
 }
 p.cap {
   font-style: italic;
@@ -293,7 +295,7 @@ p.info{
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h5{font-size: 1.8rem;}
-  p{font-size: 1.6rem;}
+  p{ font-size: 1.6rem;}
   p.centered{font-size: 1.8rem;}
 
 }
@@ -306,6 +308,7 @@ p.info{
 b{
   font-weight: bold;
 }
+
 /*---- end typography styles ----*/
 
 /* large process-stage banners in case study (for spacing)*/
@@ -615,6 +618,7 @@ a {
   margin: 2rem;
   transition: .5s all;
 }
+
 /*-- my work case study preview background-box styles + (dreamers color) --*/
 .casePreview {
   display: block;
@@ -775,7 +779,7 @@ a {
 .device-frame{
   display: block;
   height: auto;
-  margin: 10rem auto 6rem auto;
+  margin: 4rem auto;
   width: 100%;
   max-width: 600px;
   transition: all .5s;
@@ -797,7 +801,7 @@ a {
   flex-wrap: wrap;
   width: 100%;
   max-width: 1100px;
-  margin:  4rem auto;
+  margin:  2rem auto;
   justify-content: center;
 }
 /* individual frame image in gallery */
@@ -807,9 +811,8 @@ a {
   filter: drop-shadow(0 0 5px #333);
   margin: 0 1rem;
   padding: 1rem;
-  width: 250px;
+  width: 100%;
   max-width: 250px;
-  transition: all .5s;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -831,7 +834,7 @@ a {
   max-width: 500px;
   height: auto;
 }
-/* user personas container*/
+/* user personas main container*/
 .main_three{
   display: flex;
   flex-wrap: wrap;
@@ -841,23 +844,24 @@ a {
   padding: 0 ;
   justify-content: center;
 }
+/* user personas individual container*/
 .persona-container{
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   grid-gap: 1rem;
-  margin: 2vw auto;
+  margin: 2vh auto;
   text-align: left;
   height: auto;
   padding: 0;
 }
+/* user persona name text*/
 h4.left{
   text-align: left;
 }
-@media only screen and (min-width : 1024px){
-  .main_three{max-width: 500px;}
-}
+
+/* user personas individual section container*/
 .persona-section{
   align-content:  center;
   background-color: white;
@@ -915,7 +919,6 @@ h4.left{
   width: 100%;
   max-width: 900px;
   margin: 6rem auto ;
-  padding: 2rem;
 }
 /*--user flow image--*/
 .flow_img {
@@ -1181,10 +1184,7 @@ iframe{
   margin: 0 auto;
   width: 90vw;
 }
-/*----- teal image hover -------*/
-.img_hover:hover{
-  filter: drop-shadow(0 0 30px #75E8DE);
-}
+
 /*-- footer styles --*/
 footer {
   background-color: #161616;
