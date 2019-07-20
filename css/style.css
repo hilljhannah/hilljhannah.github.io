@@ -621,9 +621,9 @@ a {
   width: 80px;
   height: auto;
 }
-/* icon - iPads (portrait and landscape) ----------- */
+/* icon size change - iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {.icon{width: 90px;}}
-/* icon - Desktops and laptops ----------- */
+/* icon size change - Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {.icon{width: 100px;}}
 /*-- homepage hero section flexbox --*/
 .homeHero{
@@ -808,6 +808,11 @@ a {
   max-width: 1100px;
   margin: 0 auto;
 }
+/* creates twp col on ipads and desktops ----------- */
+@media only screen and (min-device-width : 768px) {
+  .solu{grid-template-columns: 50% 50%;}
+}
+
 /* all device frames*/
 .device-frame{
   display: block;
@@ -847,15 +852,7 @@ a {
   width: 100%;
   max-width: 250px;
 }
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .solu{grid-template-columns: 50% 50%;}
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
 
-  .solu{grid-template-columns: 50% 50%;}
-}
 .wire{
   margin: 2rem auto;
 }
@@ -1129,24 +1126,20 @@ p.img_cap{
   max-width: 90vw;
   padding: 0 2rem ;
 }
-
 .progress > * {
   flex: 1 1 250px;
   margin: 10px;
 }
-
 .progress-container{
   max-width: 200px;
 }
-
-/* individual img styles */
+/* progress individual img styles */
 .progress-img{
   display: block;
   max-width: 200px;
   height: auto;
   transition: .5s all;
 }
-
 /*-- general flexbox img container--*/
 .flexContainer{
   align-items: center;
@@ -1159,7 +1152,6 @@ p.img_cap{
   max-width: 100vw;
   margin: 0 auto;
 }
-
 /* individual flex image/item div  */
 .flexItem{
   display: block;
@@ -1167,20 +1159,17 @@ p.img_cap{
   width: 100%;
   max-width: 200px;
 }
-
 /* frame image styles*/
 .flexImg{
   height: auto;
   width: 100%;
 }
-
 .flexDiv{
   display: block;
   padding: 1rem;
   width: 100%;
   max-width: 400px;
 }
-
 .wire-sketches-flex{
   width: 100%;
   max-width: 500px;
@@ -1207,14 +1196,25 @@ iframe{
   margin: 2rem auto;
 }
 /*-------- project3 (dailyui) page styles---------*/
+.project3-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100vw;
+}
 .img-container{
+  display: block;
   position: relative;
-  width: 50%
+  min-width: 300px;
+}
+/* creates two img columns on desktops */
+@media only screen and (min-width : 1224px) {
+  .img-container{max-width: 50vw;}
 }
 .dailyui-img{
   display: block;
   width:100%;
-  max-width: 800px;
+  max-width: 100vw;
 }
 .overlay{
   position: absolute;
@@ -1226,23 +1226,30 @@ iframe{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: inherit;
 }
+
 .img-container:hover .overlay {
   opacity: 1;
 }
 .text {
-  color: white;
   font-size: 20px;
+  font-family: inherit;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
 }
-
+/*-- h3 font color change classes for dailyui hover text --*/
+h3.black {
+  color: black;
+}
+h3.white {
+  color: white;
+}
 /*-------- my work page styles---------*/
 .work{
   margin: 4rem auto;
