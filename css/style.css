@@ -187,6 +187,7 @@ h3 {
   font-family: 'Lato';
   font-size: 2.2rem;
   font-weight: 300;
+  margin: 0 auto;
   text-align: center;
   width: 100%;
   max-width: 700px;
@@ -739,7 +740,7 @@ a {
 @media only screen and (max-device-width : 1024px) {
   div.col-2:nth-child(2){margin-top: 8rem;}
 }
-/*--background hero box in case study--*/
+/*------ hero section styles (in project files)--*/
 .hero{
   background-color: rgba(22, 22, 22,.01);
   display: block;
@@ -1243,12 +1244,18 @@ iframe{
   transform: translate(-50%, -50%);
   text-align: left;
 }
-/*-- h3 font color change classes for dailyui hover text --*/
-h3.black {
+/*-- h3 + p font color change classes for dailyui img hover text --*/
+.black {
   color: black;
+  text-align: left;
 }
-h3.white {
+.white {
   color: white;
+  text-align: left;
+}
+/*-- disables image hover overlay on ipad and mobile screens --*/
+@media only screen and (max-device-width : 1024px) {
+  .text{opacity: 0;}
 }
 /*-------- my work page styles---------*/
 .work{
