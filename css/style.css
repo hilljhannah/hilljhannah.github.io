@@ -187,6 +187,7 @@ h3 {
   font-family: 'Lato';
   font-size: 2.2rem;
   font-weight: 300;
+  margin: 0 auto;
   text-align: center;
   width: 100%;
   max-width: 700px;
@@ -201,7 +202,7 @@ h3.left{
   color: #333;
   font-weight: 300;
   margin: 2rem auto;
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: 500px;
 }
@@ -580,39 +581,7 @@ a {
   .button{font-size: 1.8rem;}
   .button_ghost{font-size: 2.2rem; padding: 2.5rem 8rem;}
 }
-/*-- project1 (dreamers button color) style+hover */
-.button_ghost.project1{
-  border: 4px solid #D2C0DC !important;
-  transition: all .5s ease 0s;
-}
-.button_ghost.project1:hover{
-  background: #D2C0DC;
-  border-color: #D2C0DC !important;
-  border-radius: 40px;
-  color: black !important;
-}
-/*-- project2 (mood button color) style+hover */
-.button_ghost.project2{
-  transition: all .5s ease 0s;
-  border: 4px solid #3DD0D0 !important;
-}
-.button_ghost.project2:hover{
-  background: #3DD0D0;
-  border-color: #3DD0D0 !important;
-  border-radius: 40px;
-  color: black !important;
-}
-/*-- project3 (dailyui button color) style+hover */
-.button_ghost.project3{
-  border: 4px solid #A8FF4E !important;
-  transition: all .5s ease 0s;
-}
-.button_ghost.project3:hover{
-  background: #A8FF4E;
-  border-color: #A8FF4E !important;
-  border-radius: 40px;
-  color: black !important;
-}
+
 /* ---section icons--- */
 .icon {
   display: block;
@@ -621,9 +590,9 @@ a {
   width: 80px;
   height: auto;
 }
-/* icon - iPads (portrait and landscape) ----------- */
+/* icon size change - iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {.icon{width: 90px;}}
-/* icon - Desktops and laptops ----------- */
+/* icon size change - Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {.icon{width: 100px;}}
 /*-- homepage hero section flexbox --*/
 .homeHero{
@@ -658,10 +627,7 @@ a {
   width: 100%;
   margin: 2.5rem auto;
 }
-/* mood box margin */
-.casePreview.mood{
-  margin-top: 2vw;
-}
+
 /*- case study preview content box -*/
 .prevBox{
   display: flex;
@@ -739,7 +705,7 @@ a {
 @media only screen and (max-device-width : 1024px) {
   div.col-2:nth-child(2){margin-top: 8rem;}
 }
-/*--background hero box in case study--*/
+/*------ hero section styles (in project files)--*/
 .hero{
   background-color: rgba(22, 22, 22,.01);
   display: block;
@@ -758,7 +724,7 @@ a {
 }
 /*-- background color for dailyui box--*/
 .dailyui{
-  background-color: rgba(252, 102, 113, 0.05);
+  background-color: rgba(118, 234, 225, 0.5);
 }
 .hero_img{
   display: block;
@@ -808,6 +774,11 @@ a {
   max-width: 1100px;
   margin: 0 auto;
 }
+/* creates twp col on ipads and desktops ----------- */
+@media only screen and (min-device-width : 768px) {
+  .solu{grid-template-columns: 50% 50%;}
+}
+
 /* all device frames*/
 .device-frame{
   display: block;
@@ -847,15 +818,7 @@ a {
   width: 100%;
   max-width: 250px;
 }
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .solu{grid-template-columns: 50% 50%;}
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
 
-  .solu{grid-template-columns: 50% 50%;}
-}
 .wire{
   margin: 2rem auto;
 }
@@ -1129,24 +1092,20 @@ p.img_cap{
   max-width: 90vw;
   padding: 0 2rem ;
 }
-
 .progress > * {
   flex: 1 1 250px;
   margin: 10px;
 }
-
 .progress-container{
   max-width: 200px;
 }
-
-/* individual img styles */
+/* progress individual img styles */
 .progress-img{
   display: block;
   max-width: 200px;
   height: auto;
   transition: .5s all;
 }
-
 /*-- general flexbox img container--*/
 .flexContainer{
   align-items: center;
@@ -1159,7 +1118,6 @@ p.img_cap{
   max-width: 100vw;
   margin: 0 auto;
 }
-
 /* individual flex image/item div  */
 .flexItem{
   display: block;
@@ -1167,20 +1125,17 @@ p.img_cap{
   width: 100%;
   max-width: 200px;
 }
-
 /* frame image styles*/
 .flexImg{
   height: auto;
   width: 100%;
 }
-
 .flexDiv{
   display: block;
   padding: 1rem;
   width: 100%;
   max-width: 400px;
 }
-
 .wire-sketches-flex{
   width: 100%;
   max-width: 500px;
@@ -1205,6 +1160,67 @@ iframe{
   width: 100%;
   max-width: 100vw;
   margin: 2rem auto;
+}
+/*-------- project3 (dailyui) page styles---------*/
+.project3-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100vw;
+}
+.img-container{
+  display: block;
+  position: relative;
+  min-width: 300px;
+}
+/* creates two img columns on desktops */
+@media only screen and (min-width : 1224px) {
+  .img-container{max-width: 50vw;}
+}
+.dailyui-img{
+  display: block;
+  width:100%;
+  max-width: 100vw;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: inherit;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  font-size: 20px;
+  font-family: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+/*-- h3 + p font color change classes for dailyui img hover text --*/
+.black {
+  color: black;
+  text-align: left;
+}
+.white {
+  color: white;
+  text-align: left;
+}
+/*-- disables image hover overlay on ipad and mobile screens --*/
+@media only screen and (max-device-width : 1024px) {
+  .text{opacity: 0;}
 }
 /*-------- my work page styles---------*/
 .work{
@@ -1328,7 +1344,7 @@ input[type=email]{
 }
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
- background-color: #91FE21;
+ background-color: #76EAE1;
  border: none;
  border-radius: 4px;
  color: #333;
@@ -1343,7 +1359,8 @@ input[type=submit] {
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
- background-color: #70DD00;
+ background-color: #00FFEB;
+ color: black;
 }
 
 /*contact styles end*/
