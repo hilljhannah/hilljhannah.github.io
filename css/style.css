@@ -724,7 +724,7 @@ a {
 }
 /*-- background color for dailyui box--*/
 .dailyui{
-  background-color: rgba(118, 234, 225, 0.5);
+  background-color: rgba(118, 234, 225, 0.25);
 }
 .hero_img{
   display: block;
