@@ -202,7 +202,7 @@ h3.left{
   color: #333;
   font-weight: 300;
   margin: 2rem auto;
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: 500px;
 }
@@ -581,39 +581,7 @@ a {
   .button{font-size: 1.8rem;}
   .button_ghost{font-size: 2.2rem; padding: 2.5rem 8rem;}
 }
-/*-- project1 (dreamers button color) style+hover */
-.button_ghost.project1{
-  border: 4px solid #D2C0DC !important;
-  transition: all .5s ease 0s;
-}
-.button_ghost.project1:hover{
-  background: #D2C0DC;
-  border-color: #D2C0DC !important;
-  border-radius: 40px;
-  color: black !important;
-}
-/*-- project2 (mood button color) style+hover */
-.button_ghost.project2{
-  transition: all .5s ease 0s;
-  border: 4px solid #3DD0D0 !important;
-}
-.button_ghost.project2:hover{
-  background: #3DD0D0;
-  border-color: #3DD0D0 !important;
-  border-radius: 40px;
-  color: black !important;
-}
-/*-- project3 (dailyui button color) style+hover */
-.button_ghost.project3{
-  border: 4px solid #A8FF4E !important;
-  transition: all .5s ease 0s;
-}
-.button_ghost.project3:hover{
-  background: #A8FF4E;
-  border-color: #A8FF4E !important;
-  border-radius: 40px;
-  color: black !important;
-}
+
 /* ---section icons--- */
 .icon {
   display: block;
@@ -659,10 +627,7 @@ a {
   width: 100%;
   margin: 2.5rem auto;
 }
-/* mood box margin */
-.casePreview.mood{
-  margin-top: 2vw;
-}
+
 /*- case study preview content box -*/
 .prevBox{
   display: flex;
@@ -759,7 +724,7 @@ a {
 }
 /*-- background color for dailyui box--*/
 .dailyui{
-  background-color: rgba(252, 102, 113, 0.05);
+  background-color: rgba(118, 234, 225, 0.5);
 }
 .hero_img{
   display: block;
@@ -1379,7 +1344,7 @@ input[type=email]{
 }
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
- background-color: #91FE21;
+ background-color: #76EAE1;
  border: none;
  border-radius: 4px;
  color: #333;
@@ -1394,7 +1359,8 @@ input[type=submit] {
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
- background-color: #70DD00;
+ background-color: #00FFEB;
+ color: black;
 }
 
 /*contact styles end*/
