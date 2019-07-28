@@ -5,26 +5,24 @@
 html {
   background-color: white;
   color: #333;
-  font-size: 10px;
   font-family: "Open Sans";
+  font-size: 10px;
   max-width: 100vw;
 }
 
 body{
-  align-items: center;
   height: 100%;
   width: 100%;
-  justify-content: center;
 }
 .container{
   background-color: white;
   display: grid;
   grid-template-columns: 1fr ;
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  padding: 0;
   height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
 }
 /* process sections */
 section {
@@ -73,25 +71,25 @@ nav{
 }
 /*-- my logo --*/
 .logo {
-  display: inline-block;
-  vertical-align: middle;
   border-right: 1px solid #76EAE1;
-  padding-right: 2rem;
-  width: 100%;
+  display: inline-block;
   max-width: 50px;
   margin: 0 auto;
+  padding-right: 2rem;
+  vertical-align: middle;
+  width: 100%;
 }
 /* non-link text in navbar*/
 h1 {
   color: white;
   display: inline-block;
-  vertical-align: middle;
   font-family: 'Lato';
   font-weight: 400;
   font-size: 1.6rem;
   font-style: normal;
   margin: 0 auto;
   padding-left: 2rem;
+  vertical-align: middle;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -466,16 +464,19 @@ a {
   font-size: 1.2rem;
   color:#333;
 }
+
 .button {
     display: block;
     margin: 0 auto;
     font-family: "Lato";
     font-weight: 500;
     height: 100%;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
 }
+
 .outline{
   margin: 0 auto;
   border: 2px solid #76EAE1;
@@ -565,6 +566,7 @@ a {
   transition: all .5s ease 0s;
   padding: 2.5rem 6rem;
 }
+
 .button_ghost:hover {
   background: #FC6671;
   border-color: #FC6671 !important;
@@ -574,12 +576,12 @@ a {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   .button{font-size: 1.6rem;}
-  .button_ghost{font-size: 2.2rem; padding: 2.5rem 7rem;}
+  .button_ghost{font-size: 1.8rem; padding: 2.5rem 7rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
   .button{font-size: 1.8rem;}
-  .button_ghost{font-size: 2.2rem; padding: 2.5rem 8rem;}
+  .button_ghost{font-size: 2rem; padding: 2.5rem 8rem;}
 }
 
 /* ---section icons--- */
