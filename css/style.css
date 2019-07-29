@@ -448,7 +448,7 @@ dd {
   padding: 1rem;
 }
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
   li,dt,dd{font-size: 1.6rem;}
 }
 /* Desktops and laptops ----------- */
