@@ -30,7 +30,7 @@ section {
   font-weight: normal;
   align-items: center;
   justify-content: center;
-  margin: 10rem auto;
+  padding: 5rem 0 0 0;
   width: 90vw;
 }
 /* full width section container */
@@ -41,17 +41,18 @@ section.projects{
 header {
   align-items: center;
   justify-content: space-between;
-  background-color: #161616;
+  background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   height: 100px;
   width: 100vw;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 /*header div1 (logo+h1)*/
 .h1Logo{
   display: block;
-  margin: 0 5% ;
+  max-height: 80px;
 }
 .links{
   margin: 0 auto;
@@ -61,8 +62,7 @@ nav{
   align-items: center;
   display: grid;
   justify-content: center;
-  grid-template-columns: 25% 25% 50%;
-  margin-right: 5%;
+  grid-template-columns: 33% 33% 33%;
   width: 100%;
   max-width: 450px;
   padding: 0 ;
@@ -73,32 +73,40 @@ nav{
 .logo {
   border-right: 1px solid #76EAE1;
   display: inline-block;
-  max-width: 50px;
-  margin: 0 auto;
+  margin: 0 1rem;
   padding-right: 2rem;
   vertical-align: middle;
-  width: 100%;
+  max-height: 50px;
+}
+span{
+  color: #161616;
+  display: inline-block;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 3rem;
+  font-style: normal;
+  margin: 0 1rem;
+  vertical-align: middle;
 }
 /* non-link text in navbar*/
 h1 {
-  color: white;
+  color: #161616;
   display: inline-block;
   font-family: 'Lato';
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 3.6rem;
   font-style: normal;
   margin: 0 auto;
-  padding-left: 2rem;
   vertical-align: middle;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h1{font-size: 1.6rem;}
+  h1{font-size: 3.8rem;}
   nav{max-width: 500px;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h1{font-size: 1.8rem;}
+  h1{font-size: 4.2rem;}
 }
 /*-- navbar link text -- */
 .linkBox{
@@ -107,7 +115,7 @@ h1 {
 .link{
   border-bottom: 1px solid black;
   display: block;
-  color: white;
+  color: blue;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -136,57 +144,35 @@ h1 {
 /* section headers */
 h2{
   display: block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 4.2rem;
-  margin: 1rem auto 4rem auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  margin: 1rem auto 2rem auto;
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 200;
-  color: #1B9D9D;
+  font-weight: 500;
+  color: #333;
   width: 100%;
   max-width: 900px;
 }
-/* large project intro description font */
-h2.display{
-  display: block;
-  color: #333;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  width: 100%;
-  max-width: 90vw;
-  margin: .3rem auto 1rem auto;
-}
-/*left aligned h2*/
 h2.left{
-  display: block;
-  color: #1B9D9D;
-  text-shadow: -.4px 0, 0 .4px, .4px 0, 0 -.4px;
   text-align: left;
-  padding: 0;
-  font-size: 5.8rem;
-  margin: 0;
 }
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h2{font-size: 4.8rem;}
-  h2.left{font-size: 6.8rem; }
-  h2.display{max-width: 900px;}
+  h2{font-size: 3.2rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h2{font-size: 5.2rem;}
-  h2.left{font-size: 7.8rem; }
-  h2.display{max-width: 1000px;}
+  h2{font-size: 3.4rem;}
 }
 /* h3 text */
 h3 {
   color: #333;
   font-family: 'Lato';
   font-size: 2.2rem;
-  font-weight: 300;
-  margin: 0 auto;
-  text-align: center;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
   width: 100%;
   max-width: 700px;
 }
@@ -199,7 +185,7 @@ h3.left{
   display: block;
   color: #333;
   font-weight: 300;
-  margin: 2rem auto;
+  margin: 0;
   text-align: left;
   width: 100%;
   max-width: 500px;
@@ -598,10 +584,10 @@ a {
 @media only screen  and (min-width : 1224px) {.icon{width: 100px;}}
 /*-- homepage hero section flexbox --*/
 .homeHero{
+  background-color: #f5f5f5;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 90vw;
 }
 /* content in hero flexbox */
 .hero_content{
@@ -619,75 +605,74 @@ a {
   margin: 2rem;
   transition: .5s all;
 }
-
-/*-- my work case study preview background-box styles + (dreamers color) --*/
-.casePreview {
-  display: block;
-  background-color: rgba(210, 192, 220,.2);
-  height: auto;
-  padding: 2rem;
-  width: 100%;
-  margin: 2.5rem auto;
-}
-
-/*- case study preview content box -*/
-.prevBox{
+.card_container{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto ;
-  width: 100%;
-  max-width: 100vw;
-  align-items: center;
-  justify-content: center;
-}
-/* text content in casePreview */
-.preview_content{
-  display: block;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  max-width: 600px;
-  padding: 0;
-  margin: 2rem auto;
-}
-/* device frame in preview box*/
-.preview_frame{
-  display: block;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  max-width: 600px;
-  padding: 0;
-  margin: 2rem auto;
-}
-/* logo in my work */
-.dreamers-logo{
-  display: block;
-  width: 100%;
-  max-width: 400px;
   margin: 0 auto;
-}
-/* mood logo */
-.mood-logo{
-  display: block;
   width: 100%;
-  max-width: 350px;
-  margin:  0 auto;
-  padding:  0 5rem;
+  align-content: space-between;
+  justify-content: center;
+}
+.card{
+  background-color: white;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  transition: 0.25s;
+  display: block;
+  height: 500px;
+  width: 500px;
+  margin: 1%;
+  overflow: hidden;
+  position:relative;
+}
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* card image */
+.card_image{
+  background-color: #f5f5f5;
+  display: block;
+  max-height: 60%;
+  overflow: hidden;
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-/* desktop device frame in casePreview (preview box on home and work pages) */
-.home_frame{
+/* text content in card */
+.card_content{
   display: block;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  margin: 2rem auto;
-  padding: 0;
+  padding: 2rem;
 }
-/* mobile mood device frame from preview box*/
-.home_frame.mood_frame{
-  max-width: 400px;
+
+.card_button{
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-top: 1px solid grey;
+  border-radius: 0 0 2px 2px;
+  margin: 0;
+  position: absolute;
+  right:    0;
+  bottom:   0;
+  width: 100%;
+}
+a.card_button_text{
+  padding: 2rem;
+  text-align: left;
+  margin: 0;
 }
 /*-- lists on homepage - flexbox --*/
 .homeToolkit{
