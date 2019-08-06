@@ -4,7 +4,7 @@
     <title>Case Study | Dreamers</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,400i,600|Oswald:200,300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,800|Open+Sans:300,400,400i,600|Oswald:200,300,500,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -12,10 +12,7 @@
       <section class="container">
     <!--Navbar section-->
         <header>
-          <div class="h1Logo" href="index.html">
-            <img class="logo" src="images/hannahhill-logo.png" alt="My Personal logo"/>
-            <span>Hannah Hill</span>
-          </div>
+          <img class="myLogo" src="images/mylogo-blue.png" href="index.html" alt="My Personal logo"/>
           <nav>
             <div class="linkBox"><a class="link" href="work.html">My Work</a></div>
             <div class="linkBox" id="hidden"><a class="link" href="about.html">About Me</a></div>
@@ -28,9 +25,9 @@
               <h1>Hello, my name is Hannah.</h1>
               <p>I create limitless user experiences for the web utilizing UX/UI design & Frontend development in </p>
             </div>
-            <div>
-          <!--large map image-->
-              <img class="map" src="images/mpls-map.jpg" alt="Minneapolis, MN map"/>
+            <!--large map image-->
+            <div class="index_image_container">
+              <img class"index_image" src="images/me.png" alt="My Portrait" style="max-height: 100vh;"/>
             </div>
           </section>
         <!-- My work case study preview section -->
@@ -48,7 +45,7 @@
             </div>
             <!-- project2 card - mood -->
             <div class="card">
-              <div class="card_image"><img class="card_image" src=images/mood-real-three.png alt="Mood display"></div>
+              <div class="card_image"><img class="card_image" src=images/mood-card.png alt="Mood display"></div>
               <div class="card_content">
                 <h3 class="left">Mood</h3>
                 <p>Lead Visual Designer, Interaction Designer, and Branding Designer for Mood; a mobile emotional journaling application prototype.</p>
@@ -57,7 +54,7 @@
             </div>
             <!-- project1 card - dreamers -->
             <div class="card">
-              <div class="card_image"><img class="card_image" src=images/final-login-frame.png alt="gold macbook device frame"></div>
+              <div class="card_image"><img class="card_image" src=images/dreamers-card.png alt="gold macbook device frame"></div>
               <div class="card_content">
                 <h3 class="left">Dreamers</h3>
                 <p>Lead Visual, Interaction Designer, and Branding Designer for Dreamers; a desktop cloud storage and organization prototype.</p>
@@ -107,11 +104,10 @@
           </section> -->
       <!-- page footer-->
         <footer>
-          <div class="contact">
-            <div class="button"><a class="outline foot"  href="form.html">Contact Me</a></div>
-            <div class="button"><a class="outline foot" href="https://www.linkedin.com/in/hannah-j-hill/">Connect on Linkedin</a></div>
-          </div>
-          <h6>Hannah Hill - UX/UI Designer & Frontend Developer</h6>
+          <h6>Hannah Hill</h6>
+          <h6>UX UI Designer + Frontend Developer</h6>
+          <h6 class="highlight">Resume</h6>
+          <a href="form.html"><h6 class="highlight">Contact</h6></a>
         </footer>
       </section>
     </main>

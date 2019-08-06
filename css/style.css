@@ -26,16 +26,17 @@ body{
 }
 /* process sections */
 section {
+  align-items: center;
   display: block;
   font-weight: normal;
-  align-items: center;
   justify-content: center;
-  padding: 5rem 0 0 0;
-  width: 90vw;
+  margin: 0 auto;
+  padding: 5rem 0 ;
+  width: 100vw;
 }
 /* full width section container */
-section.projects{
-  width: 100vw;
+section.smallWidth{
+  width: 90vw;
 }
 /*--header styles--*/
 header {
@@ -43,20 +44,12 @@ header {
   justify-content: space-between;
   background-color: #FFFFFF;
   display: flex;
-  flex-wrap: wrap;
   height: 100px;
-  width: 100vw;
-  margin: 0 auto;
+  width: 90vw;
   padding: 0 2rem;
-}
-/*header div1 (logo+h1)*/
-.h1Logo{
-  display: block;
-  max-height: 80px;
-}
-.links{
   margin: 0 auto;
 }
+
 /*second header div (nav links +button)*/
 nav{
   align-items: center;
@@ -66,34 +59,23 @@ nav{
   width: 100%;
   max-width: 450px;
   padding: 0 ;
-  grid-gap: 5%;
-
 }
 /*-- my logo --*/
-.logo {
-  border-right: 1px solid #76EAE1;
+.myLogo {
   display: inline-block;
-  margin: 0 1rem;
-  padding-right: 2rem;
   vertical-align: middle;
   max-height: 50px;
 }
-span{
-  color: #161616;
-  display: inline-block;
-  font-family: 'Lato';
-  font-weight: 600;
-  font-size: 3rem;
-  font-style: normal;
-  margin: 0 1rem;
-  vertical-align: middle;
+/*-- general use grey background */
+.bg-color{
+  background-color: #f5f5f5;
 }
-/* non-link text in navbar*/
+/* h1 text */
 h1 {
-  color: #161616;
+  color: #0091A5;
   display: inline-block;
   font-family: 'Lato';
-  font-weight: 400;
+  font-weight: 700;
   font-size: 3.6rem;
   font-style: normal;
   margin: 0 auto;
@@ -113,30 +95,28 @@ h1 {
   margin: 0 auto;
 }
 .link{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #0091A5;
   display: block;
-  color: blue;
+  color: #0091A5;
   font-family: 'Lato';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.6rem;
   margin: 0 auto;
   justify-content: center;
   padding: 0 0 5px 0;
-  text-transform: uppercase;
-  transition: .4s;
+  transition: .25s;
   width: 100%;
 }
-.link:hover{border-bottom: 1px dotted #76EAE1;}
+.link:hover{border-bottom: 1px dotted #161616; color: #161616;}
 @media only screen and (max-width: 600px){
     #hidden{ display: none;}
-    nav{grid-template-columns: 40% 60%; width: 100%; max-width: 220px;}
+    nav{grid-template-columns: 50% 50%; width: 100%; max-width: 220px;}
 }
 /* hides large links on smallest screens*/
 @media only screen and (max-width: 1024px){
-  h1{display: none;}
   header{margin: 0 auto;}
-  .logo{margin: 0;}
+  .myLogo{margin: 0;}
 
 }
 
@@ -145,11 +125,11 @@ h1 {
 h2{
   display: block;
   font-family: 'Lato', sans-serif;
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin: 1rem auto 2rem auto;
   text-align: center;
-  font-weight: 500;
-  color: #333;
+  font-weight: 600;
+  color: #0091a5;
   width: 100%;
   max-width: 900px;
 }
@@ -159,17 +139,17 @@ h2.left{
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h2{font-size: 3.2rem;}
+  h2{font-size: 2.8rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h2{font-size: 3.4rem;}
+  h2{font-size: 3.0rem;}
 }
 /* h3 text */
 h3 {
   color: #333;
   font-family: 'Lato';
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 500;
   margin: 0;
   text-align: left;
@@ -184,7 +164,7 @@ h3.b{
 h3.left{
   display: block;
   color: #333;
-  font-weight: 300;
+
   margin: 0;
   text-align: left;
   width: 100%;
@@ -194,7 +174,7 @@ h3.left{
 h4 {
   color: #333;
   font-family: 'Lato';
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
   padding-top: 4rem;
@@ -208,13 +188,13 @@ h4.left{
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h3, h3.left {font-size: 2.4rem;}
-  h4{font-size: 2.2rem; }
+  h3, h3.left {font-size: 2.2rem;}
+  h4{font-size: 2rem; }
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h3, h3.left {font-size: 2.6rem;}
-  h4{font-size: 2.4rem; }
+  h3, h3.left {font-size: 2.4rem;}
+  h4{font-size: 2.2rem; }
 }
 /*-- headers inside text --*/
 h5{
@@ -276,6 +256,15 @@ p.cap {
 p.info{
   margin-top: 0;
   width: 100%;
+}
+.highlight{
+  color: #0091A5;
+  text-align: center;
+  width: 200px;
+}
+.highlight:hover{
+  text-decoration: underline #0091A5;
+  cursor: pointer;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -472,65 +461,13 @@ a {
   font-size: 1.4rem;
   font-weight: 400;
   color: white;
-  transition: all .5s ;
 }
 .outline:hover{
-  animation-name: gradient , border;
-  animation-duration: 1.0s;
-  animation-iteration-count: infinite;
   border: 0;
   border-radius: 50px;
   color: black;
 }
-/* end rainbow button styles*/
-@keyframes  gradient{
-  0% {background-color: inherit;}
-  0% {background-color: #66fcf1;}
-  5% {background-color: #66fcf1;}
-  10% {background-color: #64d6fc;}
-  15% {background-color: #64b0fc;}
-  20% {background-color: #6464fc;}
-  25% {background-color: #8a64fc;}
-  30% {background-color: #b064fc;}
-  35% {background-color: #d664fc;}
-  40% {background-color: #fc64fc;}
-  45% {background-color:  #fc64d6;}
-  50% {background-color:  #fc64b0;}
-  55% {background-color:  #fc648a;}
-  60% {background-color:  #fc6464;}
-  65% {background-color:  #fc8a64;}
-  70% {background-color:  #fcb064;}
-  75% {background-color:  #fcfc64;}
-  80% {background-color:  #8afc64;}
-  85% {background-color:  #64fc64;}
-  90% {background-color:  #64fcb0;}
-  95% {background-color:  #64fcd6;}
-  100% {background-color:  #66fcf1;}
-}
-@keyframes  border{
-  0% {border-color: inherit;}
-  0% {border-color: #66fcf1;}
-  5% {border-color: #66fcf1;}
-  10% {border-color: #64d6fc;}
-  15% {border-color: #64b0fc;}
-  20% {border-color: #6464fc;}
-  25% {border-color: #8a64fc;}
-  30% {border-color: #b064fc;}
-  35% {border-color: #d664fc;}
-  40% {border-color: #fc64fc;}
-  45% {border-color:  #fc64d6;}
-  50% {border-color:  #fc64b0;}
-  55% {border-color:  #fc648a;}
-  60% {border-color:  #fc6464;}
-  65% {border-color:  #fc8a64;}
-  70% {border-color:  #fcb064;}
-  75% {border-color:  #fcfc64;}
-  80% {border-color:  #8afc64;}
-  85% {border-color:  #64fc64;}
-  90% {border-color:  #64fcb0;}
-  95% {border-color:  #64fcd6;}
-  100% {border-color:  #66fcf1;}
-}
+
 @media only screen and (max-width: 600px){
   .outline{margin: 0 auto; padding: 1rem 2rem; font-size: 1.6rem; }
   .link, .links{font-size: 1.4rem; margin: 0 auto;}
@@ -585,25 +522,30 @@ a {
 /*-- homepage hero section flexbox --*/
 .homeHero{
   background-color: #f5f5f5;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  padding: 0;
+  width: 100vw;
 }
-/* content in hero flexbox */
+/* content in hero grid */
 .hero_content{
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   align-content: center;
   justify-content: center;
+  margin: 0 auto;
 }
-/*- homepage Minneapolis map -*/
-.map {
+/*- homepage image (me) -*/
+img.index_image {
   display: block;
-  height: auto;
-  width: 90%;
-  max-width: 600px;
-  margin: 2rem;
-  transition: .5s all;
+  margin: 0 auto;
+}
+.index_image_container{
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
 }
 .card_container{
   display: flex;
@@ -634,6 +576,7 @@ a {
 .card:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 /* card image */
 .card_image{
   background-color: #f5f5f5;
@@ -642,6 +585,7 @@ a {
   overflow: hidden;
   display: block;
   border-radius: 2px 2px 0 0;
+  padding: 1rem ;
   position: relative;
   left: 0;
   right: 0;
@@ -652,8 +596,9 @@ a {
 
 /* text content in card */
 .card_content{
-  display: block;
-  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
 }
 
 .card_button{
@@ -669,11 +614,14 @@ a {
   bottom:   0;
   width: 100%;
 }
-a.card_button_text{
+.card_button_text{
   padding: 2rem;
   text-align: left;
   margin: 0;
+  font-family: 'Lato';
+  font-size: 1.6rem;
 }
+
 /*-- lists on homepage - flexbox --*/
 .homeToolkit{
   align-items: start;
@@ -694,42 +642,31 @@ a.card_button_text{
 }
 /*------ hero section styles (in project files)--*/
 .hero{
-  background-color: rgba(22, 22, 22,.01);
+  background-color: #f5f5f5;
   display: block;
   align-content: center;
   height: auto;
   margin: 0 auto;
-  padding: 6rem 1rem;
   width: 100vw;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
 }
-.dreamers{
-  background-color: rgba(210, 192, 220,.1);
-}
-/*-- background color for mood box--*/
-.mood{
-  background-color: #69CDC814;
-}
-/*-- background color for dailyui box--*/
-.dailyui{
-  background-color: rgba(118, 234, 225, 0.25);
-}
-.hero_img{
+
+.hero_container{
   display: block;
   margin: 0 auto;
-  padding: 2rem 0;
-  width: auto;
-  height: 100%;
-  max-height: 600px;
+  width: 100%;;
+  height: 600px;
+  overflow: hidden;
 }
-/* hero case study frame*/
+
+/* hero image in projects*/
 .hero_device {
   display: block;
-  padding: 1rem;
-  margin: 6rem auto;
-  max-width: 1000px;
-  width: 100%;
-  height: auto;
-  transition: all .5s;
+  height: 900px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 .mobile-device{
   max-width: 700px;
@@ -790,25 +727,27 @@ a.card_button_text{
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1100px;
+  width: 100vw;
   margin:  2rem auto;
   justify-content: center;
 }
 /* individual frame image in gallery */
+.gallery-img-div{
+  border: 1px grey solid;
+  display: block;
+  margin: 0 1rem;
+  width: 100%;
+  max-width: 300px;
+  max-height: 215px;
+  overflow: scroll;
+}
 .gallery-img{
   display: block;
-  align-self: center;
-  filter: drop-shadow(0 0 5px #333);
-  margin: 0 1rem;
-  padding: 1rem;
   width: 100%;
-  max-width: 250px;
+  height: 100%;
+
 }
 
-.wire{
-  margin: 2rem auto;
-}
 /* project logo in case study */
 .project-Logo {
   display: block;
@@ -948,7 +887,7 @@ img.center-img{
 .logo-dev-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   margin: 2rem auto;
 }
@@ -956,6 +895,7 @@ img.center-img{
 .dev-content{
   width: 100%;
   margin: 2rem auto;
+  max-width: 215px;
 }
 /*individual logo image styles*/
 .dev-img{
@@ -963,7 +903,6 @@ img.center-img{
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  max-width: 600px;
 }
 /* img caption for logos */
 p.img_cap{
@@ -1024,13 +963,16 @@ p.img_cap{
   align-content: center;
   width: 100%;
   max-width: 1100px;
-  margin: 4rem auto;
+  margin: 0 auto;
 }
 /* testing choices content */
  .main_content{
+   border: 1px solid grey;
    width: 100%;
    max-width: 280px;
-   margin: 2rem 2rem 0 2rem;
+   max-height: 200px;
+   overflow: scroll;
+   padding: 0;
  }
  .main > * {
    flex: 1 1 250px;
@@ -1039,17 +981,18 @@ p.img_cap{
  .main_img{
    max-width: 280px;
    transition: .5s all;
+
 }
 /* choice img */
 .option{
   max-width: 100%;
-  padding: 1rem;
+  padding: 2px;
   transition: .5s all;
 }
 /* highlighted winner */
 .special{
   border: 1px solid red;
-  padding: 1rem;
+  padding: 2px;
   transition: .5s all;
 }
 /*-- brand colors img styles-- */
@@ -1247,6 +1190,7 @@ h6 {
   font-size: 1.2rem;
   text-align: center;
   margin: 0 auto ;
+  line-height: 2rem;
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
