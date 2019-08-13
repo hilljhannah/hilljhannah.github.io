@@ -11,7 +11,9 @@
     <section class="container">
     <!--Navbar section-->
       <header>
-        <img class="myLogo" src="images/mylogo-blue.png" href="index.html" alt="My Personal logo"/>
+        <div><a href="index.html">
+          <img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/>
+        </a></div>
         <nav>
           <div class="linkBox"><a class="link" href="work.html">My Work</a></div>
           <div class="linkBox" id="hidden"><a class="link" href="about.html">About Me</a></div>
@@ -20,33 +22,31 @@
       </header>
 
     <!-- Hero Section -->
-    <section class="hero mood">
-      <img class="mood-logo project_logo" src="images/mood/mood-logo.png" alt="Mood logo">
-      <img class="mobile-device hero_device" src="images/mood-real-three.png" alt="Mood Hero Image">
-      <h2 class="display">A colorful, free way to journal and track your emotional health; for everyone.</h2>
-      <div class="button"><a class="button_ghost" href="https://www.figma.com/proto/KafKLqGzsiWGkOScJrb3Kc/Mood-Prototype-Final?node-id=129%3A4&viewport=1540%2C222%2C0.27309&scaling=scale-down">Live Prototype</a></div>
+    <section class="hero">
+      <a href="https://www.figma.com/proto/KafKLqGzsiWGkOScJrb3Kc/Mood-Prototype-Final?node-id=129%3A4&viewport=1540%2C222%2C0.27309&scaling=scale-down">
+        <div class="hero_container">
+          <img class="hero_device" src="images/mood-card.png" alt="Mood Frames">
+        </div>
+      </a>
     </section>
     <!-- 3-col lists (roles, deliverables, tools) -->
     <section class="role">
       <!--roles-->
       <div class="col3">
-        <div class="icon">
-          <img class="icon" src="images/icon-roles.png" alt="roles icon">
-        </div>
-        <h2>Roles</h2>
+        <h2>My Roles</h2>
         <ul class="middle color">
-          <li>UX design</li>
-          <li>User Interface Design</li>
-          <li>Visual design</li>
-          <li>Branding</li>
+          <li>Lead UX Designer</li>
+          <li>Lead UI Designer</li>
+          <li>Lead Visual Designer</li>
+          <li>Branding Lead</li>
         </ul>
       </div>
       <!--deliverables-->
       <div class="col3">
-        <img class="icon" src="images/icon-deliverables.png" alt="deliverables icon"/>
-        <h2>Deliverables</h2>
+        <h2>Project Deliverables</h2>
         <ul class="middle color">
           <li>User survey</li>
+          <li>User survey Analysis</li>
           <li>User personas</li>
           <li>Competitive analysis</li>
           <li>User stories</li>
@@ -55,16 +55,15 @@
           <li>Sketches</li>
           <li>Wireframes</li>
           <li>High fidelity Mockup(s)</li>
-          <li>Prototype(s)</li>
-          <li>Prototype testing</li>
-          <li>Branding</li>
+          <li>Prototypes (three)</li>
+          <li>Prototype user testing</li>
+          <li>Logo + brand style guide</li>
           <li>Usability testing</li>
         </ul>
       </div>
       <!--tools-->
       <div class="col3">
-        <img class="icon" src="images/icon-toolbox.png" alt="toolkit icon"/>
-        <h2>Tools</h2>
+        <h2>Tools Used</h2>
         <ul class="middle color">
           <li>Figma</li>
           <li>Invision</li>
@@ -72,75 +71,36 @@
         </ul>
       </div>
     </section>
-    <!-- line -->
-    <hr>
-    <!--project overview-->
-    <section class=”overview”>
-      <div>
-        <img class="icon" src="images/icon-overview.png" alt="overview icon">
-      </div>
-      <h2>Project Overview</h2>
-      <p>In today's world a significant amount of our lives are spent interacting with technology to better ourselves and our lives yet when it comes to managing mental health there is a complete lack of minimalist options in the market today. Noticing this absence we wanted to change that and create a visually appealing, minimalist app to help its users track and record their moods to help identify trends and help improve its users mental health.</p>
-    </section>
-    <!--line-->
-    <hr>
     <!--project problem-->
     <section class="problem">
-      <div>
-        <img class="icon" src="images/icon-problem.png" alt="problem icon">
-      </div>
       <h2>Problem</h2>
       <p>There is a significant lack of ways to track and journal mental health in this modern, fast-paced world we live in. The average person could benefit from simply being aware of their emotional state and how their year and month have been going and could greatly improve their mental health this way. Yet the current barren app market doesn't reflect this; the apps that do exist in the market are either expensive with no free option or have outdated and unfriendly user interfaces.</p>
       <p>The project also had no brand identity.</p>
     </section>
-    <!--line-->
-    <hr>
     <!--solution-->
     <section class=”solution>
-      <div>
-        <img class="icon" src="images/icon-solution.png" alt="Lightbulb icon">
-      </div>
       <h2>Solution</h2>
-      <div class="solu">
+      <!--div class="solu">
         <div class=”solu_content”>
           <p>After extensive user research, personas, wireframing, testing, prototyping, countless iterations, and branding the concept of Mood was born; a free, easy, and colorful way to track and record your moods and emotional health throughout the year. Featuring daily reminders with a customizable time so you never miss an entry, the ability to analyze yearly mood summary to receive a detailed breakdown of your emotional health, exportable journal for personal records or sharing with a mental health professional, and a short and sweet journal prompt so you end every journal on a happy and positive note.</p>
         </div>
         <div>
           <img class="solution_frame device-frame" src="images/mood-hand.png" alt="Mood preview frames"/>
         </div>
-      </div>
+      </div-->
     </section>
-<!--Discovery section divider-->
-    <h2 class="process">Discovery & Research</h2>
     <!--user survey research-->
     <section class="research">
-      <img class="icon" src="images/icon-user-research.png" alt="Magnifying glass icon"/>
-      <h2>User Survey Research</h2>
-      <p>I crafted a user survey and sent it out to my fellow designers, friends, family, and a few subreddits to give me to broadest possible pool of surveyors and responses to help me discover my target audience and learn the following:</p>
-      <ul class="color">
-        <li>How well known are mental health/mood apps?</li>
-        <li>Are they currently being used?</li>
-        <li>Are there any user concerns?</li>
-      </ul>
-      <div class="survey-results">
-        <h5 class="left ">Key Findings:</h5>
-        <ul class="color">
-          <li><b>57%</b> reported being aware of mental health/mood tracking and journal apps</li>
-          <li><b>29%</b> have ever used a mental health / mood app yet only <b>11%</b> still use one.</li>
-          <li><b>54%</b> reported having concerns over mental health tracking and journal apps</li>
-          <li><b>Privacy, Security, and Anonymity</b> were the top three concerns.</li>
-        </ul>
-      </div>
-      <div class="button"><a class="button_ghost" href="https://docs.google.com/document/d/1yVbMNQPpQ4DRLo7baUfvpbm0Ro3c3IKtmYFjotRS1Jo/edit?usp=sharing">Survey Summary</a></div>
+      <h2>Discovery & Research</h2>
+      <p>We asked 30+ users about their mental health journaling experience via a user survey and discovered that 57% reported being aware of mental health journaling apps yet only 29% have ever used, and only 11% still used one. We then used this information to create 3 user personas and defined their expirences in a mental health/mood app using user stories and user flows.</p>
     </section>
-    <!--line-->
-    <hr>
-    <!--user personas-->
+
+    <!--user personas
     <section class="personas">
       <img class="icon" src="images/icon-user-persona.png" alt="user personas icon"/>
       <h2>User Personas</h2>
       <p>After analyzing the discoveries from the user survey, the competitive analysis, and SWOT table I discovered three core user groups and created user personas for them. </p>
-      <!--persona gallery-->
+      persona galler
         <div class="main_three">
           <div class="persona-container" >
             <div class="images"><img class="persona-img" src="images/mood/stressed-student-img.png" alt="Stressed Student img"></div>
@@ -213,27 +173,26 @@
           </div>
         </div>
     </section>
-    <!-- line-->
-    <hr>
-    <!--competitive analysis-->
+
+    competitive analysis
     <section class="comp-analysis">
       <img class="icon" src="images/icon-comp-analysis.png" alt="competitive analysis icon">
       <h2>Competitive Analysis</h2>
       <p>After completing the user survey and analyzing the results three main competitors became apparent; Moodnotes, MoodTrack, and a Year in Pixels. After discovering the main competitors a SWOT table and competitive analysis were done on these three apps to discover more about the potential competition our app will face.</p>
       <div class="SWOT">
-        <!--Moodnotes-->
+        <!-Moodnotes->
         <div class="competitor">
           <img class="comp_img" src="images/mood/moodnotes-logo.png" alt="Moodnotes logo" style="width:100px;">
           <p><b>Moodnotes</b><br>Moodnotes allows its users to record their moods using colors and emoji-like faces, then prompting users with a series of questions to journal and help the user figure out why they are feeling the way that they are.</p>
           <p>However, there is <b>no free version</b> of the app offered, only a single paid version for $4.99+ tax on the app store. Because of this many users that could benefit immensely from this app are <b>unable to even access a reduced version of it for free.</b> The fact that there is no formal way to try out the app and only a few product screenshots to give users an idea of the product they are purchasing makes this a very very niche product not something for anyone looking to better themselves.</p>
         </div>
-        <!--MoodTrack-->
+        <!-MoodTrack->
         <div class="competitor">
           <img class="comp_img" src="images/mood/moodtrack-logo.png" alt="MoodTrack Journal and Diary logo" style="width:100px;">
           <p><b>Moodtrack Social Diary</b><br>MoodTrack has a strong social aspect with the "everyone" public feed with an anonymous chat feature and search feature so users can search and follow friends, family, or therapists by username. Users can see how others are feeling and anonymously chat with them.</p>
           <p>However, all diary entries and moods in the free app are <b>automatically publicly posted</b> on a nearby user feed along with the user's screen name unless the app is upgraded to the paid version. The app itself feels outdated with bland colors and random imagery and very unintuitive user interface.  The application icon itself also looks very similar to many other well-known apps. This coupled with the fear of <b>very sensitive private information</b> being continually publicly available causes users to look for a better solution.</p>
         </div>
-        <!--Year in Pixels -->
+        <!-Year in Pixels ->
         <div class="competitor">
           <img class="comp_img" src="images/mood/yearinpixels-logo.png" alt="A Year in Pixels" style="width:100px;">
           <p><b>A Year in Pixels</b><br>A Year in Pixels has a simple layout and offers its users the ability to see their moods analyzed in a monthly pie chart or graph with percentages for each mood entered that month.</p>
@@ -245,9 +204,9 @@
         <p>During this section of the process a lot was learned about what current apps are doing well and what they are doing very wrong. It was discovered that while Moodnotes was the most user intuitive and well designed app the paywall barrier was a huge setback and turnoff for many users. Year in Pixels had the best concept for a free app but the poor font choices and the constant adds at the bottom and throughout the app coupled with a poor UI were a huge problem. MoodTrack was not much better with an outdated UI and everything posted is public unless it was paid for.</p>
       </div>
     </section>
-    <!--Information Architecture section divider-->
+    <!-Information Architecture section divider->
     <h2 class="process">Information Architecture</h2>
-    <!--User stories-->
+    <!-User stories->
     <section class="stories">
         <img class="icon" src="images/icon-user-stories.png" alt="user stories icon"/>
         <h2>User Stories</h2>
@@ -268,9 +227,7 @@
           <li>“As a new or returning user, I want to view app settings”</li>
         </ul>
     </section>
-    <!-- line -->
-    <hr>
-    <!--user flows-->
+    <!-user flows->
     <section class="flows">
       <img class="icon" src="images/icon-user-flow.png" alt="Flows icon"/>
       <h2>User Flows</h2>
@@ -285,31 +242,29 @@
       </div>
       <div class="button"><a class="button_ghost" href="https://drive.google.com/drive/folders/1y-7ENVc0MhFgymGqNOVu0JjroSR9pdbd?usp=sharing">All Flows</a></div>
     </section>
-    <!-- line -->
-    <hr>
-    <!--content strategy-->
+
+    <!-content strategy->
     <section class="content">
       <img class="icon" src="images/icon-content-strat.png" alt="content strategy icon"/>
       <h2>Sitemap & Content Strategy</h2>
       <p>I then drafted the sitemap and content strategy doc to detail how the pages within the application are going to be laid out as well as detail what is going to be on that page.</p>
       <img class="sitemap"  src="images/mood/mood-sitemap.png" alt="Sitemap" style="max-width: 600px;"/>
+    </section-->
+    <section class="the-process">
+      <h2>The Design Process</h2>
     </section>
-    <!-- line -->
-    <hr>
     <!-- wireframe sketching-->
-    <section class="sketching">
-      <img class="icon" src="images/icon-sketching.png" alt="sketching icon"/>
-      <h2>Wireframe Sketching</h2>
-      <p>Before committing wireframes to Figma, wireframe sketches were created on paper to aid in rapid prototyping and allow quick iterations. This turned out to be specifically beneficial for this project because two rounds of sketching iterations the app already went through helped make the creation and iteration of the multiple rounds of plain wireframes go much faster and easier.</p>
-      <!--initial sketches section-->
+    <section class="sketching bg-color">
+      <h2>Sketching</h2>
+      <p>Before committing wireframes to Figma, wireframe sketches were created on paper to aid in rapid prototyping and allow quick iterations.</p>
       <div class="sketching-section">
-        <h5 class="left">Initial (rough)</h5>
+        <h3>Initial (rough)</h3>
         <p>This first round of sketches was done very quickly and messily to get a first draft sketched out.</p>
         <img class="sketches" src="images/mood/rough-sketches.jpg" alt="Sketches"/>
       </div>
       <div class="sketching-section">
-        <h5 class="left">Revised</h5>
-        <p>After the first round of messy sketches cleaner and more detailed sketches were completed.</p>
+        <h3>Revised</h3>
+        <p>After the first round of messy sketches cleaner and more detailed sketches were completed.</p> -->
         <div class="flexContainer">
           <div class="flexDiv">
             <img class="wire-sketches-flex" src="images/mood/sketches-revised.jpg" alt="Revised Sketches"/>
@@ -320,13 +275,12 @@
         </div>
       </div>
     </section>
-    <!-- line -->
-    <hr>
+
     <!--wireframing-->
     <section class="wireframing">
-      <img class="icon" src="images/icon-wireframing.png" alt="wireframing icon"/>
       <h2>Wireframing</h2>
-      <p>Upon iterative sketching and moving onto wireframing it became clear that one immediate iteration would be needed. After some additional confirmatory feedback it became clear that adding a series of on-boarding screens would ensure the most user friendly experience; and so on-boarding screens were added to explain the features of the application before signing up.</p>
+      <h3>Wireframing I</h3>
+      <p>Upon iterative sketching and moving onto wireframing it became clear that one immediate iteration would be needed. After some additional confirmatory feedback via usability testing it became clear that adding a series of on-boarding screens would ensure the most user friendly experience; and so on-boarding screens were added to explain the features of the application before signing up.</p>
       <!--  FlexContainer - (initial wireframe) -->
         <div class="flexContainer">
           <div class="flexItem">
@@ -345,13 +299,10 @@
             <img class="flexImg" src="images/mood/wireframe-initial-summary-drawer.jpg" alt="drawer">
           </div>
         </div>
-      <div class="button"><a class="button_ghost" href="https://drive.google.com/open?id=1m0vNWZH2bxnBwGFWvvd3lmoYfiUIbBf7">Initial Wireframes</a></div>
+      <!--<div class="button"><a class="button_ghost" href="https://drive.google.com/open?id=1m0vNWZH2bxnBwGFWvvd3lmoYfiUIbBf7">Initial Wireframes</a></div-->
     </section>
-    <!--line-->
-    <hr>
-    <section class="wireframing">
-      <img class="icon" src="images/icon-wireframing.png" alt="wireframing icon"/>
-      <h2>Wireframing - Revised</h2>
+    <section class="wireframing bg-color">
+      <h3>Wireframing II</h3>
       <p>After the first round of wireframes we realized that there were way too many on boarding screens for users to swipe through and many of these screens could be combined to create a more streamlined signup process. On-boarding images were also added and the drawer re-designed to better accommodate icons.</p>
       <!--  FlexContainer - (revised wireframe) -->
       <div class="flexContainer">
@@ -371,63 +322,14 @@
           <img class="flexImg" src="images/mood/wireframe-revised-summary-drawer.jpg" alt="drawer">
         </div>
       </div>
-      <div class="button"><a class="button_ghost" href="https://drive.google.com/open?id=1P2ZmUkRe_VTJlLAycHnUch2HZ38EAZvk">Revised Frames</a></div>
+      <!--div class="button"><a class="button_ghost" href="https://drive.google.com/open?id=1P2ZmUkRe_VTJlLAycHnUch2HZ38EAZvk">Revised Frames</a></div-->
     </section>
 
-    <!-- line -->
-    <hr>
-    <!--wireframe user testing-->
-    <section class="wireframe user testing">
-        <img class="icon" src="images/icon-user-testing.png" alt="user testing icon"/>
-        <h2>Testing the Wireframes</h2>
-        <p>After the completion of the digital wireframes some quick informal user testing was done to assess the app’s usability. I tested the following tasks and made the proceeding changes resulting in the revised wireframes.</p>
-        <h5 class="left">Tasks Tested</h5>
-        <ul class="color">
-          <li>Sign up for an account</li>
-          <li>Record a new journal entry</li>
-          <li>Analyze summary</li>
-          <li>View settings</li>
-          <li>Add new mood</li>
-        </ul>
-        <h5 class="left">Issues/Changes</h5>
-        <p>There was a lot of confusion on how to navigate the on-boarding besides “skip”, so a "next" button was added.</p>
-        <img class="changes-img" src="images/mood/onboarding-redesign.png" alt="Before and after img"/>
-        <p>Due to additional confusion and negative comments on the drawer layout, the drawer was also redesigned to be full length instead of half-screen coming from the top.</p>
-        <img class="changes-img" src="images/mood/drawer-redesign.png" alt=" Drawer Redesign Before and after img"/>
-    </section>
-    <!--Visual design section divider-->
-    <h2 class="process">Visual Design</h2>
-    <!--branding & identity-->
-    <section class="branding">
-      <img class="icon" src="images/icon-brand.png" alt="Branding icon"/>
-      <h2>Branding & Identity</h2>
-      <!-- mind-map and thought list -->
-      <img class="moodboard" src="images/mood/mindmap-thoughtlist.jpg" alt="Branding mind map & thought list" />
-      <h4>Mind Map & Thought List</h4>
-      <p>I created a mind map and thought list while brainstorming the branding for this project to help visualize and create the Mood brand.</p>
-      <div class="Brand">
-        <h4>Brand Ideals</h4>
-        <p><strong> Modern • </strong>With a minimalist interface, recognizable fonts, and a refined color palette Mood is a modern app built for the 21st century.</p><br>
-        <p><strong> Secure • </strong>All your private emotions and journals are stored within the application but your data never leaves your device so your private data stays private.</p><br>
-        <p><strong> Motivational • </strong>Motivates you to journal daily to record, analyze, and manage your emotional health.</p><br>
-        <p><strong> Colorful • </strong>Using preset or custom colors to represent associated emotions; visualize your moods in your yearly summary, monthly analysis, or daily journal.</p><br>
-        <p><strong> Calm • </strong>The use of a dark background and non-aggressive color scheme invoke calming feelings.</p><br>
-        <h4>Colors</h4>
-        <img class="colors" src="images/mood/colors.png" alt="brand colors"/>
-        <p>Using color palette of a soft rainbow gradient of colors for the logo and a bright turquoise as the highlight color paired with dark greys and white It gives the feeling of security, creativity, and refinement to the brand and app.</p>
-        <h4>Logo Design</h4>
-        <img class="sketches" src="images/mood/logo-sketches.jpg" alt="Logo Sketches"/>
-        <p>After creating a mind map and thought list I settled on the name "Mood" for the project and started sketching out logo designs. After sketching out ideas I digitally re-created a few of the best ideas and settled on  and quick preference test was done to determine which logo style would be further refined and developed to become the final Mood logo.</p>
-        <img class="logoDesign" src="images/mood/mood-logos.jpg" alt="mood full logo">
-      </div>
-    </section>
-      <!-- line -->
-      <hr>
     <!-- mockup after branding-->
-      <section class="initial">
-        <img class="icon" src="images/icon-mockup.png" alt="mockup icon"/>
-        <h2>Hifi Mockup</h2>
-        <p>After the completion of branding documents brand colors and logos were added into the mockup and a few other changes highlighted in the wireframe usability testing. First, the landing background gradient was changed to be more unique and modern to better fit the feel of the app. The images were changed to have the same highlight color to have a cohesive look and skip & next buttons were placed at the bottom so they are easy to find. The drawer was also changed back to a long drawer but it now takes up over 60% of the screen for better readability and usability.</p>
+      <section class="initial bg-color">
+        <h2>Hifi Mockups</h2>
+        <h3>Hifi I</h3>
+        <p>After gaining feedback during wireframe usability testing a few key changes were made. First, the landing background gradient was changed to be more unique and modern to better fit the feel of the app. The images were changed to have the same highlight color to have a cohesive look and skip & next buttons were placed at the bottom so they are easy to find. The drawer was also changed back to a long drawer but it now takes up over 60% of the screen for better readability and usability.</p>
         <!--  FlexContainer - (hifi 1) -->
         <div class="flexContainer">
           <div class="flexItem">
@@ -446,14 +348,11 @@
             <img class="flexImg" src="images/mood/hifi-1-summary-drawer.jpg" alt="drawer">
           </div>
         </div>
-        <div class="button"><a class="button_ghost" href="https://drive.google.com/open?id=1AY5rP5uqMmWSXFY-yllAY11uDyMzskBM">Initial Frames</a></div>
       </section>
-    <!-- line -->
-      <hr>
+
     <!--iteration II (hifi 2)-->
       <section class="iteration">
-        <img class="icon" src="images/icon-iteration.png"  alt="design iteration icon"/>
-        <h2>Hifi Mockup II</h2>
+        <h3>Hifi II</h3>
         <p>We liked the look of the previous mockup but it didn’t invoke the feelings we wanted it to; something was missing. After some rethinking and brainstorming; we had an idea and Mood got a darker color scheme with a whole new feel. By eliminating the bright landing screen and changing the majority of the screen backgrounds to dark Mood took on a more sleek and modern look all while reducing eyestrain for short or extended periods of time.</p>
         <!--  FlexContainer - (hifi 2) -->
         <div class="flexContainer">
@@ -473,25 +372,23 @@
             <img class="flexImg" src="images/mood/hifi-2-summary-drawer.jpg" alt="drawer">
           </div>
         </div>
-        <div class="button"><a class="button_ghost" href="https://drive.google.com/open?id=1fM2ZAlsIGVb4s7f3ZBkX7wu45gXIGVan">All Frames</a></div>
       </section>
-    <!-- line -->
-      <hr>
+
       <!--Prototype I (hifi 3)-->
-      <section class="iteration">
-        <img class="icon" src="images/icon-iteration.png"  alt="design iteration icon"/>
-        <h2>Prototype - Initial</h2>
+      <section class="iteration bg-color">
+        <h2>Prototype(s)</h2>
+        <h3>Prototype I</h3>
         <p>After completing a few minor changes and finalizing the previous frames I created a testing script and used Invision to create and test the first interactive prototype for a round of formal user testing.</p>
           <!--  FlexContainer - (hifi 3) -->
           <div class="flexContainer">
-            <div class="flexItem">
-              <img class="flexImg" src="images/mood/proto-1-new-df.jpg" alt="prototype 1 new frame">
-            </div>
             <div class="flexItem">
               <img class="flexImg" src="images/mood/proto-1-signup-df.jpg" alt="prototype 1 signup frame">
             </div>
             <div class="flexItem">
               <img class="flexImg" src="images/mood/proto-1-summary-df.jpg" alt="prototype 1 summary frame">
+            </div>
+            <div class="flexItem">
+              <img class="flexImg" src="images/mood/proto-1-new-df.jpg" alt="prototype 1 new frame">
             </div>
             <div class="flexItem">
               <img class="flexImg" src="images/mood/proto-1-analysis-df.jpg" alt="prototype 1 analysis frame">
@@ -502,81 +399,20 @@
           </div>
         <div class="button"><a class="button_ghost" href="https://invis.io/8US4N4DN52C">Prototype I</a></div>
       </section>
-      <!-- line -->
-      <hr>
-    <!--preference test I-->
-      <section class="preference">
-        <img class="icon" src="images/icon-pref-test.png" alt="preference test icon"/>
-        <h2>A/B Testing</h2>
-        <p>During iterations, I was conflicted on the colors for the splash and landing page designs so I created and deployed a quick A/B preference test to get some feedback and finalize my decision.</p>
-        <div class="test-section">
-          <div class="main">
-            <div class="main_content">
-              <img class="option" src="images/mood/option1.png" alt="Option A" style="width:100%">
-              <p class="centered">A</p>
-            </div>
-            <div class="main_content">
-              <img class="option" src="images/mood/option2.png" alt="Option B" style="width:100%">
-              <p class="centered">B</p>
-            </div>
-          </div>
-        </div>
-        <h5 class="left">Results</h5>
-        <p>The results were very conclusive with option B receiving 75% of responses. This turned out to be a very helpful and successful preference test because the majority of responses received aligned with the Mood brand and ideals as well as overall project design.</p>
-        <div class="test-section">
-          <div class="main">
-            <div class="main_content">
-              <img class="option" src="images/mood/option1.png" alt="Option A" style="width:100%">
-              <p class="centered">A</p>
-            </div>
-            <div class="main_content">
-              <img class="special" src="images/mood/option2.png" alt="Option B" style="width:100%">
-              <p class="centered">B</p>
-            </div>
-          </div>
-        </div>
-    </section>
-    <!-- line -->
-    <hr>
-    <!-- Prototype and Testing -->
-    <section class="prototype and testing">
-        <img class="icon" src="images/icon-user-testing.png" alt="user testing icon"/>
-        <h2>Usability Testing II</h2>
-        <p>Two formal in-person usability tests were done on two different types of potential users utilizing the testing script below to create the same testing conditions for each user tested.</p>
-        <h5 class="left">Tasks Tested</h5>
-        <ul class="color">
-          <li>Sign up for an account</li>
-          <li>Record a new journal entry</li>
-          <li>Analyze summary</li>
-          <li>View settings</li>
-          <li>Add new mood</li>
-        </ul>
-        <h5 class="left">Key Takeways</h5>
-        <p>The initial prototype largely did well and many of the comments received simply wanted to see additional interactivity and features; however our feedback it did have a few issues:</p>
-        <ul class="color">
-          <li>Consider a demo feature to allow users to interact more</li>
-          <li>Change the location of the new entry button; right now it is only found in the drawer and it is kind of hidden. Adding an additional way from the summary page would benefit the user experience.</li>
-          <li>Add a label to the analysis page telling the user it is a monthly summary</li>
-          <li>Add additional screens to show further interactivity for a more robust prototype</li>
-        </ul>
-        <div class="button"><a class="button_ghost" href="https://drive.google.com/open?id=17x1nd-8q_ED1wQpoA8bKwQspe5PQ9ziZdsVnBP1AVkY">Testing Script</a></div>
-    </section>
-    <!-- line -->
-    <hr>
     <!-- prototype II -->
-    <section class="iteration-4">
-      <img class="icon" src="images/icon-iteration.png"  alt="design iteration icon"/>
-      <h2>Prototype - Revised</h2>
-      <p>After completing the changes and fixing the issues found during user testing a more detailed prototype was created; now with a demo feature to try the app before signing up and set daily reminder interactivity. </p>
+    <section class="iteration-4 bg-color">
+      <h3>Prototype II</h3>
+      <p>Before another round of iterations formal in-person usability tests were done on two different types of potential users utilizing a testing script to test the product usability. The feedback was majorly positive with only one minor complaint; users want a demo verson.
+        Keeping this feedback in mind, a more detailed prototype was created; now with a demo feature to try the app before signing up and set daily reminder interactivity. </p>
       <div class="flexContainer">
-        <div class="flexItem">
-          <img class="flexImg" src="images/mood/proto-2-new-df.jpg" alt="prototype 2 new frame">
-        </div>
         <div class="flexItem">
           <img class="flexImg" src="images/mood/proto-2-signup-df.jpg" alt="prototype 2 signup frame">
         </div>
         <div class="flexItem">
           <img class="flexImg" src="images/mood/proto-2-summary-df.jpg" alt="prototype 2 summary frame">
+        </div>
+        <div class="flexItem">
+          <img class="flexImg" src="images/mood/proto-2-new-df.jpg" alt="prototype 2 new frame">
         </div>
         <div class="flexItem">
           <img class="flexImg" src="images/mood/proto-2-analysis-df.jpg" alt="prototype 2 analysis frame">
@@ -587,25 +423,49 @@
       </div>
       <div class="button"><a class="button_ghost" href="https://invis.io/9VS4N8EQMA3">Prototype II</a></div>
     </section>
-    <!-- line -->
-    <hr>
     <!--final design-->
     <section class="final">
-        <img class="icon" src="images/icon-final.png" alt="Final design icon"/>
-        <h2>Prototype - Refined</h2>
+        <h2>Prototype III</h2>
         <p>After finishing the changes from the user testing the opportunity arose to further refine and develop an interactive prototype. This time around both the frames and the prototype were made using Figma to help aid in rapid refinement and testing. This additional time to refine and prototype immensely benefited the project and lead to changes in button coloring, new entry process, and app-wide interactivity.</p>
         <div class="iframe-div">
           <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FKafKLqGzsiWGkOScJrb3Kc%2FMood-Prototype-Final%3Fnode-id%3D129%253A4%26viewport%3D1177%252C170%252C0.23969630897045135%26scaling%3Dscale-down" allowfullscreen></iframe>
         </div>
         <div class="button"><a class="button_ghost" href="https://www.figma.com/proto/KafKLqGzsiWGkOScJrb3Kc/Mood-Prototype-Final?node-id=129%3A4&viewport=1177%2C170%2C0.23969630897045135&scaling=scale-down">Prototype III</a></div>
     </section>
-    <!-- line -->
-    <hr>
+    <!--wireframe user testing-->
+    <section class="wireframe user testing">
+        <h2>Testing the Wireframes</h2>
+        <p>After the completion of the digital wireframes some quick informal user testing was done to assess the app’s usability. I tested users' ability to <b>sign up for an account,
+        record a new journal entry, analyze summary, view settings, and add new mood.</b> After usability testing the following iterations were made and the revised wireframes created.</p>
+        <h5 class="left">Iterations</h5>
+        <div>
+          <p>Due to confusion on how to navigate the on-boarding besides “skip”, a "next" button was added.</p>
+        <img class="changes-img" src="images/mood/onboarding-redesign.png" alt="Before and after img"/>
+        <p>Due to additional confusion and negative comments on the drawer layout, the drawer was also redesigned to be full length instead of half-screen coming from the top.</p>
+        <img class="changes-img" src="images/mood/drawer-redesign.png" alt=" Drawer Redesign Before and after img"/>
+    </section>
+    <!--preference test I-->
+      <section class="preference">
+        <h2>A/B Testing</h2>
+        <p>During iterations, I was conflicted on the colors for the splash and landing page designs so I created and deployed a quick A/B preference test to get some feedback and finalize my decision.</p>
+        <h5 class="left">Results</h5>
+        <p>The results were very conclusive with option B receiving 75% of responses. This turned out to be a very helpful and successful preference test because the majority of responses received aligned with the Mood brand and ideals as well as overall project design.</p>
+        <div class="test-section">
+          <div class="main">
+            <div class="main_content">
+              <img class="option" src="images/mood/option1.png" alt="Option A" style="width:100%">
+            </div>
+            <div class="main_content">
+              <img class="special" src="images/mood/option2.png" alt="Option B" style="width:100%">
+            </div>
+          </div>
+        </div>
+    </section>
+
     <!--design progression-dashboard-->
-    <section class="progression">
-        <img class="icon" src="images/icon-design-progress.png" alt="design progression icon"/>
+    <section class="progression bg-color">
         <h2>Design Progression - Onboarding</h2>
-        <p>These are onboarding frames showing the design progression from the initial wireframe concept to the final prototype design.</p>
+        <p>These onboarding frames show the design progression from the initial wireframe concept to the final prototype design.</p>
         <div class="progress">
             <div class="progress-container"><img class="progress-img" src="images/mood/wire-initial-signup-2.jpg" alt="wireframe signup"></div>
             <div class="progress-container"><img class="progress-img" src="images/mood/revised-signup-4.jpg" alt="wireframe revised signup"></div>
@@ -616,11 +476,33 @@
             <div class="progress-container"><img class="progress-img" src="images/mood/hifi-5-onboarding-b.jpg" alt="prototpe 3 signup"></div>
       </div>
     </section>
-    <!-- line -->
-    <hr>
+    <!--branding & identity-->
+    <section class="branding">
+      <h2>Branding & Identity</h2>
+      <!-- mind-map and thought list -->
+      <div class="fullWidthContainer">
+        <img class="fullWidthImg" src="images/mood/mindmap-thoughtlist.jpg" alt="Branding mind map & thought list" />
+      </div>
+      <h4>Mind Map & Thought List</h4>
+      <p>I created a mind map and thought list while brainstorming the branding for this project to help visualize and create the Mood brand.</p>
+      <div class="Brand">
+        <h4>Brand Ideals</h4>
+        <p><strong> Modern • </strong>With a minimalist interface, recognizable fonts, and a refined color palette Mood is a modern app built for the 21st century.</p><br>
+        <p><strong> Secure • </strong>All your private emotions and journals are stored within the application but your data never leaves your device so your private data stays private.</p><br>
+        <p><strong> Motivational • </strong>Motivates you to journal daily to record, analyze, and manage your emotional health.</p><br>
+        <p><strong> Colorful • </strong>Using preset or custom colors to represent associated emotions; visualize your moods in your yearly summary, monthly analysis, or daily journal.</p><br>
+        <p><strong> Calm • </strong>The use of a dark background and non-aggressive color scheme invoke calming feelings.</p><br>
+        <h4>Colors</h4>
+        <img class="colors" src="images/mood/colors.png" alt="brand colors"/>
+        <p>Using color palette of a soft rainbow gradient of colors for the logo and a bright turquoise as the highlight color paired with dark greys and white It gives the feeling of security, creativity, and refinement to the brand and app.</p>
+        <h4>Logo Design</h4>
+        <div class="fullWidthContainer"><img class="fullWidthImg" src="images/mood/logo-sketches.jpg" alt="Logo Sketches"/></div>
+        <p>After creating a mind map and thought list I settled on the name "Mood" for the project and started sketching out logo designs. After sketching out ideas I digitally re-created a few of the best ideas and settled on  and quick preference test was done to determine which logo style would be further refined and developed to become the final Mood logo.</p>
+        <img class="logoDesign" src="images/mood/mood-logos.jpg" alt="mood full logo">
+      </div>
+    </section>
     <!--lessons learned-->
     <section class="Learning">
-        <img class="icon" src="images/icon-learning.png" alt="Project takeways icon"/>
         <h2>Takeaways</h2>
         <p>A lot of things went really well with this project and I am super happy with the result; it has come a long way. The logo and the color scheme for Mood perfectly represent what I wanted Mood to feel like. One of the things that clearly worked well on this project was changing the background color to dark; it gives it a more refined and modern feel. The user survey I crafted for this project was a big improvement in utility over past user surveys. One of the main things that I wish I could have done differently is fully record all of my user testing completed. Many of the earlier tests I did without recording or taking many notes; just using the feedback. This saved me a little time initially but in the long run a recording could have been a much better asset than some scattered notes. I also wish I would have completed more preference tests because the few I did helped me immensely. Throughout the duration of this project I kept a design journal to help record and organize my thoughts and documents. That journal became an invaluable resource not only throughout the project but also the creation of the case study. I fully intend on keeping a design journal for all my future projects as well. Throughout the course of this project we had a lot of successes but also some failures but in both some important lessons were learned. </p>
         <br>
