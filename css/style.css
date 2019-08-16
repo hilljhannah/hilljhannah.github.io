@@ -68,7 +68,14 @@ nav{
 /*-- general use grey background */
 .bg-color{
   background-color: #f5f5f5;
-  width: 100vw;
+  width: 90vw;
+  height: auto;
+  padding: 2rem ;
+}
+.bg-white{
+  background-color: white;
+  padding: 2rem;
+  height: auto;
 }
 /* h1 text */
 h1 {
@@ -100,7 +107,7 @@ h1 {
   color: #0091A5;
   font-family: 'Lato';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 1.6rem;
   margin: 0 auto;
   justify-content: center;
@@ -108,7 +115,7 @@ h1 {
   transition: .25s;
   width: 100%;
 }
-.link:hover{border-bottom: 1px dotted #161616; color: #161616;}
+.link:hover{border-bottom: 1px dotted #FFFFFF; color: #FFFFFF;}
 @media only screen and (max-width: 600px){
     #hidden{ display: none;}
     nav{grid-template-columns: 50% 50%; width: 100%; max-width: 220px;}
@@ -196,16 +203,16 @@ h4 {
 h5{
   color: #333;
   font-family: 'Lato';
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
 }
 h5.left{
   text-align: left;
-  margin-top: 3rem ;
+  margin-top: 1.4rem ;
   max-width: 700px;
 }
 /*-- paragraph text --*/
@@ -264,14 +271,14 @@ p.info{
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h5{font-size: 1.8rem;}
+  h5{font-size: 1.6rem;}
   p{ font-size: 1.6rem;}
   p.centered{font-size: 1.8rem;}
 
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1024px) {
-  h5{font-size: 2rem;}
+  h5{font-size: 1.8rem;}
   p {font-size: 1.8rem;}
   p.centered{font-size: 2rem;}
 }
@@ -616,7 +623,6 @@ img.index_image {
   font-family: 'Lato';
   font-size: 1.6rem;
 }
-
 /*-- lists on homepage - flexbox --*/
 .homeToolkit{
   align-items: start;
@@ -625,7 +631,6 @@ img.index_image {
   width: 100%;
   max-width: 1400px;
 }
-
 /*------ hero section styles (in project files)--*/
 .hero{
   background-color: #f5f5f5;
@@ -638,24 +643,19 @@ img.index_image {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
 }
-
 .hero_container{
   display: block;
   margin: 0 auto;
-  width: 100%;;
+  width: 100%;
   height: 600px;
   overflow: hidden;
 }
-
 /* hero image in projects*/
 .hero_device {
   display: block;
   height: 900px;
   overflow: hidden;
   margin: 0 auto;
-}
-.mobile-device{
-  max-width: 700px;
 }
 
 /* solution section*/
@@ -713,27 +713,28 @@ img.index_image {
   width: 100%;
   height: auto;
 }
-
+/* user personas img container*/
+.personas{
+  display: block;
+  max-width: 100vw;
+  width: 100%;
+}
 /* user personas main container*/
 .main_three{
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1100px;
-  margin: 4rem auto;
-  padding: 0 ;
+  max-width: 90vw;
+  margin: 2rem auto;
+  padding: 1rem 0 ;
   justify-content: center;
 }
 /* user personas individual container*/
 .persona-container{
   align-items: center;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  grid-gap: 1rem;
+  flex-wrap: wrap;
   margin: 2vh auto;
-  text-align: left;
-  height: auto;
+  height: 300px;
   padding: 0;
 }
 /* user persona name text*/
@@ -808,11 +809,7 @@ h4.left{
   width: 100%;
   max-width: 900px;
 }
-.flow_img_b{
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
+
 /*-- branding --*/
 .moodboard{
   display: block;
@@ -874,25 +871,19 @@ p.img_cap{
 /*-- content strat sitemap image styles --*/
 .sitemap {
   display: block;
-  height: auto;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 4rem;
-  width: 100%;
-}
-#mood-sitemap{
-  display: block;
-  height: 100%;
-  max-height: 900px;
+  height: 400px;
   width: auto;
-  padding: 4rem;
+  margin: 2rem auto;
+}
+img.sitemap{
+  height: 100%;
 }
 /*-- rough sketching image styles --*/
 .rough-sketch{
   display: block;
   height: auto;
-  margin: 4rem auto;
-  max-width: 1100px;
+  margin: 2rem auto;
+  max-width: 80vw;
   width: 100%;
   }
 /*-- sketching image styles that fit within body text --*/
@@ -1004,15 +995,14 @@ p.img_cap{
   object-fit: cover;
   object-position: center;
 }
-
 /*-- general flexbox img container--*/
 .flexContainer{
   align-items: center;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
-
+  padding: 2rem;
   max-width: 90vw;
   margin: 0 auto;
 }
@@ -1023,10 +1013,12 @@ p.img_cap{
   width: 100%;
   max-width: 200px;
 }
+
 /* frame image styles*/
 .flexImg{
   height: auto;
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .flexDiv{
   display: block;
@@ -1127,7 +1119,7 @@ iframe{
 
 /*-------- about me page styles --------*/
 .about-me{
-  margin: 4rem auto;
+  margin: 0 auto;
 }
 /*- my portrait img -*/
 .portrait{
@@ -1211,8 +1203,8 @@ h6 {
 #formContainer {
  border-radius: 5px;
  background-color: #FFFFFF;
- padding: 3rem 5rem ;
- margin: 11rem auto;
+ padding: 2rem 5rem ;
+ margin: 4rem auto;
  width: 100%;
  max-width: 500px;
 }
@@ -1243,7 +1235,7 @@ input[type=email]{
 }
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
- background-color: #76EAE1;
+ background-color: #0091A5;
  border: none;
  border-radius: 4px;
  color: #333;
