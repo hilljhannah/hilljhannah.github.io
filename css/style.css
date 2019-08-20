@@ -68,9 +68,10 @@ nav{
 /*-- general use grey background */
 .bg-color{
   background-color: #f5f5f5;
-  width: 90vw;
   height: auto;
+  margin: 1rem auto;
   padding: 2rem ;
+  width: 90vw;
 }
 .bg-white{
   background-color: white;
@@ -157,10 +158,11 @@ h2.left{
 /* h3 text */
 h3 {
   color: #333;
+  display: block;
   font-family: 'Lato';
   font-size: 1.8rem;
   font-weight: 800;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   text-align: left;
   width: 100%;
   max-width: 700px;
@@ -186,7 +188,7 @@ h4 {
   font-size: 1.8rem;
   font-weight: 700;
   text-align: left;
-  padding-top: 4rem;
+  padding-top: 1rem;
   margin: 2rem auto;
   max-width: 700px;
 }
@@ -289,73 +291,6 @@ b{
 
 /*---- end typography styles ----*/
 
-/* large process-stage banners in case study (for spacing)*/
-.process {
-  align-content: center;
-  border: 5px solid #76EAE1;
-  border-radius: 30px;
-  color: #333;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: 'Oswald', sans-serif;
-  font-size: 3.8rem;
-  margin: 15rem auto;
-  text-align: center;
-  padding: 3% 4%;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  max-width: 90vw;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.process::after{
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: white ;
-}
-.process:first-of-type::after{
-  left: 10vw;
-  bottom: -4vh;
-}
-.process:nth-of-type(2n)::after{
-  left: 80vw;
-  bottom: -15%;
-}
-.process:nth-of-type(3n)::after{
-  left: 25vw;
-  bottom: 90%;
-}
-/* h2 - iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .process::after{
-    width: 40px;
-    height: 40px;}
-}
-/* h2 - Desktops and laptops ----------- */
-@media only screen  and (min-width : 1024px) {
-  .process::after{
-    width: 50px;
-    height: 50px;}
-}
-/*-- section dividing line (for spacing)--*/
-hr{
-  display: block;
-  color: #233746;
-  width: 85vw;
-  margin: 15% auto;
-  filter: drop-shadow(0 0 15px #233746)
-}
-/* h2 - iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h2.process{font-size: 7.2rem; }
-}
-/* h2 - Desktops and laptops ----------- */
-@media only screen  and (min-width : 1024px) {
-  h2.process{font-size: 7.8rem;}
-}
 /*-------- list styles -------*/
 /*-- unordered list bullet --*/
 ul{
@@ -652,12 +587,14 @@ img.index_image {
   margin: 0 auto;
   height: 280px;
   overflow: hidden;
-  padding: 5rem 1rem;
-  width: 80vw;
+  padding: 2.5rem 1rem;
 }
-/* sets hero height on ipads and desktops ----------- */
+/* sets hero height on ipads  ----------- */
 @media only screen and (min-device-width : 768px) {
-  .hero_container{height:600px;}
+  .hero_container{
+    height: 700px;
+    padding: 5rem 20rem;
+  }
 }
 /* hero image in projects*/
 .hero_device {
@@ -718,6 +655,7 @@ img.index_image {
 .persona{
   display: block;
   width: 80vw;
+  margin: 0 auto
 }
 /* user personas individual container
 .persona-container{
@@ -805,7 +743,7 @@ h4.left{
 .moodboard{
   display: block;
   width: 100%;
-  max-width: 1100px;
+  max-width: 700px;
   margin: 0 auto;
 }
 img.center-img{
@@ -825,7 +763,7 @@ img.center-img{
 .logoDesign{
   display: block;
   height: auto;
-  margin: 4rem auto;
+  margin: 0 auto;
   width: 100%;
   max-width: 700px;
 }
@@ -864,10 +802,13 @@ p.img_cap{
   display: block;
   height: 400px;
   width: auto;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
-img.sitemap{
+.sitemapImg{
+  display: block;
+  margin: 0 auto;
   height: 100%;
+  width: auto;
 }
 /*-- rough sketching image styles --*/
 .rough-sketch{
@@ -894,7 +835,7 @@ img.sitemap{
 }
 /* preference container test section */
 .test-section{
-  margin: 2rem auto 0 auto;
+  margin: 1rem auto;
   height: 100%;
   width: 100%;
 }
@@ -941,7 +882,7 @@ img.sitemap{
 .colors{
   display: block;
   height: auto;
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 80vw;
   max-width: 700px;
   padding: 0 ;
@@ -974,27 +915,29 @@ img.sitemap{
 /* progress individual img styles */
 .progress-img{
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 .fullWidthContainer{
-  width: 100%;
   height: 300px;
+  margin: 0 auto;
+  width: 700px;
 }
 /*--full size image--*/
 .fullWidthImg{
   height: 100%;
-  width: 100%;
+  margin: 1rem auto;
   object-fit: cover;
   object-position: center;
+  width: 100%;
 }
 /* desktop project/dreamers frames image gallery container */
 .gallery {
 display: flex;
+justify-content: center;
 flex-wrap: wrap;
 max-width: 100vw;
 margin:  0 auto;
-justify-content: center;
 }
 /* individual img container in desktop project/dreamers gallery */
 .gallery-img-div{
@@ -1006,10 +949,9 @@ overflow: hidden;
 }
 /* individual img in desktop project/dreamers gallery */
 .gallery-img{
-  border: 1px solid #f5f5f5;
   display: block;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 /*-- general mobile project/mood flexbox img container--*/
 .flexContainer{
@@ -1018,9 +960,9 @@ overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2rem;
   max-width: 90vw;
   margin: 0 auto;
+  padding: 2rem;
 }
 /* individual project/mood flex image/item div  */
 .flexItem{
@@ -1033,7 +975,6 @@ overflow: hidden;
 .flexImg{
   height: auto;
   width: 100%;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.09);
 }
 .flexImgHighlight{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1048,7 +989,9 @@ overflow: hidden;
   width: 100%;
   max-width: 500px;
 }
-
+.imgShadow{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+}
 .mini-section{
   margin: 2rem auto;
 }
