@@ -107,7 +107,7 @@ h1 {
 .link{
   border-bottom: 1px solid #FFFFFF;
   display: block;
-  color: #FFFFFF;
+  color: #0091A5;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 800;
@@ -118,7 +118,10 @@ h1 {
   transition: .25s;
   width: 100%;
 }
-.link:hover{border-bottom: 1px dotted #0091A5; color: #0091A5;}
+.link:hover{border-bottom: 1px dotted #FFFFFF; color: #00FFEB;}
+.inline-link{
+  color:#0091A5;
+}
 @media only screen and (max-width: 600px){
     #hidden{ display: none;}
     nav{grid-template-columns: 50% 50%; width: 100%; max-width: 220px;}
@@ -127,7 +130,6 @@ h1 {
 @media only screen and (max-width: 1024px){
   header{margin: 0 auto;}
   .myLogo{margin: 0;}
-
 }
 
 /*--- begin typography styles ---*/
@@ -219,6 +221,23 @@ h5.left{
   margin-top: 1.4rem ;
   max-width: 700px;
 }
+/* h6 used in footer */
+h6 {
+  color: white;
+  font-family: 'Lato';
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 1rem auto ;
+  line-height: 2rem;
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  h6{font-size: 1.4rem;}
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  h6{font-size: 1.6rem;}
+}
 /*-- paragraph text --*/
 p {
   color: #333;
@@ -266,8 +285,7 @@ p.info{
 /* blue brand highlight color - used in footer*/
 .highlight{
   color: #0091A5;
-  text-align: center;
-  width: 200px;
+
 }
 .highlight:hover{
   text-decoration: underline #0091A5;
@@ -1090,7 +1108,6 @@ iframe{
 
 /*-------- about me page styles --------*/
 .about-me{
-  margin: 0 auto;
 }
 /*- my portrait img -*/
 .portrait{
@@ -1113,24 +1130,7 @@ footer {
   padding: 8vh 8vw 4vh;
   margin-top: 10vh ;
 }
-/* footer font */
-h6 {
-  justify-content: center;
-  color: white;
-  font-family: 'Lato';
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 1rem auto ;
-  line-height: 2rem;
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h6{font-size: 1.4rem;}
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-  h6{font-size: 1.6rem;}
-}
+
 /* contact footer button*/
 .contact{
   align-content: center;
@@ -1163,12 +1163,16 @@ h6 {
   margin: 1rem auto;
 }
 .contact-icon{
-  height: auto;
-  max-width: 50px;
-  display: block;
-  margin: 0 4rem;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  margin: 0 ;
 }
-
+.iconContainer{
+  display: inline-block;
+  max-width: 40px;
+  max-height: 40px;
+}
 /*----- contact form start--- */
 /* form container */
 #formContainer {

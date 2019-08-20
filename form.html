@@ -9,52 +9,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <section class="container">
+  <main>
+    <section class="container">
     <!--Navbar section-->
-    <header>
-      <div><a href="index.html"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a></div>
-      <nav>
-        <div class="linkBox"><a class="link" href="work.html">My Work</a></div>
-        <div class="linkBox" id="hidden"><a class="link" href="about.html">About Me</a></div>
-        <div class="linkBox"><a class="link" href="form.html">Contact</a></div>
-      </nav>
-    </header>
-    <div id="formContainer">
-      <h2 style="margin: 0rem auto 2rem auto;">Contact Me</h2>
-      <div class="contact-section">
-        <div><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/In-2C-121px-R.png" href="https://www.linkedin.com/in/hannah-j-hill/" alt="Linkedin icon"></a></div>
-        <div><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/GitHub-Mark-120px-plus.png"  alt="github icon"></a></div>
+      <header>
+        <div><a href="index.html"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a></div>
+        <nav>
+          <div class="linkBox"><a class="link" href="work.html">My Work</a></div>
+          <div class="linkBox" id="hidden"><a class="link" href="about.html">About Me</a></div>
+          <div class="linkBox"><a class="link" href="form.html">Contact</a></div>
+        </nav>
+      </header>
+      <div id="formContainer">
+        <h2>Contact Me</h2>
+        <div class="contact-section">
+          <div><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/In-2C-121px-R.png" href="https://www.linkedin.com/in/hannah-j-hill/" alt="Linkedin icon"></a></div>
+          <div><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/GitHub-Mark-120px-plus.png"  alt="github icon"></a></div>
+        </div>
+        <!-- form inputs -->
+        <form action="https://send.pageclip.co/3phqZ9uRhWChvgBDxIe1kpQIEJ4Darnb/Contact" class="pageclip-form" method="post">
+          <!-- email address -->
+          <input type="email" name="email" placeholder="Email address.."/>
+          <!-- message subject. Must have name="subject" -->
+          <input type="text" name="subject" placeholder="Message subject.."/>
+          <!-- message body -->
+          <textarea name="body" placeholder="Message.."></textarea>
+          <!-- submit button -->
+          <input type="submit" value="Submit">
+        </form>
       </div>
-      <!-- form inputs -->
-      <form action="https://send.pageclip.co/3phqZ9uRhWChvgBDxIe1kpQIEJ4Darnb/Contact" class="pageclip-form" method="post">
-        <!-- email address -->
-        <input type="email" name="email" placeholder="Email address.."/>
-        <!-- message subject. Must have name="subject" -->
-        <input type="text" name="subject" placeholder="Message subject.."/>
-        <!-- message body -->
-        <textarea name="body" placeholder="Message.."></textarea>
-        <!-- submit button -->
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </section>
-<!-- page footer-->
-  <footer>
-    <h6>Hannah Hill</h6>
-    <h6>UX UI Designer + Frontend Developer</h6>
-    <h6 class="highlight">Resume</h6>
-    <a href="form.html"><h6 class="highlight">Contact</h6></a>
-  </footer>
-<!-- form script -->
-  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    </section>
+    <!-- page footer-->
+    <footer>
+      <h6><a class="inline-link" href="form.html">Hannah Hill</a></h6>
+      <h6>UX UI Designer + Frontend Developer</h6>
+      <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+      <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png"  alt="github icon"></a></div>
+    </footer>
+    <!-- form script -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'UA-134476139-1');
-  </script>
+      gtag('config', 'UA-134476139-1');
+    </script>
+  </main>
 </body>
 </html>
