@@ -1173,7 +1173,7 @@ footer {
   max-width: 40px;
   max-height: 40px;
 }
-/*----- contact form start--- */
+/*----- contact form styles start--- */
 /* form container */
 #formContainer {
  border-radius: 5px;
@@ -1228,5 +1228,4 @@ input[type=submit]:hover {
  background-color: #00FFEB;
  color: black;
 }
-
-/*contact styles end*/
+/*form styles end*/
