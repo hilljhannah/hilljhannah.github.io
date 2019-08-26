@@ -405,9 +405,10 @@ a {
   align-self: center;
   background-color: #f5f5f5;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 2rem;
   width: 100vw;
 }
 /* content in hero grid */
@@ -417,6 +418,14 @@ a {
   align-content: center;
   justify-content: center;
   margin: 0 auto;
+  padding: 2rem;
+}
+/* sets hero col on desktop  ----------- */
+@media only screen  and (min-width : 1024px)  {
+  .homeHero{
+    grid-template-columns: 1fr 1fr;
+    padding: 0;}
+  .hero_container{padding:0;}
 }
 /*- homepage image (me) -*/
 img.index_image {
@@ -428,7 +437,8 @@ img.index_image {
 .index_image_container{
   display: block;
   margin: 0 auto;
-  height: 500px;
+  height: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 .card_container{
