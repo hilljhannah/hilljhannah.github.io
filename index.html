@@ -10,14 +10,27 @@
 <body>
   <main>
     <section class="container">
-      <!--Navbar section-->
+      <!--Navbar section
       <header>
-        <div><a href="index.html"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a></div>
+        <a href="index.html"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a></div>
         <nav>
-          <div class="linkBox"><a class="link" href="work.html">My Work</a></div>
-          <div class="linkBox" id="hidden"><a class="link" href="about.html">About Me</a></div>
-          <div class="linkBox"><a class="link" href="form.html">Contact</a></div>
+          <a href="#" id="menu-icon"></a>
+          <ul class="ul_nav">
+            <li class="li_nav"><a href="#" class="current">My Work</a></li>
+            <li class="li_nav"><a href="#">About Me</a></li>
+            <li class="li_nav"><a href="#">Contact</a></li>
+          </ul>
         </nav>
+      </header>-->
+      <header class="header">
+        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </header>
       <!-- Homepage Hero section -->
       <section class="homeHero">

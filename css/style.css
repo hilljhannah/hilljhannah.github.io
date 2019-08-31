@@ -37,7 +37,7 @@ section {
 section.smallWidth{
   width: 90vw;
 }
-/*--header styles--*/
+/*--header styles
 header {
   align-items: center;
   background-color: #161616;
@@ -47,6 +47,133 @@ header {
   width: 100vw;
   padding: 0 40px;
   margin: 0 auto;
+}--*/
+header{
+  background: #161616;
+  width: 100%;
+  z-index: 3;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #161616;
+}
+.header li a {
+  display: block;
+  color: #FFFFFF;
+  padding: 20px 20px;
+  border-right: 1px solid #0091a5;
+  text-decoration: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #0091a5;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #0091a5;;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #0091a5;;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
 
 /*second header div (nav links +button)*/
@@ -56,14 +183,17 @@ nav{
   justify-content: center;
   grid-template-columns: 33% 33% 33%;
   width: 100%;
-  max-width: 450px;
   padding: 0 ;
 }
-/*-- my logo --*/
+/*-- my logo
 .myLogo {
   display: inline-block;
   vertical-align: middle;
   max-height: 50px;
+}--*/
+.myLogo{
+  display: block;
+	max-height: 30px;
 }
 /*-- general use grey background */
 .bg-color{
@@ -310,19 +440,15 @@ b{
 /*---- end typography styles ----*/
 
 /*-------- list styles -------*/
-/*-- unordered list bullet --*/
-ul{
+/* lists in projects with background color */
+ul.color{
   font-size: 1.4rem;
+  list-style-position: inside;
   list-style-type: circle;
   margin: 1rem auto;
   width: 100%;
   max-width: 700px;
-  padding-right: 4rem;
-}
-/* list with background color */
-ul.color{
-  list-style-position: inside;
-  padding: 0 ;
+  padding: 0;
 }
 ul.color li:nth-of-type(odd){
   background: rgba(102, 102, 102, 0.05);
@@ -330,14 +456,19 @@ ul.color li:nth-of-type(odd){
 ul.color li:nth-of-type(even){
   background: rgba(118, 234, 225, 0.025);
 }
-/* centered no-bullet (for lists) */
-ul.middle{
-  list-style-type: none;
-  text-align: center;
-  padding: 0 5%;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 350px;
+/* ul.color - iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  ul.color{font-size: 1.6rem;}
+}
+/* ul.color - Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  ul.color{font-size: 1.8rem;}
+}
+/*-- color list item styles --*/
+ul.color li{
+  font-size: 1.4rem;
+  padding: 1.5rem .5rem ;
+  font-weight: normal;
 }
 /* brand ideals list */
 ul.ideals {
@@ -347,20 +478,7 @@ ul.ideals {
   font-weight: bold;
   list-style-position: inside;
 }
-/* ul - iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  ul{font-size: 1.6rem;}
-}
-/* ul - Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-  ul{font-size: 1.8rem;}
-}
-/*-- list item styles --*/
-li{
-  font-size: 1.4rem;
-  padding: 1.5rem .5rem ;
-  font-weight: normal;
-}
+
 /*-- list within a list --*/
 dt {
   background: rgba(135, 206, 250,.09);
@@ -381,11 +499,11 @@ dd {
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-  li,dt,dd{font-size: 1.6rem;}
+  ul.color li,dt,dd{font-size: 1.6rem;}
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
-  li,dt,dd{font-size: 1.8rem;}
+  ul.color li,dt,dd{font-size: 1.8rem;}
 }
 
 /*---- general button styles ----*/
