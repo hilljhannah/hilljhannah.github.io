@@ -4,21 +4,23 @@
   <title>Case Study | Dreamers</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,400i,600|Oswald:200,300,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <main>
     <section class="container">
-    <!--Navbar section-->
-      <header>
-        <div><a href="index.html"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a></div>
-        <nav>
-          <div class="linkBox"><a class="link" href="work.html">My Work</a></div>
-          <div class="linkBox" id="hidden"><a class="link" href="about.html">About Me</a></div>
-          <div class="linkBox"><a class="link" href="form.html">Contact</a></div>
-        </nav>
+      <!--Navbar section-->
+      <header class="header">
+        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="form.html">Contact</a></li>
+        </ul>
       </header>
       <div id="formContainer">
         <h2>Contact Me</h2>

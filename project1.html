@@ -4,19 +4,22 @@
   <title>Case Study | Dreamers</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <section class="container">
-    <!--Navbar section-->
-    <header>
-        <div><a href="index.html"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a></div>
-        <nav>
-          <div class="linkBox"><a class="link" href="work.html">My Work</a></div>
-          <div class="linkBox" id="hidden"><a class="link" href="about.html">About Me</a></div>
-          <div class="linkBox"><a class="link" href="form.html">Contact</a></div>
-        </nav>
+  <main>
+    <section class="container">
+      <!--Navbar section-->
+      <header class="header">
+        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="form.html">Contact</a></li>
+        </ul>
       </header>
       <!-- Hero Section -->
       <section class="hero">
@@ -436,23 +439,24 @@
           <li>Dont overthink my design</li>
           <li>Create good, through survey questions to be a better asset to the process</li>
         </ul>
-    </section>
-  </section>
-  <!-- page footer-->
-  <footer>
-    <h6><a class="inline-link" href="form.html">Hannah Hill</a></h6>
-    <h6>UX UI Designer + Frontend Developer</h6>
-    <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
-    <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png"  alt="github icon"></a></div>
-  </footer>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      </section>
+      <!-- page footer-->
+      <footer>
+        <h6><a class="inline-link" href="form.html">Hannah Hill</a></h6>
+        <h6>UX UI Designer + Frontend Developer</h6>
+        <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+        <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png"  alt="github icon"></a></div>
+      </footer>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-134476139-1');
-  </script>
+        gtag('config', 'UA-134476139-1');
+      </script>
+    </section>
+  </main>
 </body>
 </html>
