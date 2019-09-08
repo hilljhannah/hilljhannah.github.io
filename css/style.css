@@ -585,9 +585,6 @@ img.index_image {
   overflow: hidden;
   position:relative;
 }
-.card:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 
 /* card image */
 .card_image{
@@ -634,7 +631,11 @@ img.index_image {
   font-family: 'Lato';
   font-size: 1.6rem;
 }
-.card_button_text:hover{
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+.card:hover .card_button_text{
   color: #0091a5;
 }
 /*-- lists on homepage - flexbox --*/
