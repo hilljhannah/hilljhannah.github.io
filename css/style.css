@@ -507,14 +507,18 @@ dd {
 }
 
 /*---- general button styles ----*/
-/* a link (used in buttons) + nav */
+/* a link  */
 a {
   text-align: center;
   text-decoration: none;
   margin: 0 auto;
   color:#333;
 }
-
+/* fixes a styles for card container hover*/
+a.cardHover{
+  text-align: left;
+  margin: 0;
+}
 @media only screen and (max-width: 600px){
   .link, .links{font-size: 1.4rem; margin: 0 auto;}
 }
