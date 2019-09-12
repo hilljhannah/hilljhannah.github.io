@@ -388,13 +388,7 @@ p.quote {
 }
 /* centered p text */
 p.centered, #b{
-  color: #333;
-  display: block;
-  font-family: 'Lato';
-  font-size: 1.6rem;
-  font-weight: 300;
   text-align: center;
-  word-spacing: 3rem;
 }
 p.occupation{
   margin: 0;
@@ -853,7 +847,7 @@ img.center-img{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 100%;
+  max-width: 90vw;
   margin: 2rem auto;
 }
 /* image + content logo div */
@@ -934,12 +928,12 @@ p.img_cap{
 /* testing choices content */
  .main_content{
    width: 100%;
-   max-width: 280px;
+   max-width: 200px;
    height: 100%;
    padding: 0;
  }
  .main > * {
-   flex: 1 1 250px;
+   flex: 1 1 10px;
    margin: 10px;
  }
  .main_img{
