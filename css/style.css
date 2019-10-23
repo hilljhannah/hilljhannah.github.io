@@ -516,33 +516,22 @@ a.cardHover{
 @media only screen and (max-width: 600px){
   .link, .links{font-size: 1.4rem; margin: 0 auto;}
 }
-/*-- homepage hero section flexbox --*/
+/*-- homepage hero section --*/
 .homeHero{
   align-self: center;
   background-color: #f5f5f5;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding: 15%;
   width: 100vw;
 }
-/* content in hero grid */
+/* content in hero section */
 .hero_content{
   width: 100%;
   max-width: 550px;
-  align-content: center;
-  justify-content: center;
   margin: 0 auto;
   padding: 2rem;
 }
-/* sets hero col on desktop  ----------- */
-@media only screen  and (min-width : 1024px)  {
-  .homeHero{
-    grid-template-columns: 1fr 1fr;
-    padding: 0;}
-  .hero_container{padding:0;}
-}
+
 /*- homepage image (me) -*/
 img.index_image {
   display: block;
@@ -700,9 +689,13 @@ img.index_image {
   width: 100%;
   max-width: 600px;
 }
-.solution_frame{
-  margin: 2rem auto;
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
 }
+
   /* device frame in final design */
   .desktop-frame{
     display: block;
