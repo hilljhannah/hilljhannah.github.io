@@ -1,300 +1,324 @@
 <!DOCTYPE html>
 <html  lang="en">
-<head>
-  <title>Case Study | Dreamers</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <main>
-    <section class="container">
-      <!--Navbar section-->
-      <header class="header">
-        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="work.html">My Work</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="form.html">Contact</a></li>
-        </ul>
-      </header>
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero_container">
-          <img class="hero_device" src="images/dreamers-card.png" alt="Gold macbook device frame"/>
-        </div>
-      </section>
-    <!--problem overview-->
-    <section class=”overview”>
-      <h2>Project Overview</h3>
-      <h5>Summary</h5>
-      <p>Even though there are a lot of big names in the cloud storage and organization industry, a rising competitor with the right combination of features to meet the needs of a target audience could dominate the market. I set out to create that competitor.</p>
-      <!--my roles/tools-->
-      <h5>My Role</h5>
-      <p>I worked as the core designer for the Dreamers project. I was responsible for the research and creation of the logo and brand, as well as all aspects of user research, testing, and design of the Dreamers site itself. </p>
-      <h5>Tools and Deliverables</h5>
-      <p>Using Figma and InVision as tools I produced a user survey and analysis, three user personas, competitve analysis, user stories, user flows, wireframes, prototype(s), prototype testing, user testing, and created a brand and logo for the project.</p>
-    </section>
-    <section class="problem">
-      <h2>The Probelm</h2>
-      <p>There are many well-known cloud storage sites in use today but they are all designed for one set of tasks or user group and many are hard to use or plain looking. So, I wanted to learn what features users would actually use and use what I learned to create a product that would be intuitive to use as well as aesthetically pleasing and unique.</p>
-    </section>
-    <!--solution-->
-    <section class="solution">
-      <h2>The Solution</h2>
-      <p>Through user research and competitive analysis I discovered that a competitor with a large amount of free and secure storage, a broad target audience, and an easy to use interface, could take the market by storm.
+  <head>
+    <title>Case Study | Dreamers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <!--Navbar section-->
+        <header class="header">
+          <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="form.html">Contact</a></li>
+          </ul>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="parallax dreamers" style="background-image: url(images/dreamers-card.png);"></div>
+        </section>
+        <!--problem overview-->
+        <section data-aos="fade-right" class=”overview”>
+          <h2>Project Overview</h3>
+            <div class="bg_text">
+              <h5>Summary</h5>
+              <p>Even though there are a lot of big names in the cloud storage and organization industry, a rising competitor with the right combination of features to meet the needs of a target audience could dominate the market. I set out to create that competitor.</p>
+              <!--my roles/tools-->
+              <h5>My Role</h5>
+              <p>I worked as the core designer for the Dreamers project. I was responsible for the research and creation of the logo and brand, as well as all aspects of user research, testing, and design of the Dreamers site itself. </p>
+              <h5>Tools and Deliverables</h5>
+            <p>Using Figma and InVision as tools I produced a user survey and analysis, three user personas, competitve analysis, user stories, user flows, wireframes, prototype(s), prototype testing, user testing, and created a brand and logo for the project.</p>
+          </div>
+        </section>
+        <section data-aos="fade-right" class="problem">
+          <h2>The Probelm</h2>
+          <div class="bg_text">
+            <p>There are many well-known cloud storage sites in use today but they are all designed for one set of tasks or user group and many are hard to use or plain looking. So, I wanted to learn what features users would actually use and use what I learned to create a product that would be intuitive to use as well as aesthetically pleasing and unique.</p>
+          </div>
+        </section>
+        <!--solution-->
+        <section class="solution">
+          <h2 data-aos="fade-right">The Solution</h2>
+          <div data-aos="fade-right" class="bg_text">
+            <p>Through user research and competitive analysis I discovered that a competitor with a large amount of free and secure storage, a broad target audience, and an easy to use interface, could take the market by storm.
             Then through the creation of user story and user personas; I discovered the features users actually wanted and needed.
-            And so the concept of <b>Dreamers was born; with 20GB of free secure cloud storage, the ability to upload files and images, download, edit, add and sort files using labels or folders, create documents, spreadsheets, notes, presentations, as well as share content and collaborate via video conference.</b>
+            And so the concept of <strong>Dreamers was born; with 20GB of free secure cloud storage, the ability to upload files and images, download, edit, add and sort files using labels or folders, create documents, spreadsheets, notes, presentations, as well as share content and collaborate via video conference.</strong>
             I then put it all into action with user flows, wireframes, mockups, branding, prototypes, and tested it all with mockup usability testing and analysis.<br><a class="inline-link" target="_blank" href="https://invis.io/79ORKW3YTQ4#/318584690_Landing">Live Prototype</a></p>
-      <div class="bg-color"><div class="bg-white parallax" style="background-image: url(images/final-frame.png);"></div></div>
-    </section>
-    <!--Discovery and Research Section-->
-    <!--user survey research-->
-    <section class="research">
-      <h2>User Survey Research</h2>
-      <h5 class="left">Goals:</h5>
-      <p>Before starting the design, I created and deployed a user survey to gather some general information about users to discover and assess the competition, key user groups, and current user wants, needs, and habits.</p>
-      <h5 class="left">Results:</h5>
-      <ul class="color">
-        <li>88% of users reported using cloud storage services</li>
-        <li>95.2% reported wanting to use folders to organize their content</li>
-        <li>47.6% reported wanting to use labels</li>
-        <li>There was also a general interest in collaboration features</li>
-      </ul>
-      <h5>Summary</h5>
-      <p>The results were helpful but somewhat inconclusive. My word choice and question options allowed for a lot of mixed and unhelpful data that went beyond the scope of the project. <br>In the future I will spend more time crafting questions that will be more of an asset to the project.</p>
-    </section>
-    <!--user personas-->
-    <section class="personas">
-      <h2>User Personas</h2>
-      <p>I interviewed three respondants from my survey and used their data, as well as the survey data, to craft three user personas that represent the three different types of potential user groups.</p>
-      <div class="bg-color">
-        <div class="bg-white"><img class="persona" src="images/dreamers-personas-group.png" alt="User Persona"/></div>
-      </div>
-    </section>
-    <!--competitive analysis-->
-    <section class="comp-analysis">
-      <h2>Competitive Analysis</h2>
-      <p>During the survey analysis three main potential competitors were discovered; Google Drive, Evernote, Dropbox. Following the discovery a competitive analysis was completed to determine the strengths of the competition and potential opportunities for Dreamers. These are the key discoveries:</p>
-      <h5>Strengths</h5>
-      <ul class="color">
-        <li>Built in productivity suite</li>
-        <li>In-app collaboration</li>
-        <li>Two factor authentication option</li>
-        <li>Sharing features</li>
-      </ul>
-      <h5>Opportunities</h5>
-      <ul class="color">
-        <li>Native set of productivity and sharing features</li>
-        <li>More free storage for every user</li>
-        <li>Clean, simple interface with only necessary features</li>
-        <li>Support for multiple file types</li>
-      </ul>
-    </section>
-    <!--User stories and flows-->
-    <section class="stories">
-      <h2>User Stories & Flows</h2>
-      <p>After the creation of my user personas I used the data I had previously gathered in my research to create a list of high, medium, and low priority user stories. For the sake of staying within the scope of the project I focused on mainly the high, with a few medium, priority user stories for the creation of my user flows.</p>
-      <div class="bg-color">
-        <div class="bg-white"><img class="flow_img" src="images/new-content.png" alt="User flow diagram"/></div>
-      </div>
-    </section>
-    <!--sketching-->
-    <section class="design-process">
-      <h2>Wireframe Sketches</h2>
-      <p>After creating the content strategy for the Dreamers site I quickly hand-drafted rough page outlines with a pen and paper for the major pages I thought I was going to need for the site... little did I know this would not be NEARLY enough.</p>
-      <div class="bg-color"><div class="bg-white"><img class="sketches" src="images/rough-sketches.jpg" alt="pen and paper sketches"/></div></div>
-    </section>
-    <!--wireframing-->
-    <section class="wireframing">
-      <h2>Wireframes</h2>
-      <p>After the rough sketches I translated them to low-fidelity wireframes in Figma. These are a few of the wireframes created in Figma. I ended up creating significantly more screens than I had originally sketched out so it ended up being a more time-intensive piece of the design than I had anticipated as well but I did learn a lot about careful iteration.</p>
-      <div class="bg-color"><div class="gallery bg-white">
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/dreamers-wireframe-signupb.jpg" alt="share frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/dreamers-wireframe-dashboard.jpg" alt="dashboard"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/dreamers-wireframe-file.jpg" alt="file frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/dreamers-wireframe-new.jpg" alt="share frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/dreamers-wireframe-login.jpg" alt="login frame"/></div>
-      </div></div>
-    </section>
-    <section>
-      <h2>Wireframes— Usability Testing</h2>
-      <p>I then created a working prototype with my wireframes using InVision and tested it with two different types of users to assess the usability of the project and identify potential problems. I tested it both in-person and remotely using screen record and video calling using an identical testing script to help assure testing result accuracy. I asked each tester to complete three tasks on the site: sign up for an account, add a piece of content, and organize a piece of content. Neither user had any significant issues completing the tasks and did so with little to no input or help from me. The only negative feedback I received was during the signup process the selection buttons resembled the navigation buttons which caused some confusion. The other point of feedback was on the landing page the “login” and “Sign up” are not using the same font. Both of these issues would be fixed with my first round of iterations.</p>
-    </section>
-    <!--initial mockup-->
-    <section class="initial">
-      <h2>Hifi I - Initial</h2>
-      <p>When I initially layered on the skins to my wireframes I wanted to use a lot of bright colors for every page. When I first had the idea it seemed fun and colorful, in execution it was overwhelming. After going back over my design I realized that all of these colors didn't add anything to the design, in fact they took away from it significantly. The readability of the whole site was poor so before I even did any user testing I went back and revised the color scheme and design for the Dreamers site to tone it down. I also got carried away with my use of multiple background types and images. This step was a really big learning lesson about editing your work and really thinking about your design choice before executing it and evaluating later.</p>
-      <div class="bg-color"><div class="gallery bg-white">
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-sign-up.jpg" alt="sign up frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-dashboard.jpg" alt="dashboard"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-file.jpg" alt="file frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-label.jpg" alt="label frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-login.jpg" alt="login frame"/></div>
-      </div></div>
-    </section>
-    <!--design iteration I-->
-    <section class="iteration">
-      <h2>Hifi II - Iteration</h2>
-      <p>After my initial high-fidelity mock-up it became very clear that I needed to tone down my color palate significantly and so I went back over and got rid of all the neon-esq colors and replaced them with a darker blue and dusty purple toned color palette. The buttons also took on a more rounded look and the file images were taking up too much space on the initial wireframes so I scaled down those as well.</p>
-      <div class="bg-color"><div class="gallery bg-white">
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-signup.jpeg" alt="sign up frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-dashboard.jpg" alt="dashboard frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-file.jpg" alt="file frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-label.jpeg" alt="label frame"/></div>
-        <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-login.jpg" alt="login frame"/></div>
-      </div></div>
-    </section>
-    <!--design dilemma-->
-    <section class="dilemma">
-        <h2>Design Dilemma</h2>
-        <p>Throughout the duration of the iterations one thing still bothered me, the background and layout. I felt as if I had a lot of wasted space on the page by confining the page content into a box on the page. I knew I wanted to keep the star/space theme but I wanted to brighten it up and not make it feel so dark and gloomy and give the content room to breathe; & I am so glad I did. </p>
-    </section>
-    <!--design iteration 2-->
-    <section class="iteration-2">
-        <h2>Hifi III - Iteration Iterated</h2>
-        <p>By eliminating the whole image background, more space could be given to the files and it allowed me to further visually separate the folders/buttons from the files on the user dashboard. I also utilized a blue tone color scheme throughout with the image as the header throughout. I also removed the boxes around the files and moved them closer together in order to fit more files on the screen and better utilize the space on the page.</p>
-        <div class="bg-color"><div class="gallery bg-white">
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-signup.jpeg" alt="sign up frame"/></div>
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-dashboard.jpg" alt="dashboard frame"/></div>
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-file.jpg" alt="file frame"/></div>
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-label.jpg" alt="share frame"/></div>
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-login.jpg" alt="login frame"/></div>
-        </div></div>
-    </section>
-
-    <!--usability testing II
-    <section class="usability">
-        <h2>Usability Testing II</h2>
-        <p>For this second round of prototpe testing I used an identical testing script and three users to assess the current usability of Dreamers as well as identify any issues. Overall I got good results from my user tests. All three users enjoyed the site as a whole and had no problems navigating around the site.</p>
-        <h5>Issues & Changes</h5>
-          <dt> <b>I.</b> When rendered on a desktop the screens were fine but when viewed on a Mac-book the design was way too big.</dt>
+          </div>
+          <div class="bg_color"><div class="parallax dreamers" style="background-image: url(images/final-frame.png);"></div></div>
+        </section>
+        <!--Discovery and Research Section-->
+        <!--user survey research-->
+        <section data-aos="fade-right" class="research">
+          <h2>User Survey Research</h2>
+          <div class="bg_text">
+            <h5 class="left">Goals:</h5>
+            <p>Before starting the design, I created and deployed a user survey to gather some general information about users to discover and assess the competition, key user groups, and current user wants, needs, and habits.</p>
+            <h5 class="left">Results:</h5>
+            <ul class="color">
+              <li>88% of users reported using cloud storage services</li>
+              <li>95.2% reported wanting to use folders to organize their content</li>
+              <li>47.6% reported wanting to use labels</li>
+              <li>There was also a general interest in collaboration features</li>
+            </ul>
+            <h5>Summary</h5>
+            <p>The results were helpful but somewhat inconclusive. My word choice and question options allowed for a lot of mixed and unhelpful data that went beyond the scope of the project. <br>In the future I will spend more time crafting questions that will be more of an asset to the project.</p>
+          </div>
+        </section>
+        <!--user personas-->
+        <section class="personas">
+          <div data-aos="fade-right">
+            <h2>User Personas</h2>
+            <div class="bg_text"><p>I interviewed three respondants from my survey and used their data, as well as the survey data, to craft three user personas that represent the three different types of potential user groups.</p></div>
+          </div>
+          <a href="#img1"><img class="persona thumbnail" src="images/dreamers-personas-group.png" alt="User Persona"/></a>
+            <!-- lightbox container ()-->
+          <a href="#_" class="lightbox" id="img1"><img src="images/dreamers-personas-group.png" alt="User Persona"/></a>
+        </section>
+        <!--competitive analysis-->
+        <section data-aos="fade-right" class="comp-analysis">
+          <h2>Competitive Analysis</h2>
+          <div class="bg_text">
+            <p>During the survey analysis three main potential competitors were discovered; Google Drive, Evernote, Dropbox. Following the discovery a competitive analysis was completed to determine the strengths of the competition and potential opportunities for Dreamers. These are the key discoveries:</p>
+            <h5>Strengths</h5>
+            <ul class="color">
+              <li>Built in productivity suite</li>
+              <li>In-app collaboration</li>
+              <li>Two factor authentication option</li>
+              <li>Sharing features</li>
+            </ul>
+            <h5>Opportunities</h5>
+            <ul class="color">
+              <li>Native set of productivity and sharing features</li>
+              <li>More free storage for every user</li>
+              <li>Clean, simple interface with only necessary features</li>
+              <li>Support for multiple file types</li>
+            </ul>
+          </div>
+        </section>
+        <!--User stories and flows-->
+        <section class="stories">
+          <div data-aos="fade-right">
+            <h2>User Stories & Flows</h2>
+            <div class="bg_text"><p>After the creation of my user personas I used the data I had previously gathered in my research to create a list of high, medium, and low priority user stories. For the sake of staying within the scope of the project I focused on mainly the high, with a few medium, priority user stories for the creation of my user flows.</p></div>
+          </div>
+          <a href="#img2"><img class="flow_img thumbnail"  src="images/new-content.png" alt="User flow diagram"/></a>
+          <!-- lightbox container (hidden)-->
+        <a href="#_" class="lightbox" id="img2"><img src="images/new-content.png" alt="User Persona"/></a>
+        </section>
+        <!--sketching-->
+        <section class="design-process">
+          <div data-aos="fade-right">
+            <h2>Wireframe Sketches</h2>
+            <div class="bg_text"><p>After creating the content strategy for the Dreamers site I quickly hand-drafted rough page outlines with a pen and paper for the major pages I thought I was going to need for the site... little did I know this would not be NEARLY enough.</p></div>
+          </div>
+          <div div data-aos="fade"  class="bg_color"><img class="sketches" src="images/rough-sketches.jpg" alt="pen and paper sketches"></div>
+        </section>
+        <!--wireframing-->
+        <section class="wireframing">
+          <div data-aos="fade-right">
+            <h2>Wireframes</h2>
+            <div class="bg_text"><p>After the rough sketches I translated them to low-fidelity wireframes in Figma. These are a few of the wireframes created in Figma. I ended up creating significantly more screens than I had originally sketched out so it ended up being a more time-intensive piece of the design than I had anticipated as well but I did learn a lot about careful iteration.</p></div>
+          </div>
+          <div class="bg_color"><div class="parallax dreamers parallax_small" style="background-image: url(images/wireframes.png);"></div></div>
+          </section>
+          <section data-aos="fade-right">
+            <h2>Wireframes— Usability Testing</h2>
+            <div class="bg_text"><p>I then created a working prototype with my wireframes using InVision and tested it with two different types of users to assess the usability of the project and identify potential problems. I tested it both in-person and remotely using screen record and video calling using an identical testing script to help assure testing result accuracy. I asked each tester to complete three tasks on the site: sign up for an account, add a piece of content, and organize a piece of content. Neither   user had any significant issues completing the tasks and did so with little to no input or help from me. The only negative feedback I received was during the signup process the selection buttons resembled the navigation buttons which caused some confusion. The other point of feedback was on the landing page the “login” and “Sign up” are not using the same font. Both of these issues would be fixed with my first round of iterations.</p></div>
+          </section>
+          <!--initial mockup-->
+          <section class="initial">
+            <div data-aos="fade-right">
+              <h2>Hifi I - Initial</h2>
+              <div class="bg_text"><p>When I initially layered on the skins to my wireframes I wanted to use a lot of bright colors for every page. When I first had the idea it seemed fun and colorful, in execution it was overwhelming. After going back over my design I realized that all of these colors didn't add anything to the design, in fact they took away from it significantly. The readability of the whole site was poor so before I even did any user testing I went back and revised the color scheme and design for the Dreamers site to tone it down. I also got carried away with my use of multiple background types and images. This step was a really big learning lesson about editing your work and really thinking about your design choice before executing it and evaluating later.</p></div>
+            </div>
+            <div class="bg_color"><div class="gallery bg_color_padded">
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-sign-up.jpg" alt="sign up frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-dashboard.jpg" alt="dashboard"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-file.jpg" alt="file frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-label.jpg" alt="label frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/initial-login.jpg" alt="login frame"/></div>
+            </div></div>
+          </section>
+          <!--design iteration I-->
+          <section class="iteration">
+            <div data-aos="fade-right">
+              <h2>Hifi II - Iteration</h2>
+              <div class="bg_text"><p>After my initial high-fidelity mock-up it became very clear that I needed to tone down my color palate significantly and so I went back over and got rid of all the neon-esq colors and replaced them with a darker blue and dusty purple toned color palette. The buttons also took on a more rounded look and the file images were taking up too much space on the initial wireframes so I scaled down those as well.</p></div>
+            </div>
+            <div class="bg_color"><div class="gallery bg_color_padded">
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-signup.jpeg" alt="sign up frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-dashboard.jpg" alt="dashboard frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-file.jpg" alt="file frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-label.jpeg" alt="label frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-I-login.jpg" alt="login frame"/></div>
+            </div></div>
+          </section>
+          <!--design dilemma-->
+          <section data-aos="fade-right" class="dilemma">
+            <h2>Design Dilemma</h2>
+            <div class="bg_text">
+              <p>Throughout the duration of the iterations one thing still bothered me, the background and layout. I felt as if I had a lot of wasted space on the page by confining the page content into a box on the page. I knew I wanted to keep the star/space theme but I wanted to brighten it up and not make it feel so dark and gloomy and give the content room to breathe; & I am so glad I did. </p>
+            </div>
+          </section>
+          <!--design iteration 2-->
+          <section class="iteration-2">
+            <div data-aos="fade-right">
+              <h2>Hifi III - Iteration Iterated</h2>
+              <div class="bg_text"><p>By eliminating the whole image background, more space could be given to the files and it allowed me to further visually separate the folders/buttons from the files on the user dashboard. I also utilized a blue tone color scheme throughout with the image as the header throughout. I also removed the boxes around the files and moved them closer together in order to fit more files on the screen and better utilize the space on the page.</p></div>
+            </div>
+            <div class="bg_color"><div class="gallery bg_color_padded">
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-signup.jpeg" alt="sign up frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-dashboard.jpg" alt="dashboard frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-file.jpg" alt="file frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-label.jpg" alt="share frame"/></div>
+              <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/revised-II-login.jpg" alt="login frame"/></div>
+            </div></div>
+          </section>
+          <!--usability testing II
+          <section class="usability">
+          <h2>Usability Testing II</h2>
+          <p>For this second round of prototpe testing I used an identical testing script and three users to assess the current usability of Dreamers as well as identify any issues. Overall I got good results from my user tests. All three users enjoyed the site as a whole and had no problems navigating around the site.</p>
+          <h5>Issues & Changes</h5>
+          <dt> <strong>I.</strong> When rendered on a desktop the screens were fine but when viewed on a Mac-book the design was way too big.</dt>
           <dd>This may be due to the prototype being in Figma as the frame sizes are standard and should have no issues scaling properly.</dd>
-          <dt> <b>II.</b> There were unintentionally two different types of screens for an overlay (one for the folder and one for labels).</dt>
+          <dt> <strong>II.</strong> There were unintentionally two different types of screens for an overlay (one for the folder and one for labels).</dt>
           <dd>Both screens were changed to the label format.</dd>
-          <dt> <b>III.</b> On the sign up screen the highlighted “box” moves along the page and seems disorganized.</dt>
+          <dt> <strong>III.</strong> On the sign up screen the highlighted “box” moves along the page and seems disorganized.</dt>
           <dd>All screens were changed to reflect the middle formatting.</dd>
-          <dt> <b>IV.</b> Most buttons had to be clicked twice (once to select one to navigate) and caused a lot of confusion.</dt>
+          <dt> <strong>IV.</strong> Most buttons had to be clicked twice (once to select one to navigate) and caused a lot of confusion.</dt>
           <dd>Changed buttons to be “hover” for color change and  one click to navigate.</dd>
-          <dt> <b>V.</b> This user testing also made me aware of some inconsistencies in my design where the buttons shift slightly or the colors change unnecessarily.</dt>
+          <dt> <strong>V.</strong> This user testing also made me aware of some inconsistencies in my design where the buttons shift slightly or the colors change unnecessarily.</dt>
           <dd>I went back to discover and remedy any inconsistencies throughout the site.</dd>
         </dl>
-    </section> -->
-    <!--preference test II-->
-    <section class="preference-2">
-        <h2>Preference Testing</h2>
-        <p>After another round of usability testing I learned that the site was much too dark and didn’t have the visual appeal I wanted it to. The all blue color scheme felt a lot like several other well known brands so I decided to conduct this preference test to determine which color scheme would be best for the overall finished dreamers design. I recieved overwhelming support for option ‘C’ so Dreamers-refined was born.</p>
-        <div class="main">
-          <div class="main_content">
-            <img class="main_img" src="images/landing-1.jpg" alt="BlueGreen tones" style="width:100%">
-            <p class="centered">A</p>
+        </section> -->
+        <!--preference test II-->
+        <section class="preference-2">
+          <div data-aos="fade-right">
+            <h2>Preference Testing</h2>
+            <div class="bg_text"><p>After another round of usability testing I learned that the site was much too dark and didn’t have the visual appeal I wanted it to. The all blue color scheme felt a lot like several other well known brands so I decided to conduct this preference test to determine which color scheme would be best for the overall finished dreamers design. I recieved overwhelming support for option ‘C’ so Dreamers-refined was born.</p></div>
           </div>
-          <div class="main_content">
-            <img class="main_img" src="images/landing-2.jpg" alt="Teal tones" style="width:100%">
-            <p class="centered">B</p>
+          <div class=test>
+            <div class=test_content>
+              <img class=test_img src="images/landing-1.jpg" alt="BlueGreen tones" style="width:100%">
+              <p class="centered">A</p>
+            </div>
+            <div class=test_content>
+              <img class=test_img src="images/landing-2.jpg" alt="Teal tones" style="width:100%">
+              <p class="centered">B</p>
+            </div>
+            <div class=test_content>
+              <img class=test_img src="images/landing-3.jpg" alt="Mauve tones" style="width:100%">
+              <p class="centered">C</p>
+            </div>
+            <div class=test_content>
+              <img class=test_img src="images/landing-4.jpg" alt="Purple tones" style="width:100%">
+              <p class="centered">D</p>
+            </div>
           </div>
-          <div class="main_content">
-            <img class="main_img" src="images/landing-3.jpg" alt="Mauve tones" style="width:100%">
-            <p class="centered">C</p>
+        </section>
+        <!--final design-->
+        <section class="final">
+          <div data-aos="fade-right">
+            <h2>Final Design</h2>
+            <div class="bg_text"><p>The preference test further supported my belief in the need to change the color scheme to mauve/purple with yellow-orange as an accent color. Changing the colors gave the site a more luxurious and dreamy cloud feel which better represents the brand and its ideals. <a class="inline-link" target="_blank" href="https://invis.io/79ORKW3YTQ4#/318584690_Landing">Live Prototype</a></p></div>
           </div>
-          <div class="main_content">
-            <img class="main_img" src="images/landing-4.jpg" alt="Purple tones" style="width:100%">
-            <p class="centered">D</p>
+          <div class="bg_color"><div class="parallax dreamers" style="background-image: url(images/final-frames.png);"></div></div>
+        </section>
+        <!--design progression-dashboard-->
+        <section class="progression">
+          <div data-aos="fade-right">
+            <h2>Design Progression - Dashboard</h2>
+            <div class="bg_text"><p>This is the design progression throughout all of my iterations visualized using the dashboard; for many of these I only designed the dashboard before iterating the design again; not every frame.</p></div>
           </div>
-        </div>
-    </section>
-    <!--final design-->
-    <section class="final">
-        <h2>Final Design</h2>
-        <p>The preference test further supported my belief in the need to change the color scheme to mauve/purple with yellow-orange as an accent color. Changing the colors gave the site a more luxurious and dreamy cloud feel which better represents the brand and its ideals. <a class="inline-link" target="_blank" href="https://invis.io/79ORKW3YTQ4#/318584690_Landing">Live Prototype</a></p>
-        <div class="bg-color"><div class="gallery bg-white">
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/final-signup.jpg" alt="sign up frame"/></div>
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/final-dashboard.png" alt="dashboard frame"/></div>
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/final-file.jpg" alt="file frame"/></div>
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/final-label.jpg" alt="share frame"/></div>
-          <div class="gallery-img-div"><img class="gallery-img imgShadow" src="images/final-login.jpg" alt="login frame"/></div>
-        </div></div>
-    </section>
-    <!--design progression-dashboard-->
-    <section class="progression">
-        <h2>Design Progression - Dashboard</h2>
-        <p>This is the design progression throughout all of my iterations visualized using the dashboard; for many of these I only designed the dashboard before iterating the design again; not every frame.</p>
-        <div class="bg-color"><div class="progress bg-white">
-            <div class="progress-container"><img class="flexImg imgShadow" src="images/wireframe-dashboard.png" alt="Empty wireframe"></div>
-            <div class="progress-container"><img class="flexImg imgShadow" src="images/first-skin.jpeg" alt="Initial mockup"></div>
-            <div class="progress-container"><img class="flexImg imgShadow" src="images/first-redesign.jpeg" alt="First iteration" ></div>
-            <div class="progress-container"><img class="flexImg imgShadow" src="images/second-design-iteration.jpg" alt="Second iteration" ></div>
-            <div class="progress-container"><img class="flexImg imgShadow" src="images/final-dashboard.jpeg" alt="Final design"></div>
-      </div></div>
-    </section>
-    <!--branding & identity-->
-    <section class="branding">
-        <!--img class="icon" src="images/icon-brand.png" alt="Branding icon"/-->
-        <h2>Branding</h2>
-        <img class="moodboard" src="images/moodboard.jpg" alt="Branding moodboard"/>
-        <p class="cap">Dreamers moodboard</p>
-        <div class="Brand">
-          <h3>Brand Ideals</h3>
-            <ul class="color">
-              <li><i> Everyone • </i> Everybody has a dream and anyone can be a Dreamer. </li>
-              <li><i> Secure • </i>Dreamers lets you keep all of your files in one secure place in the cloud.</li>
-              <li><i> Organize • </i>Through searchable labels and folders you can easily find the file you are looking for when you need it most.</li>
-              <li><i> Create • </i>Dreamers lets you create documents, spreadsheets, notes, and presentations no matter where your dreams take you.</li>
-            </ul>
-        </div>
-        <div class="logo-development">
-          <h3>Logo Development</h3>
-          <div class="logo_sketches">
-            <img class="sketches" src="images/logo-sketches.jpg" alt="Logo sketches"/>
-          </div>
-        <!--logo image gallery-->
-        <div class="logo-dev-images">
-          <div class="dev-content">
-            <img class="dev-img" src="images/logo-init.png" alt="initial draft"/>
-            <p class="img_cap"><b>1. Initial outline</b> - Draft</p>
-          </div>
-          <div class="dev-content">
-            <img class="dev-img" src="images/logo-1fill.png" alt="first background fill">
-            <p class="img_cap"><b>2. First background fill</b> - Too busy for anything but a plain white background</p>
-          </div>
-          <div class="dev-content">
-            <img class="dev-img" src="images/logo-2fill.png" alt="first fill iteration">
-            <p class="img_cap"><b>3. Fill iteration</b> - The background was too light and made the logo hard to read</p>
-          </div>
-          <div class="dev-content">
-            <img class="dev-img" src="images/logo-3fill.png" alt="second fill iteration">
-            <p class="img_cap"><b>4. Second fill iteration</b> - The background was too dark and “gloomy” and didnt convey the “dreamy” feel I was going for</p>
-          </div>
-          <div class="dev-content">
-            <img class="dev-img" src="images/logo-noFill.png" alt="Alternate coloring">
-            <p class="img_cap"><b>5. Final design </b> - Alternative, all-white logo variant</p>
-          </div>
-          <div class="dev-content">
-            <img class="dev-img" src="images/logo-final.png" alt="Final fill design">
-            <p class="img_cap"><b>6. Final design </b> - Because it has the same colors the site uses and it has good readability at all sizes as well as having a simple fill image that isn’t too distracting</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--lessons learned-->
-    <section class="Learning">
-        <h2>Learning</h2>
-        <p>While crafting the survey for this project I included too many short answer questions which lead to a lot of data, but most of it was muddled and had no consensus. When I was crafting the survey I was determined to believe that short-answer questions would give me the best range of data to work with. This project was a hard lesson on how wrong I was and how an unhelpful survey can cause significant scope creep, iterations, and an unfriendly user design. Partially due to the survey, but also partially due to my incessant need to attempt to overachieve and do more than was asked, I ended up creating a much larger project for myself by going beyond what my client asked for and offering many features that while they are neat; they only took time away from the rest of the design that mattered more to the client and users. While because I had made this project into something so much bigger I needed to make SIGNIFICANTLY more screens than I had anticipated or had time to make so many screens were rushed which is why the design was plagued with jumping elements until I eliminated some of the extra factors and brought Dreamers back into the scope of the project. After that I was able to give more attention to the layout and colors themselves and bring Dreamers back around to really create a design I was happy with and proud of.
-        </p>
-        <br>
-        <h3>Lessons Learned</h3>
-        <ul class="color">
-          <li>Stay within the scope of the project</li>
-          <li>Dont overthink my design</li>
-          <li>Create good, through survey questions to be a better asset to the process</li>
-        </ul>
-      </section>
+          <div class="bg_color"><div class="progress bg_color_padded">
+              <div class="progress-container"><img class="flexImg imgShadow" src="images/wireframe-dashboard.png" alt="Empty wireframe"></div>
+              <div class="progress-container"><img class="flexImg imgShadow" src="images/first-skin.jpeg" alt="Initial mockup"></div>
+              <div class="progress-container"><img class="flexImg imgShadow" src="images/first-redesign.jpeg" alt="First iteration" ></div>
+              <div class="progress-container"><img class="flexImg imgShadow" src="images/second-design-iteration.jpg" alt="Second iteration" ></div>
+              <div class="progress-container"><img class="flexImg imgShadow" src="images/final-dashboard.jpeg" alt="Final design"></div>
+            </div></div>
+          </section>
+          <!--branding & identity-->
+          <section data-aos="fade-right" class="branding">
+            <h2>Branding</h2>
+            <img class="moodboard" src="images/moodboard.jpg" alt="Branding moodboard"/>
+            <p><i>Dreamers moodboard</i></p>
+            <div class="Brand">
+              <div class="bg_text">
+                <h3 style="margin: 1rem auto 0 auto;">Brand Ideals</h3>
+                <ul class="color">
+                  <li><i> Everyone • </i> Everybody has a dream and anyone can be a Dreamer. </li>
+                  <li><i> Secure • </i>Dreamers lets you keep all of your files in one secure place in the cloud.</li>
+                  <li><i> Organize • </i>Through searchable labels and folders you can easily find the file you are looking for when you need it most.</li>
+                  <li><i> Create • </i>Dreamers lets you create documents, spreadsheets, notes, and presentations no matter where your dreams take you.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="logo-development">
+              <h3 style="color: #FFF;">Logo Development</h3>
+              <div class="logo_sketches">
+                <img class="sketches" src="images/logo-sketches.jpg" alt="Logo sketches"/>
+              </div>
+              <!--logo image gallery-->
+              <div class="logo-dev-images">
+                <div class="dev-content">
+                  <img class="dev-img" src="images/logo-init.png" alt="initial draft"/>
+                  <p class="img_cap"><strong>1. Initial outline</strong> - Draft</p>
+                </div>
+                <div class="dev-content">
+                  <img class="dev-img" src="images/logo-1fill.png" alt="first background fill">
+                  <p class="img_cap"><strong>2. First background fill</strong> - Too busy for anything but a plain white background</p>
+                </div>
+                <div class="dev-content">
+                  <img class="dev-img" src="images/logo-2fill.png" alt="first fill iteration">
+                  <p class="img_cap"><strong>3. Fill iteration</strong> - The background was too light and made the logo hard to read</p>
+                </div>
+                <div class="dev-content">
+                  <img class="dev-img" src="images/logo-3fill.png" alt="second fill iteration">
+                  <p class="img_cap"><strong>4. Second fill iteration</strong> - The background was too dark and “gloomy” and didnt convey the “dreamy” feel I was going for</p>
+                </div>
+                <div class="dev-content">
+                  <img class="dev-img" src="images/logo-noFill.png" alt="Alternate coloring">
+                  <p class="img_cap"><strong>5. Final design </strong> - Alternative, all-white logo variant</p>
+                </div>
+                <div class="dev-content">
+                  <img class="dev-img" src="images/logo-final.png" alt="Final fill design">
+                  <p class="img_cap"><strong>6. Final design </strong> - Because it has the same colors the site uses and it has good readability at all sizes as well as having a simple fill image that isn’t too distracting</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--lessons learned-->
+          <section data-aos="fade-right" class="Learning">
+            <h2>Learning</h2>
+            <div class="bg_text">
+              <p>While crafting the survey for this project I included too many short answer questions which lead to a lot of data, but most of it was muddled and had no consensus. When I was crafting the survey I was determined to believe that short-answer questions would give me the best range of data to work with. This project was a hard lesson on how wrong I was and how an unhelpful survey can cause significant scope creep, iterations, and an unfriendly user design. Partially due to the survey, but also partially due to my incessant need to attempt to overachieve and do more than was asked, I ended up creating a much larger project for myself by going beyond what my client asked for and offering many features that while they are neat; they only took time away from the rest of the design that mattered more to the client and users. While because I had made this project into something so much bigger I needed to make SIGNIFICANTLY more screens than I had anticipated or had time to make so many screens were rushed which is why the design was plagued with jumping elements until I eliminated some of the extra factors and brought Dreamers back into the scope of the project. After that I was able to give more attention to the layout and colors themselves and bring Dreamers back around to really create a design I was happy with and proud of.
+              </p>
+              <br>
+              <h3>Lessons Learned</h3>
+              <ul class="color">
+                <li>Stay within the scope of the project</li>
+                <li>Dont overthink my design</li>
+                <li>Create good, through survey questions to be a better asset to the process</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </main>
       <!-- page footer-->
       <footer>
-        <h6><a class="inline-link" href="form.html">Hannah Hill</a></h6>
+        <h6><a id="white" class="inline-link" href="form.html">Hannah Hill</a></h6>
         <h6>UX UI Designer + Frontend Developer</h6>
         <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
         <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png"  alt="github icon"></a></div>
@@ -302,13 +326,18 @@
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
       <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-        gtag('config', 'UA-134476139-1');
+          gtag('config', 'UA-134476139-1');
       </script>
-    </section>
-  </main>
-</body>
+      <!-- Scripts  -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
+      <script src="scripts/main.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+  </body>
 </html>
