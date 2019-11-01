@@ -6,27 +6,30 @@ var tl = anime.timeline({
 tl
 .add({
   targets: '.shape',
-  translateY: -250,
+  translateY: -350,
   scale: 4,
   rotate: '1turn'
 }, 100)
 .add({
   targets: '.shape1',
-  translateX: 250,
+  translateY: -250,
   scale: 4,
-  rotate: '1turn'
+  rotate: '1turn',
+  opacity: .5
 }, 200) // relative offset
 .add({
   targets: '.shape2',
-  translateY: 250,
+  translateY: -150,
   scale: 4,
-  rotate: '1turn'
+  rotate: '1turn',
+  opacity: .25
 }, 300) // relative offset
 .add({
   targets: '.shape3',
-  translateX: -250,
+  translateY: -50,
   scale: 4,
-  rotate: '1turn'
+  rotate: '1turn',
+  opacity: .15
 }, 400); // absolute offset
 
 

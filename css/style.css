@@ -695,12 +695,22 @@ img.index_image {
 .parallax_small{
   min-height: 500px;
 }
-/** LIGHTBOX MARKUP **/
+/**--- Lightbox Styles ---**/
+.lightboxContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 700px;
+  margin: 1.5rem auto;
 
+}
+.thumbnail{
+  width: 100px;
+}
+/**- Lightbox Markup -**/
 .lightbox {
 	/** Default lightbox to hidden */
 	display: none;
-
 	/** Position and style */
 	position: fixed;
 	z-index: 9999;
@@ -722,10 +732,10 @@ img.index_image {
 .lightbox:target {
 	/** Remove default browser outline */
 	outline: none;
-
 	/** Unhide lightbox **/
 	display: block;
 }
+
 /*--user persona img container*/
 .persona{
   display: block;
