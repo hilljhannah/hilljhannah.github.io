@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <title>Project Challenge | DailyUI</title>
+  <title>Case Study | Dreamers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <main>
@@ -22,9 +24,8 @@
         </ul>
       </header>
       <section class="dailyui">
-        <h2 class="display">#DailyUI</h2>
-        <h3>Daily UI Challenge</h3>
-        <p>I am currently designing my way through a 100 day design challenge called DailyUI. My goal is to continue to surprise + challenge myself and to become a more design-oriented thinker, <a class="inline-link" href="https://www.linkedin.com/in/hannah-j-hill/"> connect with me on Linkedin.</a></p>
+        <h2 class="display">#DailyUI Challenge</h2>
+        <p class="white">I am currently designing my way through a 100 day design challenge called DailyUI. My goal is to continue to surprise + challenge myself, to become a more design-oriented thinker, and to learn something new along the way. <a class="inline-link" href="https://www.linkedin.com/in/hannah-j-hill/"> Join me and connect on Linkedin!</a></p>
       </section>
       <!-- gallery container -->
       <div class="project3-gallery">
@@ -595,23 +596,30 @@
 
 
     </div>
-      <!-- page footer-->
-      <footer>
-        <h6><a class="inline-link" href="form.html">Hannah Hill</a></h6>
-        <h6>UX UI Designer + Frontend Developer</h6>
-        <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
-        <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png"  alt="github icon"></a></div>
-      </footer>
-    </section>
-  </main>
+    </main>
+  </section>
+  <!-- page footer-->
+  <footer>
+    <h6><a id="white" class="inline-link" href="form.html">Hannah Hill</a></h6>
+    <h6>UX UI Designer + Frontend Developer</h6>
+    <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+    <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png"  alt="github icon"></a></div>
+  </footer>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-134476139-1');
-  </script>
-</body>
+        gtag('config', 'UA-134476139-1');
+    </script>
+    <!-- Scripts  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  </body>
 </html>

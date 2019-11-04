@@ -1,6 +1,7 @@
 var tl = anime.timeline({
   easing: 'easeOutExpo',
   duration: 1750,
+  direction: 'alternate',
   loop: true
 });
 tl

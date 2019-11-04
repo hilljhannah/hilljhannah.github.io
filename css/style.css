@@ -205,8 +205,10 @@ nav{
 }
 .bg_color_padded{
   background-color: inherit;
-  padding: 2rem;
+  padding: 1rem;
   height: auto;
+  width: 100%;
+  max-width: 700px;
 }
 .bg_text{
   background-color: #F7F7F7;
@@ -488,6 +490,34 @@ a.cardHover{
 @media only screen and (max-width: 600px){
   .link, .links{font-size: 1.4rem; margin: 0 auto;}
 }
+a.button{
+  background: #141414;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Lato';
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.4s;
+  width: 250px;
+
+}
+a.button:hover{
+  background: #0091a5;
+  border: 2px solid #0091a5;
+  transition: 0.4s;
+}
+.button_group{
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+}
 /*-------- end button styles --------*/
 
 /*-------- homepage (index) styles --------*/
@@ -686,11 +716,17 @@ img.index_image {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: #0091a5;
-  min-height: 1200px;
+  display: block;
+  margin-top: 1rem;
+  min-height: 1100px;
+  transform-origin:bottom;
 }
 /* colored purple background in parallax for dreamers*/
 .dreamers{
   background-color: #493757;
+}
+.mood{
+  background-color: #3DD0D0;
 }
 .parallax_small{
   min-height: 500px;
@@ -783,7 +819,7 @@ img.index_image {
   margin: 0 auto;
   width: 100%;
   max-width: 700px;
-  padding: 0 1rem;
+  padding: 0 0 1rem 0;
 }
 /* dreamers logo images*/
 .logo-dev-images {
@@ -846,13 +882,7 @@ p.img_cap{
   max-width: 700px;
   width: 100%;
 }
-/*-- user testing change example image --*/
-.changes-img{
-  display: block;
-  height: 100%;
-  max-height: 350px;
-  margin: 0 auto 2rem auto;
-}
+
 /* preference container test section */
 .test-section{
   margin: 1rem auto;
@@ -902,9 +932,8 @@ p.img_cap{
   display: block;
   height: auto;
   margin: 1rem auto;
-  width: 80vw;
+  width: 100%;
   max-width: 700px;
-  padding: 1rem ;
 }
 .prototype-prev{
   display: block;
@@ -940,7 +969,8 @@ p.img_cap{
 .imgContainer{
   height: 300px;
   margin: 0 auto;
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
 }
 /*--full size image--*/
 .containedImg{
@@ -949,7 +979,7 @@ p.img_cap{
   object-fit: cover;
   object-position: center;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 /* desktop project/dreamers frames image gallery container */
 .gallery {
@@ -976,16 +1006,25 @@ p.img_cap{
   height: auto;
   width: 100%;
 }
+/*-- user testing change example image --*/
+.changes-img{
+  display: block;
+  height: auto;
+  width: 100%;
+}
 /*-- general mobile project/mood flexbox img container--*/
 .flexContainer{
-  align-items: center;
-  background-color: white;
+  align-items: start;
+  background-color: inherit;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   max-width: 90vw;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
+}
+.mobileFrames{
+  justify-content: center;
 }
 /* individual project/mood flex image/item div  */
 .flexItem{
@@ -1006,7 +1045,7 @@ p.img_cap{
   display: block;
   padding: 1rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 .wire-sketches-flex{
   width: 100%;
