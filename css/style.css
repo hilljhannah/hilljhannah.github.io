@@ -8,6 +8,8 @@ html {
   font-family: "Open Sans";
   font-size: 10px;
   max-width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 body{
   height: 100%;
@@ -205,8 +207,10 @@ nav{
 }
 .bg_color_padded{
   background-color: inherit;
-  padding: 1rem;
+  display: block;
   height: auto;
+  margin: 0 auto;
+  padding: 1rem;
   width: 100%;
   max-width: 700px;
 }
@@ -655,6 +659,7 @@ img.index_image {
 /*-------- project files hero section styles --------*/
 .hero{
   background-color: #141414;
+  background-position: top;
   display: block;
   align-content: center;
   height: 100%;
@@ -665,7 +670,7 @@ img.index_image {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
 }
 .hero_container{
-  background-color: #0091a5;
+  background-color: inherit;
   display: block;
   margin: 0 auto;
   height: 280px;
@@ -712,14 +717,13 @@ img.index_image {
 /* general parallax scroll animation styles */
 .parallax{
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: #0091a5;
   display: block;
+  min-height: 900px;
   margin-top: 1rem;
-  min-height: 1100px;
-  transform-origin:bottom;
 }
 /* colored purple background in parallax for dreamers*/
 .dreamers{
@@ -742,6 +746,9 @@ img.index_image {
 }
 .thumbnail{
   width: 100px;
+}
+.thumbnail_large{
+  width: 300px;
 }
 /**- Lightbox Markup -**/
 .lightbox {

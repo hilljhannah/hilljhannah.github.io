@@ -25,7 +25,7 @@
         </header>
         <!-- Hero Section -->
         <section class="hero">
-          <div class="parallax mood" style="background-image: url(images/mood-card.png);"></div>
+          <div class="parallax_hero mood" style="background-image: url(images/mood-card.png);"></div>
         </section>
         <!--overview-->
         <section class="overview" data-aos="fade-right">
@@ -47,20 +47,15 @@
           </div>
         </section>
         <!--solution-->
-        <section class="solution" data-aos="fade-right">
-          <h2>The Solution</h2>
-          <div class="bg_text">
-            <p>After extensive user research, personas, wireframing, testing, prototyping, countless iterations, and branding the concept of Mood was born; a free, easy, and colorful way to track and record your moods and emotional health throughout the year. Featuring daily reminders with a customizable time so you never miss an entry, the ability to analyze yearly mood summary to receive a detailed breakdown of your emotional health, exportable journal for personal records or sharing with a mental health professional, and a short and sweet journal prompt so you end every journal on a happy and positive note.<br><a class="inline-link" target="_blank" href="https://www.figma.com/proto/KafKLqGzsiWGkOScJrb3Kc/Mood-Prototype-Final?node-id=129%3A4&viewport=1177%2C170%2C0.23969630897045135&scaling=scale-down">View Prototype</a></p>
-          </div>
-          <div class="bg_color">
-            <div class="flexContainer bg_color_padded">
-              <div class="flexItem"><img class="flexImg" src="images/mood/proto-3-signup.png" alt="prototype 3 signup frame"></div>
-              <div class="flexItem"><img class="flexImg" src="images/mood/proto-3-summary.png" alt="prototype 3 summary frame"></div>
-              <div class="flexItem"><img class="flexImg" src="images/mood/proto-3-new.png" alt="prototype 3 new frame"></div>
-              <div class="flexItem"><img class="flexImg" src="images/mood/proto-3-analysis.png" alt="prototype 3 analysis frame"></div>
-              <div class="flexItem"><img class="flexImg" src="images/mood/proto-3-drawer.png" alt="drawer"></div>
+        <section class="solution">
+          <div data-aos="fade-right">
+            <h2>The Solution</h2>
+            <div class="bg_text">
+              <p>After extensive user research, personas, wireframing, testing, prototyping, countless iterations, and branding the concept of Mood was born; a free, easy, and colorful way to track and record your moods and emotional health throughout the year. Featuring daily reminders with a customizable time so you never miss an entry, the ability to analyze yearly mood summary to receive a detailed breakdown of your emotional health, exportable journal for personal records or sharing with a mental health professional, and a short and sweet journal prompt so you end every journal on a happy and positive note.</p>
             </div>
+            <a class="button" target="_blank" href="https://www.figma.com/proto/KafKLqGzsiWGkOScJrb3Kc/Mood-Prototype-Final?node-id=129%3A4&viewport=654%2C147%2C0.1289122998714447&scaling=scale-down">View Final Prototype</a>
           </div>
+          <div class="parallax mood" style="background-image: url(images/mood/mood-showcase.jpg);"></div>
           </section>
         <!--user survey-->
         <section class="research" data-aos="fade-right">
@@ -107,40 +102,41 @@
           </div>
         </section>
       <!--content strategy-->
-      <section class="content" data-aos="fade-right">
-        <h2>Sitemap & Content Strategy</h2>
-        <p class="bg_text">We then drafted the sitemap and content strategy doc to detail how the pages within the application are going to be laid out as well as detail what is going to be on that page.</p>
-          <div class="bg_color"><div class="bg_color_padded sitemap"><img class="sitemapImg"  src="images/mood/mood-sitemap.png" alt="Sitemap"/></div></div>
+      <section class="content">
+        <div data-aos="fade-right">
+          <h2>Sitemap & Content Strategy</h2>
+          <p class="bg_text">We then drafted the sitemap and content strategy doc to detail how the pages within the application are going to be laid out as well as detail what is going to be on that page.</p>
+        </div>
+        <div class="lightboxContainer">
+          <!-- msitemap img thumbnail-->
+          <a href="#msitemap"><img class=" thumbnail thumbnail_large"  src="images/mood/mood-sitemap.png" alt="sketches 1 thumbnail"/></a>
+          <!-- msitemap lightbox container (hidden)-->
+          <a href="#_" class="lightbox" id="msitemap"><img src="images/mood/mood-sitemap.png" alt="sketches 1 signup"/></a>
+        </div>
       </section>
       <!-- wireframe sketching-->
-      <section class="sketching" data-aos="fade-right">
-        <h2>Wireframe Sketches</h2>
-        <p class="bg_text">Before committing wireframes to Figma, wireframe sketches were created on paper to aid in rapid prototyping and allow quick iterations.</p>
-        <!--div class="sketching-section">
-        <h3>Initial (rough)</h3>
-        <p>This first round of sketches was done very quickly and messily to get a first draft sketched out.</p>
-        <img class="sketches" src="images/mood/rough-sketches.jpg" alt="Sketches"/>
+      <section class="sketching">
+        <div data-aos="fade-right">
+          <h2>Wireframe Sketches</h2>
+          <p class="bg_text">Before committing wireframes to Figma, wireframe sketches were created on paper to aid in rapid prototyping and allow quick iterations.</p>
         </div>
-        <div class="sketching-section">
-          <h3>Revised</h3>
-        <p>After the first round of messy sketches cleaner and more detailed sketches were completed.</p> -->
         <div class="lightboxContainer">
-          <!-- mprog1 img thumbnail-->
-          <a href="#mprog1"><img class=" thumbnail"  src="images/mood/wire-initial-signup-2.jpg" alt="wireframe initial thumbnail"/></a>
-          <!-- mprog1 lightbox container (hidden)-->
-          <a href="#_" class="lightbox" id="mprog1"><img src="images/mood/wire-initial-signup-2.jpg" alt="wireframe initial signup"/></a>
-        <div class="bg_color"><div class="flexContainer mobileFrames">
-          <div class="flexDiv"><img class="wire-sketches-flex  imgShadow" src="images/mood/sketches-revised.jpg" alt="Revised Sketches"/></div>
-          <div class="flexDiv"><img class="wire-sketches-flex  imgShadow" src="images/mood/sketches-revised-2.jpg" alt="Revised Sketches cont"/></div>
-          </div>
+          <!-- msketch1 img thumbnail-->
+          <a href="#msketch1"><img class=" thumbnail thumbnail_large"  src="images/mood/sketches-revised.jpg" alt="sketches 1 thumbnail"/></a>
+          <!-- msketch1 lightbox container (hidden)-->
+          <a href="#_" class="lightbox" id="msketch1"><img src="images/mood/sketches-revised.jpg" alt="sketches 1 signup"/></a>
+          <!-- msketch2 img thumbnail-->
+          <a href="#msketch1"><img class=" thumbnail thumbnail_large"  src="images/mood/sketches-revised-2.jpg" alt="sketches 2 thumbnail"/></a>
+          <!-- msketch2 lightbox container (hidden)-->
+          <a href="#_" class="lightbox" id="msketch1"><img src="images/mood/sketches-revised-2.jpg" alt="sketches 2 signup"/></a>
         </div>
       </section>
       <!--wireframing-->
-      <section class="wireframing">
+      <section class="wireframing" data-aos="fade-right">
         <h2>Wireframing</h2>
         <p class="bg_text">Upon iterative sketching and moving onto wireframing it became clear that something was missing. After some additional confirmatory feedback it became clear that adding a series of on-boarding screens would ensure the most user friendly experience; and so on-boarding screens were added to explain the features of the application before signing up.</p>
         <!--  FlexContainer - (wireframing) -->
-        <div class="bg_color"><div class="flexContainer mobileFrames">
+        <div class="bg_color"><div class="flexContainer mobileFrames" data-aos="fade-right">
           <div class="flexItem"><img class="flexImg imgShadow" src="images/mood/revised-signup-4.jpg" alt="onboarding"></div>
           <div class="flexItem"><img class="flexImg imgShadow" src="images/mood/revised-summary-clipped.jpg" alt="summary"></div>
           <div class="flexItem"><img class="flexImg imgShadow" src="images/mood/revised-new-entry-clipped.jpg" alt="new entry"></div>
@@ -151,7 +147,7 @@
       </section>
 
       <!--wireframe user testing-->
-      <section class="wireframe user testing">
+      <section class="wireframe user testing" data-aos="fade-right">
         <h2>Testing the Wireframes</h2>
         <div class="bg_text">
           <p>After the completion of the digital wireframes we did some quick informal user testing to assess the app’s usability. We tested the following tasks: <strong>sign up for an account,
@@ -169,35 +165,32 @@
           </div>
         </section>
         <!--branding & identity-->
-        <section class="branding">
+        <section class="branding" data-aos="fade-right">
           <h2>Branding & Identity</h2>
           <!-- mind-map and thought list -->
           <div class="bg_text">
-            <div class="bg_color_padded"><img class="moodboard" src="images/mood/mindmap-thoughtlist.jpg" alt="Branding mind map & thought list"/></div>
-
-          <h5>Mind Map & Thought List</h5>
-          <p>I created a mind map and thought list while brainstorming the branding for this project to help visualize and create the Mood brand.</p>
-          <div class="Brand">
-            <h3>Brand Ideals</h3>
-            <ul class="color">
-              <li><i>Modern</i> • With a minimalist interface, recognizable fonts, and a refined color palette Mood is a modern app built for the 21st century.</li>
-              <li><i>Secure</i> • All your private emotions and journals are stored within the application but your data never leaves your device so your private data stays private.</li>
-              <li><i>Motivational</i> • Motivates you to journal daily to record, analyze, and manage your emotional health.</li>
-              <li><i>Colorful</i> • Using preset or custom colors to represent associated emotions; visualize your moods in your yearly summary, monthly analysis, or daily journal.</li>
-              <li><i>Calm</i> • The use of a dark background and non-aggressive color scheme invoke calming feelings.</li>
-            </ul>
-            <h3>Colors</h3>
-            <img class="colors" src="images/mood/colors.png" alt="brand colors"/>
-            <p>Using color palette of a soft rainbow gradient of colors for the logo and a bright turquoise as the highlight color paired with dark greys and white It gives the feeling of security, creativity, and refinement to the brand and app.</p>
-            <h3>Logo Design</h3>
-            <div class="imgContainer"><img class="containedImg" src="images/mood/logo-sketches.jpg" alt="Logo Sketches"/></div>
-            <p>After creating a mind map and thought list I settled on the name "Mood" for the project and started sketching out logo designs. After sketching out ideas I digitally re-created a few of the best ideas and settled on  and quick preference test was done to determine which logo style would be further refined and developed to become the final Mood logo.</p>
-            <img class="logo_design" src="images/mood/mood-logos.jpg" alt="mood full logo">
-          </div>
-          </div>
+            <h3>Mind Map & Thought List</h5>
+            <p>I created a mind map and thought list while brainstorming the branding for this project to help visualize and create the Mood brand.</p>
+            <img class="moodboard" src="images/mood/mindmap-thoughtlist.jpg" alt="Branding mind map & thought list"/>
+              <h3>Brand Ideals</h3>
+              <ul class="color">
+                <li><i>Modern</i> • With a minimalist interface, recognizable fonts, and a refined color palette Mood is a modern app built for the 21st century.</li>
+                <li><i>Secure</i> • All your private emotions and journals are stored within the application but your data never leaves your device so your private data stays private.</li>
+                <li><i>Motivational</i> • Motivates you to journal daily to record, analyze, and manage your emotional health.</li>
+                <li><i>Colorful</i> • Using preset or custom colors to represent associated emotions; visualize your moods in your yearly summary, monthly analysis, or daily journal.</li>
+                <li><i>Calm</i> • The use of a dark background and non-aggressive color scheme invoke calming feelings.</li>
+              </ul>
+              <h3>Colors</h3>
+              <img class="colors" src="images/mood/colors.png" alt="brand colors"/>
+              <p>Using color palette of a soft rainbow gradient of colors for the logo and a bright turquoise as the highlight color paired with dark greys and white It gives the feeling of security, creativity, and refinement to the brand and app.</p>
+              <h3>Logo Design</h3>
+              <div class="imgContainer"><img class="containedImg" src="images/mood/logo-sketches.jpg" alt="Logo Sketches"/></div>
+              <p>After creating a mind map and thought list I settled on the name "Mood" for the project and started sketching out logo designs. After sketching out ideas I digitally re-created a few of the best ideas and settled on  and quick preference test was done to determine which logo style would be further refined and developed to become the final Mood logo.</p>
+              <img class="logo_design" src="images/mood/mood-logos.jpg" alt="mood full logo">
+            </div>
         </section>
       <!-- mockup after branding-->
-      <section class="initial">
+      <section class="initial" data-aos="fade-right">
         <h2>Hifi Mockup</h2>
         <p class="bg_text">After gaining feedback during wireframe usability testing a few key changes were made. First, a landing background gradient was added to make the landing page look more unique and modern to better fit the feel of the app. Then, images were changed to have the same highlight color to have a cohesive look and skip & next buttons were placed at the bottom so they are easy to find. Finally, the drawer was also changed back to a long drawer but it now takes up over 60% of the screen for better readability and usability.</p>
         <!--  FlexContainer - (hifi 1) -->
@@ -210,7 +203,7 @@
         </div><a class="button" target="_blank" href=" ">View Hifi Frames</a></div>
       </section>
       <!--iteration II (hifi 2)-->
-      <section class="iteration">
+      <section class="iteration" data-aos="fade-right">
         <h2>Hifi Revised / Prototype I</h2>
         <p class="bg_text" >While we liked the look of the previous mockup, it didn’t invoke the feelings we wanted it to; something was missing. After some rethinking and brainstorming; an idea was had and Mood got a darker color scheme with a whole new feel. By eliminating the bright landing screen and changing the majority of the screen backgrounds to dark Mood took on a more sleek and modern look all while reducing eyestrain for short or extended periods of time. These frames would also go on to make up our first prototype.</p>
         <!--  FlexContainer - (hifi 2) -->
@@ -223,7 +216,7 @@
         </div><a class="button" target="_blank" href=" ">View Prototype I</a></div>
       </section>
         <!--preference test I-->
-        <section class="preference">
+        <section class="preference" data-aos="fade-right">
           <h2>A/B Testing</h2>
           <div class="bg_text">
             <p>During the creation of our clickable prototype, we were conflicted on the colors for the splash and landing page designs. So, we created and deployed a quick A/B preference test to get some feedback and guide our design choices. The results?
@@ -243,7 +236,7 @@
           </div>
         </section>
         <!-- prototype II -->
-        <section class="iteration-3">
+        <section class="iteration-3" data-aos="fade-right">
           <h2>Prototype II</h2>
           <p class="bg_text">After the creation of a clickable prototype, formal in-person usability tests were done on two different types of potential users utilizing the same testing script and tasks on each user to test the product usability. The feedback was majorly positive with only one minor complaint; users want a demo verson.
               Keeping this feedback in mind, a more detailed prototype was created; now with a demo feature to try the app before signing up and set daily reminder interactivity.</p>
@@ -257,15 +250,19 @@
         </section>
         <!--final design-->
         <section class="final">
-          <h2>Final Design - Prototype III</h2>
-          <p class="bg_text">After finishing the changes from the user testing the opportunity arose to further refine and develop an interactive prototype. This time around both the frames and the prototype were made using Figma to help aid in rapid refinement and testing. This additional time to refine and prototype immensely benefited the project and lead to changes in button coloring, new entry process, and app-wide interactivity.</p>
-            <div class="parallax mood" style="background-image: url(images/mood/mood-final-group.jpg);"></div>
+          <div data-aos="fade-right">
+            <h2>Final Design - Prototype III</h2>
+            <p class="bg_text">After finishing the changes from the user testing the opportunity arose to further refine and develop an interactive prototype. This time around both the frames and the prototype were made using Figma to help aid in rapid refinement and testing. This additional time to refine and prototype immensely benefited the project and lead to changes in button coloring, new entry process, and app-wide interactivity.</p>
             <a class="button" target="_blank" href="https://www.figma.com/proto/KafKLqGzsiWGkOScJrb3Kc/Mood-Prototype-Final?node-id=129%3A4&viewport=654%2C147%2C0.1289122998714447&scaling=scale-down">View Final Prototype</a>
+          </div>
+          <div class="parallax mood" style="background-image: url(images/mood/mood-shot.jpg);"></div>
           </section>
           <!--design progression-dashboard-->
           <section class="progression">
-            <h2>Design Progression - Onboarding</h2>
-            <p class="bg_text">These onboarding frames show the design progression from the initial wireframe concept to the final prototype design.</p>
+            <div data-aos="fade-right">
+              <h2>Design Progression - Onboarding</h2>
+              <p class="bg_text">These onboarding frames show the design progression from the initial wireframe concept to the final prototype design.</p>
+            </div>
             <div class="lightboxContainer">
               <!-- mprog1 img thumbnail-->
               <a href="#mprog1"><img class=" thumbnail"  src="images/mood/wire-initial-signup-2.jpg" alt="wireframe initial thumbnail"/></a>
@@ -290,7 +287,7 @@
             </div>
           </section>
           <!--lessons learned-->
-          <section class="Learning">
+          <section class="Learning" data-aos="fade-right">
             <h2>Takeaways</h2>
             <div class="bg_text">
               <p>A lot of things went really well with this project and I am super happy with the result; it has come a long way. The logo and the color scheme for Mood perfectly represent what I wanted Mood to feel like. One of the things that clearly worked well on this project was changing the background color to dark; it gives it a more refined and modern feel. The user survey I crafted for this project was a big improvement in utility over past user surveys. One of the main things that I wish I could have done differently is fully record all of my user testing completed. Many of the earlier tests I did without recording or taking many notes; just using the feedback. This saved me a little time initially but in the long run a recording could have been a much better asset than some scattered notes. I also wish I would have completed more preference tests because the few I did helped me immensely. Throughout the duration of this project I kept a design journal to help record and organize my thoughts and documents. That journal became an invaluable resource not only throughout the project but also the creation of the case study. I fully intend on keeping a design journal for all my future projects as well. Throughout the course of this project we had a lot of successes but also some failures but in both some important lessons were learned.</p>
@@ -322,7 +319,7 @@
           gtag('config', 'UA-134476139-1');
       </script>
       <!-- Scripts  -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
+      <script src="scripts/lib/anime.min.js"></script>
       <script src="scripts/main.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
