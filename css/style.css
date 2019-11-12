@@ -3,7 +3,7 @@
 }
 
 html {
-  background-color: #141414;
+  background-color: #242424;
   color: #333;
   font-family: "Open Sans";
   font-size: 10px;
@@ -11,19 +11,22 @@ html {
   height: 100%;
   width: 100%;
 }
-body{
+
+body {
   height: 100%;
   width: 100%;
 }
-.container{
+
+.container {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   height: 100%;
   justify-content: center;
   margin: 0 auto;
   width: 100%;
   padding: 0;
 }
+
 /* process sections */
 section {
   align-items: center;
@@ -34,10 +37,12 @@ section {
   padding: 0;
   width: 100vw;
 }
+
 /* full width section container */
-section.smallWidth{
+section.smallWidth {
   width: 90vw;
 }
+
 /*--header styles
 header {
   align-items: center;
@@ -53,14 +58,17 @@ header {
   opacity: 0;
   transition-property: opacity;
 }
+
 [aos="fade"].aos-animate {
   opacity: 1;
 }
-header{
+
+header {
   background: #161616;
   width: 100%;
   z-index: 3;
 }
+
 .header ul {
   margin: 0;
   padding: 0;
@@ -68,11 +76,12 @@ header{
   overflow: hidden;
   background-color: #161616;
 }
+
 .header li a {
   display: block;
   color: #FFFFFF;
   padding: 20px 20px;
-  border-right: 1px solid #0091a5;
+  border-right: 1px solid #00C6E0;
   text-decoration: none;
   font-family: 'Lato';
   font-style: normal;
@@ -93,7 +102,6 @@ header{
 }
 
 /* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
@@ -101,7 +109,6 @@ header{
 }
 
 /* menu icon */
-
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -112,7 +119,8 @@ header{
 }
 
 .header .menu-icon .navicon {
-  background: #0091a5;;
+  background: #0091a5;
+  ;
   display: block;
   height: 2px;
   position: relative;
@@ -122,7 +130,8 @@ header{
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #0091a5;;
+  background: #0091a5;
+  ;
   content: '';
   display: block;
   height: 100%;
@@ -140,72 +149,76 @@ header{
 }
 
 /* menu btn */
-
 .header .menu-btn {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu {
   max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
 /* 48em = 768px */
-
 @media (min-width: 48em) {
   .header li {
     float: left;
   }
+
   .header li a {
     padding: 20px 30px;
   }
+
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
+
   .header .menu-icon {
     display: none;
   }
 }
 
 /*second header div (nav links +button)*/
-nav{
+nav {
   align-items: center;
   display: grid;
   justify-content: center;
   grid-template-columns: 33% 33% 33%;
   width: 100%;
-  padding: 0 ;
+  padding: 0;
 }
-.myLogo{
+
+.myLogo {
   display: block;
-	max-height: 30px;
+  max-height: 30px;
 }
+
 /*-- container + background */
-.bg_color{
+.bg_color {
   background-color: #141414;
   height: auto;
   margin: 2rem auto 0 auto;
   width: 100vw;
 }
-.bg_color_padded{
+
+.bg_color_padded {
   background-color: inherit;
   display: block;
   height: auto;
@@ -214,7 +227,8 @@ nav{
   width: 100%;
   max-width: 700px;
 }
-.bg_text{
+
+.bg_text {
   background-color: #F7F7F7;
   border-radius: 8px;
   display: block;
@@ -223,6 +237,7 @@ nav{
   width: 80%;
   max-width: 700px;
 }
+
 /* h1 text */
 h1 {
   color: #0091A5;
@@ -234,20 +249,31 @@ h1 {
   margin: 0 auto;
   vertical-align: middle;
 }
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h1{font-size: 3.8rem;}
-  nav{max-width: 500px;}
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  nav {
+    max-width: 500px;
+  }
 }
+
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1024px) {
-  h1{font-size: 4.2rem;}
+@media only screen and (min-width : 1024px) {
+  h1 {
+    font-size: 4.2rem;
+  }
 }
+
 /*-- navbar link text -- */
-.linkBox{
+.linkBox {
   margin: 0 auto;
 }
-.link{
+
+.link {
   border-bottom: 1px solid #FFFFFF;
   display: block;
   color: #0091A5;
@@ -261,23 +287,42 @@ h1 {
   transition: .25s;
   width: 100%;
 }
-.link:hover{border-bottom: 1px dotted #FFFFFF; color: #00FFEB;}
-.inline-link{
-  color:#0091A5;
+
+.link:hover {
+  border-bottom: 1px dotted #FFFFFF;
+  color: #00FFEB;
 }
-@media only screen and (max-width: 600px){
-    #hidden{ display: none;}
-    nav{grid-template-columns: 50% 50%; width: 100%; max-width: 220px;}
+
+.inline-link {
+  color: #0091A5;
 }
+
+@media only screen and (max-width: 600px) {
+  #hidden {
+    display: none;
+  }
+
+  nav {
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
 /* hides large links on smallest screens*/
-@media only screen and (max-width: 1024px){
-  header{margin: 0 auto;}
-  .myLogo{margin: 0;}
+@media only screen and (max-width: 1024px) {
+  header {
+    margin: 0 auto;
+  }
+
+  .myLogo {
+    margin: 0;
+  }
 }
 
 /*--- begin typography styles ---*/
 /* section headers */
-h2{
+h2 {
   display: block;
   font-family: 'Lato', sans-serif;
   font-size: 2.4rem;
@@ -288,18 +333,25 @@ h2{
   width: 100%;
   max-width: 900px;
 }
-h2.left{
+
+h2.left {
   text-align: left;
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h2{font-size: 2.8rem;}
+  h2 {
+    font-size: 2.8rem;
+  }
 }
+
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1024px) {
-  h2{font-size: 3.0rem;}
+@media only screen and (min-width : 1024px) {
+  h2 {
+    font-size: 3.0rem;
+  }
 }
+
 /* h3 text */
 h3 {
   color: #333;
@@ -312,20 +364,22 @@ h3 {
   width: 100%;
   max-width: 700px;
 }
-h3.b{
+
+h3.b {
   text-align: left;
   font-weight: 300;
 }
+
 /*left aligned h3*/
-h3.left{
+h3.left {
   display: block;
   color: #333;
-
   margin: 0;
   text-align: left;
   width: 100%;
   max-width: 500px;
 }
+
 /*-- headers within sections --*/
 h4 {
   color: #333;
@@ -340,50 +394,66 @@ h4 {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h3, h3.left {font-size: 2rem;}
-  h4{font-size: 2rem; }
+  h3, h3.left {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
 }
+
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1024px) {
-  h3, h3.left {font-size: 2.1rem;}
-  h4{font-size: 2.2rem; }
+@media only screen and (min-width : 1024px) {
+  h3, h3.left {
+    font-size: 2.1rem;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+  }
 }
+
 /*-- headers inside text --*/
-h5{
+h5 {
   color: #333;
   font-family: 'Lato';
   font-size: 1.4rem;
   font-weight: 600;
-  margin: 1.5rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   text-align: left;
   width: 100%;
   max-width: 700px;
 }
-h5.left{
-  text-align: left;
-  margin-top: 1.4rem ;
-  max-width: 700px;
-}
+
 /* h6 used in footer */
 h6 {
   color: white;
   font-family: 'Lato';
   font-size: 1.2rem;
   text-align: left;
-  margin: 1rem auto ;
+  margin: 1rem auto;
   line-height: 2rem;
 }
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h6{font-size: 1.4rem;}
+  h6 {
+    font-size: 1.4rem;
+  }
 }
+
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-  h6{font-size: 1.6rem;}
+@media only screen and (min-width : 1224px) {
+  h6 {
+    font-size: 1.6rem;
+  }
 }
-#white{
+
+#white {
   color: white;
 }
+
 /*-- paragraph text --*/
 p {
   color: #333;
@@ -396,29 +466,47 @@ p {
   line-height: 150%;
   align-items: center;
 }
+
 /* centered p text */
-p.centered, #b{
+p.centered, #b {
   text-align: center;
 }
 
 /*--- typography media queries ---*/
 /*-- iPads --*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h5{font-size: 1.6rem;}
-  p{ font-size: 1.6rem;}
-  p.centered{font-size: 1.8rem;}
-}
-/*-- Desktops and laptops -- */
-@media only screen  and (min-width : 1024px) {
-  h5{font-size: 1.8rem;}
-  p {font-size: 1.8rem;}
-  p.centered{font-size: 2rem;}
-}
-/*-------- end typography styles --------*/
+  h5 {
+    font-size: 1.6rem;
+  }
 
+  p {
+    font-size: 1.6rem;
+  }
+
+  p.centered {
+    font-size: 1.8rem;
+  }
+}
+
+/*-- Desktops and laptops -- */
+@media only screen and (min-width : 1024px) {
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  p.centered {
+    font-size: 2rem;
+  }
+}
+
+/*-------- end typography styles --------*/
 /*-------- list styles --------*/
 /*-- lists with background color --*/
-ul.color{
+ul.color {
   font-size: 1.4rem;
   list-style-position: inside;
   list-style-type: circle;
@@ -427,30 +515,34 @@ ul.color{
   max-width: 700px;
   padding: 0;
 }
-ul.color li:nth-of-type(odd){
+
+ul.color li:nth-of-type(odd) {
   background: rgba(102, 102, 102, 0.05);
 }
-ul.color li:nth-of-type(even){
+
+ul.color li:nth-of-type(even) {
   background: rgba(118, 234, 225, 0.025);
 }
+
 /* color list item styles */
-ul.color li{
+ul.color li {
   font-size: 1.4rem;
-  padding: 1.5rem .5rem ;
+  padding: 1.5rem .5rem;
   font-weight: normal;
 }
+
 /* brand ideals list */
 ul.ideals {
   align-content: center;
   list-style-type: circle;
-  margin: 0 auto ;
+  margin: 0 auto;
   font-weight: bold;
   list-style-position: inside;
 }
 
 /* list within a list */
 dt {
-  background: rgba(135, 206, 250,.09);
+  background: rgba(135, 206, 250, .09);
   font-family: "Open Sans";
   font-size: 1.4rem;
   margin: 2rem auto 0 auto;
@@ -458,48 +550,61 @@ dt {
   max-width: 600px;
   padding: 1rem;
 }
+
 dd {
   font-size: 1.4rem;
   width: 90vw;
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(135, 206, 250,.02);
+  background: rgba(135, 206, 250, .02);
   padding: 1rem;
 }
+
 /*--- media queries ---*/
 /* iPads (portrait and landscape) ---- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  ul.color li,dt,dd{font-size: 1.6rem;}
+  ul.color li, dt, dd {
+    font-size: 1.6rem;
+  }
 }
-/* Desktops and laptops ---- */
-@media only screen  and (min-width : 1224px) {
-  ul.color li,dt,dd{font-size: 1.8rem;}
-}
-/*-------- end list styles --------*/
 
+/* Desktops and laptops ---- */
+@media only screen and (min-width : 1224px) {
+  ul.color li, dt, dd {
+    font-size: 1.8rem;
+  }
+}
+
+/*-------- end list styles --------*/
 /*-------- button styles --------*/
 /* a link styles  */
 a {
   text-align: center;
   text-decoration: none;
   margin: 0 auto;
-  color:#333;
+  color: #333;
 }
+
 /* fixes a styles for card container hover*/
-a.cardHover{
+a.cardHover {
   text-align: left;
   margin: 0;
   cursor: pointer;
 }
-@media only screen and (max-width: 600px){
-  .link, .links{font-size: 1.4rem; margin: 0 auto;}
+
+@media only screen and (max-width: 600px) {
+  .link, .links {
+    font-size: 1.4rem;
+    margin: 0 auto;
+  }
 }
-a.button{
-  background: #141414;
+
+a.button {
+  background: inherit;
   border: 2px solid white;
   color: white;
   cursor: pointer;
-  display: flex;
+  display: block;
   font-family: 'Lato';
   font-size: 1.6rem;
   font-weight: 400;
@@ -509,36 +614,39 @@ a.button{
   text-transform: uppercase;
   transition: 0.4s;
   width: 250px;
-
 }
-a.button:hover{
+
+a.button:hover {
   background: #0091a5;
   border: 2px solid #0091a5;
   transition: 0.4s;
 }
-.button_group{
+
+.button_group {
   display: flex;
   margin: 0 auto;
   width: 100%;
   max-width: 700px;
 }
-/*-------- end button styles --------*/
 
+/*-------- end button styles --------*/
 /*-------- homepage (index) styles --------*/
 /* homepage hero section */
-.homeHero{
+.homeHero {
   align-self: center;
-  background-color: #f5f5f5;
+  background-color: #242424;
   margin: 0 auto;
-  padding: 15%;
+  padding: 5% ;
   width: 100vw;
 }
+
 /* content in hero section */
-.hero_content{
+.hero_content {
   width: 100%;
   max-width: 550px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0;
+  z-index: 2;
 }
 
 /*- homepage image (me) -*/
@@ -548,23 +656,27 @@ img.index_image {
   height: 100%;
   width: 100%;
 }
+
 /*- homepage image container -*/
-.index_image_container{
+.index_image_container {
   display: block;
   margin: 0 auto;
   height: 100%;
   max-width: 100%;
   overflow: hidden;
 }
-.card_container{
+
+.card_container {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
+  max-width: 900vw;
   align-content: space-between;
   justify-content: center;
 }
-.card{
+
+.card {
   background-color: white;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
@@ -572,26 +684,26 @@ img.index_image {
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   transition: 0.25s;
   display: block;
   height: 500px;
   width: 500px;
   margin: 1%;
   overflow: hidden;
-  position:relative;
+  position: relative;
 }
 
 /* card image */
-.card_image{
+.card_image {
   background-color: #f5f5f5;
   display: block;
   max-height: 60%;
   overflow: hidden;
   display: block;
   border-radius: 2px 2px 0 0;
-  padding: 1rem ;
+  padding: 1rem;
   position: relative;
   left: 0;
   right: 0;
@@ -601,27 +713,30 @@ img.index_image {
 }
 
 /* text content in card */
-.card_content{
+.card_content {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 2rem;
 }
+
 /* card button */
-.card_button{
+.card_button {
   align-content: center;
   display: flex;
   flex-wrap: wrap;
   background: white;
-  border-top: 1px solid #f5f5f5;;
+  border-top: 1px solid #f5f5f5;
+  ;
   border-radius: 0 0 2px 2px;
   margin: 0;
   position: absolute;
-  right:    0;
-  bottom:   0;
+  right: 0;
+  bottom: 0;
   width: 100%;
 }
+
 /* text on card button */
-.card_button_text{
+.card_button_text {
   color: grey;
   padding: 2rem;
   text-align: left;
@@ -629,47 +744,60 @@ img.index_image {
   font-family: 'Lato';
   font-size: 1.6rem;
 }
+
 /* effect on card hover*/
-.card:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+/* color effect for card button and text on card hover*/
+.card:Hover #blueOnHover{
+  color: #0091a5;
 }
 /* text effect on card hover*/
 .card:hover .card_button_text{
   color: #0091a5;
+  font-weight: bolder;
 }
-/*-------- end homepage (index) styles --------*/
-.shapes{
-  display: grid;
-  grid-template-columns:  10% 10% 10% 10% 10% 10% 10% 10% 10% 10% ;
-  grid-template-rows: 4fr ;
-  max-width: 100vw;
-  height: 100%;
-  grid-row-gap: 50%;
 
+/*-------- end homepage (index) styles --------*/
+.shapes {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 4fr;
+  height: 100%;
+  justify-items: center;
+  max-width: 1400px;
+  margin: 1rem auto 0 auto;
+  padding: 1rem 0 0 0;
+  width: 100%;
+  z-index: 999;
 }
-.shape,.shape1,.shape2,.shape3{
-  width: 10px;
-  height: 10px;
+
+.shape, .shape1, .shape2, .shape3 {
   border-radius: 1px;
   background-color: #0091a5;
+  height: 10px;
   opacity: 1;
-
+  width: 10px;
 }
+
 /*-------- project files hero section styles --------*/
-.hero{
+.hero {
+  align-content: center;
   background-color: #141414;
   background-position: top;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   display: block;
-  align-content: center;
   height: 100%;
   margin: 0 auto;
   width: 100vw;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
 }
-.hero_container{
+
+.hero_container {
   background-color: inherit;
   display: block;
   margin: 0 auto;
@@ -677,13 +805,15 @@ img.index_image {
   overflow: hidden;
   padding: 2.5rem 1rem;
 }
+
 /* sets hero height on ipads  ----------- */
 @media only screen and (min-device-width : 768px) {
-  .hero_container{
+  .hero_container {
     height: 700px;
     padding: 5rem 20rem;
   }
 }
+
 /* hero image in projects*/
 .hero_device {
   display: block;
@@ -693,7 +823,7 @@ img.index_image {
 }
 
 /* solution section*/
-.solu{
+.solu {
   align-items: center;
   display: grid;
   grid-template-columns: 100%;
@@ -701,23 +831,27 @@ img.index_image {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 /* creates two col on ipads and desktops ----------- */
 @media only screen and (min-device-width : 768px) {
-  .solu{grid-template-columns: 50% 50%;}
+  .solu {
+    grid-template-columns: 50% 50%;
+  }
 }
 
 /* all device frames*/
-.device-frame{
+.device-frame {
   display: block;
   height: auto;
   margin: 4rem auto;
   width: 100%;
   max-width: 600px;
 }
+
 /* general parallax scroll animation styles */
-.parallax{
+.parallax {
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: #0091a5;
@@ -725,66 +859,73 @@ img.index_image {
   min-height: 900px;
   margin-top: 1rem;
 }
+
 /* colored purple background in parallax for dreamers*/
-.dreamers{
+.dreamers {
   background-color: #493757;
 }
-.mood{
+
+.mood {
   background-color: #3DD0D0;
 }
-.parallax_small{
+
+.parallax_small {
   min-height: 500px;
 }
+
 /**--- Lightbox Styles ---**/
-.lightboxContainer{
+.lightboxContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   max-width: 700px;
   margin: 1.5rem auto;
+}
 
+.thumbnail {
+  width: 125px;
 }
-.thumbnail{
-  width: 100px;
-}
-.thumbnail_large{
+
+.thumbnail_large {
   width: 300px;
 }
+
 /**- Lightbox Markup -**/
 .lightbox {
-	/** Default lightbox to hidden */
-	display: none;
-	/** Position and style */
-	position: fixed;
-	z-index: 9999;
-	width: 100%;
-	height: 100%;
+  /** Default lightbox to hidden */
+  display: none;
+  /** Position and style */
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
   text-align: center;
   top: 0;
   left: 0;
-	background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .lightbox img {
-	/** Pad the lightbox image */
+  /** Pad the lightbox image */
   max-width: 90%;
   max-height: 80%;
   margin-top: 2%;
 }
 
 .lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
-	/** Unhide lightbox **/
-	display: block;
+  /** Remove default browser outline */
+  outline: none;
+  /** Unhide lightbox **/
+  display: block;
 }
 
 /*--user persona img container*/
-.persona{
+.persona {
   display: block;
   width: 80vw;
   margin: 1rem auto
 }
+
 /* individual competitor  */
 .competitor {
   display: block;
@@ -799,11 +940,11 @@ img.index_image {
   height: 100%;
   margin: 1rem auto;
   width: 90%;
-  max-width: 900px;
+  max-width: 700px;
 }
 
 /*-- branding moodboard --*/
-.moodboard{
+.moodboard {
   display: block;
   width: 100%;
   max-width: 700px;
@@ -817,10 +958,11 @@ img.index_image {
   width: 100%;
   max-width: 900px;
   height: auto;
-  padding: 1rem;
+  padding: 0;
 }
+
 /* logo section in branding */
-.logo_design{
+.logo_design {
   display: block;
   height: auto;
   margin: 0 auto;
@@ -828,30 +970,34 @@ img.index_image {
   max-width: 700px;
   padding: 0 0 1rem 0;
 }
-/* dreamers logo images*/
+
+/* dreamers logo images container */
 .logo-dev-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 90vw;
-  margin: 2rem auto;
+  max-width: 700px;
+  margin: 1rem auto;
 }
+
 /* image + content logo div */
-.dev-content{
+.dev-content {
   width: 100%;
   margin: 2rem auto;
   max-width: 215px;
 }
+
 /*individual logo image styles*/
-.dev-img{
+.dev-img {
   display: block;
   justify-content: center;
   width: 100%;
   max-width: 150px;
   margin: 0 auto;
 }
+
 /* img caption for logos */
-p.img_cap{
+p.img_cap {
   color: #FFF;
   font-weight: 800;
   font-size: 1.4rem;
@@ -860,6 +1006,7 @@ p.img_cap{
   width: 100%;
   max-width: 600px;
 }
+
 /*-- content strat sitemap image styles --*/
 .sitemap {
   display: block;
@@ -867,22 +1014,25 @@ p.img_cap{
   width: auto;
   margin: 1rem auto;
 }
-.sitemapImg{
+
+.sitemapImg {
   display: block;
   margin: 0 auto;
   height: 100%;
   width: auto;
 }
+
 /*-- rough sketching image styles --*/
-.rough-sketch{
+.rough-sketch {
   display: block;
   height: auto;
   margin: 2rem auto;
   max-width: 80vw;
   width: 100%;
-  }
+}
+
 /*-- sketching image styles that fit within body text --*/
-.sketches{
+.sketches {
   display: block;
   height: auto;
   margin: 0 auto 2rem auto;
@@ -891,11 +1041,12 @@ p.img_cap{
 }
 
 /* preference container test section */
-.test-section{
+.test-section {
   margin: 1rem auto;
   height: 100%;
   width: 100%;
 }
+
 /*-- pref-test flex container --*/
 .test {
   display: flex;
@@ -907,48 +1058,56 @@ p.img_cap{
   height: 100%;
   margin: 0 auto;
 }
+
 /* testing choices content */
- .test_content{
-   width: 100%;
-   max-width: 200px;
-   height: 100%;
-   padding: 0;
- }
- .test > * {
-   flex: 1 1 10px;
-   margin: 10px;
- }
- .test_img{
-   max-width: 280px;
-   transition: .5s all;
+.test_content {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  padding: 0;
 }
+
+.test>* {
+  flex: 1 1 10px;
+  margin: 10px;
+}
+
+.test_img {
+  max-width: 280px;
+  transition: .5s all;
+}
+
 /* choice img */
-.option{
+.option {
   max-width: 100%;
   padding: 3px;
   transition: .5s all;
 }
+
 /* highlighted winner */
-.special{
+.special {
   border: 1px solid red;
   padding: 2px;
   transition: .5s all;
 }
+
 /*-- brand colors img styles-- */
-.colors{
+.colors {
   display: block;
   height: auto;
   margin: 1rem auto;
   width: 100%;
   max-width: 700px;
 }
-.prototype-prev{
+
+.prototype-prev {
   display: block;
   margin: 4rem auto;
   width: 100%;
   max-width: 900px;
   padding: 4rem;
 }
+
 /*-- design progression image flex container --*/
 .progress {
   align-content: center;
@@ -958,29 +1117,34 @@ p.img_cap{
   margin: 0 auto;
   width: 100%;
   max-width: 100vw;
-  padding: 2rem ;
+  padding: 2rem;
 }
-.progress > * {
+
+.progress>* {
   flex: 1 1 250px;
   margin: 5px;
 }
-.progress-container{
+
+.progress-container {
   max-width: 200px;
 }
+
 /* progress individual img styles */
-.progress-img{
+.progress-img {
   display: block;
   height: auto;
   max-width: 100%;
 }
-.imgContainer{
+
+.imgContainer {
   height: 300px;
   margin: 0 auto;
   width: 100%;
   max-width: 700px;
 }
+
 /*--full size image--*/
-.containedImg{
+.containedImg {
   height: 100%;
   margin: 1rem auto;
   object-fit: cover;
@@ -988,18 +1152,20 @@ p.img_cap{
   width: 100%;
   padding: 1rem 0;
 }
+
 /* desktop project/dreamers frames image gallery container */
 .gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100vw;
-  margin:  0 auto;
+  margin: 0 auto;
 }
+
 /* individual img container in desktop project/dreamers gallery */
-.gallery-img-div{
+.gallery-img-div {
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  box-shadow:0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   display: block;
   margin: 1rem;
   max-width: 300px;
@@ -1008,19 +1174,23 @@ p.img_cap{
 }
 
 /* individual img in desktop project/dreamers gallery */
-.gallery-img{
+.gallery-img {
   display: block;
   height: auto;
   width: 100%;
 }
+
 /*-- user testing change example image --*/
-.changes-img{
+.changes-img {
   display: block;
-  height: auto;
+  height: 100%;
   width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
 }
+
 /*-- general mobile project/mood flexbox img container--*/
-.flexContainer{
+.flexContainer {
   align-items: start;
   background-color: inherit;
   display: flex;
@@ -1030,44 +1200,50 @@ p.img_cap{
   margin: 0 auto;
   padding: 0;
 }
-.mobileFrames{
+
+.mobileFrames {
   justify-content: center;
 }
+
 /* individual project/mood flex image/item div  */
-.flexItem{
+.flexItem {
   display: block;
   padding: 1rem;
   width: 100%;
   max-width: 200px;
 }
+
 /* flex project/mood image styles*/
-.flexImg{
+.flexImg {
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  box-shadow:0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   height: auto;
   width: 100%;
 }
 
-.flexDiv{
+.flexDiv {
   display: block;
   padding: 1rem;
   width: 100%;
   max-width: 300px;
 }
-.wire-sketches-flex{
+
+.wire-sketches-flex {
   width: 100%;
   max-width: 500px;
 }
-.imgShadow{
+
+.imgShadow {
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  box-shadow:0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
-.mini-section{
+
+.mini-section {
   margin: 2rem auto;
 }
 
 /*-- iframe styles --*/
-iframe{
+iframe {
   margin: 0 auto;
   display: block;
   border: none;
@@ -1075,13 +1251,14 @@ iframe{
   height: 800px;
 }
 
-.iframe-div{
+.iframe-div {
   display: block;
   background-color: #161616;
   width: 100%;
   max-width: 100vw;
   margin: 2rem auto;
 }
+
 /*------- project3 (dailyui) page styles-------------------------------------*/
 .project3-gallery {
   display: grid;
@@ -1089,22 +1266,27 @@ iframe{
   width: 100vw;
   height: 400px;
 }
-.img-container{
+
+.img-container {
   display: block;
   position: relative;
-
 }
+
 /* creates two img columns on desktops */
 @media only screen and (min-width : 1224px) {
-  .img-container{max-width: 50vw;}
+  .img-container {
+    max-width: 50vw;
+  }
 }
-.dailyui-img{
+
+.dailyui-img {
   display: block;
-  width:100%;
+  width: 100%;
   max-width: 100vw;
 }
+
 /*daily ui image hover overlay*/
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1120,6 +1302,7 @@ iframe{
 .img-container:hover .overlay {
   opacity: 1;
 }
+
 .text {
   font-size: 20px;
   font-family: inherit;
@@ -1131,49 +1314,57 @@ iframe{
   transform: translate(-50%, -50%);
   text-align: left;
 }
+
 /*-- h3 + p font color change classes for dailyui img hover text --*/
 .black {
   color: black;
   text-align: left;
 }
+
 .white {
   color: white;
   text-align: left;
 }
+
 /*-- disables image hover overlay on ipad and mobile screens --*/
 @media only screen and (max-device-width : 1024px) {
-  .text{opacity: 0;}
+  .text {
+    opacity: 0;
+  }
 }
+
 /*-------- my work page styles---------*/
-.work{
+.work {
   margin: 4rem auto;
 }
 
 /*-------- about me page styles --------*/
-.about-me{
-}
+.about-me {}
+
 /*- my portrait img -*/
-.portrait{
+.portrait {
   display: block;
   border-radius: 75%;
   margin: 4rem auto;
   max-width: 300px;
 }
-.about-content{
+
+.about-content {
   margin: 0 auto;
   width: 90vw;
 }
+
 /*----------- footer styles ----------------*/
 footer {
   background-color: #0091a5;
   height: auto;
   width: 100%;
   padding: 8vh 8vw 4vh;
-  margin-top: 10vh ;
+  margin-top: 10vh;
 }
 
 /* contact footer button*/
-.contact{
+.contact {
   align-content: center;
   justify-content: space-between;
   display: flex;
@@ -1182,8 +1373,9 @@ footer {
   margin: 0 auto 5rem auto;
   flex-wrap: wrap;
 }
+
 /* footer button margin and padding styles */
-.foot{
+.foot {
   display: block;
   height: auto;
   margin: 2rem auto 5rem auto;
@@ -1191,56 +1383,66 @@ footer {
   padding: 2rem 3.5rem;
   width: 250px;
 }
-.foot:hover{
+
+.foot:hover {
   animation-name: gradient, border;
   animation-duration: 1.0s;
   animation-iteration-count: infinite;
 }
-.contact-section{
+
+.contact-section {
   justify-content: center;
   align-content: center;
   display: flex;
   max-width: 300px;
   margin: 0 auto;
 }
-.contact-icon{
+
+.contact-icon {
   height: 100%;
   width: 100%;
   display: inline-block;
-  margin: 0 ;
+  margin: 0;
 }
-.iconContainer{
+
+.iconContainer {
   display: inline-block;
   max-width: 40px;
   max-height: 40px;
 }
+
 /*----- contact form styles start--- */
 /* form container */
 #formContainer {
- border-radius: 5px;
- background-color: #FFFFFF;
- padding: 2rem 5rem ;
- margin: 4rem auto;
- width: 100%;
- max-width: 500px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 2rem 5rem;
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 500px;
 }
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], textarea {
- border: 1px solid #ccc;
- border-radius: 4px;
- margin-top: 1rem;
- margin-bottom: 2rem;
- font-size: 1.4rem;
- resize: vertical ;/* Allow the user to vertically resize the textarea (not horizontally) */
- padding: 1.4rem;
- width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+  padding: 1.4rem;
+  width: 100%;
 }
+
 textarea {
   width: 100%;
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
   height: 300px;
 }
-input[type=email]{
+
+input[type=email] {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1.4rem;
@@ -1249,24 +1451,27 @@ input[type=email]{
   padding: 1.4rem;
   width: 100%;
 }
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
- background-color: #0091A5;
- border: none;
- border-radius: 4px;
- color: #333;
- cursor: pointer;
- font-size: 1.6rem;
- font-family: "Lato";
- font-weight: 700;
- margin: 2rem auto;
- text-transform: uppercase;
- padding: 2.5rem 4.5rem;
- width: 100%;
+  background-color: #0091A5;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 700;
+  margin: 2rem auto;
+  text-transform: uppercase;
+  padding: 2.5rem 4.5rem;
+  width: 100%;
 }
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
- background-color: #00FFEB;
- color: black;
+  background-color: #00FFEB;
+  color: black;
 }
+
 /*form styles end*/

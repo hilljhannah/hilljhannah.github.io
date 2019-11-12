@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
+
 <head>
-  <title>Case Study | Dreamers</title>
+  <title>Contact Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <main>
     <section class="container">
       <!--Navbar section-->
       <header class="header">
-        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a>
+        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
@@ -26,14 +31,14 @@
         <h2>Contact Me</h2>
         <div class="contact-section">
           <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
-          <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github-black.png"  alt="github icon"></a></div>
+          <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github-black.png" alt="github icon"></a></div>
         </div>
         <!-- form inputs -->
         <form action="https://send.pageclip.co/3phqZ9uRhWChvgBDxIe1kpQIEJ4Darnb/Contact" class="pageclip-form" method="post">
           <!-- email address -->
-          <input type="email" name="email" placeholder="Email address.."/>
+          <input type="email" name="email" placeholder="Email address.." />
           <!-- message subject. Must have name="subject" -->
-          <input type="text" name="subject" placeholder="Message subject.."/>
+          <input type="text" name="subject" placeholder="Message subject.." />
           <!-- message body -->
           <textarea name="body" placeholder="Message.."></textarea>
           <!-- submit button -->
@@ -46,7 +51,7 @@
       <h6><a class="inline-link" href="form.html">Hannah Hill</a></h6>
       <h6>UX UI Designer + Frontend Developer</h6>
       <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
-      <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png"  alt="github icon"></a></div>
+      <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png" alt="github icon"></a></div>
     </footer>
     <!-- form script -->
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
@@ -54,11 +59,22 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'UA-134476139-1');
     </script>
+    <!-- Scripts  -->
+    <script src="scripts/lib/anime.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </main>
 </body>
+
 </html>

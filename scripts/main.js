@@ -1,38 +1,46 @@
-
-var tl = anime.timeline({
-  easing: 'easeOutExpo',
-  duration: 1750,
-  direction: 'alternate',
+anime({
+  targets: '.shapes .shape,.shape1,.shape2,.shape3',
+  scale: [
+    {value: .1, easing: 'easeOutSine', duration: 500},
+    {value: 1, easing: 'easeInOutQuad', duration: 1200}
+  ],
+  delay: anime.stagger(200, {grid: [10, 4], from: 'center'}),
   loop: true
 });
-tl
-.add({
-  targets: '.shape',
-  translateY: -350,
-  scale: 4,
-  rotate: '1turn'
-}, 100)
-.add({
-  targets: '.shape1',
-  translateY: -250,
-  scale: 4,
-  rotate: '1turn',
-  opacity: .5
-}, 200) // relative offset
-.add({
-  targets: '.shape2',
-  translateY: -150,
-  scale: 4,
-  rotate: '1turn',
-  opacity: .25
-}, 300) // relative offset
-.add({
-  targets: '.shape3',
-  translateY: -50,
-  scale: 4,
-  rotate: '1turn',
-  opacity: .15
-}, 400); // absolute offset
+//var tl = anime.timeline({
+//  easing: 'easeOutExpo',
+//  duration: 1750,
+//  direction: 'alternate',
+//  loop: true
+//});
+//tl
+//.add({
+//  targets: '.shape',
+//  translateY: -350,
+//  scale: 4,
+//  rotate: '1turn'
+//}, 100)
+//.add({
+//  targets: '.shape1',
+//  translateY: -250,
+//  scale: 4,
+//  rotate: '1turn',
+//  opacity: .5
+//}, 200) // relative offset
+//.add({
+//  targets: '.shape2',
+//  translateY: -150,
+//  scale: 4,
+//  rotate: '1turn',
+  //opacity: .25
+//}, 300) // relative offset
+//.add({
+//  targets: '.shape3',
+//  translateY: -50,
+//  scale: 4,
+//  rotate: '1turn',
+//  opacity: .15
+//}, 400); // absolute offset
 
 
 //const tl = anime.timeline({
