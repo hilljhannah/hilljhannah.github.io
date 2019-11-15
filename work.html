@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-    <title>Case Study | Dreamers</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Hill | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800|Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
 </head>
-  <body>
-    <main>
-      <section class="container">
-        <!--Navbar section-->
-        <header class="header">
-          <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo"/></a>
-          <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-          <ul class="menu">
-            <li><a href="work.html">My Work</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="form.html">Contact</a></li>
-          </ul>
-        </header>
-        <!-- My work case study preview section -->
-        <section class="projects">
-          <h2>My Work</h2>
-          <div class="card_container">
-            <!-- project1 card - dreamers -->
-            <div class="card">
+
+<body>
+  <main>
+    <section class="container">
+      <!--Navbar section-->
+      <header class="header">
+        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="form.html">Contact</a></li>
+        </ul>
+      </header>
+      <!-- My work case study preview section -->
+      <section data-aos="fade-up" class="projects">
+        <h2>My Work</h2>
+        <div class="card_container">
+          <!-- project1 card - dreamers -->
+          <div class="card"><a class="cardHover" href="project1.html">
               <div class="card_image"><img class="card_image" src=images/dreamers-card.png alt="gold macbook device frame"></div>
               <div class="card_content">
                 <h3 id="blueOnHover" class="left">Dreamers</h3>
-                <p id="blueOnHover">Lead Visual, Interaction Designer, and Branding Designer for Dreamers; a desktop cloud storage and organization prototype.</p>
+                <p>Visual, Interaction Designer, and Branding Designer for Dreamers; a desktop cloud storage and organization prototype.</p>
               </div>
-              <div class="card_button"><a class="card_button_text" href="project1.html">Case Study</a></div>
-            </div>
-            <!-- project2 card - mood -->
-            <div class="card">
+              <div class="card_button"><a id="blueOnHover" class="card_button_text" href="project1.html">View Dreamers Case Study</a></div>
+            </a></div>
+          <!-- project2 card - mood -->
+          <div class="card"><a class="cardHover" href="project2.html">
               <div class="card_image"><img class="card_image" src=images/mood-card.png alt="Mood display"></div>
               <div class="card_content">
                 <h3 id="blueOnHover" class="left">Mood</h3>
-                <p id="blueOnHover">Lead Visual Designer, Interaction Designer, and Branding Designer for Mood; a mobile emotional journaling application prototype.</p>
+                <p>Visual Designer, Interaction Designer, and Branding Designer for Mood; a mobile emotional journaling application prototype.</p>
               </div>
-              <div class="card_button"><a class="card_button_text" href="project2.html">Case Study</a></div>
-            </div>
-            <!--project3 card - #dailyui  -->
-            <div class="card">
+              <div class="card_button"><a id="blueOnHover" class="card_button_text" href="project2.html">View Mood Case Study</a></div>
+            </a></div>
+          <!--project3 card - #dailyui  -->
+          <div class="card"><a class="cardHover" href="project3.html">
               <div class="card_image"><img class="card_image" src=images/dailyui/dailyui-showcase.jpg alt="dailyui day 001-008 showcase"></div>
               <div class="card_content">
-                <h3 id="blueOnHover" class="left">Daily UI Challenge</h3>
-                <p id="blueOnHover">100 day UI challenge</p>
+                <h3 id="blueOnHover" class="left">DailyUI Challenges</h3>
+                <p>100 day UI challenge</p>
               </div>
-              <div class="card_button"><a class="card_button_text" href="project3.html">View Past Challenges</a></div>
-            </div>
-          </div>
-        </section>
-        <!-- page footer-->
-        <footer>
-          <h6><a class="inline-link" href="form.html">Hannah Hill</a></h6>
-          <h6>UX UI Designer + Frontend Developer</h6>
-          <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
-          <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png"  alt="github icon"></a></div>
-        </footer>
+              <div class="card_button"><a id="blueOnHover" class="card_button_text" href="project3.html">View Completed Challenges</a></div>
+            </a></div>
+        </div>
       </section>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      <!-- page footer-->
+      <footer>
+        <h6><a class="inline-link" href="form.html">Hannah Hill</a></h6>
+        <h6>UX UI Designer + Frontend Developer</h6>
+        <div class="iconContainer"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="contact-icon" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+        <div class="iconContainer"><a href="https://github.com/hilljhannah"><img class="contact-icon" src="images/icons8-github.png" alt="github icon"></a></div>
+      </footer>
+    </section>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'UA-134476139-1');
-        </script>
-        <!-- Scripts  -->
-        <script src="scripts/lib/anime.min.js"></script>
-        <script src="scripts/main.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
-  </main>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134476139-1');
+    </script>
+    <!-- Scripts  -->
+    <script src="scripts/lib/anime.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</main>
+
 </html>

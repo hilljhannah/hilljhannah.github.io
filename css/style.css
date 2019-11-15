@@ -38,29 +38,17 @@ section {
   width: 100vw;
 }
 
-/* full width section container */
+/* small width section container */
 section.smallWidth {
   width: 90vw;
 }
-
-/*--header styles
-header {
-  align-items: center;
-  background-color: #161616;
-  display: flex;
-  height: 100px;
-  justify-content: space-between;
-  width: 100vw;
-  padding: 0 40px;
-  margin: 0 auto;
-}--*/
-
+/* page header */
 header {
   background: #161616;
   width: 100%;
   z-index: 3;
 }
-
+/*-- header navbar ul button styles  -----------------*/
 .header ul {
   margin: 0;
   padding: 0;
@@ -80,27 +68,27 @@ header {
   font-weight: 800;
   font-size: 1.4rem;
 }
-
+/*highlights text color to brand color on hover*/
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #009AAF;
   cursor: pointer;
 }
-
+/*personal logo in header*/
 .header .logo {
   display: block;
   float: left;
   padding: 10px 20px;
 }
 
-/* menu */
+/* menu on mobile */
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
 }
 
-/* menu icon */
+/* menu icon on mobile */
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -109,7 +97,7 @@ header {
   position: relative;
   user-select: none;
 }
-
+/* menu on mobile responsive styles start ---------*/
 .header .menu-icon .navicon {
   background: #009AAF;
   ;
@@ -140,7 +128,7 @@ header {
   top: -5px;
 }
 
-/* menu btn */
+/* menu btn on mobile responsive styles ---*/
 .header .menu-btn {
   display: none;
 }
@@ -186,8 +174,9 @@ header {
     display: none;
   }
 }
+/* menu on mobile responsive styles start ---------*/
 
-/*second header div (nav links +button)*/
+/*navbar*/
 nav {
   align-items: center;
   display: grid;
@@ -197,22 +186,12 @@ nav {
   padding: 0;
 }
 
+/*personal logo*/
 .myLogo {
   display: block;
   max-height: 30px;
 }
 
-
-
-.bg_color_padded {
-  background-color: inherit;
-  display: block;
-  height: auto;
-  margin: 0 auto;
-  padding: 1rem;
-  width: 100%;
-  max-width: 700px;
-}
 /* light background color for text container in project.html files*/
 .bg_text {
   background-color: #F7F7F7;
@@ -227,21 +206,35 @@ nav {
 /*--- nav + header + logo media queries ----------------------------------------------------*/
 /*-- for iPads (portrait and landscape) --*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  nav {max-width: 500px;}
+  nav {
+    max-width: 500px;
+  }
 }
+
 /*-- for mobile --*/
 @media only screen and (max-width: 600px) {
-  #hidden {display: none; }
+  #hidden {
+    display: none;
+  }
+
   nav {
     grid-template-columns: 50% 50%;
     width: 100%;
-    max-width: 220px;}
+    max-width: 220px;
+  }
 }
+
 /*-- hides large links on smallest screens --*/
 @media only screen and (max-width: 1024px) {
-  header {margin: 0 auto;}
-  .myLogo {margin: 0;}
+  header {
+    margin: 0 auto;
+  }
+
+  .myLogo {
+    margin: 0;
+  }
 }
+
 /*--- begin typography styles ---*/
 /* h1 text */
 h1 {
@@ -254,6 +247,7 @@ h1 {
   margin: 0 auto;
   vertical-align: middle;
 }
+
 /* h2 text - large section headers */
 h2 {
   display: block;
@@ -266,9 +260,11 @@ h2 {
   width: 100%;
   max-width: 900px;
 }
+
 h2.left {
   text-align: left;
 }
+
 /* h3 text */
 h3 {
   color: #333;
@@ -281,10 +277,12 @@ h3 {
   width: 100%;
   max-width: 700px;
 }
+
 h3.b {
   text-align: left;
   font-weight: 300;
 }
+
 /*left aligned h3*/
 h3.left {
   display: block;
@@ -294,6 +292,7 @@ h3.left {
   width: 100%;
   max-width: 500px;
 }
+
 /*-- headers within sections --*/
 h4 {
   color: #333;
@@ -305,6 +304,7 @@ h4 {
   margin: 2rem auto;
   max-width: 700px;
 }
+
 /*-- headers inside text --*/
 h5 {
   color: #333;
@@ -316,6 +316,7 @@ h5 {
   width: 100%;
   max-width: 700px;
 }
+
 /* h6 used in footer */
 h6 {
   color: white;
@@ -325,6 +326,7 @@ h6 {
   margin: 1rem auto;
   line-height: 2rem;
 }
+
 /*-- paragraph text --*/
 p {
   color: #333;
@@ -337,42 +339,93 @@ p {
   line-height: 150%;
   align-items: center;
 }
+
 /* centered p text */
 p.centered, #b {
   text-align: center;
 }
+
 /*--- typeography media queries ----------------------------------------------------*/
 /*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h1 {font-size: 4.2rem;}
-  h2 {font-size: 3.0rem;}
-  h3, h3.left {font-size: 2rem;}
-  h4 {font-size: 2rem;}
-  h5 {font-size: 1.6rem;}
-  h6 {font-size: 1.4rem;}
-  p {font-size: 1.6rem;}
-  p.centered {font-size: 1.8rem;}
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  h2 {
+    font-size: 3.0rem;
+  }
+
+  h3, h3.left {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  h6 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  p.centered {
+    font-size: 1.8rem;
+  }
 }
+
 /*-- Desktops and laptops -- */
 @media only screen and (min-width : 1024px) {
-  h1 {font-size: 4.8rem;}
-  h2 {font-size: 3.2rem;}
-  h3, h3.left {font-size: 2.1rem;}
-  h4 {font-size: 2.2rem;}
-  h5 {font-size: 1.8rem;}
-  h6 {font-size: 1.6rem;}
-  p {font-size: 1.8rem;}
-  p.centered {font-size: 2rem;}
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3, h3.left {
+    font-size: 2.1rem;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  h6 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  p.centered {
+    font-size: 2rem;
+  }
 }
 
 /*--sets/overrides color of text to white--*/
 #white {
   color: white;
 }
+
 /*-- navbar link text -- */
 .linkBox {
   margin: 0 auto;
 }
+
 .link {
   border-bottom: 1px solid #FFFFFF;
   display: block;
@@ -387,13 +440,16 @@ p.centered, #b {
   transition: .25s;
   width: 100%;
 }
+
 .link:hover {
   border-bottom: 1px dotted #FFFFFF;
   color: #00FFEB;
 }
+
 .inline-link {
   color: #009AAF;
 }
+
 /*-------- end typography styles --------*/
 /*-------- list styles --------*/
 /*-- lists with background color --*/
@@ -454,14 +510,19 @@ dd {
 /*-- list media queries -------------------*/
 /*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  ul.color li, dt, dd {font-size: 1.6rem;}
+  ul.color li, dt, dd {
+    font-size: 1.6rem;
+  }
 }
+
 /*-- for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
-  ul.color li, dt, dd {font-size: 1.8rem;}
+  ul.color li, dt, dd {
+    font-size: 1.8rem;
+  }
 }
-/*-- end list styles ------------------------*/
 
+/*-- end list styles ------------------------*/
 /*-- button + link styles -------------------*/
 /* a link styles  */
 a {
@@ -484,6 +545,7 @@ a.cardHover {
     margin: 0 auto;
   }
 }
+
 /* button styles */
 a.button {
   background: inherit;
@@ -508,6 +570,7 @@ a.button:hover {
   border: 2px solid #009AAF;
   transition: 0.4s;
 }
+
 /* container for multiple buttons*/
 .button_group {
   display: flex;
@@ -524,7 +587,7 @@ a.button:hover {
   align-self: center;
   background-color: #1c1c1c;
   margin: 0 auto;
-  padding: 5% ;
+  padding: 5%;
   width: 100vw;
 }
 
@@ -637,11 +700,11 @@ img.index_image {
   box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
   cursor: pointer;
 }
+
 /* color effect for card button and text on card hover*/
-.card:Hover #blueOnHover{
+.card:Hover #blueOnHover {
   color: #009AAF;
 }
-
 
 /*-------- end homepage (index) styles --------*/
 .shapes {
@@ -754,10 +817,14 @@ img.index_image {
 .parallax_small {
   min-height: 500px;
 }
+
 /*-- parallax larger resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
-  .parallax {min-height: 900px;}
+  .parallax {
+    min-height: 900px;
+  }
 }
+
 /**--- Lightbox Styles ---**/
 .lightboxContainer {
   display: flex;
@@ -770,9 +837,12 @@ img.index_image {
 .thumbnail {
   width: 50px;
 }
+
 /*-- parallax resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
-  .thumbnail {width: 125px;}
+  .thumbnail {
+    width: 125px;
+  }
 }
 
 /**- Lightbox Markup -**/
