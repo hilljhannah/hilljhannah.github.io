@@ -54,14 +54,6 @@ header {
   padding: 0 40px;
   margin: 0 auto;
 }--*/
-[aos="fade"] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[aos="fade"].aos-animate {
-  opacity: 1;
-}
 
 header {
   background: #161616;
@@ -81,7 +73,7 @@ header {
   display: block;
   color: #FFFFFF;
   padding: 20px 20px;
-  border-right: 1px solid #00C6E0;
+  border-right: 1px solid #009AAF;
   text-decoration: none;
   font-family: 'Lato';
   font-style: normal;
@@ -91,7 +83,7 @@ header {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #0091a5;
+  background-color: #009AAF;
   cursor: pointer;
 }
 
@@ -119,7 +111,7 @@ header {
 }
 
 .header .menu-icon .navicon {
-  background: #0091a5;
+  background: #009AAF;
   ;
   display: block;
   height: 2px;
@@ -130,7 +122,7 @@ header {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #0091a5;
+  background: #009AAF;
   ;
   content: '';
   display: block;
@@ -210,13 +202,7 @@ nav {
   max-height: 30px;
 }
 
-/*-- container + background */
-.bg_color {
-  background-color: #141414;
-  height: auto;
-  margin: 2rem auto 0 auto;
-  width: 100vw;
-}
+
 
 .bg_color_padded {
   background-color: inherit;
@@ -227,7 +213,7 @@ nav {
   width: 100%;
   max-width: 700px;
 }
-
+/* light background color for text container in project.html files*/
 .bg_text {
   background-color: #F7F7F7;
   border-radius: 8px;
@@ -238,120 +224,51 @@ nav {
   max-width: 700px;
 }
 
+/*--- nav + header + logo media queries ----------------------------------------------------*/
+/*-- for iPads (portrait and landscape) --*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  nav {max-width: 500px;}
+}
+/*-- for mobile --*/
+@media only screen and (max-width: 600px) {
+  #hidden {display: none; }
+  nav {
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    max-width: 220px;}
+}
+/*-- hides large links on smallest screens --*/
+@media only screen and (max-width: 1024px) {
+  header {margin: 0 auto;}
+  .myLogo {margin: 0;}
+}
+/*--- begin typography styles ---*/
 /* h1 text */
 h1 {
-  color: #0091A5;
+  color: #009AAF;
   display: inline-block;
   font-family: 'Lato';
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 3.8rem;
   font-style: normal;
   margin: 0 auto;
   vertical-align: middle;
 }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h1 {
-    font-size: 3.8rem;
-  }
-
-  nav {
-    max-width: 500px;
-  }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1024px) {
-  h1 {
-    font-size: 4.2rem;
-  }
-}
-
-/*-- navbar link text -- */
-.linkBox {
-  margin: 0 auto;
-}
-
-.link {
-  border-bottom: 1px solid #FFFFFF;
-  display: block;
-  color: #0091A5;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 1.6rem;
-  margin: 0 auto;
-  justify-content: center;
-  padding: 0 0 5px 0;
-  transition: .25s;
-  width: 100%;
-}
-
-.link:hover {
-  border-bottom: 1px dotted #FFFFFF;
-  color: #00FFEB;
-}
-
-.inline-link {
-  color: #0091A5;
-}
-
-@media only screen and (max-width: 600px) {
-  #hidden {
-    display: none;
-  }
-
-  nav {
-    grid-template-columns: 50% 50%;
-    width: 100%;
-    max-width: 220px;
-  }
-}
-
-/* hides large links on smallest screens*/
-@media only screen and (max-width: 1024px) {
-  header {
-    margin: 0 auto;
-  }
-
-  .myLogo {
-    margin: 0;
-  }
-}
-
-/*--- begin typography styles ---*/
-/* section headers */
+/* h2 text - large section headers */
 h2 {
   display: block;
   font-family: 'Lato', sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   margin: 2rem auto;
   text-align: center;
   font-weight: 600;
-  color: #0091a5;
+  color: #009AAF;
   width: 100%;
   max-width: 900px;
 }
-
 h2.left {
   text-align: left;
 }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h2 {
-    font-size: 2.8rem;
-  }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1024px) {
-  h2 {
-    font-size: 3.0rem;
-  }
-}
-
 /* h3 text */
 h3 {
   color: #333;
@@ -364,12 +281,10 @@ h3 {
   width: 100%;
   max-width: 700px;
 }
-
 h3.b {
   text-align: left;
   font-weight: 300;
 }
-
 /*left aligned h3*/
 h3.left {
   display: block;
@@ -379,7 +294,6 @@ h3.left {
   width: 100%;
   max-width: 500px;
 }
-
 /*-- headers within sections --*/
 h4 {
   color: #333;
@@ -391,29 +305,6 @@ h4 {
   margin: 2rem auto;
   max-width: 700px;
 }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h3, h3.left {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 2rem;
-  }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1024px) {
-  h3, h3.left {
-    font-size: 2.1rem;
-  }
-
-  h4 {
-    font-size: 2.2rem;
-  }
-}
-
 /*-- headers inside text --*/
 h5 {
   color: #333;
@@ -425,7 +316,6 @@ h5 {
   width: 100%;
   max-width: 700px;
 }
-
 /* h6 used in footer */
 h6 {
   color: white;
@@ -435,25 +325,6 @@ h6 {
   margin: 1rem auto;
   line-height: 2rem;
 }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h6 {
-    font-size: 1.4rem;
-  }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-  h6 {
-    font-size: 1.6rem;
-  }
-}
-
-#white {
-  color: white;
-}
-
 /*-- paragraph text --*/
 p {
   color: #333;
@@ -466,43 +337,63 @@ p {
   line-height: 150%;
   align-items: center;
 }
-
 /* centered p text */
 p.centered, #b {
   text-align: center;
 }
-
-/*--- typography media queries ---*/
-/*-- iPads --*/
+/*--- typeography media queries ----------------------------------------------------*/
+/*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  h5 {
-    font-size: 1.6rem;
-  }
-
-  p {
-    font-size: 1.6rem;
-  }
-
-  p.centered {
-    font-size: 1.8rem;
-  }
+  h1 {font-size: 4.2rem;}
+  h2 {font-size: 3.0rem;}
+  h3, h3.left {font-size: 2rem;}
+  h4 {font-size: 2rem;}
+  h5 {font-size: 1.6rem;}
+  h6 {font-size: 1.4rem;}
+  p {font-size: 1.6rem;}
+  p.centered {font-size: 1.8rem;}
 }
-
 /*-- Desktops and laptops -- */
 @media only screen and (min-width : 1024px) {
-  h5 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 1.8rem;
-  }
-
-  p.centered {
-    font-size: 2rem;
-  }
+  h1 {font-size: 4.8rem;}
+  h2 {font-size: 3.2rem;}
+  h3, h3.left {font-size: 2.1rem;}
+  h4 {font-size: 2.2rem;}
+  h5 {font-size: 1.8rem;}
+  h6 {font-size: 1.6rem;}
+  p {font-size: 1.8rem;}
+  p.centered {font-size: 2rem;}
 }
 
+/*--sets/overrides color of text to white--*/
+#white {
+  color: white;
+}
+/*-- navbar link text -- */
+.linkBox {
+  margin: 0 auto;
+}
+.link {
+  border-bottom: 1px solid #FFFFFF;
+  display: block;
+  color: #009AAF;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0 0 5px 0;
+  transition: .25s;
+  width: 100%;
+}
+.link:hover {
+  border-bottom: 1px dotted #FFFFFF;
+  color: #00FFEB;
+}
+.inline-link {
+  color: #009AAF;
+}
 /*-------- end typography styles --------*/
 /*-------- list styles --------*/
 /*-- lists with background color --*/
@@ -560,23 +451,18 @@ dd {
   padding: 1rem;
 }
 
-/*--- media queries ---*/
-/* iPads (portrait and landscape) ---- */
+/*-- list media queries -------------------*/
+/*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  ul.color li, dt, dd {
-    font-size: 1.6rem;
-  }
+  ul.color li, dt, dd {font-size: 1.6rem;}
 }
-
-/* Desktops and laptops ---- */
+/*-- for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
-  ul.color li, dt, dd {
-    font-size: 1.8rem;
-  }
+  ul.color li, dt, dd {font-size: 1.8rem;}
 }
+/*-- end list styles ------------------------*/
 
-/*-------- end list styles --------*/
-/*-------- button styles --------*/
+/*-- button + link styles -------------------*/
 /* a link styles  */
 a {
   text-align: center;
@@ -598,7 +484,7 @@ a.cardHover {
     margin: 0 auto;
   }
 }
-
+/* button styles */
 a.button {
   background: inherit;
   border: 2px solid white;
@@ -613,17 +499,19 @@ a.button {
   text-align: center;
   text-transform: uppercase;
   transition: 0.4s;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 a.button:hover {
-  background: #0091a5;
-  border: 2px solid #0091a5;
+  background: #009AAF;
+  border: 2px solid #009AAF;
   transition: 0.4s;
 }
-
+/* container for multiple buttons*/
 .button_group {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
   max-width: 700px;
@@ -634,7 +522,7 @@ a.button:hover {
 /* homepage hero section */
 .homeHero {
   align-self: center;
-  background-color: #242424;
+  background-color: #1c1c1c;
   margin: 0 auto;
   padding: 5% ;
   width: 100vw;
@@ -726,7 +614,6 @@ img.index_image {
   flex-wrap: wrap;
   background: white;
   border-top: 1px solid #f5f5f5;
-  ;
   border-radius: 0 0 2px 2px;
   margin: 0;
   position: absolute;
@@ -747,18 +634,14 @@ img.index_image {
 
 /* effect on card hover*/
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
   cursor: pointer;
 }
 /* color effect for card button and text on card hover*/
 .card:Hover #blueOnHover{
-  color: #0091a5;
+  color: #009AAF;
 }
-/* text effect on card hover*/
-.card:hover .card_button_text{
-  color: #0091a5;
-  font-weight: bolder;
-}
+
 
 /*-------- end homepage (index) styles --------*/
 .shapes {
@@ -770,14 +653,14 @@ img.index_image {
   justify-items: center;
   max-width: 1400px;
   margin: 1rem auto 0 auto;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 0;
   width: 100%;
   z-index: 999;
 }
 
 .shape, .shape1, .shape2, .shape3 {
   border-radius: 1px;
-  background-color: #0091a5;
+  background-color: #009AAF;
   height: 10px;
   opacity: 1;
   width: 10px;
@@ -785,9 +668,8 @@ img.index_image {
 
 /*-------- project files hero section styles --------*/
 .hero {
-  align-content: center;
   background-color: #141414;
-  background-position: top;
+  background-position: center;
   border-radius: 2px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -801,16 +683,16 @@ img.index_image {
   background-color: inherit;
   display: block;
   margin: 0 auto;
-  height: 280px;
+  height: 300px;
   overflow: hidden;
-  padding: 2.5rem 1rem;
+  padding: 3rem 1rem 0 1rem;
 }
 
 /* sets hero height on ipads  ----------- */
 @media only screen and (min-device-width : 768px) {
   .hero_container {
     height: 700px;
-    padding: 5rem 20rem;
+    padding: 5rem 20rem 0 20rem;
   }
 }
 
@@ -854,9 +736,9 @@ img.index_image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #0091a5;
+  background-color: #009AAF;
   display: block;
-  min-height: 900px;
+  min-height: 400px;
   margin-top: 1rem;
 }
 
@@ -872,7 +754,10 @@ img.index_image {
 .parallax_small {
   min-height: 500px;
 }
-
+/*-- parallax larger resize for Desktops and laptops -- */
+@media only screen and (min-width : 1224px) {
+  .parallax {min-height: 900px;}
+}
 /**--- Lightbox Styles ---**/
 .lightboxContainer {
   display: flex;
@@ -883,11 +768,11 @@ img.index_image {
 }
 
 .thumbnail {
-  width: 125px;
+  width: 50px;
 }
-
-.thumbnail_large {
-  width: 300px;
+/*-- parallax resize for Desktops and laptops -- */
+@media only screen and (min-width : 1224px) {
+  .thumbnail {width: 125px;}
 }
 
 /**- Lightbox Markup -**/
@@ -1356,7 +1241,7 @@ iframe {
 
 /*----------- footer styles ----------------*/
 footer {
-  background-color: #0091a5;
+  background-color: #161616;
   height: auto;
   width: 100%;
   padding: 8vh 8vw 4vh;
@@ -1454,7 +1339,7 @@ input[type=email] {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #0091A5;
+  background-color: #009AAF;
   border: none;
   border-radius: 4px;
   color: #333;
