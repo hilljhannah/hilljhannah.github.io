@@ -7,4 +7,3 @@ anime({
   delay: anime.stagger(200, {grid: [10, 4], from: 'center'}),
   loop: true
 });
-AOS.init({});
