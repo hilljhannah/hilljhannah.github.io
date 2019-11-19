@@ -16,6 +16,9 @@ body {
   height: 100%;
   overflow-x: hidden;
   width: 100%;
+  min-height:100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .container {
@@ -705,7 +708,7 @@ img.index_image {
 }
 
 /* color effect for card button and text on card hover*/
-.card:Hover #blueOnHover {
+.card:Hover .blueOnHover {
   color: #009AAF;
 }
 
@@ -1316,9 +1319,6 @@ iframe {
 footer {
   background-color: #161616;
   height: auto;
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   padding: 8vh 8vw 4vh;
   margin-top: 10vh;
