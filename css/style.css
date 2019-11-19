@@ -757,7 +757,7 @@ img.index_image {
   padding: 3rem 1rem 0 1rem;
 }
 
-/* sets hero height on ipads  ----------- */
+/* sets hero height on ipads and desktops  ----------- */
 @media only screen and (min-device-width : 768px) {
   .hero_container {
     height: 700px;
