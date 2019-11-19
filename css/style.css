@@ -14,6 +14,7 @@ html {
 
 body {
   height: 100%;
+  overflow-x: hidden;
   width: 100%;
 }
 
@@ -549,18 +550,20 @@ a.cardHover {
 /* button styles */
 a.button {
   background: inherit;
-  border: 2px solid white;
+  border: 2px white;
+  border-style: dotted double;
   color: white;
   cursor: pointer;
   display: block;
   font-family: 'Lato';
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 20px;
   margin: 1rem auto;
   padding: 1rem;
   text-align: center;
   text-transform: uppercase;
-  transition: 0.4s;
+  transition: all 0.5s;
   width: 100%;
   max-width: 250px;
 }
@@ -568,7 +571,7 @@ a.button {
 a.button:hover {
   background: #009AAF;
   border: 2px solid #009AAF;
-  transition: 0.4s;
+  transition: all 0.5s;
 }
 
 /* container for multiple buttons*/
@@ -835,7 +838,7 @@ img.index_image {
 }
 
 .thumbnail {
-  width: 50px;
+  width: 100px;
 }
 
 /*-- parallax resize for Desktops and laptops -- */
@@ -1141,7 +1144,7 @@ p.img_cap {
   height: 100%;
   width: 100%;
   max-width: 200px;
-  margin: 0 auto;
+  margin: .5rem auto;
 }
 
 /*-- general mobile project/mood flexbox img container--*/
@@ -1164,7 +1167,7 @@ p.img_cap {
 .flexItem {
   display: block;
   padding: 1rem;
-  width: 100%;
+  width: 50%;
   max-width: 200px;
 }
 
@@ -1313,6 +1316,9 @@ iframe {
 footer {
   background-color: #161616;
   height: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   padding: 8vh 8vw 4vh;
   margin-top: 10vh;
