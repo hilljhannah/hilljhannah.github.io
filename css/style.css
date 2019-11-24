@@ -250,6 +250,8 @@ h1 {
   font-style: normal;
   margin: 0 auto;
   vertical-align: middle;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* h2 text - large section headers */
@@ -262,7 +264,7 @@ h2 {
   font-weight: 600;
   color: #009AAF;
   width: 100%;
-  max-width: 900px;
+  max-width: 350px;
 }
 
 h2.left {
@@ -279,7 +281,7 @@ h3 {
   margin: 4rem auto 0 auto;
   text-align: left;
   width: 100%;
-  max-width: 700px;
+  max-width: 300px;
 }
 
 h3.b {
@@ -294,7 +296,7 @@ h3.left {
   margin: 0;
   text-align: left;
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
 }
 
 /*-- headers within sections --*/
@@ -306,7 +308,7 @@ h4 {
   text-align: left;
   padding-top: 1rem;
   margin: 2rem auto;
-  max-width: 700px;
+  max-width: 300px;
 }
 
 /*-- headers inside text --*/
@@ -318,7 +320,7 @@ h5 {
   margin: 1rem auto 0 auto;
   text-align: left;
   width: 100%;
-  max-width: 700px;
+  max-width: 300px;
 }
 
 /* h6 used in footer */
@@ -339,7 +341,7 @@ p {
   margin: 1rem auto 1rem auto;
   font-style: normal;
   width: 100%;
-  max-width: 700px;
+  max-width: 300px;
   line-height: 150%;
   align-items: center;
 }
@@ -389,22 +391,27 @@ p.centered, #b {
 @media only screen and (min-width : 1024px) {
   h1 {
     font-size: 4.8rem;
+    max-width: 700px
   }
 
   h2 {
     font-size: 3.2rem;
+    max-width: 900px
   }
 
   h3, h3.left {
     font-size: 2.1rem;
+    max-width: 700px;
   }
 
   h4 {
     font-size: 2.2rem;
+    max-width: 700px;
   }
 
   h5 {
     font-size: 1.8rem;
+    max-width: 700px;
   }
 
   h6 {
@@ -413,6 +420,7 @@ p.centered, #b {
 
   p {
     font-size: 1.8rem;
+    max-width: 700px;
   }
 
   p.centered {
@@ -1228,19 +1236,12 @@ iframe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100vw;
-  height: 400px;
+  height: 100%;
 }
 
 .img-container {
   display: block;
   position: relative;
-}
-
-/* creates two img columns on desktops */
-@media only screen and (min-width : 1224px) {
-  .img-container {
-    max-width: 50vw;
-  }
 }
 
 .dailyui-img {
@@ -1268,6 +1269,7 @@ iframe {
 }
 
 .text {
+  display: hidden;
   font-size: 20px;
   font-family: inherit;
   position: absolute;
@@ -1277,6 +1279,12 @@ iframe {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: left;
+}
+/* creates two img columns on desktops and unhides text descriptions*/
+@media only screen and (min-width : 1224px) {
+  .img-container {
+    max-width: 50vw;
+  }
 }
 
 /*-- h3 + p font color change classes for dailyui img hover text --*/
@@ -1289,11 +1297,13 @@ iframe {
   color: white;
   text-align: left;
 }
-
-/*-- disables image hover overlay on ipad and mobile screens --*/
-@media only screen and (max-device-width : 1024px) {
+/* creates two img columns on desktops and unhides image hover text*/
+@media only screen and (min-width : 1224px) {
+  .img-container {
+    max-width: 50vw;
+  }
   .text {
-    opacity: 0;
+    display: block;
   }
 }
 
