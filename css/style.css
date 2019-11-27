@@ -827,9 +827,13 @@ img.index_image {
   display: block;
   min-height: 400px;
   margin-top: 1rem;
-  max-width: 100vw;
+  max-width: 100%;
 }
-
+@media only screen and (max-width:749px) {
+  .parallax {
+    background-attachment: inherit;
+  }
+}
 /* colored purple background in parallax for dreamers*/
 .dreamers {
   background-color: #493757;
