@@ -829,9 +829,10 @@ img.index_image {
   margin-top: 1rem;
   max-width: 100%;
 }
+/* disables parallax image on mobile devices*/
 @media only screen and (max-width:749px) {
   .parallax {
-    background-attachment: inherit;
+    display: none;
   }
 }
 /* colored purple background in parallax for dreamers*/
