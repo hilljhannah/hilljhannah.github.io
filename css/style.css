@@ -13,23 +13,26 @@ html {
 }
 
 body {
-  height: 100%;
-  overflow-x: hidden;
-  width: 100%;
-  min-height:100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  height: 100%;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
   height: auto;
-  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  max-width: 100vw;
+  overflow: hidden;
 }
 
 /* process sections */
@@ -41,13 +44,10 @@ section {
   margin: 5rem auto;
   padding: 0;
   width: 100%;
-  max-width: 100vw;
+  overflow: hidden;
 }
 
-/* small width section container */
-section.smallWidth {
-  width: 90vw;
-}
+
 /* page header */
 header {
   background: #161616;
@@ -253,7 +253,6 @@ h1 {
   margin: 0 auto;
   vertical-align: middle;
   width: 100%;
-  max-width: 300px;
 }
 
 /* h2 text - large section headers */
@@ -266,7 +265,6 @@ h2 {
   font-weight: 600;
   color: #009AAF;
   width: 100%;
-  max-width: 350px;
 }
 
 h2.left {
@@ -283,7 +281,6 @@ h3 {
   margin: 4rem auto 0 auto;
   text-align: left;
   width: 100%;
-  max-width: 300px;
 }
 
 h3.b {
@@ -298,7 +295,6 @@ h3.left {
   margin: 0;
   text-align: left;
   width: 100%;
-  max-width: 300px;
 }
 
 /*-- headers within sections --*/
@@ -310,7 +306,7 @@ h4 {
   text-align: left;
   padding-top: 1rem;
   margin: 2rem auto;
-  max-width: 300px;
+  width: 100%;
 }
 
 /*-- headers inside text --*/
@@ -322,7 +318,6 @@ h5 {
   margin: 1rem auto 0 auto;
   text-align: left;
   width: 100%;
-  max-width: 300px;
 }
 
 /* h6 used in footer */
@@ -393,27 +388,22 @@ p.centered, #b {
 @media only screen and (min-width : 1024px) {
   h1 {
     font-size: 4.8rem;
-    max-width: 100%;
   }
 
   h2 {
     font-size: 3.2rem;
-    max-width: 900px
   }
 
   h3, h3.left {
     font-size: 2.1rem;
-    max-width: 700px;
   }
 
   h4 {
     font-size: 2.2rem;
-    max-width: 700px;
   }
 
   h5 {
     font-size: 1.8rem;
-    max-width: 700px;
   }
 
   h6 {
@@ -580,7 +570,7 @@ a.button {
   text-align: center;
   text-transform: uppercase;
   transition: all 0.5s;
-  width: 100%;
+  width: auto;
   max-width: 250px;
 }
 
@@ -608,7 +598,7 @@ a.button:hover {
   background-color: #1c1c1c;
   margin: 0 auto;
   padding: 5%;
-  width: 100vw;
+  width: auto;
 }
 
 /* content in hero section */
@@ -641,8 +631,8 @@ img.index_image {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 100%;
-  max-width: 900vw;
+  width: 90%;
+  max-width: 100vw;
   align-content: space-between;
   justify-content: center;
 }
@@ -739,8 +729,8 @@ img.index_image {
   justify-items: center;
   max-width: 1400px;
   margin: 1rem auto 0 auto;
-  padding: 1rem 0 0;
-  width: 100%;
+  padding: 1rem 0 1rem 0;
+  width: auto;
   z-index: 999;
 }
 
