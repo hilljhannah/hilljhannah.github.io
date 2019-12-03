@@ -598,7 +598,7 @@ a.button:hover {
   background-color: #1c1c1c;
   margin: 0 auto;
   padding: 5%;
-  width: auto;
+  width: 100%;
 }
 
 /* content in hero section */
