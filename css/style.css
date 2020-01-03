@@ -1278,7 +1278,7 @@ iframe {
 }
 
 .text {
-  display: none;
+  display: block;
   font-size: 20px;
   font-family: inherit;
   position: absolute;
