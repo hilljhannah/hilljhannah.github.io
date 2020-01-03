@@ -1289,12 +1289,6 @@ iframe {
   transform: translate(-50%, -50%);
   text-align: left;
 }
-/* creates two img columns on desktops and unhides text descriptions*/
-@media only screen and (min-width : 1224px) {
-  .img-container {
-    max-width: 50vw;
-  }
-}
 
 /*-- h3 + p font color change classes for dailyui img hover text --*/
 .black {
