@@ -259,10 +259,10 @@ h1 {
 h2 {
   display: block;
   font-family: 'Lato', sans-serif;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   margin: 2rem auto;
   text-align: center;
-  font-weight: 600;
+  font-weight: 800;
   color: #009AAF;
   width: 100%;
 }
@@ -276,8 +276,8 @@ h3 {
   color: #333;
   display: block;
   font-family: 'Lato';
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 2.4rem;
+  font-weight: 500;
   margin: 4rem auto 0 auto;
   text-align: left;
   width: 100%;
@@ -301,7 +301,7 @@ h3.left {
 h4 {
   color: #333;
   font-family: 'Lato';
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: left;
   padding-top: 1rem;
@@ -320,8 +320,8 @@ h5 {
   width: 100%;
 }
 
-/* h6 used in footer */
-h6 {
+/* text-footer used in footer */
+text-footer {
   color: white;
   font-family: 'Lato';
   font-size: 1.2rem;
@@ -371,7 +371,7 @@ p.centered, #b {
     font-size: 1.6rem;
   }
 
-  h6 {
+  text-footer {
     font-size: 1.4rem;
   }
 
@@ -406,7 +406,7 @@ p.centered, #b {
     font-size: 1.8rem;
   }
 
-  h6 {
+  text-footer {
     font-size: 1.6rem;
   }
 
