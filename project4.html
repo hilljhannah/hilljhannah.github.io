@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio | FieldAgent Design System Case Study</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <!-- Navbar -->
+      <header class="header">
+        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="form.html">Contact</a></li>
+        </ul>
+      </header>
+      <!-- Hero -->
+      <section class="hero">
+        <div data-aos="zoom-in" class="hero_container DS">
+          <img class="hero_device" src="images/" alt="Design System hero card">
+        </div>
+      </section>
+      <!-- Overview -->
+      <section data-aos="fade-right" class="overview">
+        <h2>Project Overview</h2>
+        <div class="bg_text">
+          <!-- My roles/tools -->
+          <h5>My Role</h5>
+          <p>Creator, owner, and maintainer of the FieldAgent Design System.</p>
+          <h5>Tools</h5>
+          <p>I used Figma as the platform for our Design System due to its component and variant handling capabilities.</p>
+        </div>
+      </section>
+      <!-- Approach -->
+      <h2>Approach</h2>
+      <!-- Research -->
+      <section data-aos="fade-left" class="research">
+        <div class="bg_text">
+          <h3>Research</h3>
+          <p>Figma’s virtual design system conference, Schema, coincidentally took place at the same time I was researching design systems. At Schema, I listened to some of the best design system creators talk about the highs and lows of their design system journey.
+            Hearing about the pain points encountered during the creation of other design systems taught me so much more than every article I read.
+          </p>
+          <p>I learned an immense amount at the conference, including these key takeaways:</p>
+          <ul class="">
+          <p>How to create and use Design Tokens</p>
+          <p>How to structure a design system in the best way for your platform and team</p>
+          <p>Prioritize consumability of the system over easy maintenance of the system</p>
+          </ul>
+        </div>
+          <div class="parallax DS generic-img" style="background-image: url(images/schema_conference_2021.jpg);"></div>
+      </section>
+      <!-- System Structure -->
+      <section class=" ">
+        <div data-aos="fade-right">
+          <h2>System Structure</h2>
+          <div class="bg_text">
+            <p>In order to manage the size and complexity of our design system, the system is divided into three libraries: Color & Typography Library, Iconography Library, and Component Library.
+              The first two libraries hold Design Tokens used in the largest part of our design system, our Component Library.
+              Splitting up the three libraries of the system decreases loading times and network strain caused by having one massive library.
+            </p>
+            <h3>What are Design Tokens?</h3>
+            <p>Design Tokens are the single source of truth to name and store a design decision.</p>
+          </div>
+        </div>
+      </section>
+      <!-- System Libraries -->
+      <section>
+          <h2>System Libraries</h2>
+      </section>
+      <!-- Color & Typography Library -->
+      <section>
+        <div data-aos="fade-right">
+          <div class="bg_text">
+            <h3>Color & Typography Library:</h3>
+            <p>I started with the Color & Typography Library to create the base for our Design System. This library holds Color and Typography Design Tokens; used throughout libraries, designs, and in development to maintain design consistency.</p>
+            <p>Color Design Tokens for both light and dark modes verified WCAG passing contrast ratios. This aids in design work and maintaining accessibility in our products, ensuring that designs are accessible without relying on the designer or developer to verify accessibility.</p>
+            <p>The Color & Typography Library also contains documentation notes on how these Color and Typography Design Tokens should be used.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+      <!-- Key Takeaways -->
+      <section data-aos="fade-right" class="Learning">
+        <h2>Key Takeaways</h2>
+        <div class="bg_text">
+          <p></p>
+          <h3>Key Lessons Learned</h3>
+          <ul class="color">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
+  <!-- page footer-->
+  <footer>
+    <h6><a id="white" class="inline-link" href="form.html">Hannah Hill</a></h6>
+    <h6>UX UI Designer + Frontend Developer</h6>
+    <div class="social_icon_container">
+      <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+      <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github.png" alt="github icon"></a></div>
+    </div>
+  </footer>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134476139-1');
+  </script>
+  <!-- Scripts  -->
+  <script src="scripts/lib/anime.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
