@@ -210,6 +210,7 @@ nav {
 }
 
 /*--- nav + header + logo media queries ----------------------------------------------------*/
+
 /*-- for iPads (portrait and landscape) --*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   nav {
@@ -242,11 +243,12 @@ nav {
 }
 
 /*--- begin typography styles ---*/
+/*--- mobile first ---*/
 /* h1 text */
 h1 {
   color: #009AAF;
   display: inline-block;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 3.8rem;
   font-style: normal;
@@ -254,53 +256,41 @@ h1 {
   vertical-align: middle;
   width: 100%;
 }
-
-/* h2 text - large section headers */
+/* h2 text */
 h2 {
   display: block;
   font-family: 'Lato', sans-serif;
   font-size: 2.8rem;
   margin: 2rem auto;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   color: #009AAF;
   width: 100%;
 }
-
 h2.left {
   text-align: left;
 }
-
 /* h3 text */
 h3 {
   color: #333;
   display: block;
-  font-family: 'Lato';
-  font-size: 1.8rem;
-  font-weight: 800;
-  margin: 4rem auto 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 2rem auto ;
   text-align: left;
   width: 100%;
-}
-
-h3.b {
-  text-align: left;
-  font-weight: 300;
 }
 
 /*left aligned h3*/
 h3.left {
-  display: block;
-  color: #333;
   margin: 0;
-  text-align: left;
   width: 100%;
 }
-
 /*-- headers within sections --*/
 h4 {
   color: #333;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   text-align: left;
@@ -308,44 +298,41 @@ h4 {
   margin: 2rem auto;
   width: 100%;
 }
-
 /*-- headers inside text --*/
 h5 {
   color: #333;
-  font-family: 'Lato';
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin: 1rem auto 0 auto;
   text-align: left;
   width: 100%;
 }
-
-/* h6 used in footer */
-h6 {
-  color: white;
-  font-family: 'Lato';
-  font-size: 1.2rem;
-  text-align: left;
-  margin: 1rem auto;
-  line-height: 2rem;
-}
-
 /*-- paragraph text --*/
 p {
   color: #333;
   font-family: 'Open+Sans';
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 1rem auto 1rem auto;
   font-style: normal;
   width: 100%;
   line-height: 150%;
   align-items: center;
 }
-
 /* centered p text */
 p.centered, #b {
   text-align: center;
 }
+/*-- Footer Text ---*/
+p.foot {
+  color: white;
+  font-family: 'Lato';
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 1rem auto;
+  line-height: 2rem;
+}
+
 
 /*--- typeography media queries ----------------------------------------------------*/
 /*-- iPads (portrait and landscape) -- */
@@ -356,11 +343,11 @@ p.centered, #b {
   }
 
   h2 {
-    font-size: 3.0rem;
+    font-size: 3.2rem;
   }
 
   h3, h3.left {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   h4 {
@@ -368,11 +355,7 @@ p.centered, #b {
   }
 
   h5 {
-    font-size: 1.6rem;
-  }
-
-  h6 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   p {
@@ -382,9 +365,12 @@ p.centered, #b {
   p.centered {
     font-size: 1.8rem;
   }
+  p.foot {
+    font-size: 1.4rem;
+  }
 }
 
-/*-- Desktops and laptops -- */
+-- Desktops and laptops --
 @media only screen and (min-width : 1024px) {
   h1 {
     font-size: 4.8rem;
@@ -395,7 +381,7 @@ p.centered, #b {
   }
 
   h3, h3.left {
-    font-size: 2.1rem;
+    font-size: 2.8rem;
   }
 
   h4 {
@@ -406,20 +392,19 @@ p.centered, #b {
     font-size: 1.8rem;
   }
 
-  h6 {
-    font-size: 1.6rem;
-  }
 
   p {
     font-size: 1.8rem;
-    max-width: 700px;
   }
 
   p.centered {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-}
 
+    p.foot {
+      font-size: 1.6rem;
+    }
+}
 /*--sets/overrides color of text to white--*/
 #white {
   color: white;
@@ -604,7 +589,7 @@ a.button:hover {
 /* content in hero section */
 .hero_content {
   width: 100%;
-  max-width: 550px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem 0;
   z-index: 2;
@@ -673,14 +658,14 @@ img.index_image {
 .card_image_div{
   display: block;
   height: 100%;
-  max-height: 50%;
+  max-height: 250px;
   overflow: hidden;
 }
 /* text content in card */
 .card_content {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 2rem;
+  padding: 2rem;
 }
 
 /* card button */
@@ -1224,8 +1209,8 @@ p.img_cap {
 }
 
 
-/*------- project3 (dailyui) page styles-------------------------------------*/
-.project3-gallery {
+/*------- caseStudyDailyUI (dailyui) page styles-------------------------------------*/
+.caseStudyDailyUI-gallery {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
@@ -1287,7 +1272,7 @@ p.img_cap {
 }
 /* creates two img columns on desktops and unhides image hover text*/
 @media only screen and (min-width : 1024px) {
-  .project3-gallery{
+  .caseStudyDailyUI-gallery{
     grid-template-columns: 1fr 1fr;
   }
   .text {

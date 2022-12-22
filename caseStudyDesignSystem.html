@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio | FieldAgent Design System Case Study</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <!-- Navbar -->
+      <header class="header">
+        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="form.html">Contact</a></li>
+        </ul>
+      </header>
+      <!-- Hero -->
+      <section class="hero">
+        <div data-aos="zoom-in" class="hero_container DS">
+          <img class="hero_device" src="images/" alt="Design System hero card">
+        </div>
+      </section>
+      <!-- Overview -->
+      <section data-aos="fade-right" class="overview">
+        <h2>Project Overview</h2>
+        <div class="bg_text">
+          <p>As the first UX/UI designer, I was tasked with establishing product branding and creating our design system from scratch. </p>
+          <!-- My roles/tools -->
+          <h5>My Role</h5>
+          <p>Creator, owner, and maintainer of the FieldAgent Design System.</p>
+          <h5>Tools</h5>
+          <p>I used Figma as the platform for our Design System due to its component and variant handling capabilities.</p>
+        </div>
+      </section>
+      <!-- Research -->
+      <section data-aos="fade-left" class="research">
+          <h2>Research</h2>
+        <div class="bg_text">
+          <p>My research started at Figma’s design system conference, Schema.</p>
+          <p>At Schema, I listened to some of the best design system creators talk about different aspects of creating, maintaining, and overhauling design systems. I had a ton of fun and learned so many invaluable bits of knowledge about design systems. </p>
+          <p>These are a few of the most important things I learned at Schema</p>
+          <ul class="">
+          <li>What Design Tokens are - they are the single source of truth to name and store a design decision.</li>
+          <li>Utilizing Design Tokens in a Design System to maintain design consistency</li>
+          <li>How to structure our design system in a performant way</li>
+          <li>Prioritizing consumability of the system over easy maintenance of the system</li>
+          </ul>
+        </div>
+      </section>
+      <!--Structure -->
+      <section class=" ">
+        <div data-aos="fade-right">
+          <h2>Structure</h2>
+          <div class="bg_text">
+            <p>In order to manage the size and complexity of our design system, the system is divided into three libraries utilizing Design Tokens.</p>
+            <p>The first two libraries hold Design Tokens used in the largest part of our design system, our Component Library. Splitting up the three libraries of the system decreases loading times and network strain caused by having one massive library.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Color & Typography Library -->
+        <div data-aos="fade-left">
+          <h2>Color & Typography Library</h2>
+          <div class="bg_text">
+            <p>This Library creates the base for our Design System and holds Color + Typography Design Tokens. These Tokens are used throughout our libraries, designs, and in development to maintain design consistency. Design Tokens hold a design style and also documentation notes on how the individual Token should be used.</p>
+            <p>Color Design Tokens for both light and dark modes were both created with accessibility in mind. Text colors have been verified for accessibility when used with background color tokens of the same type (light/dark).</p>
+            <p>This aids in design work and maintaining accessibility in our products, ensuring that designs are accessible without relying on the designer or developer to verify accessibility.</p>
+            <br>
+            <p>Typography colors are defined using Color Design Tokens to ensure accessibility.</p>
+            <p>Additionally, I chose Roboto as the font for our platform due to its high level of readability and accessibility for all users; in addition to its plethora of font weights.</p>
+          </div>
+        </div>
+        <!-- Iconography Library -->
+        <div data-aos="fade-right">
+          <h2>Iconography Library</h2>
+          <div class="bg_text">
+            <p>The Iconography Library contains all of the icons used throughout the FieldAgent experience. Originally I had planned to create all the icons from scratch throughout the life of the design system. I was able to do this for a while but as the design system grew, so did my responsibilities. It was no longer feasible to make them myself so new icons were supplemented using the MUI icon set. This allowed me to spend more time on other work and managing the rest of the design system. The Icons  are created in their own library so they are easy to swap instances and component overrides, making for a better design system experience. .</p>
+          </div>
+        </div>
+        <!-- Component Library -->
+        <div data-aos="fade-left">
+          <h2>Component Library</h2>
+          <div class="bg_text">
+              <p>The Component Library is the largest and most used library in the system. It was by far the biggest lift of the project and took the longest amount of time. The Component Library utilizes Design Tokens from the other two Libraries to create components structured like an atom, using with smallest molecules being Design Tokens and breaking up each component to build the smallest parts first, then combine to form a component (the atom)</p>
+              <p>This means that, for example, a button uses styles from the color, typography, and iconography libraries - and in turn is used by larger parent components, like a modal window. By building the core libraries first, and then the smallest components, changes are simple but easy to control unwanted changes by restricting access to these core libraries.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Style Guide -->
+      <section>
+        <div data-aos="fade-right">
+          <h2>Brand Style Guide</h2>
+          <div class="bg_text">
+            <p>Additionally, using the Color & Typography, and Iconography library Design Tokens, a style guide was created for our Design System.</p>
+            <div>img</div>
+          </div>
+        </div>
+      </section>
+      <!-- Maintaining the System  -->
+      <section>
+        <div data-aos="fade-left">
+          <h2>Maintaining the System</h2>
+          <div class="bg_text">
+            <p>A design system is not a project with a set end date, it requires continual maintenance that I was responsible for. Component additions to the design system must be thoroughly vetted to maintain the integrity of the design system and to manage unnecessary expansion. Another major part of maintenance is limiting the number of additions to the design system to components that will be reused in more than one part of the app. To manage future expansion and limit the size of the library, components only used on one page or in a singular instance were not added to the design system.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Implementing the System -->
+      <section data-aos="fade-right" class="Learning">
+        <h2>Implementing the System</h2>
+        <div class="bg_text">
+          <p>The implementation of the design system was a huge success. Not only did it improve our speed and consistency in mockups, but it made the onboarding experience for new team members much easier. The team has saved countless hours of tedious work thanks to the design system because we are able to reuse components from the library and adhere to established design guidelines.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <!-- page footer-->
+  <footer>
+    <p class="foot"><a id="white" class="inline-link" href="form.html">Hannah Hill</a></p class="foot">
+    <p class="foot">UX UI Designer + Frontend Developer</p class="foot">
+    <div class="social_icon_container">
+      <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+      <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github.png" alt="github icon"></a></div>
+    </div>
+  </footer>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134476139-1');
+  </script>
+  <!-- Scripts  -->
+  <script src="scripts/lib/anime.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
