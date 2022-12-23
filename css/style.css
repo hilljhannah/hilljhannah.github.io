@@ -405,6 +405,7 @@ p.foot {
       font-size: 1.6rem;
     }
 }
+
 /*--sets/overrides color of text to white--*/
 #white {
   color: white;
@@ -647,7 +648,6 @@ img.index_image {
   display: block;
   height: auto;
   border-radius: 2px 2px 0 0;
-  padding: 2rem 2rem 0 2rem;
   position: relative;
   left: 0;
   right: 0;
@@ -827,6 +827,9 @@ img.index_image {
   width: 100%;
   max-width: 90vw;
   text-align: center;
+}
+.designSystem{
+  background-color: #212121;
 }
 /*-- parallax larger resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
