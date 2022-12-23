@@ -807,6 +807,7 @@ img.index_image {
   background-color: #009AAF;
   display: block;
   min-height: 400px;
+
   margin-top: 1rem;
   max-width: 100%;
 }
@@ -835,7 +836,7 @@ img.index_image {
   text-align: center;
 }
 .designSystem{
-  background-color: #212121;
+  background-color: #121212;
 }
 /*-- parallax larger resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
