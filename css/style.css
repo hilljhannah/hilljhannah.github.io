@@ -848,6 +848,12 @@ img.index_image {
   }
 }
 
+/*-- product showcase image style--*/
+img.result{
+  display: block;
+  width: 100%;
+}
+
 /**--- Lightbox Styles ---**/
 .lightboxContainer {
   display: flex;
