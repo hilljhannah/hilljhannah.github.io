@@ -47,9 +47,9 @@
       <section data-aos="fade-left" class="approach">
           <h2>Approach</h2>
         <div class="bg_text">
-          <p>I started my research at Figma’s design system conference, Schema.</p>
-          <p>At Schema, I listened to some of the best design system creators talk about different aspects of creating, maintaining, and overhauling design systems. I had a ton of fun and learned so many invaluable bits of knowledge about design systems. </p>
-          <h5>These are a few of the key takeaways from Schema:</h5>
+          <p>I started at Figma’s design system conference, Schema.</p>
+          <p>I listened to some of the best design system creators talk about different aspects of creating, maintaining, and overhauling design systems. I had a ton of fun and learned so many invaluable bits of knowledge about design systems. </p>
+          <h5>These are a few of my key takeaways from Schema:</h5>
           <ul class="color">
           <li>Design Tokens are the single source of truth to name and store a design decision.</li>
           <li>Utilizing Design Tokens in a Design System to maintain design consistency</li>
@@ -63,29 +63,32 @@
         <div data-aos="fade-right">
           <h2>Managing Complexity</h2>
           <div class="bg_text">
-            <p>In order to manage the size and complexity of our design system, the system is divided into three libraries utilizing Design Tokens.</p>
-            <p>The first two libraries hold Design Tokens used in the largest part of our design system, our Component Library. Splitting up the three libraries of the system decreases loading times and network strain caused by having one massive library.</p>
+            <p>In order to manage the size and complexity of our design system, I divided the system into three atomic design libraries.</p>
+            <p>The Typography + Color and Iconography Libraries support the largest part of our design system, our Component Library.</p>
+            <p> Additionally, splitting up the three libraries of the system decreases loading times and network strain caused by having one massive library.</p>
           </div>
         </div>
       </section>
       <section>
-        <!-- Color & Typography Library -->
+        <!-- Color + Typography Library -->
         <div data-aos="fade-left">
-          <h2>Color & Typography Library</h2>
+          <h2>Color + Typography Library</h2>
           <div class="bg_text">
             <p>This Library creates the base for our Design System and holds Color + Typography Design Tokens. These Tokens are used throughout our libraries, designs, and in development to maintain design consistency. Design Tokens hold a design style and also documentation notes on how the individual Token should be used.</p>
             <p>Color Design Tokens for both light and dark modes have both been verified for accessibility when used with background color tokens of the same type.</p>
             <p>This aids in design work and maintaining accessibility in our products, ensuring that designs are accessible without relying on the designer or developer to validate.</p>
-            <p>Additionally, I chose Roboto as the font for our platform due to its high level of readability and accessibility for all users; in addition to its plethora of font weights. Colors for Typography styles are also defined in this library and are verified to pass accessibility guidelines.</p>
+            <p>Additionally, I chose Roboto as the font for our platform due to its high level of readability and accessibility for all users; in addition to its plethora of font weights.</p>
           </div>
-      <!--    <div>
-            <img class="product" src="images/designSystem/DS_CaseStudyTypographyColorLibrary.png" alt=" Color & Typography Library Screenshot"></img>
-          </div> -->
         </div>
         <div>
+           <img class="product" src="images/designSystem/DS_CaseStudyTypographyColorLibrary.png" alt="Color + Typography Library Screenshot"></img>
+         </div>
+      </section>
+        <!--<div>
           <div class="parallax designSystem" style="background-image: url(images/designSystem/DS_CaseStudyTypographyColorLibrary.png);"></div>
-        </div>
+        </div> -->
         <!-- Iconography Library -->
+        <section>
         <div data-aos="fade-right">
           <h2>Iconography Library</h2>
           <div class="bg_text">
@@ -93,14 +96,12 @@
             <p> The Icons  are created in their own library so they are easy to swap instances and component overrides, making for a better design system experience.</p>
           </div>
         </div>
-          <div>
-            <div class="parallax designSystem" style="background-image: url(images/designSystem/DS_CaseStudyIconography.png);"></div>
-          </div>
-      <!--    <div>
+         <div>
             <img class="product" src="images/designSystem/DS_CaseStudyIconography.png" alt="Iconography Library Screenshot"></img>
-          </div> -->
-
+          </div>
+        </section>
         <!-- Component Library -->
+        <section>
         <div data-aos="fade-left">
           <h2>Component Library</h2>
           <div class="bg_text">
@@ -108,13 +109,14 @@
               <p>This means that, for example, a button uses styles from the color, typography, and iconography libraries - and in turn is used by larger parent components, like a modal window. By building the core libraries first, and then the smallest components, changes are simple but easy to control unwanted changes by restricting access to these core libraries.</p>
           </div>
         </div>
+      </section>
       <!--  <div class="designSystem">
           <img class="product" src="images/designSystem/DS_ComponentLibrary-v2.png" alt="Component Library Screenshot"></img>
         </div> -->
         <div>
           <div class="parallax designSystem" style="background-image: url(images/designSystem/DS_ComponentLibrary-v2.png);"></div>
         </div>
-      </section>
+
       <!-- Maintaining the System  -->
       <section>
         <div data-aos="fade-right">
