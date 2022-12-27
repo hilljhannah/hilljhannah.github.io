@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Portfolio | FieldAgent Design System Case Study</title>
   <meta charset="UTF-8">
@@ -27,7 +28,7 @@
       <!-- Hero -->
       <section class="hero">
         <div data-aos="zoom-in" class="hero_container DS hero_container_modified">
-          <img class="hero_device designSystem" src="images/designSystem/DS_CaseStudyHero.png" alt="Design System hero card">
+          <img class="hero_device designSystem" src="images/designSystem/DesignSystemHero.png" alt="Design System Showcase">
         </div>
       </section>
       <!-- Overview -->
@@ -42,13 +43,13 @@
           <p>I used Figma as the platform for our Design System due to its component and variant handling capabilities.</p>
         </div>
       </section>
-      <!-- Research -->
+      <!-- Approach -->
       <section data-aos="fade-left" class="approach">
           <h2>Approach</h2>
         <div class="bg_text">
-          <p>I started my research at Figma’s design system conference, Schema.</p>
-          <p>At Schema, I listened to some of the best design system creators talk about different aspects of creating, maintaining, and overhauling design systems. I had a ton of fun and learned so many invaluable bits of knowledge about design systems. </p>
-          <h5>These are a few of the key takeaways from Schema:</h5>
+          <p>I started at Figma’s design system conference, Schema.</p>
+          <p>I listened to some of the best design system creators talk about different aspects of creating, maintaining, and overhauling design systems. I had a ton of fun and learned so many invaluable bits of knowledge about design systems. </p>
+          <h5>These are a few of my key takeaways from Schema:</h5>
           <ul class="color">
           <li>Design Tokens are the single source of truth to name and store a design decision.</li>
           <li>Utilizing Design Tokens in a Design System to maintain design consistency</li>
@@ -57,75 +58,68 @@
           </ul>
         </div>
       </section>
-      <!--Structure -->
-      <section class=" ">
-        <div data-aos="fade-right">
+      <!--Managing Complexity -->
+      <section data-aos="fade-right" class="managing complexity">
           <h2>Managing Complexity</h2>
           <div class="bg_text">
-            <p>In order to manage the size and complexity of our design system, the system is divided into three libraries utilizing Design Tokens.</p>
-            <p>The first two libraries hold Design Tokens used in the largest part of our design system, our Component Library. Splitting up the three libraries of the system decreases loading times and network strain caused by having one massive library.</p>
+            <p>In order to manage the size and complexity of our design system, I divided the system into three atomic design libraries.</p>
+            <p>The Typography + Color and Iconography Libraries support the largest part of our design system, our Component Library.</p>
+            <p> Additionally, splitting up the three libraries of the system decreases loading times and network strain caused by having one massive library.</p>
           </div>
         </div>
       </section>
-      <section>
-        <!-- Color & Typography Library -->
-        <div data-aos="fade-left">
-          <h2>Color & Typography Library</h2>
+      <!-- Color + Typography Library -->
+      <section data-aos="fade-left" class="Color + Typography Library">
+          <h2>Color + Typography Library</h2>
           <div class="bg_text">
             <p>This Library creates the base for our Design System and holds Color + Typography Design Tokens. These Tokens are used throughout our libraries, designs, and in development to maintain design consistency. Design Tokens hold a design style and also documentation notes on how the individual Token should be used.</p>
             <p>Color Design Tokens for both light and dark modes have both been verified for accessibility when used with background color tokens of the same type.</p>
             <p>This aids in design work and maintaining accessibility in our products, ensuring that designs are accessible without relying on the designer or developer to validate.</p>
-            <p>Additionally, I chose Roboto as the font for our platform due to its high level of readability and accessibility for all users; in addition to its plethora of font weights. Colors for Typography styles are also defined in this library and are verified to pass accessibility guidelines.</p>
+            <p>Additionally, I chose Roboto as the font for our platform due to its high level of readability and accessibility for all users; in addition to its plethora of font weights.</p>
           </div>
-      <!--    <div>
-            <img class="product" src="images/designSystem/DS_CaseStudyTypographyColorLibrary.png" alt=" Color & Typography Library Screenshot"></img>
-          </div> -->
-        </div>
-        <div>
+          <div>
+             <img class="product" src="images/designSystem/DesignSystem-1.png" alt="Color + Typography Library Screenshot"></img>
+           </div>
+      </section>
+        <!--<div>
           <div class="parallax designSystem" style="background-image: url(images/designSystem/DS_CaseStudyTypographyColorLibrary.png);"></div>
-        </div>
+        </div> -->
         <!-- Iconography Library -->
-        <div data-aos="fade-right">
+        <section data-aos="fade-right" class="Iconography Library">
           <h2>Iconography Library</h2>
           <div class="bg_text">
             <p>The Iconography Library contains all of the icons used throughout the FieldAgent experience.</p>
             <p> The Icons  are created in their own library so they are easy to swap instances and component overrides, making for a better design system experience.</p>
           </div>
-        </div>
           <div>
-            <div class="parallax designSystem" style="background-image: url(images/designSystem/DS_CaseStudyIconography.png);"></div>
-          </div>
-      <!--    <div>
-            <img class="product" src="images/designSystem/DS_CaseStudyIconography.png" alt="Iconography Library Screenshot"></img>
-          </div> -->
-
+             <img class="product" src="images/designSystem/DesignSystem-2.png" alt="Iconography Library Screenshot"></img>
+           </div>
+        </section>
         <!-- Component Library -->
-        <div data-aos="fade-left">
+        <section data-aos="fade-left" class="Component Library">
           <h2>Component Library</h2>
           <div class="bg_text">
               <p>The Component Library is the largest and most used library in the system. It was by far the biggest lift of the project and took the longest amount of time. The Component Library utilizes Design Tokens from the other two Libraries to create components structured like an atom, using with smallest molecules being Design Tokens and breaking up each component to build the smallest parts first, then combine to form a component (the atom)</p>
               <p>This means that, for example, a button uses styles from the color, typography, and iconography libraries - and in turn is used by larger parent components, like a modal window. By building the core libraries first, and then the smallest components, changes are simple but easy to control unwanted changes by restricting access to these core libraries.</p>
           </div>
-        </div>
+      </section>
       <!--  <div class="designSystem">
           <img class="product" src="images/designSystem/DS_ComponentLibrary-v2.png" alt="Component Library Screenshot"></img>
         </div> -->
         <div>
-          <div class="parallax designSystem" style="background-image: url(images/designSystem/DS_ComponentLibrary-v2.png);"></div>
+          <div class="parallax designSystem" style="background-image: url(images/designSystem/DesignSystem-3.png);"></div>
         </div>
-      </section>
+
       <!-- Maintaining the System  -->
-      <section>
-        <div data-aos="fade-right">
+      <section data-aos="fade-right" class="Maintaining the System">
           <h2>Maintaining the System</h2>
           <div class="bg_text">
             <p>Caring for a Design System and maintaining it over time is just as important as creating it in the first place. An important part of this is thoroughly vetting additions to the design system to maintain integrity of the design system and manage unnecessary expansion.</p>
             <p>This means that components only used on one page or in a singular instance were not added to the design system.</p>
           </div>
-        </div>
       </section>
       <!-- Result -->
-      <section data-aos="fade-right" class="Learning">
+      <section data-aos="fade-right" class="Result">
         <h2>Result</h2>
         <div class="bg_text">
           <p>The implementation of the design system was a huge success. Not only did it improve our speed and consistency in mockups, but it made the onboarding experience for new team members much easier. The team has saved countless hours of tedious work because we are able to reuse components from the library and adhere to established design guidelines.</p>
@@ -136,7 +130,7 @@
   <!-- page footer-->
   <footer>
     <p class="foot"><a id="white" class="inline-link" href="form.html">Hannah Hill</a></p class="foot">
-    <p class="foot">UX/UI Designer</p class="foot">
+    <p class="foot">UX UI Designer + Frontend Developer</p class="foot">
     <div class="social_icon_container">
       <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
       <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github.png" alt="github icon"></a></div>
