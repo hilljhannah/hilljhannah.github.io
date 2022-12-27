@@ -771,6 +771,9 @@ img.index_image {
   overflow: hidden;
   margin: 0 auto;
 }
+.FA-hero{
+  max-width: 800px;
+}
 
 /* solution section*/
 .solu {
@@ -837,6 +840,20 @@ img.index_image {
 }
 .designSystem{
   background-color: #121212;
+}
+
+.fieldAgent{
+  background-color: #799B3E;
+}
+/*-- product showcase image style--*/
+img.result{
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+div.result{
+  margin: 0 auto;
 }
 /*-- parallax larger resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
