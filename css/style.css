@@ -252,7 +252,7 @@ h1 {
   display: inline-block;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: 3.8rem;
+  font-size: 4rem;
   font-style: normal;
   margin: 0 auto;
   vertical-align: middle;
@@ -330,11 +330,6 @@ p {
   align-items: center;
 }
 
-/* centered p text */
-p.centered, #b {
-  text-align: center;
-}
-
 /*-- Footer Text ---*/
 p.foot {
   color: white;
@@ -344,12 +339,18 @@ p.foot {
   margin: 1rem auto;
   line-height: 2rem;
 }
+/*-- Introduction subtitle --*/
+p.subtitle{
+  color: white;
+  margin: 1rem 0;
+  font-size: 2rem;
 
+}
 /*--- typeography media queries ----------------------------------------------------*/
 /*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h1 {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
     max-width: 100%;
   }
 
@@ -373,18 +374,18 @@ p.foot {
     font-size: 1.6rem;
   }
 
-  p.centered {
+  p.subtitle {
     font-size: 1.8rem;
   }
-
   p.foot {
     font-size: 1.4rem;
   }
 }
 
--- Desktops and laptops -- @media only screen and (min-width : 1024px) {
+/*-- Desktops and laptops --*/
+@media only screen and (min-device-width : 1024px) {
   h1 {
-    font-size: 4.8rem;
+    font-size: 7.2rem;
   }
 
   h2 {
@@ -405,10 +406,11 @@ p.foot {
 
   p {
     font-size: 1.8rem;
+    line-height: 160%;
   }
 
-  p.centered {
-    font-size: 1.8rem;
+  p.subtitle {
+    font-size: 2rem;
   }
 
   p.foot {
