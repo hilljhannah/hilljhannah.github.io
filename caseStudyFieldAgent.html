@@ -13,24 +13,27 @@
 </head>
 
 <body>
+  <!--page header-->
+  <header class="header">
+    <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="work.html">My Work</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="form.html">Contact</a></li>
+    </ul>
+  </header>
   <main>
     <section class="container">
-      <!-- Navbar -->
-      <header class="header">
-        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="work.html">My Work</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="form.html">Contact</a></li>
-        </ul>
-      </header>
-      <!-- Hero -->
-      <section class="hero fieldAgent">
-        <div data-aos="zoom-in" class="hero_container fieldAgent hero_container_modified">
-          <img class="hero_device FA-hero" src="images/fieldAgent/FieldAgentSplash.png" alt="FieldAgent - Feild Redesign hero card">
+      <!-- splash -->
+      <section class="splash fieldAgent">
+        <div data-aos="zoom-in" class="splash_container fieldAgent splash_container_modified">
+          <img class="splash_device FA-splash" src="images/fieldAgent/FieldAgentSplash.png" alt="FieldAgent - Field Redesign Splash">
         </div>
+      </section>
+      <section>
+        <h1>FieldAgent: Field Redesign</h1>
       </section>
       <!-- Overview -->
       <section data-aos="fade-right" class="overview">
@@ -115,6 +118,7 @@
           </div>
         </div>
       </section>
+    </section>
   </main>
   <!-- page footer-->
   <footer>

@@ -584,8 +584,8 @@ a.button:hover {
 
 /*-------- end button styles --------*/
 /*-------- homepage (index) styles --------*/
-/* homepage hero section */
-.homeHero {
+/* homepage splash section */
+.homesplash {
   align-self: center;
   background-color: #1c1c1c;
   margin: 0 auto;
@@ -593,8 +593,8 @@ a.button:hover {
   width: 100%;
 }
 
-/* content in hero section */
-.hero_content {
+/* content in splash section */
+.splash_content {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -735,8 +735,8 @@ img.index_image {
   width: 10px;
 }
 
-/*-------- project files hero section styles --------*/
-.hero {
+/*-------- project files splash section styles --------*/
+.splash {
   background-color: #141414;
   background-position: center;
   border-radius: 2px;
@@ -748,7 +748,7 @@ img.index_image {
   width: 100vw;
 }
 
-.hero_container {
+.splash_container {
   background-color: inherit;
   display: block;
   margin: 0 auto;
@@ -758,31 +758,31 @@ img.index_image {
   padding: 3rem 1rem 0 1rem;
 }
 
-.hero_container_modified {
+.splash_container_modified {
   padding: 0;
 }
 
-/* sets hero height on ipads and desktops  ----------- */
+/* sets splash height on ipads and desktops  ----------- */
 @media only screen and (min-device-width : 768px) {
-  .hero_container {
+  .splash_container {
     max-height: 650px;
     padding: 5rem 20rem 0 20rem;
   }
 
-  .hero_container_modified {
+  .splash_container_modified {
     padding: 0;
   }
 }
 
-/* hero image in projects*/
-.hero_device {
+/* splash image in projects*/
+.splash_device {
   display: block;
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
 }
 
-.FA-hero {
+.FA-splash {
   max-width: 800px;
 }
 
@@ -845,7 +845,7 @@ img.index_image {
   background-color: #000;
 }
 
-.dailyui_hero {
+.dailyui_splash {
   display: block;
   width: 100%;
   max-width: 90vw;
