@@ -258,7 +258,9 @@ h1 {
   vertical-align: middle;
   width: 100%;
 }
-
+h1.center{
+  text-align: center;
+}
 /* h2 text */
 h2 {
   display: block;
