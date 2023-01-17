@@ -193,8 +193,22 @@ nav {
   grid-template-columns: 33% 33% 33%;
   width: 100%;
   padding: 0;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  max-width: 220px;
 }
-
+/*-- for iPads (portrait and landscape) --*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  nav {
+    max-width: 500px;
+  }
+}
+/*-- for desktop --*/
+@media only screen and (min-device-width : 1024px) {
+  .bg_text {
+    max-width: 900px;
+  }
+}
 /*personal logo*/
 .myLogo {
   display: block;
@@ -207,11 +221,15 @@ nav {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   width: 80%;
-  max-width: 800px;
 }
-
+/*-- for desktop --*/
+@media only screen and (min-device-width : 1024px) {
+  .bg_text {
+    max-width: 900px;
+  }
+}
 /*--- nav + header + logo media queries ----------------------------------------------------*/
 /*-- for iPads (portrait and landscape) --*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -309,7 +327,7 @@ h4 {
 h5 {
   color: #333;
   font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin: 1rem auto 0 auto;
   text-align: left;
@@ -320,14 +338,15 @@ h5 {
 p {
   color: #333;
   font-family: 'Open+Sans';
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0 auto;
   padding-top: 1em;
   padding-bottom: 1em;
   font-style: normal;
   width: 100%;
   line-height: 150%;
-  align-items: center;
+  text-align: left;
+  max-width: 800px;
 }
 
 /* centered p text */
@@ -370,7 +389,7 @@ p.foot {
   }
 
   p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   p.centered {
@@ -404,7 +423,7 @@ p.foot {
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   p.centered {
