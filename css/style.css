@@ -11,10 +11,25 @@ html {
   height: 100%;
   width: 100%;
 }
+/* page header */
+header {
+  background: #161616;
+  width: 100%;
+  z-index: 3;
+  grid-area: "header";
+}
+main{
+  grid-area: "main";
+}
 
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
   height: 100%;
   min-height: 100vh;
   margin-left: auto;
@@ -47,12 +62,6 @@ section {
   overflow: hidden;
 }
 
-/* page header */
-header {
-  background: #161616;
-  width: 100%;
-  z-index: 3;
-}
 
 /*-- header navbar ul button styles  -----------------*/
 .header ul {
@@ -347,7 +356,7 @@ p.subtitle{
 
 }
 /*--- typeography media queries ----------------------------------------------------*/
-/*-- iPads (portrait and landscape) -- */
+/*-------- iPads (portrait and landscape) --------*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   h1 {
     font-size: 4.8rem;
@@ -381,8 +390,7 @@ p.subtitle{
     font-size: 1.4rem;
   }
 }
-
-/*-- Desktops and laptops --*/
+/*-------- Desktops and laptops --------*/
 @media only screen and (min-device-width : 1024px) {
   h1 {
     font-size: 7.2rem;
@@ -417,17 +425,9 @@ p.subtitle{
     font-size: 1.6rem;
   }
 }
-
-/*--sets/overrides color of text to white--*/
-#white {
-  color: white;
-}
-
-/*-- navbar link text -- */
-.linkBox {
-  margin: 0 auto;
-}
-
+/*-------- end typography styles ---------------------------------------------------*/
+/*-------- start link styles -------------------------------------------------------------*/
+/*-------- navbar link text --------*/
 .link {
   border-bottom: 1px solid #FFFFFF;
   display: block;
@@ -435,26 +435,29 @@ p.subtitle{
   font-family: 'Lato';
   font-style: normal;
   font-weight: 800;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 0 auto;
   justify-content: center;
   padding: 0 0 5px 0;
   transition: .25s;
   width: 100%;
 }
-
 .link:hover {
   border-bottom: 1px dotted #FFFFFF;
   color: #00FFEB;
 }
-
 .inline-link {
   color: #009AAF;
 }
-
-/*-------- end typography styles --------*/
-/*-------- list styles --------*/
-/*-- lists with background color --*/
+/*-------- link media queries --------*/
+/*-------- for Desktops and laptops --------*/
+@media only screen and (min-width : 1224px) {
+  .link {
+    font-size: 1.6rem;
+  }
+}
+/*-------- list styles -------------------------------------------------------*/
+/*-------- lists with background color --------*/
 ul.color {
   font-size: 1.6rem;
   list-style-position: inside;
@@ -472,117 +475,39 @@ ul.color li:nth-of-type(odd) {
 ul.color li:nth-of-type(even) {
   background: rgba(118, 234, 225, 0.025);
 }
-
-/* color list item styles */
+/*-------- color list item styles --------*/
 ul.color li {
   padding: 1.5rem .5rem;
   font-weight: normal;
 }
-
-/* brand ideals list */
-ul.ideals {
-  align-content: center;
-  list-style-type: circle;
-  margin: 0 auto;
-  font-weight: bold;
-  list-style-position: inside;
-}
-
-/* list within a list */
-dt {
-  background: rgba(135, 206, 250, .09);
-  font-family: "Open Sans";
-  font-size: 1.4rem;
-  margin: 2rem auto 0 auto;
-  width: 90vw;
-  max-width: 600px;
-  padding: 1rem;
-}
-
-dd {
-  font-size: 1.4rem;
-  width: 90vw;
-  max-width: 600px;
-  margin: 0 auto;
-  background: rgba(135, 206, 250, .02);
-  padding: 1rem;
-}
-
-/*-- list media queries -------------------*/
-/*-- iPads (portrait and landscape) -- */
+/*-------- list media queries --------*/
+/*-------- iPads (portrait and landscape) -------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   ul.color li, dt, dd {
     font-size: 1.6rem;
   }
 }
-
-/*-- for Desktops and laptops -- */
+/*-------- for Desktops and laptops --------*/
 @media only screen and (min-width : 1224px) {
   ul.color li, dt, dd {
     font-size: 1.8rem;
   }
 }
-
-/*-- end list styles ------------------------*/
-/*-- button + link styles -------------------*/
-/* a link styles  */
+/*-------- a link styles ---------------------------------------------------------*/
 a {
   text-align: center;
   text-decoration: none;
   margin: 0 auto;
   color: #333;
 }
-
-/* fixes a styles for card container hover*/
+/*------- fixes style for card container hover--------*/
 a.cardHover {
   text-align: left;
   margin: 0;
   cursor: pointer;
 }
+/*-------- button styles ---------------------------------------------------------*/
 
-@media only screen and (max-width: 600px) {
-  .link, .links {
-    font-size: 1.4rem;
-    margin: 0 auto;
-  }
-}
-
-/* button styles */
-a.button {
-  background: inherit;
-  border: 2px white;
-  border-style: dotted double;
-  border-color: white #009AAF;
-  color: white;
-  cursor: pointer;
-  display: block;
-  font-family: 'Lato';
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 20px;
-  margin: 1rem auto;
-  padding: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.5s;
-  width: auto;
-  max-width: 250px;
-}
-
-a.button:hover {
-  background: #009AAF;
-  border: 2px solid #009AAF;
-  transition: all 0.5s;
-}
-
-/* container for multiple buttons*/
-.button_group {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 700px;
-}
 
 /*-------- end button styles --------*/
 /*-------- homepage (index) styles --------*/
