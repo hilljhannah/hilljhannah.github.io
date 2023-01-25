@@ -2,81 +2,83 @@
 <html lang="en">
 
 <head>
-  <title>Portfolio | Contact Form</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QG18S327JJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QG18S327JJ');
+
+    </script>
+    <title>Portfolio | Contact Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
-  <main>
-    <section class="container">
-      <!--Navbar section-->
-      <header class="header">
-        <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="work.html">My Work</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="form.html">Contact</a></li>
-        </ul>
-      </header>
-      <div data-aos="fade-up" id="formContainer">
-        <h2>Contact Me</h2>
-        <div class="contact_section">
-          <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
-          <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github-black.png" alt="github icon"></a></div>
-        </div>
-        <!-- form inputs -->
-        <form action="https://send.pageclip.co/3phqZ9uRhWChvgBDxIe1kpQIEJ4Darnb/Contact" class="pageclip-form" method="post">
-          <!-- email address -->
-          <input type="email" name="email" placeholder="Email address.." />
-          <!-- message subject. Must have name="subject" -->
-          <input type="text" name="subject" placeholder="Message subject.." />
-          <!-- message body -->
-          <textarea name="body" placeholder="Message.."></textarea>
-          <!-- submit button -->
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </section>
-    <!-- page footer-->
-    <footer>
-      <p class="foot"><a id="white" class="inline-link" href="form.html">Hannah Hill</a></p class="foot">
-      <p class="foot">UX UI Designer + Frontend Developer</p class="foot">
-      <div class="social_icon_container">
-        <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
-        <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github.png" alt="github icon"></a></div>
-      </div>
-    </footer>
-    <!-- form script -->
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134476139-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+    <main>
+        <section class="container">
+            <!--Navbar section-->
+            <header class="header">
+                <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="form.html">Contact</a></li>
+                </ul>
+            </header>
+            <div data-aos="fade-up" id="formContainer">
+                <h2>Contact Me</h2>
+                <div class="contact_section">
+                    <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+                    <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github-black.png" alt="github icon"></a></div>
+                </div>
+                <!-- form inputs -->
+                <form action="https://send.pageclip.co/3phqZ9uRhWChvgBDxIe1kpQIEJ4Darnb/Contact" class="pageclip-form" method="post">
+                    <!-- email address -->
+                    <input type="email" name="email" placeholder="Email address.." />
+                    <!-- message subject. Must have name="subject" -->
+                    <input type="text" name="subject" placeholder="Message subject.." />
+                    <!-- message body -->
+                    <textarea name="body" placeholder="Message.."></textarea>
+                    <!-- submit button -->
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <!-- page footer-->
+        <footer>
+            <p class="foot"><a id="white" class="inline-link" href="form.html">Hannah Hill</a></p>
+            <p class="foot">UX UI Designer + Frontend Developer</p>
+            <div class="social_icon_container">
+                <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+                <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github.png" alt="github icon"></a></div>
+            </div>
+        </footer>
+        <!-- Scripts  -->
+        <!-- form script -->
+        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+        <script src="scripts/lib/anime.min.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-134476139-1');
-    </script>
-    <!-- Scripts  -->
-    <script src="scripts/lib/anime.min.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </main>
+        </script>
+    </main>
 </body>
 
 </html>
