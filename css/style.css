@@ -282,9 +282,9 @@ h3 {
   color: #333;
   display: block;
   font-family: 'Lato', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 2rem auto;
+  font-size: 2.4rem;
+
+  margin: 2rem auto 0 auto;
   text-align: left;
   width: 100%;
 }
@@ -299,7 +299,7 @@ h3.left {
 h4 {
   color: #333;
   font-family: 'Lato', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: left;
   padding-top: 1rem;
@@ -310,10 +310,11 @@ h4 {
 /*-- headers inside text --*/
 h5 {
   color: #333;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Open+Sans', sans-serif;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin: 1rem auto 0 auto;
+  margin: 0 auto;
+    padding-top: 1rem;
   text-align: left;
   width: 100%;
 }
@@ -322,10 +323,9 @@ h5 {
 p {
   color: #333;
   font-family: 'Open+Sans';
-  font-size: 1.6rem;
-  margin: 0 auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  font-size: 1.8rem;
+  margin: 1em auto;
+
   font-style: normal;
   width: 100%;
   line-height: 150%;
