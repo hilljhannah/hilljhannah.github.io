@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QG18S327JJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QG18S327JJ');
+
+    </script>
+    <title>Portfolio | FieldAgent Design System Case Study</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <!-- Navbar -->
+            <header class="header">
+                <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </header>
+            <!-- Hero -->
+            <section class="hero">
+                <div data-aos="zoom-in" class="hero_container DS hero_container_modified">
+                    <img class="hero_device designSystem" src="images/designSystem/DesignSystemHero.png" alt="Design System Showcase">
+                </div>
+            </section>
+            <!-- Overview -->
+            <section data-aos="fade-right" class="overview">
+                <h2>Project Overview</h2>
+                <div class="bg_text">
+                    <p>As the first UX/UI designer, I was tasked with establishing platform branding and creating the FieldAgent design system from scratch. </p>
+                    <!-- My roles/tools -->
+                    <h5>My Role</h5>
+                    <p>Creator, owner, and maintainer of the FieldAgent Design System.</p>
+                    <h5>Tools</h5>
+                    <p>I used Figma as the platform for our Design System due to its component and variant handling capabilities.</p>
+                </div>
+            </section>
+            <!-- Approach -->
+            <section data-aos="fade-left" class="approach">
+                <h2>Approach</h2>
+                <div class="bg_text">
+                    <p>I started at Figma’s design system conference, Schema.</p>
+                    <p>I listened to some of the best design system creators talk about different aspects of creating, maintaining, and overhauling design systems. I had a ton of fun and learned so many invaluable bits of knowledge about design systems. </p>
+                    <h5>These are a few of my key takeaways from Schema:</h5>
+                    <ul class="color">
+                        <li>Design Tokens are the single source of truth to name and store a design decision.</li>
+                        <li>Utilizing Design Tokens in a Design System to maintain design consistency</li>
+                        <li>How to structure our design system in a performant way</li>
+                        <li>Prioritizing consumability of the system over easy maintenance of the system</li>
+                    </ul>
+                </div>
+            </section>
+            <!--Managing Complexity -->
+            <section data-aos="fade-right" class="managing complexity">
+                <h2>Managing Complexity</h2>
+                <div class="bg_text">
+                    <p>In order to manage the size and complexity of our design system, I divided the system into three atomic design libraries.</p>
+                    <p>The Typography + Color and Iconography Libraries support the largest part of our design system, our Component Library.</p>
+                    <p> Additionally, splitting up the three libraries of the system decreases loading times and network strain caused by having one massive library.</p>
+                </div>
+            </section>
+            <!-- Color + Typography Library -->
+            <section data-aos="fade-left" class="Color + Typography Library">
+                <h2>Color + Typography Library</h2>
+                <div class="bg_text">
+                    <p>This Library creates the base for our Design System and holds Color + Typography Design Tokens. These Tokens are used throughout our libraries, designs, and in development to maintain design consistency. Design Tokens hold a design style
+                        and also documentation notes on how the individual Token should be used.</p>
+                    <p>Color Design Tokens for both light and dark modes have both been verified for accessibility when used with background color tokens of the same type.</p>
+                    <p>This aids in design work and maintaining accessibility in our products, ensuring that designs are accessible without relying on the designer or developer to validate.</p>
+                    <p>Additionally, I chose Roboto as the font for our platform due to its high level of readability and accessibility for all users; in addition to its plethora of font weights.</p>
+                </div>
+                <div>
+                    <img class="product" src="images/designSystem/DesignSystem-1.png" alt="Color + Typography Library Screenshot">
+                </div>
+            </section>
+            <!--<div>
+          <div class="parallax designSystem" style="background-image: url(images/designSystem/DS_CaseStudyTypographyColorLibrary.png);"></div>
+        </div> -->
+            <!-- Iconography Library -->
+            <section data-aos="fade-right" class="Iconography Library">
+                <h2>Iconography Library</h2>
+                <div class="bg_text">
+                    <p>The Iconography Library contains all of the icons used throughout the FieldAgent experience.</p>
+                    <p> The Icons are created in their own library so they are easy to swap instances and component overrides, making for a better design system experience.</p>
+                </div>
+                <div>
+                    <img class="product" src="images/designSystem/DesignSystem-2.png" alt="Iconography Library Screenshot">
+                </div>
+            </section>
+            <!-- Design Tokens -->
+            <section data-aos="fade-left" class="Design Tokens">
+                <h2>Design Tokens Using Tokens Studio</h2>
+                <div class="bg_text">
+                    <p>In comes Tokens Studio, a plugin built for Figma, enabling the creation of design tokens for export in multiple different coding languages.</p>
+                    <p>When I found Tokens Studio I thought I had found the perfect simple solution; but that is only where my problems began.</p>
+                    <p>The plugin itself is extremely powerful and flexible; with an extremely sharp learning curve. There is very limited documentation on how to use it - for designers or developers. I spent the next several days collaborating with the lead developer tasked with working on our Storybook library; figuring out how we could make this work and setting up the first components. This was very challenging and required near constant back and forth with the lead developer to smooth out kinks and craft the basis for Tokens within our Component Library.</p>
+                </div>
+            </section>
+            <div>
+                <div class="parallax designSystem" style="background-image: url(images/designSystem/DesignSystem-3.png);"></div>
+            </div>
+
+            <!-- Governance Process  -->
+            <section data-aos="fade-right" class="Governance Process">
+                <h2>Governance Process</h2>
+                <div class="bg_text">
+                    <p>One of the key primary objectives given to me was to create and establish a Governance process for the Design System. The Governance process defines the flow to be followed for adding new components, updating components, and adding components to Storybook. The purpose of the Governance process is to validate each component addition or update for flexibility and for cross functional utility.</p>
+                    <p>Part of the governance process included a weekly component review where I brought together the UX Leads to discuss new components, how they might be used in their individual products, any concerns, and to review component documentation. This was an invaluable part of the process because it allowed me to vet component utility to validate a components flexibility in a wide range of use cases.</p>
+                </div>
+                <div>
+                    <img class="product" src="images/designSystem/DesignSystem-2.png" alt="Governance Process Screenshot">
+                </div>
+            </section>
+            <!-- Result -->
+            <section data-aos="fade-left" class="Result">
+                <h2>Result</h2>
+                <div class="bg_text">
+                    <p>MS 3.0 is a huge success. The system is actively used by all our designers, making up at least 80% of in their work. Additionally, the Storybook Component library is being implemented incrementally in our products.</p>
+                    <p>By being the dedicated resource for our Design System I was able to create flexible headless components and limit one-off additions to the system. This enabled the creation of an extremely capable and robust Design System. Throughout this process of defining, creating, and evangelizing our Design System I was able to learn powerful, efficient ways to construct components that can be used at scale while creating a system easily maintainable at scale.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- page footer-->
+    <footer>
+        <p class="foot"><a id="white" class="inline-link" href="form.html">Hannah Hill</a></p>
+        <p class="foot">UX UI Designer</p>
+        <div class="social_icon_container">
+            <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+            <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github.png" alt="github icon"></a></div>
+        </div>
+    </footer>
+    <!-- Scripts  -->
+    <script src="scripts/lib/anime.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+</body>
+
+</html>
