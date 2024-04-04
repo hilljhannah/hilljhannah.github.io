@@ -275,6 +275,10 @@ h2.left {
     text-align: left;
 }
 
+h2.dark{
+    color:#007b8c;
+}
+
 /* h3 text */
 h3 {
     color: #333;
