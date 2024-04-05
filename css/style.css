@@ -455,6 +455,19 @@ p.foot {
 
 /*-------- end typography styles --------*/
 /*-------- list styles --------*/
+ul.list {
+    font-size: 1.6rem;
+    list-style-type: circle;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+}
+/*  list item styles */
+ul.list li {
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
 /*-- lists with background color --*/
 ul.color {
     font-size: 1.6rem;
@@ -839,6 +852,10 @@ img.index_image {
     max-width: 100%;
 }
 
+.whiteBG{
+    background-color:#FFFFFF;
+}
+
 /* disables parallax image on mobile devices*/
 @media only screen and (max-width:749px) {
     .parallax {
@@ -846,7 +863,7 @@ img.index_image {
     }
 }
 
-/* colored purple background in parallax for dreamers*/
+/* colored backgrounds for parallax*/
 .dreamers {
     background-color: #493757;
 }
