@@ -275,10 +275,6 @@ h2.left {
     text-align: left;
 }
 
-h2.dark{
-    color:#007b8c;
-}
-
 /* h3 text */
 h3 {
     color: #333;
@@ -459,6 +455,19 @@ p.foot {
 
 /*-------- end typography styles --------*/
 /*-------- list styles --------*/
+ul.list {
+    font-size: 1.6rem;
+    list-style-type: circle;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+}
+/*  list item styles */
+ul.list li {
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
 /*-- lists with background color --*/
 ul.color {
     font-size: 1.6rem;
