@@ -6,7 +6,7 @@ html {
     background-color: #242424;
     color: #333;
     font-family: "Open Sans";
-    font-size: 10px;
+    font-size: 16px;
     max-width: 100vw;
     height: 100%;
     width: 100%;
@@ -41,7 +41,7 @@ section {
     display: block;
     font-weight: normal;
     justify-content: center;
-    margin: 5rem auto;
+    margin: 40px auto;
     padding: 0;
     width: 100%;
     overflow: hidden;
@@ -66,13 +66,13 @@ header {
 .header li a {
     display: block;
     color: #FFFFFF;
-    padding: 15px 20px;
+    padding: 16px 20px;
     border-right: 1px solid #009AAF;
     text-decoration: none;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 /*highlights text color to brand color on hover*/
@@ -86,7 +86,7 @@ header {
 .header .logo {
     display: block;
     float: left;
-    padding: 15px 20px;
+    padding: 16px 20px;
 }
 
 /* menu on mobile */
@@ -207,9 +207,9 @@ nav {
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 2rem;
     width: 80%;
-    max-width: 700px;
+    max-width: 800px;
 }
 
 /*--- nav + header + logo media queries ----------------------------------------------------*/
@@ -252,7 +252,7 @@ h1 {
     display: inline-block;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 3.8rem;
+    font-size: 3.815rem;
     font-style: normal;
     margin: 0 auto;
     vertical-align: middle;
@@ -263,7 +263,7 @@ h1 {
 h2 {
     display: block;
     font-family: 'Lato', sans-serif;
-    font-size: 2.8rem;
+    font-size: 3.052rem;
     margin: 2rem auto;
     text-align: center;
     font-weight: 700;
@@ -280,9 +280,10 @@ h3 {
     color: #333;
     display: block;
     font-family: 'Lato', sans-serif;
-    font-size: 2rem;
+    font-size: 2.441rem;
     font-weight: 400;
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding-bottom: 1rem;
     text-align: left;
     width: 100%;
 }
@@ -291,17 +292,18 @@ h3 {
 h3.left {
     margin: 0;
     width: 100%;
+    padding: 0;
 }
 
 /*-- headers within sections --*/
 h4 {
     color: #333;
     font-family: 'Lato', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.953rem;
     font-weight: 700;
     text-align: left;
-    padding-top: 1rem;
-    margin: 2rem auto;
+    padding-bottom: 1rem;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -309,24 +311,29 @@ h4 {
 h5 {
     color: #333;
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.563rem;
     font-weight: 700;
     margin: 1rem auto 0 auto;
     text-align: left;
+    padding-bottom: 1rem;
     width: 100%;
+}
+
+/* removes margin */
+.noMargin{
+    margin: 0;
 }
 
 /*-- paragraph text --*/
 p {
     color: #333;
     font-family: 'Open+Sans';
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin: 0 auto;
-    padding-top: 1em;
     padding-bottom: 1em;
     font-style: normal;
     width: 100%;
-    line-height: 150%;
+    line-height: 1.6;
     align-items: center;
 }
 
@@ -340,82 +347,40 @@ p.centered,
 p.foot {
     color: white;
     font-family: 'Lato';
-    font-size: 1.4rem;
+    font-size: .8rem;
     text-align: center;
     margin: 1rem auto;
     line-height: 2rem;
 }
 
 /*--- typeography media queries ----------------------------------------------------*/
-/*-- iPads (portrait and landscape) -- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/*-- Mobile screens only -- */
+@media only screen and (min-device-width : 1px) and (max-device-width : 768px) {
     h1 {
-        font-size: 4.2rem;
+        font-size: 3.052rem;
         max-width: 100%;
     }
 
     h2 {
-        font-size: 3.2rem;
+        font-size: 2.441rem;
+        width: 80%;
     }
 
     h3,
     h3.left {
-        font-size: 2.4rem;
+        font-size: 1.953rem;
     }
 
     h4 {
-        font-size: 2rem;
+        font-size: 1.563rem;
     }
 
     h5 {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
     }
 
     p {
-        font-size: 1.6rem;
-    }
-
-    p.centered {
-        font-size: 1.8rem;
-    }
-
-    p.foot {
-        font-size: 1.4rem;
-    }
-}
-
--- Desktops and laptops -- @media only screen and (min-width : 1024px) {
-    h1 {
-        font-size: 4.8rem;
-    }
-
-    h2 {
-        font-size: 3.2rem;
-    }
-
-    h3,
-    h3.left {
-        font-size: 2.8rem;
-    }
-
-    h4 {
-        font-size: 2.2rem;
-    }
-
-    h5 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 1.8rem;
-    }
-
-    p.centered {
-        font-size: 1.8rem;
-    }
-
-    p.foot {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 }
 
@@ -456,12 +421,12 @@ p.foot {
 /*-------- end typography styles --------*/
 /*-------- list styles --------*/
 ul.list {
-    font-size: 1.6rem;
+    font-size: 1rem;
     list-style-type: circle;
     margin: 0;
     padding-bottom: 1.5rem;
     width: 100%;
-    max-width: 600px;
+    
 }
 /*  list item styles */
 ul.list li {
@@ -529,7 +494,7 @@ dd {
     ul.color li,
     dt,
     dd {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 }
 
@@ -539,7 +504,7 @@ dd {
     ul.color li,
     dt,
     dd {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -564,7 +529,7 @@ a.cardHover {
 
     .link,
     .links {
-        font-size: 1.4rem;
+        font-size: 1rem;
         margin: 0 auto;
     }
 }
@@ -689,7 +654,7 @@ img.index_image {
 .card_image_div {
     display: block;
     height: 100%;
-    max-height: 250px;
+    max-height: 240px;
     overflow: hidden;
 }
 
@@ -706,7 +671,6 @@ img.index_image {
     display: flex;
     flex-wrap: wrap;
     background: white;
-    border-top: 1px solid #f5f5f5;
     border-radius: 0 0 2px 2px;
     margin: 0;
     position: absolute;
@@ -722,7 +686,9 @@ img.index_image {
     text-align: left;
     margin: 0;
     font-family: 'Lato';
-    font-size: 1.6rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* effect on card hover*/
@@ -732,8 +698,9 @@ img.index_image {
 }
 
 /* color effect for card button and text on card hover*/
-.card:Hover .blueOnHover {
+.card:Hover .card_button_text {
     color: #009AAF;
+    text-decoration: underline;
 }
 
 /*-------- end homepage (index) styles --------*/
@@ -793,7 +760,6 @@ img.index_image {
 @media only screen and (min-device-width : 768px) {
     .hero_container {
         max-height: 650px;
-        padding: 5rem 20rem 0 20rem;
     }
 
     .hero_container_modified {
