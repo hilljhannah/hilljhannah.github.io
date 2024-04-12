@@ -259,7 +259,7 @@ h1 {
     width: 100%;
 }
 
-/* h2 text */
+/* h2  */
 h2 {
     display: block;
     font-family: 'Lato', sans-serif;
@@ -275,7 +275,7 @@ h2.left {
     text-align: left;
 }
 
-/* h3 text */
+/* h3  */
 h3 {
     color: #333;
     display: block;
@@ -288,14 +288,8 @@ h3 {
     width: 100%;
 }
 
-/*left aligned h3*/
-h3.left {
-    margin: 0;
-    width: 100%;
-    padding: 0;
-}
 
-/*-- headers within sections --*/
+/*-- h4 --*/
 h4 {
     color: #333;
     font-family: 'Lato', sans-serif;
@@ -307,7 +301,7 @@ h4 {
     width: 100%;
 }
 
-/*-- headers inside text --*/
+/*-- h5 --*/
 h5 {
     color: #333;
     font-family: 'Lato', sans-serif;
