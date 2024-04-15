@@ -264,7 +264,6 @@ h2 {
     display: block;
     font-family: 'Lato', sans-serif;
     font-size: 3.052rem;
-    margin: 2rem auto;
     text-align: center;
     font-weight: 700;
     color: #009AAF;
@@ -461,7 +460,7 @@ ul.ideals {
     list-style-position: inside;
 }
 
-/* list within a list */
+/* Unused -- DELETE -- list within a list */
 dt {
     background: rgba(135, 206, 250, .09);
     font-family: "Open Sans";
@@ -471,7 +470,7 @@ dt {
     max-width: 600px;
     padding: 1rem;
 }
-
+/* Unused -- DELETE -- list within a list */
 dd {
     font-size: 1.4rem;
     width: 90vw;
@@ -606,7 +605,7 @@ img.index_image {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     max-width: 100vw;
     align-content: space-between;
     justify-content: center;
@@ -624,8 +623,8 @@ img.index_image {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     transition: 0.25s;
     display: block;
-    height: 500px;
-    width: 500px;
+    height: 560;
+    width: 400px;
     margin: 1%;
     overflow: hidden;
     position: relative;
@@ -648,7 +647,7 @@ img.index_image {
 .card_image_div {
     display: block;
     height: 100%;
-    max-height: 240px;
+    max-height: 200px;
     overflow: hidden;
 }
 
@@ -658,8 +657,24 @@ img.index_image {
     flex-wrap: wrap;
     padding: 2rem;
 }
-
-/* card button */
+button{
+    background: #4db8c7; /* primary brand shade */
+    display: flex;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 1rem;
+    color: #002e34; /* dark primary brand shade */
+}
+button:hover{
+    background: #A2DFE7; /* lighter primary brand shade */
+    cursor: pointer;
+}
+/* Unused -- DELETE -- card button */
 .card_button {
     align-content: center;
     display: flex;
@@ -673,7 +688,7 @@ img.index_image {
     width: 100%;
 }
 
-/* text on card button */
+/* Unused -- DELETE -- text on card button */
 .card_button_text {
     color: grey;
     padding: 2rem;
