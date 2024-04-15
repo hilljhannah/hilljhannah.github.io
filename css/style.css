@@ -47,6 +47,32 @@ section {
     overflow: hidden;
 }
 
+section.twoUp{
+    display: grid;
+    grid-template-columns: 4rem 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". text text image image image";
+    width: 100vw;
+    background: white;
+    height: 100%;
+    max-height: 800px;
+}
+.twoUp-text{
+    grid-area: text;
+    padding: 4rem;
+}
+.twoUp-image{
+    grid-area: image ; 
+    max-height: 100%;
+    overflow: hidden;
+}
+img.twoUp{
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    
+}
 /* page header */
 header {
     background: #161616;
@@ -305,8 +331,20 @@ h5 {
     color: #333;
     font-family: 'Lato', sans-serif;
     font-size: 1.563rem;
-    font-weight: 700;
+    font-weight: 600;
     margin: 1rem auto 0 auto;
+    text-align: left;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+/*-- h6 --*/
+h6 {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
     text-align: left;
     padding-bottom: 1rem;
     width: 100%;
@@ -510,7 +548,6 @@ a {
     margin: 0 auto;
     color: #333;
 }
-
 /* fixes a styles for card container hover*/
 a.cardHover {
     text-align: left;
@@ -610,7 +647,11 @@ img.index_image {
     align-content: space-between;
     justify-content: center;
 }
-
+a.card{
+    display: grid;
+    grid-template-columns: 32px auto 32px;
+    grid-template-rows: 200px 280px;
+}
 .card {
     background-color: white;
     background-color: #fff;
@@ -622,15 +663,14 @@ img.index_image {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     transition: 0.25s;
-    display: block;
-    height: 560;
+    height: 480px;
     width: 400px;
-    margin: 1%;
+    margin: 1rem;
     overflow: hidden;
     position: relative;
 }
 
-/* card image */
+/* image used in case study cards */
 .card_image {
     background-color: inherit;
     display: block;
@@ -643,32 +683,42 @@ img.index_image {
     bottom: 0;
     width: 100%;
 }
-
+/* container for image used in case study cards */
 .card_image_div {
     display: block;
     height: 100%;
     max-height: 200px;
     overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-/* text content in card */
+/* flexbox container for button and content within cards */
 .card_content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 2rem;
+    align-content: space-between;
+    height: 280px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
 }
 button{
     background: #4db8c7; /* primary brand shade */
-    display: flex;
+    display: block;
     font-family: 'Lato';
     font-weight: 600;
     font-size: 1rem;
     padding: 1rem;
     border: none;
     border-radius: 8px;
-    text-align: left;
+    text-align: center;
     margin-top: 1rem;
     color: #002e34; /* dark primary brand shade */
+    grid-row-start: 4;
+    width: auto;
 }
 button:hover{
     background: #A2DFE7; /* lighter primary brand shade */
