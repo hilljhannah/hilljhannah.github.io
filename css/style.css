@@ -47,26 +47,32 @@ section {
     overflow: hidden;
 }
 
+/* side by side text and image section 40/60 split  */
 section.twoUp{
     display: grid;
-    grid-template-columns: 4rem 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 4rem ;
     grid-template-rows: auto;
     grid-template-areas: 
-        ". text text image image image";
+        "text image";
     width: 100vw;
     background: white;
     height: 100%;
     max-height: 800px;
 }
+/* text item in side by side text and image section  */
 .twoUp-text{
     grid-area: text;
     padding: 4rem;
+    max-width: 800px;
 }
+/* image container in side by side text and image section  */
 .twoUp-image{
     grid-area: image ; 
     max-height: 100%;
     overflow: hidden;
 }
+/* image in side by side text and image section  */
 img.twoUp{
     width: 100%;
     max-width: 100vw;
@@ -276,7 +282,7 @@ nav {
 h1 {
     color: #009AAF;
     display: inline-block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-weight: 700;
     font-size: 3.815rem;
     font-style: normal;
@@ -288,7 +294,7 @@ h1 {
 /* h2  */
 h2 {
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: 3.052rem;
     text-align: center;
     font-weight: 700;
@@ -304,7 +310,7 @@ h2.left {
 h3 {
     color: #333;
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: 2.441rem;
     font-weight: 400;
     margin: 0 auto;
@@ -317,7 +323,7 @@ h3 {
 /*-- h4 --*/
 h4 {
     color: #333;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: 1.953rem;
     font-weight: 700;
     text-align: left;
@@ -329,7 +335,7 @@ h4 {
 /*-- h5 --*/
 h5 {
     color: #333;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: 1.563rem;
     font-weight: 600;
     margin: 1rem auto 0 auto;
@@ -341,7 +347,7 @@ h5 {
 /*-- h6 --*/
 h6 {
     color: #333;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
