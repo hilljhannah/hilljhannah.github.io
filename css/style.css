@@ -277,7 +277,6 @@ nav {
 }
 
 /*--- begin typography styles ---*/
-/*--- mobile first ---*/
 /* h1 text */
 h1 {
     color: #009AAF;
@@ -286,9 +285,10 @@ h1 {
     font-weight: 700;
     font-size: 3.815rem;
     font-style: normal;
-    margin: 0 auto;
+    margin: .5rem;
     vertical-align: middle;
     width: 100%;
+    text-align: left;
 }
 
 /* h2  */
@@ -373,7 +373,17 @@ p {
     line-height: 1.6;
     align-items: center;
 }
-
+/*-- paragraph text --*/
+p.body2 {
+    color: #333;
+    font-family: 'Open+Sans';
+    font-size: .8rem;
+    padding-bottom: 1em;
+    font-style: normal;
+    width: 100%;
+    line-height: 1.6;
+    text-align: left;
+}
 /* centered p text */
 p.centered,
 #b {
@@ -606,8 +616,44 @@ a.button:hover {
     width: 100%;
     max-width: 700px;
 }
-
 /*-------- end button styles --------*/
+
+
+/*-------- start flexbox div styles --------*/
+
+/*---- grid for flexbox hero section ----*/
+.parentFlexGridContainer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+}
+/*---- parent flexbox   ----*/
+.parentFlexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background: white;
+    align-items: stretch;
+    margin: 0 auto;
+}
+/*---- child flexbox for text + list content - left aligned  ----*/
+.flexContent{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    align-content: flex-start;
+    width: 100%;
+    max-width: 800px;
+}
+/*---- child flexbox for images  ----*/
+.flexImage{
+    display: flex;
+    align-self: stretch; 
+    width: auto;
+}
+
+
+
 /*-------- homepage (index) styles --------*/
 /* homepage hero section */
 .homeHero {
