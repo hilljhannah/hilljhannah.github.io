@@ -1,26 +1,103 @@
- <!DOCTYPE html>
- <!-- two up -->
-     <section class="twoUp">
-         <div class="twoUp-text">
-               <h2 class="left">Two Up h2</h2>
-               <p>Body</p>
-         </div>
-            <div class="twoUp-image">         
-               <img class="twoUp" src="images/ms-designSystem/foundation2_MS_DS.jpg" alt="MS foundations">
-             </div>
-     </section>
- <!-- 3 col -->
-     <section class="threeCol">
-         <div class="threeCol-item1">
-               <h3>Two Up h3</h3>
-               <p>Body</p>
-         </div>
-        <div class="threeCol-item2">
-               <h3>Two Up h3</h3>
-               <p>Body</p>
-         </div>
-        <div class="threeCol-item3">
-               <h3>Two Up h3</h3>
-               <p>Body</p>
-         </div>
-     </section>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QG18S327JJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QG18S327JJ');
+
+    </script>
+    <title>Portfolio | Medical Solutions 3.0 Design System Case Study</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <!-- Navbar -->
+            <header class="header">
+                <a href="index.html" class="logo"><img class="myLogo" src="images/mylogo-blue.png" alt="My Personal logo" /></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </header>
+            <!-- Hero -->
+            <section class="heroFlex ms_ds_heroBG">
+                <div class="heroFlexTitle"><h1 class="white">This is a longer case study title</h1></div>
+                <img class="heroFlexImg" src="images/designSystem/DesignSystem-1.png" alt="Color + Typography Library Screenshot">
+            </section>
+          <!-- Overview  --> 
+            <section class="flexSection"> <!-- flex section - parent -->
+                        <div class="flexSectionItem flexText"> <!-- flex text content - child -->
+                            <p class="lozenge">Project Overview</p> <!-- lozenge -->
+                            <h4>This is h4 text used for a bold summary statement about the project.</h4>  <!-- project summary statement -->
+                            <div class="innerFlexSection"> <!-- inner flex content - parent container  -->
+                                    <div> <!-- inner flex content - child container  -->
+                                        <h5>Timeline</h5>  <!-- title  -->
+                                        <ul><li>Item 1</li></ul> <!-- list  -->
+                                    </div>
+                                    <div> <!-- inner flex content - child container  -->
+                                        <h5>My Role</h5>  <!-- title  -->
+                                        <ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul> <!-- list  -->
+                                    </div>
+                                    <div> <!-- inner flex content - child container  -->
+                                        <h5>Tools</h5>  <!-- title  -->
+                                        <ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul> <!-- list  -->
+                                    </div>                       
+                            </div>
+                        </div>
+                            <div class="flexSectionItem">  <!-- flex image - child -->
+                                <img src="images/designSystem/DesignSystem-1.png" alt="">
+                            </div>
+                    </section>
+          <!-- Section 1  -->  
+            <section class="flexSection"> <!-- flex section - parent -->
+                        <div class="flexSectionItem flexText">  <!-- flex text content - child -->
+                            <p class="lozenge">Section 1</p> <!-- lozenge -->
+                            <h2 class="left">This is h2 text used for a section title</h2> <!-- section header -->
+                            <p>This is body copy</p> <!-- body copy -->
+                         </div>
+                         <div class="flexSectionItem">  <!-- flex image - child -->
+                             <img src="images/designSystem/DesignSystem-1.png" alt="">
+                         </div>
+            </section>
+        </section>
+    </main>
+    <!-- page footer-->
+    <footer>
+        <p class="foot"><a id="white" class="inline-link" href="form.html">Hannah Hill</a></p>
+        <p class="foot">UX UI Designer with a passion for Design Systems</p>
+        <div class="social_icon_container">
+            <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
+            <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github.png" alt="github icon"></a></div>
+        </div>
+    </footer>
+    <!-- Scripts  -->
+    <script src="scripts/lib/anime.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+</body>
+
+</html>
