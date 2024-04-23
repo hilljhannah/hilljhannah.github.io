@@ -574,40 +574,65 @@ a.button:hover {
 }
 /*-------- end button styles --------*/
 
-
-
-/*-------- start hero flexbox styles --------*/
-/*---- hero flexbox container  ----*/
-.heroFlex{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: auto;  
-    background-repeat: no-repeat;
-    background-size: cover; 
+/*-------- start grid styles --------*/
+/* grid container (mobile only) */
+.grid-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: white;
+    margin: 2rem 0; /* 32px */
+    grid-gap: 1rem;
 }
-.ms_ds_heroBG{
-    background-image: url("../images/ms-designSystem/MSDesignSystemCoverBackground.jpg");
-}
-
-.heroFlexImg{
-    width: 100%;
-    max-width: 50vw;
-}
-/* hides extra image on ipads and desktops  ----------- */
-@media only screen and (max-device-width : 768px) {
-    .heroFlexImg {
-         display: none;
+/*-- creates two col grid on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .grid-section {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
     }
 }
-.heroFlexTitle{
+ /* image in grid container */
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* or cover*/
+}
+
+/* grid items / columns */
+.grid-section > * {
+    padding: 0 2rem ;
+}
+/*-- end grid styles  --*/
+
+/*-------- start flexbox styles --------*/
+/*-- start hero flexbox styles --*/
+/* hero flexbox container */
+.hero-flex{
+    display: flex;
+    width: 100%;
+    margin: auto;  
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 10rem 4rem;
+}
+/* hero background image - MS Design System */
+.heroBG-ms-ds{
+    background-image: url("../images/ms-designSystem/MSDesignSystemCoverBackground.jpg");
+}
+/* Case study title (in hero section) */
+.hero-flex-title{
     width: 100%;
     max-width: 800px;
-    padding: 80px;
 } 
-/*-------- start flexbox styles --------*/
-/*-- general flexbox container--*/
-.flexContainer {
+/*-- for tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .hero-flex {
+        padding: 4rem;
+        height: 520px;
+    }
+}
+/* general flexbox container */
+.flex-container {
     align-items: start;
     background-color: inherit;
     display: flex;
@@ -616,80 +641,64 @@ a.button:hover {
     margin: 0;
     padding: 0;
 }
-
-/*---- grid section  ----*/
-section.gridSection{
-    display: grid;
-    grid-template-columns: [column1] 1fr [column2] 1fr;
-    background: white;
-    margin: 0 ;
-    justify-content:flex-start;
-    column-gap: 2rem;
-}
-/* sets hero height on ipads and desktops  ----------- */
-@media only screen and (min-device-width : 768px) {
-    .gridSection {
-         grid-template-columns: 1fr;
-    }
-}
-/*---- flexbox section  ----*/
-.flexSection{
+/* flexbox section */
+.flex-section{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     flex-flow: row wrap;
-    align-content: flex-start;
+    align-items: center;
+    align-content: center;
     background: white;
-    margin: 0 ;
-    justify-content:flex-start;
-    column-gap: 2rem;
-    padding: 2rem;
+    margin: 0;
+    justify-content: center;
+    justify-items: center;
+    padding: 2rem 4rem;
+    width: 100vw;
 }
-
-.flexSection .flexSectionItem{
-  flex: auto; 
+/* flexbox section item */
+.flex-section-item{ 
   width: 800px; 
   margin: .5vw; 
 }
-.flexSection .flexSectionItem img{
-  width: 100%; 
-  height: auto; 
+/* flexbox section image item */
+ .flex-section-item img{
+     display: flex;
+    width: 100%; 
+     height: auto; 
+     justify-content: flex-end;
+     object-fit: cover;
 }
-/*---- first level child flexbox container  ----*/
-.flexLevelOneChild{
-    flex-basis: 800px;  
+/* adds padding to flexbox section on tablet and desktops */
+@media (min-device-width:768px) {
+    .flex-section{
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .flex-text{
+    padding-right: 80px;
+    }
 }
-/*---- text only flexbox styles  ----*/
-.flexText{
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    max-width: 800px;  
-}
-
-/*---- Image in flexbox  ----*/
-.flexImage{
+/* Image in flexbox */
+.flex-image{
     max-width: 100%;
     overflow: hidden;
     object-fit: cover;
 }
-.innerFlexSection{
+/* flexbox list section */
+.inner-flex-section{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     flex-flow: row wrap;
     align-content: flex-start;
+    justify-content: space-between
 }
-.innerFlexSection div{
+.inner-flex-section div{
    max-width: 100%;
      padding-right: 80px;
 }
-.flexListItem{
-    width: 200px;
-    flex-direction: column;
-    padding-right: 80px;
-}
+/*--- end flexbox styles--*/
 
+/* lozenge used in case studies */
 .lozenge{
     display: block;
     padding: .5rem 1rem;
@@ -698,11 +707,12 @@ section.gridSection{
     font-size: 11px;
     font-weight: 800;
     font-family: 'Lato';
-    margin: 0 0 2rem 0;
+    margin: 2rem 0;
     width: fit-content;
     border-radius: 2px;
     text-transform: uppercase;
 }
+
 /*-------- homepage (index) styles --------*/
 /* homepage hero section */
 .homeHero {
