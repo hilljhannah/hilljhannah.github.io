@@ -424,6 +424,13 @@ p.foot {
 
 /*-------- end typography styles --------*/
 /*-------- list styles --------*/
+/* unstlyed list with no decoration or padding */
+ul.unstyled-list{
+    padding: 0;
+    list-style-position: inside;
+    list-style: none;
+}
+
 ul.list {
     font-size: 1rem;
     list-style-type: circle;
@@ -437,7 +444,7 @@ ul.list li {
     padding-bottom: 1.5rem;
     font-weight: normal;
 }
-/*-- lists with background color --*/
+/*-- list with background color --*/
 ul.color {
     font-size: 1.6rem;
     list-style-position: inside;
@@ -574,7 +581,24 @@ a.button:hover {
     max-width: 700px;
 }
 /*-------- end button styles --------*/
-
+.case-study-index{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+}
+.case-study-index > * {
+    margin: 2rem 0;
+}
+.case-study-index-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+.index-link{
+    text-decoration: underline;
+}
 /*-------- start grid styles --------*/
 /* two column grid container (mobile only) */
 .two-col-grid{
@@ -590,7 +614,7 @@ a.button:hover {
     .two-col-grid {
         display: grid;
         grid-template-columns:  1fr 1fr;
-        padding: 10vw ;
+        padding: 2vw 8vw; ;
     }
 }
 
@@ -612,7 +636,7 @@ a.button:hover {
     .one-col-grid {
         display: grid;
         grid-template-columns: 1fr;
-        padding: .5vw ;
+        padding: 2vw 8vw ;
         justify-content: center;
         justify-items: center;
     }
