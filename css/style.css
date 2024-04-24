@@ -35,6 +35,7 @@ body {
     overflow: hidden;
 }
 
+
 /* process sections */
 section {
     align-items: center;
@@ -575,21 +576,54 @@ a.button:hover {
 /*-------- end button styles --------*/
 
 /*-------- start grid styles --------*/
-/* grid container (mobile only) */
-.grid-section{
+/* two column grid container (mobile only) */
+.two-col-grid{
     display: grid;
     grid-template-columns: 1fr;
     background: white;
     margin: 2rem 0; /* 32px */
     grid-gap: 1rem;
+    padding: 2vw;
 }
 /*-- creates two col grid on tablet and desktop  --*/
 @media (min-device-width:768px) {
-    .grid-section {
+    .two-col-grid {
         display: grid;
         grid-template-columns:  1fr 1fr;
+        padding: 10vw ;
     }
 }
+
+/* two column grid items */
+.two-col-grid > * {
+    padding: 0 2rem ;
+}
+/* two column grid container (mobile only) */
+.one-col-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: white;
+    margin: 2rem 0; /* 32px */
+    grid-gap: 1rem;
+    padding: 2vw;
+}
+/*-- creates two col grid on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .one-col-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: .5vw ;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+/* one column grid items */
+.one-col-grid > * {
+    padding: 0 2rem ;
+    max-width: 880px;
+}
+
  /* image in grid container */
 .grid-item img{
     width: 100%;
@@ -597,9 +631,12 @@ a.button:hover {
     object-fit: contain; /* or cover*/
 }
 
-/* grid items / columns */
-.grid-section > * {
-    padding: 0 2rem ;
+.hero-medsol {
+    background: #263349;
+}
+.hero-grid {
+    margin: 0;
+    padding: 2rem 0;
 }
 /*-- end grid styles  --*/
 
@@ -610,26 +647,40 @@ a.button:hover {
     display: flex;
     width: 100%;
     margin: auto;  
-    height: 400px;
+    height: 200px;
+    max-height: 500px;
     background-repeat: no-repeat;
     background-size: cover; 
-    padding: 10rem 4rem;
+    padding: 2vw;
+    justify-content:  flex-start;
 }
-/* hero background image - MS Design System */
+/* hero background images */ 
+
+/* MS Design System */
 .heroBG-ms-ds{
+    background-image: url("../images/ms-designSystem/MSDesignSystemCoverSmall.jpg");
+}
+/* larger hero image for display on tablet and desktops */
+@media (min-device-width:768px) {
+    .heroBG-ms-ds{ /* MS Design System */
     background-image: url("../images/ms-designSystem/MSDesignSystemCoverBackground.jpg");
+    }
 }
 /* Case study title (in hero section) */
 .hero-flex-title{
     width: 100%;
-    max-width: 800px;
+    max-width: 300px;
 } 
 /*-- for tablet and desktop  --*/
 @media (min-device-width:768px) {
     .hero-flex {
-        padding: 4rem;
+        padding: 10vw;
         height: 520px;
     }
+    .hero-flex-title{
+    width: 100%;
+    max-width: 600px;
+} 
 }
 /* general flexbox container */
 .flex-container {

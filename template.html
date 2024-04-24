@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: white;">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -39,17 +39,53 @@
                     <li><a href="about.html">About Me</a></li>
                 </ul>
             </header>
-            <!-- Hero -->
-            <section class="heroFlex ms_ds_heroBG">
-                <div class="heroFlexTitle"><h1 class="white">Implementing Tokens in the Medical Solutions Design System </h1></div>
-            </section>  
-            
-          <!-- Overview  --> 
-            <section class="flexSection"> <!-- flex section - parent -->
-                        <div class="flexSectionItem flexText"> <!-- flex text content - child -->
+            <!-- Hero image 
+            <section class="hero-flex heroBG-ms-ds">
+                <!-- <div class="hero-flex-title"><h1 class="white">Implementing Tokens in the Medical Solutions Design System</h1></div> -->
+          <!--  </section>  -->
+        <!--  title section  --> 
+                    <!-- image / text grid  -->  
+            <section class="two-col-grid hero-medsol hero-grid"> <!-- grid section - parent -->
+                        <div class="grid-item">  <!-- grid item - child -->
+                             <img src="images/designSystem/DesignSystem-1.png" alt="">
+                         </div>
+                        <div class="grid-item">  <!-- grid item - child -->
+                             <h1 class="white">Implementing Tokens in the Medical Solutions Design System</h1>  <!-- case study title -->
+                            <p>This is body copy</p> <!-- body copy -->
+                         </div>
+            </section>
+            <section class="case-study-index">
+                <div> 
+                    <h5>Category 1</h5>  <!-- category 1  -->
+                    <ul class="case-study-index-list"> <!--list  -->
+                        <li class="index-link"><a href="#section-1">Section 1</a></li> <!--list item - link -->
+                    </ul> 
+                </div>
+                <div> 
+                    <h5>Category 2</h5>  <!-- category 1  -->
+                    <ul class="case-study-index-list"> <!--list  -->
+                        <li class="index-link"><a href="#section-2">Section 2</a></li> <!--list item - link -->
+                    </ul> 
+                </div>
+                <div> 
+                    <h5>Category 3</h5>  <!-- category 1  -->
+                    <ul class="case-study-index-list"> <!--list  -->
+                        <li class="index-link"><a href="#section-3">Section 3</a></li> <!--list item - link -->
+                    </ul> 
+                </div> 
+                <div> 
+                    <h5>Category 4</h5>  <!-- category 1  -->
+                    <ul class="case-study-index-list"> <!--list  -->
+                        <li class="index-link"><a href="#section-1">Section 1</a></li> <!--list item - link -->
+                    </ul> 
+                </div>
+            </section>
+          <!-- section 1 - two column  --> 
+            <section id="section-1" class="two-col-grid"> <!-- grid section - parent -->
+                        <div class="grid-item"> <!-- grid item - child -->
                             <p class="lozenge">Project Overview</p> <!-- lozenge -->
-                            <h4>This is h4 text used for a bold summary statement about the project.</h4>  <!-- project summary statement -->
-                            <div class="innerFlexSection"> <!-- inner flex content - parent container  -->
+                            <h2 class="left">This is h4 text used for a bold summary statement about the project.</h2>  <!-- project summary statement -->
+                            <div class="inner-flex-section"> <!-- inner flex content - parent container  -->
                                     <div> <!-- inner flex content - child container  -->
                                         <h5>Timeline</h5>  <!-- title  -->
                                         <ul><li>Item 1</li></ul> <!-- list  -->
@@ -64,20 +100,31 @@
                                     </div>                       
                             </div>
                         </div>
-                            <div class="flexSectionItem">  <!-- flex image - child -->
+                            <div class="grid-item">  <!-- grid item - child -->
                                 <img src="images/designSystem/DesignSystem-1.png" alt="">
                             </div>
                     </section>
-       
-          <!-- Section 1  -->  
-            <section class="flexSection"> <!-- flex section - parent -->
-                        <div class="flexSectionItem flexText">  <!-- flex text content - child -->
-                            <p class="lozenge">Section 1</p> <!-- lozenge -->
-                            <h2 class="left">This is h2 text used for a section title</h2> <!-- section header -->
+
+        <!--  section 2 - two column   -->  
+            <section id="section-2" class="two-col-grid"> <!-- grid section - parent -->
+                        <div class="grid-item"> <!-- grid item - child -->
+                             <img src="images/designSystem/DesignSystem-1.png" alt="">
+                         </div>
+                        <div class="grid-item">  <!-- grid item - child -->
+                            <p class="lozenge">Section 2</p> <!-- lozenge -->
+                            <h4>This is h4 text used for a section header.</h4> <!-- section header -->
                             <p>This is body copy</p> <!-- body copy -->
                          </div>
-                         <div class="flexSectionItem">  <!-- flex image - child -->
-                             <img src="images/designSystem/DesignSystem-1.png" alt="">
+            </section>
+        <!-- one column center aligned  -->  
+            <section id="section-3" class="one-col-grid"> <!-- grid section - parent -->
+                        <div class="grid-item">  <!-- grid item - child -->
+                            <p class="lozenge">Section 3</p> <!-- lozenge -->
+                            <h4>This is h2 text used for a section title</h4> <!-- section header -->
+                            <p>This is body copy</p> <!-- body copy -->
+                         </div>
+                        <div class="grid-item">  <!-- grid item - child -->
+                             <img src="images/designSystem/DesignSystem-1.png" alt="" style="max-width: 921px;">
                          </div>
             </section>
         </section>
