@@ -609,7 +609,7 @@ a.button:hover {
     grid-gap: 1rem;
     padding: 2vw;
 }
-/*-- creates two col grid on tablet and desktop  --*/
+/*-- creates two col grid section on tablet and desktop  --*/
 @media (min-device-width:768px) {
     .two-col-grid {
         display: grid;
@@ -662,6 +662,20 @@ a.button:hover {
     margin: 0;
     padding: 2rem 0;
 }
+.inner-grid-four-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+/*-- creates four col grid on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .inner-grid-four-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 /*-- end grid styles  --*/
 
 /*-------- start flexbox styles --------*/
