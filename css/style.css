@@ -429,8 +429,12 @@ ul.unstyled-list{
     padding: 0;
     list-style-position: inside;
     list-style: none;
+    margin: 0;
 }
-
+/* unstlyed list item with no decoration or padding */
+ul.unstyled-list li{
+    margin-bottom: .5rem;
+}
 ul.list {
     font-size: 1rem;
     list-style-type: circle;
@@ -662,6 +666,7 @@ a.button:hover {
     margin: 0;
     padding: 2rem 0;
 }
+/* four column grid used within another grid section */
 .inner-grid-four-column{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -784,6 +789,15 @@ a.button:hover {
 .inner-flex-section div{
    max-width: 100%;
      padding-right: 80px;
+}
+.quoteSection{
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    padding: 4rem;
+    margin: auto;
+    background: blue;
+    text-align: center;
 }
 /*--- end flexbox styles--*/
 
