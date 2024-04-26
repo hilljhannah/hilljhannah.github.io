@@ -252,11 +252,12 @@ h1 {
     display: inline-block;
     font-family: 'Open+Sans', sans-serif;
     font-weight: 700;
-    font-size: 3.815rem;
+    font-size: 3.052rem;
     font-style: normal;
     margin: .5rem;
     vertical-align: middle;
     width: 100%;
+    max-width: 100%;
     text-align: left;
 }
 
@@ -264,11 +265,12 @@ h1 {
 h2 {
     display: block;
     font-family: 'Open+Sans', sans-serif;
-    font-size: 3.052rem;
+    font-size: 2.441rem;
+    width: 80%;
     text-align: center;
     font-weight: 700;
     color: #009AAF;
-    width: 100%;
+    
 }
 
 h2.left {
@@ -280,7 +282,7 @@ h3 {
     color: #333;
     display: block;
     font-family: 'Open+Sans', sans-serif;
-    font-size: 2.441rem;
+    font-size: 1.953rem;
     font-weight: 400;
     margin: 0 auto;
     padding-bottom: 1rem;
@@ -293,7 +295,7 @@ h3 {
 h4 {
     color: #333;
     font-family: 'Open+Sans', sans-serif;
-    font-size: 1.953rem;
+    font-size: 1.563rem;
     font-weight: 700;
     text-align: left;
     padding-bottom: 1rem;
@@ -358,25 +360,24 @@ p.foot {
 }
 
 /*--- typeography media queries ----------------------------------------------------*/
-/*-- Mobile screens only -- */
-@media only screen and (min-device-width : 1px) and (max-device-width : 768px) {
+
+/*-- Desktop and tablet typography media queries  -- */
+@media (min-device-width:768px) {
     h1 {
-        font-size: 3.052rem;
-        max-width: 100%;
+        font-size: 3.815rem;
     }
 
     h2 {
-        font-size: 2.441rem;
-        width: 80%;
+        font-size: 3.052rem;
+        width: 100%;
     }
 
-    h3,
-    h3.left {
-        font-size: 1.953rem;
+    h3 {
+        font-size: 2.441rem;
     }
 
     h4 {
-        font-size: 1.563rem;
+        font-size: 1.953rem;
     }
 
     h5 {
@@ -387,7 +388,6 @@ p.foot {
         font-size: 1rem;
     }
 }
-
 /*--sets/overrides color of text to white--*/
 #white {
     color: white;
