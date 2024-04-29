@@ -70,7 +70,7 @@ header {
     padding: 16px 20px;
     border-right: 1px solid #009AAF;
     text-decoration: none;
-    font-family: 'Lato';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
     font-size: 1rem;
@@ -325,7 +325,7 @@ h5 {
     color: #333;
     font-family: 'Nunito';
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     text-align: left;
     padding-bottom: 1rem;
@@ -363,7 +363,7 @@ p.centered,
 /*-- Footer Text ---*/
 p.foot {
     color: white;
-    font-family: 'Lato';
+    font-family: 'Open+Sans';
     font-size: .8rem;
     text-align: center;
     margin: 1rem auto;
@@ -413,7 +413,7 @@ p.foot {
     border-bottom: 1px solid #FFFFFF;
     display: block;
     color: #009AAF;
-    font-family: 'Lato';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
     font-size: 1rem;
@@ -544,7 +544,7 @@ a.button {
     color: white;
     cursor: pointer;
     display: block;
-    font-family: 'Lato';
+    font-family: 'Open+Sans';
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 20px;
@@ -598,8 +598,26 @@ a.button:hover {
     color: #009AAF;
 }
 /*-------- start grid styles --------*/
-/* two column grid container (mobile only) */
+/* simple two column grid container (mobile styles) */
 .two-col-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: white;
+    margin: 0 ; 
+    grid-gap: 1rem;
+    padding: 0;
+}
+/*-- creates two col grid container on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .two-col-grid {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        padding: 0 ;
+        grid-gap: 2rem;
+    }
+}
+/* two column grid section (mobile styles) */
+.two-col-grid-section{
     display: grid;
     grid-template-columns: 1fr;
     background: white;
@@ -609,19 +627,19 @@ a.button:hover {
 }
 /*-- creates two col grid section on tablet and desktop  --*/
 @media (min-device-width:768px) {
-    .two-col-grid {
+    .two-col-grid-section {
         display: grid;
         grid-template-columns:  1fr 1fr;
-        padding: 2vw 8vw; ;
+        padding: 2vw 8vw; 
     }
 }
 
 /* two column grid items */
-.two-col-grid > * {
+.two-col-grid-section > * {
     padding: 0 2rem ;
 }
 /* two column grid container (mobile only) */
-.one-col-grid{
+.one-col-grid-section{
     display: grid;
     grid-template-columns: 1fr;
     background: white;
@@ -631,7 +649,7 @@ a.button:hover {
 }
 /*-- creates two col grid on tablet and desktop  --*/
 @media (min-device-width:768px) {
-    .one-col-grid {
+    .one-col-grid-section {
         display: grid;
         grid-template-columns: 1fr;
         padding: 2vw 8vw ;
@@ -641,7 +659,7 @@ a.button:hover {
 }
 
 /* one column grid items */
-.one-col-grid > * {
+.one-col-grid-section > * {
     padding: 0 2rem ;
     max-width: 880px;
 }
@@ -685,6 +703,21 @@ a.button:hover {
 /*-- end grid styles  --*/
 
 /*-------- start flexbox styles --------*/
+.flexbox-img-within-grid{
+    display: flex;
+    width: 100%;
+    margin: auto;  
+    height: 600px;
+    max-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    justify-content:  flex-start;
+}
+/* background images */
+/* MS Design System Audit */
+.imgBG-msds-audit{
+    background-image: url("../images/msDesignSystemAudit/MSDSAudit-compilation.png");
+}
 /*-- start hero flexbox styles --*/
 /* hero flexbox container */
 .hero-flex{
@@ -809,8 +842,8 @@ a.button:hover {
     background: #009aaf24;
     width: auto;
     font-size: 11px;
-    font-weight: 800;
-    font-family: 'Lato';
+    font-weight: 700;
+    font-family: 'Nunito';
     margin: 2rem 0;
     width: fit-content;
     border-radius: 2px;
@@ -923,7 +956,7 @@ a.card{
 button{
     background: #4db8c7; /* primary brand shade */
     display: block;
-    font-family: 'Lato';
+    font-family: 'Open+Sans';
     font-weight: 600;
     font-size: 1rem;
     padding: 1rem;
@@ -959,7 +992,7 @@ button:hover{
     padding: 2rem;
     text-align: left;
     margin: 0;
-    font-family: 'Lato';
+    font-family: 'Open+Sans';
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.6;
@@ -1720,7 +1753,7 @@ input[type=submit] {
     color: #333;
     cursor: pointer;
     font-size: 1.6rem;
-    font-family: "Lato";
+    font-family: "Open+Sans";
     font-weight: 700;
     margin: 2rem auto;
     text-transform: uppercase;
