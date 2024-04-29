@@ -250,7 +250,7 @@ nav {
 h1 {
     color: #009AAF;
     display: inline-block;
-    font-family: 'Open+Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 3.052rem;
     font-style: normal;
@@ -261,10 +261,11 @@ h1 {
     text-align: left;
 }
 
+
 /* h2  */
 h2 {
     display: block;
-    font-family: 'Open+Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 2.441rem;
     width: 80%;
     text-align: center;
@@ -273,7 +274,7 @@ h2 {
     
 }
 
-h2.left {
+.left {
     text-align: left;
 }
 
@@ -281,7 +282,7 @@ h2.left {
 h3 {
     color: #333;
     display: block;
-    font-family: 'Open+Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.953rem;
     font-weight: 400;
     margin: 0 auto;
@@ -294,9 +295,9 @@ h3 {
 /*-- h4 --*/
 h4 {
     color: #333;
-    font-family: 'Open+Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.563rem;
-    font-weight: 700;
+    font-weight: 400;
     text-align: left;
     padding-bottom: 1rem;
     margin: 0 auto;
@@ -306,7 +307,7 @@ h4 {
 /*-- h5 --*/
 h5 {
     color: #333;
-    font-family: 'Open+Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
@@ -320,7 +321,17 @@ h5 {
 .noMargin{
     margin: 0;
 }
-
+.subtext1{
+    color: #333;
+    font-family: 'Nunito';
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+}
 /*-- paragraph text --*/
 p {
     color: #333;
@@ -335,7 +346,7 @@ p {
 /*-- paragraph text --*/
 p.body2 {
     color: #333;
-    font-family: 'Lato';
+    font-family: 'Open+Sans';
     font-size: .8rem;
     padding-bottom: 1em;
     font-style: normal;
@@ -380,7 +391,7 @@ p.foot {
         font-size: 1.953rem;
     }
 
-    h5 {
+    h5,p.subtext {
         font-size: 1.25rem;
     }
 
