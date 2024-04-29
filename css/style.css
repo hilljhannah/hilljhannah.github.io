@@ -405,8 +405,7 @@ p.foot {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 800;
-    font-size: 1.6rem;
-    margin: 0 auto;
+    font-size: 1rem;
     justify-content: center;
     padding: 0 0 5px 0;
     transition: .25s;
@@ -414,8 +413,8 @@ p.foot {
 }
 
 .link:hover {
-    border-bottom: 1px dotted #FFFFFF;
-    color: #00FFEB;
+    border-bottom: 2px solid #FFFFFF;
+    color: #009AAF;
 }
 
 .inline-link {
@@ -482,33 +481,12 @@ ul.ideals {
     list-style-position: inside;
 }
 
-/* Unused -- DELETE -- list within a list */
-dt {
-    background: rgba(135, 206, 250, .09);
-    font-family: "Open Sans";
-    font-size: 1.4rem;
-    margin: 2rem auto 0 auto;
-    width: 90vw;
-    max-width: 600px;
-    padding: 1rem;
-}
-/* Unused -- DELETE -- list within a list */
-dd {
-    font-size: 1.4rem;
-    width: 90vw;
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(135, 206, 250, .02);
-    padding: 1rem;
-}
 
 /*-- list media queries -------------------*/
 /*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-    ul.color li,
-    dt,
-    dd {
+    ul.color li{
         font-size: 1rem;
     }
 }
@@ -516,9 +494,7 @@ dd {
 /*-- for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
 
-    ul.color li,
-    dt,
-    dd {
+    ul.color li{
         font-size: 1rem;
     }
 }
@@ -587,6 +563,7 @@ a.button:hover {
 /*-------- end button styles --------*/
 .case-study-index{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
@@ -602,6 +579,12 @@ a.button:hover {
 }
 .index-link{
     text-decoration: underline;
+    padding-bottom: 1rem;
+    transition: .25s;
+}
+.index-link:hover {
+    border-bottom: 2px solid #FFFFFF;
+    color: #009AAF;
 }
 /*-------- start grid styles --------*/
 /* two column grid container (mobile only) */
@@ -672,6 +655,13 @@ a.button:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1rem;
+    justify-content: space-around;
+    margin: .5rem;
+}
+/* four column grid items used in summary */
+.inner-grid-four-column > * {
+    align-self: stretch;
+    justify-self: center;
 }
 /*-- creates four col grid on tablet and desktop  --*/
 @media (min-device-width:768px) {
