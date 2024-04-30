@@ -329,7 +329,7 @@ h5 {
     color: #333;
     font-family: 'Nunito';
     font-size: 1.063rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 /*-- paragraph text --*/
 p {
@@ -444,6 +444,19 @@ p.foot {
 
 /*-------- end typography styles --------*/
 /*-------- list styles --------*/
+/* default list  */
+ul.list {
+    font-size: 1rem;
+    list-style-type: circle;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    width: 100%;  
+}
+/* default list item  */
+ul.list li {
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
 /* unstlyed list with no decoration or padding */
 ul.unstyled-list{
     padding: 0;
@@ -455,16 +468,32 @@ ul.unstyled-list{
 ul.unstyled-list li{
     margin-bottom: .5rem;
 }
-ul.list {
+/* list with green checkmark as list marker */
+ul.pros {
+    list-style-image: url('../images/icon-check-bold.svg');
+    list-style-type: image;
     font-size: 1rem;
-    list-style-type: circle;
     margin: 0;
-    padding-bottom: 1.5rem;
     width: 100%;
-    
+    padding-left: 1.5rem; /* 24px */
+    padding-bottom: 1.5rem; /* 24px */
 }
-/*  list item styles */
-ul.list li {
+/* list with red x as list marker */
+ul.cons {
+    list-style-image: url('../images/icon-cancel.svg');
+    list-style-type: image;
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    padding-left: 1.5rem; /* 24px */
+}
+/* pros list items  */
+ul.pros li {
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
+/* cons list items  */
+ul.cons li {
     padding-bottom: 1.5rem;
     font-weight: normal;
 }
