@@ -252,7 +252,7 @@ h1 {
     display: inline-block;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 3.052rem;
+    font-size: 3.815rem;
     font-style: normal;
     margin: .5rem;
     vertical-align: middle;
@@ -264,9 +264,9 @@ h1 {
 
 /* h2  */
 h2 {
-    display: block;
+    display: block; 
     font-family: 'Nunito', sans-serif;
-    font-size: 2.441rem;
+    font-size: 2.441rem; /* 3.052rem on desktop+tablet  */
     width: 80%;
     text-align: center;
     font-weight: 700;
@@ -274,16 +274,13 @@ h2 {
     
 }
 
-.left {
-    text-align: left;
-}
 
 /* h3  */
 h3 {
     color: #333;
     display: block;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.953rem;
+    font-size: 1.953rem; /* 2.441rem on desktop+tablet  */
     font-weight: 400;
     margin: 0 auto;
     padding-bottom: 1rem;
@@ -296,7 +293,7 @@ h3 {
 h4 {
     color: #333;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.563rem;
+    font-size: 1.563rem; /* 1.953rem on desktop+tablet  */
     font-weight: 400;
     text-align: left;
     padding-bottom: 1rem;
@@ -308,19 +305,15 @@ h4 {
 h5 {
     color: #333;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.25rem; /*  on desktop+tablet  */
     font-weight: 600;
     margin: 0;
     text-align: left;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    width: 100%;
+    max-width: 100%;
 }
 
-/* removes margin */
-.noMargin{
-    margin: 0;
-}
 .subtext1{
     color: #333;
     font-family: 'Nunito';
@@ -332,10 +325,16 @@ h5 {
     padding-top: 1rem;
     width: 100%;
 }
+.subtext2{
+    color: #333;
+    font-family: 'Nunito';
+    font-size: 1.063rem;
+    font-weight: 700;
+}
 /*-- paragraph text --*/
 p {
     color: #333;
-    font-family: 'Open+Sans';
+    font-family: 'Open Sans';
     font-size: 1rem;
     margin: 0 auto;
     padding-bottom: 1em;
@@ -346,7 +345,7 @@ p {
 /*-- paragraph text --*/
 p.body2 {
     color: #333;
-    font-family: 'Open+Sans';
+    font-family: 'Open Sans';
     font-size: .8rem;
     padding-bottom: 1em;
     font-style: normal;
@@ -363,13 +362,24 @@ p.centered,
 /*-- Footer Text ---*/
 p.foot {
     color: white;
-    font-family: 'Open+Sans';
+    font-family: 'Open Sans';
     font-size: .8rem;
     text-align: center;
     margin: 1rem auto;
     line-height: 2rem;
 }
 
+/*-- left aligns text ---*/
+.left {
+    text-align: left;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+/* removes margin */
+.noMargin{
+    margin: 0;
+}
 /*--- typeography media queries ----------------------------------------------------*/
 
 /*-- Desktop and tablet typography media queries  -- */
@@ -638,7 +648,7 @@ a.button:hover {
 .two-col-grid-section > * {
     padding: 0 2rem ;
 }
-/* two column grid container (mobile only) */
+/* two column grid container (mobile) */
 .one-col-grid-section{
     display: grid;
     grid-template-columns: 1fr;
@@ -838,16 +848,16 @@ a.button:hover {
 /* lozenge used in case studies */
 .lozenge{
     display: block;
-    padding: .5rem 1rem;
-    background: #009aaf24;
+    padding-bottom: 1rem;
     width: auto;
     font-size: 11px;
-    font-weight: 700;
-    font-family: 'Nunito';
-    margin: 2rem 0;
+    font-weight: 500;
+    font-family: 'Open Sans';
+    margin:  0;
     width: fit-content;
-    border-radius: 2px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #828282;
 }
 
 /*-------- homepage (index) styles --------*/
@@ -895,11 +905,37 @@ img.index_image {
     align-content: space-between;
     justify-content: center;
 }
+/* three column grid container (mobile) */
+.card_grid_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 0; /* 32px */
+    grid-gap: 1rem;
+    padding: 2vw;
+}
+/*-- creates three col grid on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .card_grid_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2vw ;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+/*
 a.card{
     display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-rows: 200px 280px;
+} */
+/*-- adds column width on tablet and desktop  --*/
+/*@media (min-device-width:768px) {
+    a.card{
     grid-template-columns: 32px auto 32px;
     grid-template-rows: 200px 280px;
-}
+    }
+}*/
 .card {
     background-color: white;
     background-color: #fff;
@@ -911,8 +947,8 @@ a.card{
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     transition: 0.25s;
-    height: 480px;
-    width: 400px;
+    width: auto;
+    flex-direction: column;
     margin: 1rem;
     overflow: hidden;
     position: relative;
@@ -943,19 +979,28 @@ a.card{
 
 /* flexbox container for button and content within cards */
 .card_content {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
     align-content: space-between;
-    height: 280px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-
+    height: auto;
+    width: fit-content;
+    overflow: clip;
+    position: relative;
+    grid-gap: 1rem;
+}
+/*-- adds padding to card content on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .card_content{
+        padding: 2rem;
+        padding-bottom: 5rem;
+    }
 }
 button{
     background: #4db8c7; /* primary brand shade */
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     font-family: 'Open+Sans';
     font-weight: 600;
     font-size: 1rem;
@@ -966,7 +1011,9 @@ button{
     margin-top: 1rem;
     color: #002e34; /* dark primary brand shade */
     grid-row-start: 4;
-    width: auto;
+    width: fit-content;
+    position: absolute;
+    bottom: 1rem;
 }
 button:hover{
     background: #A2DFE7; /* lighter primary brand shade */
@@ -986,16 +1033,17 @@ button:hover{
     width: 100%;
 }
 
-/* Unused -- DELETE -- text on card button */
+/*  text on card button */
 .card_button_text {
     color: grey;
     padding: 2rem;
     text-align: left;
     margin: 0;
-    font-family: 'Open+Sans';
+    font-family: 'Open Sans';
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.6;
+    text-decoration: underline;
 }
 
 /* effect on card hover*/
@@ -1009,7 +1057,10 @@ button:hover{
     color: #009AAF;
     text-decoration: underline;
 }
-
+/* color effect for card text on hover*/
+.blueOnHover {
+    color: #009AAF;
+}
 /*-------- end homepage (index) styles --------*/
 .shapes {
     display: grid;

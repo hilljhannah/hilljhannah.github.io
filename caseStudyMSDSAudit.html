@@ -42,8 +42,8 @@
             </header>
             <!-- Hero -->
             <section class="hero">
-                <div data-aos="zoom-in" class="hero_container DS hero_container_modified">
-                    <img class="hero_device designSystem" src="images/msDesignSystemAudit/MSDSAudit-cover.jpg" alt="Design System audit presentation cover">
+                <div data-aos="zoom-in" class="hero_container DS hero_container_modified" style="max-height: 250px;">
+                    <img class="hero_device designSystem" src="images/msDesignSystemAudit/MSDSAuditBanner.jpg" alt="Design System audit presentation cover">
                 </div>
             </section>
             <!--  hero section  -->
@@ -56,16 +56,18 @@
                    <h5 class="white"></h5>
                 </div> 
             </section>-->
-            <section id="section-1" class="two-col-grid-section">
-                <!-- column 1 -->
-                <div>
-                <!-- text -->
-                <div class="grid-item">
-                    <!-- project summary statement -->
-                    <h1 class="left">Auditing Medical Solutions existing design system and presenting recommendations for a path forward</h1>
-                </div>
-                <!-- list grid container  -->
-                <div class="inner-grid-four-column" style="grid-column-start: 2 span;">
+            <section id="section-1" class="one-col-grid-section">
+                <!-- title + image -->
+               
+                    <div data-aos="fade-right" class="grid-item">
+                        <!-- project summary statement -->
+                        <h1>Auditing Medical Solutions design system</h1>
+                    </div>
+                <div data-aos="fade-left" class="grid-item">
+                    <img src="images/msDesignSystemAudit/MSDSAudit-compilation.png" alt="Macbook device frame displaying ms audit presentation screenshot">
+                </div> 
+                <!-- list container  -->
+                <div data-aos="fade-right" class="inner-grid-four-column" style="grid-column-start: 2 span;">
                     <!-- timeline list  -->
                     <div style="justify-self: start;">
                         <!-- Timeline  -->
@@ -81,11 +83,11 @@
                         <p class="subtext1">Role</p>
                         <!-- list  -->
                         <ul class="unstyled-list">
-                            <li>UI / UX Designer II - <br> Design Systems</li>
+                            <li>UI / UX Designer - <br> Design Systems</li>
                             <li>Product and Innovation Team</li>
                         </ul>
                     </div>
-                     <!-- Disciplines list  -->
+                    <!-- Disciplines list  -->
                     <div>
                         <!-- Disciplines  -->
                         <p class="subtext1">Disciplines</p>
@@ -107,25 +109,16 @@
                         </ul>
                     </div>
                 </div>
-             </div>
-                <!-- column 2-->
-                <div>
-               <div class="flexbox-img-within-grid">
-                    <img src="images/msDesignSystemAudit/MSDSAudit-cover.jpg" alt="Design System audit presentation sides">
-                </div>
-                </div>
             </section>
-            <section id="section-2" class="two-col-grid-section">
-               <div class="grid-item">
+            <!--
+            <section id="section-2" class="two-col-grid-section">   
+               <div data-aos="fade-right" class="grid-item">
                     <img src="images/msDesignSystemAudit/MSDSAudit-macbookFrame.png" alt="Macbook device frame displaying ms audit presentation screenshot">
-                </div>
-                <!-- case study index / project milestones -->
-                <div class="case-study-index grid-item">
+                </div> 
+                <div data-aos="fade-left" class="case-study-index grid-item">
                     <div>
-                        <h3>Project Milestones</h3>
-                        <!--list  -->
+                        <h4>Project Milestones</h4>
                         <ul class="case-study-index-list">
-                            <!--list item - link -->
                             <li class="index-link"><a href="#user-interview">Interviewing users of our design system</a></li>
                             <li class="index-link"><a href="#audit-system">Understanding our existing design system</a></li>
                             <li class="index-link"><a href="#presentation">Presenting my findings and recommendations for next steps</a></li>
@@ -134,15 +127,15 @@
                             <li class="index-link"><a href="#proof-of-concept">Presenting buttons as a proof of concept</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </section>
         
-            <!-- quote section -->
+            <!-- quote section 
             <section id="quote-1" class="quoteSection">
                 <div>
                     <h4 class="white">“How do you sleep at night knowing you make such cool things?” - M</h4>
                 </div>
-            </section>
+            </section> -->
             <!-- User Interviews -->
             <section id="user-interview" class="one-col-grid-section">
                 <!-- text -->
@@ -154,15 +147,15 @@
                         <h2 class="left">Learning more about the consumers of MS design system</h2>
                         <!-- body copy -->
                         <p>I interviewed 20 designers, developers, and PM’s to better understand users of Medical Solutions design system; asking questions surrounding use of our existing system and for our future design system.</p>
-                        <!--  <div> 
-                        <h5>Notable findings from user interviews</h5>
+                    <div> 
+                        <p style="padding-bottom: 0;">Notable findings from user interviews:</p>
                         <ul>
-                            <li>Expressed frustration due to system inconsistencies</li>
+                            <li>Expressed <strong>frustration</strong> due to <strong>system inconsistencies</strong></li>
                             <li>Inconsistencies in components cross-product</li>
-                            <li>System can be challenging to navigate</li>
+                            <li>System can be <strong>challenging</strong> to navigate</li>
                             <li>Wishes for additional documentation</li>  
                         </ul>
-                    </div> -->
+                    </div> 
                     </div>
                 </div>
                 <!-- image -->
@@ -221,10 +214,10 @@
                     <p>I presented two main options for a path forward in our design system.</p>
                     <div>
                         <div style="margin-top: 2rem;">
-                            <h3>Path #1 - Update current system</h3>
+                            <p class="subtext1">Path #1 - Update current system</p>
                             <div class="two-col-grid">
                                 <div>
-                                    <h4>Cons:</h4>
+                                    <p class="subtext2">Cons:</p>
                                     <ul class="list">
                                         <li>Any updates to existing components can, and likely will, cause breaking changes to existing designs.</li>
                                         <li>Updates will have to work around or with existing components</li>
@@ -233,7 +226,7 @@
                                      </ul>
                                 </div>
                                 <div>
-                                    <h4>Pros:</h4>
+                                    <p class="subtext2">Pros:</p>
                                     <ul class="list">
                                         <li>Does not require a new library</li>
                                     </ul>   
@@ -241,17 +234,17 @@
                             </div>
                         </div>
                         <div style="margin-top: 2rem;">
-                            <h3>Path #2 - Start a 3.0 system, updating and pulling in components from 2.0</h3>
+                            <p class="subtext1">Path #2 - Start a 3.0 system, updating and pulling in components from 2.0</p>
                             <div class="two-col-grid">
                                 <div>
-                                    <h4>Cons:</h4>
+                                    <p class="subtext2">Cons:</p>
                                     <ul class="list">
                                         <li>Requires new library file and designers to add new library file</li>
                                         <li>Potential issues with designers still using old components</li>
                                      </ul>
                                 </div>
                                 <div>
-                                    <h4>Pros:</h4>
+                                    <p class="subtext2">Pros:</p>
                                     <ul class="list">
                                         <li>No effect on old and existing designs</li>
                                         <li>Freedom to establish system structure before components</li>
@@ -279,8 +272,8 @@
                     <!-- body copy -->
                     <p>There was overwhelming excitement about the possibility of a 3.0 design system. At the same time, there was significant hesitancy on what that would look like and what an updated system could do.</p>
                     <div>
-                        <h3>To address and alleviate these concerns I created a proof of concept using a single component: the button.</h3>
-                        <p>I decided on the button for a proof of concept because I wanted to clearly illustrate the power of flexibly built components. With a flexible component, Instead of needing 5 separate button components or variants for each product and brand; a single component combined with variables can be used.</p>
+                        <p>To address and alleviate these concerns I created a <strong>proof of concept</strong> using a single component: <strong>the button.</strong></p>
+                        <p>I decided on the button for a proof of concept because I wanted to clearly illustrate the <strong>power of flexibly built components.</strong> With a flexible component, Instead of needing 5 separate button components or variants for each product and brand; a single component combined with variables can be used.</p>
                     </div>
                 </div>
                 <!-- image -->
