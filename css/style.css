@@ -918,7 +918,10 @@ img.index_image {
     .card_grid_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 2vw ;
+        padding: 0;
+        grid-gap: 2rem ;
+        margin: auto  ;
+        max-width: 1400px;
         justify-content: center;
         justify-items: center;
     }
@@ -1053,12 +1056,12 @@ button:hover{
 }
 
 /* color effect for card button and text on card hover*/
-.card:Hover .card_button_text {
+.card:hover .card_button_text {
     color: #009AAF;
     text-decoration: underline;
 }
 /* color effect for card text on hover*/
-.blueOnHover {
+.card:hover .blueOnHover {
     color: #009AAF;
 }
 /*-------- end homepage (index) styles --------*/
