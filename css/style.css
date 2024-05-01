@@ -354,8 +354,7 @@ p.body2 {
     text-align: left;
 }
 /* centered p text */
-p.centered,
-#b {
+p.centered, #b {
     text-align: center;
 }
 
@@ -637,25 +636,38 @@ a.button:hover {
     color: #009AAF;
 }
 /*-------- start grid styles --------*/
-/* simple two column grid container (mobile styles) */
-.two-col-grid{
+ /* image in grid item container */
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* or cover*/
+}
+
+/*------ start grid SECTION styles ------*/
+/* one column grid section (mobile) */
+.one-col-grid-section{
     display: grid;
     grid-template-columns: 1fr;
     background: white;
-    margin: 0 ; 
+    margin: 2rem 0; /* 32px */
     grid-gap: 1rem;
-    padding: 0;
+    padding: 2vw;
 }
-/*-- creates two col grid container on tablet and desktop  --*/
+/* adds padding to one column grid section on tablet and desktop  */
 @media (min-device-width:768px) {
-    .two-col-grid {
-        display: grid;
-        grid-template-columns:  1fr 1fr;
-        padding: 0 ;
-        grid-gap: 2rem;
+    .one-col-grid-section {
+        padding: 2vw 8vw ;
+        justify-content: center;
+        justify-items: center;
     }
 }
-/* two column grid section (mobile styles) */
+/* one column grid items */
+.one-col-grid-section > * {
+    padding: 0 2rem ;
+    max-width: 880px;
+}
+
+/* two column grid section (mobile ) */
 .two-col-grid-section{
     display: grid;
     grid-template-columns: 1fr;
@@ -672,44 +684,67 @@ a.button:hover {
         padding: 2vw 8vw; 
     }
 }
-
 /* two column grid items */
 .two-col-grid-section > * {
     padding: 0 2rem ;
 }
-/* two column grid container (mobile) */
-.one-col-grid-section{
+/*---- end ----*/
+/*------ start grid CONTAINER styles ------*/
+/* simple two column grid container (mobile styles) */
+.two-col-grid{
     display: grid;
     grid-template-columns: 1fr;
     background: white;
-    margin: 2rem 0; /* 32px */
+    margin: 0 ; 
     grid-gap: 1rem;
-    padding: 2vw;
+    padding: 0;
 }
-/*-- creates two col grid on tablet and desktop  --*/
+/* creates two col grid container on tablet and desktop  */
 @media (min-device-width:768px) {
-    .one-col-grid-section {
+    .two-col-grid {
         display: grid;
-        grid-template-columns: 1fr;
-        padding: 2vw 8vw ;
-        justify-content: center;
-        justify-items: center;
+        grid-template-columns:  1fr 1fr;
+        padding: 0 ;
+        grid-gap: 2rem;
     }
 }
-
-/* one column grid items */
-.one-col-grid-section > * {
-    padding: 0 2rem ;
-    max-width: 880px;
+/* four column grid used within another grid section (mobile style) */
+.inner-grid-four-column{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    justify-content: space-around;
+    margin: .5rem;
+    text-align: center;
+    place-items: center;
 }
-
- /* image in grid container */
-.grid-item img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* or cover*/
+/* four column grid items used in summary */
+.inner-grid-four-column > * {
+    align-self: stretch;
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
 }
-
+/* centers heading text in four col grid on mobile  */
+p.inner-grid-four-column-text{
+    text-align: center;
+}
+/*-- creates four col grid on tablet and desktop and left aligns text content --*/
+@media (min-device-width:768px) {
+    .inner-grid-four-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: left;
+    }
+    .inner-grid-four-column > * {
+        justify-self: center;
+        text-align: left;
+    }
+    p.inner-grid-four-column-text{
+    text-align: left;
+    }
+}
 .hero-medsol {
     background: #263349;
 }
@@ -717,27 +752,7 @@ a.button:hover {
     margin: 0;
     padding: 2rem 0;
 }
-/* four column grid used within another grid section */
-.inner-grid-four-column{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 1rem;
-    justify-content: space-around;
-    margin: .5rem;
-}
-/* four column grid items used in summary */
-.inner-grid-four-column > * {
-    align-self: stretch;
-    justify-self: center;
-}
-/*-- creates four col grid on tablet and desktop  --*/
-@media (min-device-width:768px) {
-    .inner-grid-four-column {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
+
 
 /*-- end grid styles  --*/
 
