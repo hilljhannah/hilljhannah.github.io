@@ -264,14 +264,15 @@ h1 {
 
 /* h2  */
 h2 {
-    display: block; 
+    display: block;
     font-family: 'Nunito', sans-serif;
-    font-size: 2.441rem; /* 3.052rem on desktop+tablet  */
+    font-size: 2.441rem;
+    /* 3.052rem on desktop+tablet  */
     width: 80%;
     text-align: center;
     font-weight: 700;
     color: #009AAF;
-    
+
 }
 
 
@@ -280,7 +281,8 @@ h3 {
     color: #333;
     display: block;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.953rem; /* 2.441rem on desktop+tablet  */
+    font-size: 1.953rem;
+    /* 2.441rem on desktop+tablet  */
     font-weight: 400;
     margin: 0 auto;
     padding-bottom: 1rem;
@@ -293,7 +295,8 @@ h3 {
 h4 {
     color: #333;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.563rem; /* 1.953rem on desktop+tablet  */
+    font-size: 1.563rem;
+    /* 1.953rem on desktop+tablet  */
     font-weight: 400;
     text-align: left;
     padding-bottom: 1rem;
@@ -305,7 +308,8 @@ h4 {
 h5 {
     color: #333;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem; /*  on desktop+tablet  */
+    font-size: 1.25rem;
+    /*  on desktop+tablet  */
     font-weight: 600;
     margin: 0;
     text-align: left;
@@ -314,7 +318,7 @@ h5 {
     max-width: 100%;
 }
 
-.subtext1{
+.subtext1 {
     color: #333;
     font-family: 'Nunito';
     font-size: 1.25rem;
@@ -325,12 +329,14 @@ h5 {
     padding-top: 1rem;
     width: 100%;
 }
-.subtext2{
+
+.subtext2 {
     color: #333;
     font-family: 'Nunito';
     font-size: 1.063rem;
     font-weight: 500;
 }
+
 /*-- paragraph text --*/
 p {
     color: #333;
@@ -343,6 +349,7 @@ p {
     max-width: 100%;
     line-height: 1.6;
 }
+
 /*-- paragraph text --*/
 p.body2 {
     color: #333;
@@ -354,8 +361,10 @@ p.body2 {
     line-height: 1.6;
     text-align: left;
 }
+
 /* centered p text */
-p.centered, #b {
+p.centered,
+#b {
     text-align: center;
 }
 
@@ -377,9 +386,10 @@ p.foot {
 }
 
 /* removes margin */
-.noMargin{
+.noMargin {
     margin: 0;
 }
+
 /*--- typeography media queries ----------------------------------------------------*/
 
 /*-- Desktop and tablet typography media queries  -- */
@@ -401,7 +411,8 @@ p.foot {
         font-size: 1.953rem;
     }
 
-    h5,p.subtext {
+    h5,
+    p.subtext {
         font-size: 1.25rem;
     }
 
@@ -410,6 +421,7 @@ p.foot {
         max-width: 800px;
     }
 }
+
 /*--sets/overrides color of text to white--*/
 #white {
     color: white;
@@ -451,24 +463,28 @@ ul.list {
     list-style-type: circle;
     margin: 0;
     padding-bottom: 1.5rem;
-    width: 100%;  
+    width: 100%;
 }
+
 /* default list item  */
 ul.list li {
     padding-bottom: 1.5rem;
     font-weight: normal;
 }
+
 /* unstlyed list with no decoration or padding */
-ul.unstyled-list{
+ul.unstyled-list {
     padding: 0;
     list-style-position: inside;
     list-style: none;
     margin: 0;
 }
+
 /* unstlyed list item with no decoration or padding */
-ul.unstyled-list li{
+ul.unstyled-list li {
     margin-bottom: .5rem;
 }
+
 /* list with green checkmark as list marker */
 ul.pros {
     list-style-image: url('../images/icon-check-bold.svg');
@@ -476,9 +492,12 @@ ul.pros {
     font-size: 1rem;
     margin: 0;
     width: 100%;
-    padding-left: 1.5rem; /* 24px */
-    padding-bottom: 1.5rem; /* 24px */
+    padding-left: 1.5rem;
+    /* 24px */
+    padding-bottom: 1.5rem;
+    /* 24px */
 }
+
 /* list with red x as list marker */
 ul.cons {
     list-style-image: url('../images/icon-cancel.svg');
@@ -486,18 +505,22 @@ ul.cons {
     font-size: 1rem;
     margin: 0;
     width: 100%;
-    padding-left: 1.5rem; /* 24px */
+    padding-left: 1.5rem;
+    /* 24px */
 }
+
 /* pros list items  */
 ul.pros li {
     padding-bottom: 1.5rem;
     font-weight: normal;
 }
+
 /* cons list items  */
 ul.cons li {
     padding-bottom: 1.5rem;
     font-weight: normal;
 }
+
 /*-- list with background color --*/
 ul.color {
     font-size: 1.6rem;
@@ -537,7 +560,7 @@ ul.ideals {
 /*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-    ul.color li{
+    ul.color li {
         font-size: 1rem;
     }
 }
@@ -545,7 +568,7 @@ ul.ideals {
 /*-- for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
 
-    ul.color li{
+    ul.color li {
         font-size: 1rem;
     }
 }
@@ -559,6 +582,7 @@ a {
     margin: 0 auto;
     color: #333;
 }
+
 /* fixes a styles for card container hover*/
 a.cardHover {
     text-align: left;
@@ -611,8 +635,9 @@ a.button:hover {
     width: 100%;
     max-width: 700px;
 }
+
 /*-------- end button styles --------*/
-.case-study-index{
+.case-study-index {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -620,100 +645,115 @@ a.button:hover {
     width: 100%;
     max-width: 800px;
 }
+
 .case-study-index > * {
     margin: 2rem 0;
 }
-.case-study-index-list{
+
+.case-study-index-list {
     list-style-type: none;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
-.index-link{
+
+.index-link {
     text-decoration: underline;
     padding-bottom: 1rem;
     transition: .25s;
 }
+
 .index-link:hover {
     border-bottom: 2px solid #FFFFFF;
     color: #009AAF;
 }
+
 /*-------- start grid styles --------*/
- /* image in grid item container */
-.grid-item img{
+/* image in grid item container */
+.grid-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* or cover*/
+    object-fit: contain;
+    /* or cover*/
 }
 
 /*------ start grid SECTION styles ------*/
 /* one column grid section (mobile) */
-.one-col-grid-section{
+.one-col-grid-section {
     display: grid;
     grid-template-columns: 1fr;
     background: white;
-    margin: 2rem 0; /* 32px */
+    margin: 2rem 0;
+    /* 32px */
     grid-gap: 1rem;
     padding: 2vw;
 }
+
 /* adds padding to one column grid section on tablet and desktop  */
 @media (min-device-width:768px) {
     .one-col-grid-section {
-        padding: 2vw 8vw ;
+        padding: 2vw 8vw;
         justify-content: center;
         justify-items: center;
     }
 }
+
 /* one column grid items */
 .one-col-grid-section > * {
-    padding: 0 2rem ;
+    padding: 0 2rem;
     max-width: 880px;
 }
 
 /* two column grid section (mobile ) */
-.two-col-grid-section{
+.two-col-grid-section {
     display: grid;
     grid-template-columns: 1fr;
     background: white;
-    margin: 2rem 0; /* 32px */
+    margin: 2rem 0;
+    /* 32px */
     grid-gap: 1rem;
     padding: 2vw;
 }
+
 /*-- creates two col grid section on tablet and desktop  --*/
 @media (min-device-width:768px) {
     .two-col-grid-section {
         display: grid;
-        grid-template-columns:  1fr 1fr;
-        padding: 2vw 8vw; 
+        grid-template-columns: 1fr 1fr;
+        padding: 2vw 8vw;
     }
 }
+
 /* two column grid items */
 .two-col-grid-section > * {
-    padding: 0 2rem ;
+    padding: 0 2rem;
 }
+
 /*---- end ----*/
 /*------ start grid CONTAINER styles ------*/
 /* simple two column grid container (mobile styles) */
-.two-col-grid{
+.two-col-grid {
     display: grid;
     grid-template-columns: 1fr;
     background: white;
-    margin: 0 ; 
+    margin: 0;
     grid-gap: 1rem;
     padding: 0;
 }
+
 /* creates two col grid container on tablet and desktop  */
 @media (min-device-width:768px) {
     .two-col-grid {
         display: grid;
-        grid-template-columns:  1fr 1fr;
-        padding: 0 ;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
         grid-gap: 2rem;
     }
 }
+
 /* four column grid used within another grid section (mobile style) */
-.inner-grid-four-column{
+.inner-grid-four-column {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 1rem;
     justify-content: space-between;
@@ -721,19 +761,22 @@ a.button:hover {
     text-align: center;
     place-items: center;
 }
+
 /* four column grid items used in summary */
 .inner-grid-four-column > * {
-   /* place-self: center stretch; /* align self + justify self */
+    /* place-self: center stretch; /* align self + justify self */
     width: fit-content;
     max-width: 100%;
     text-align: center;
     padding-left: 0px;
     justify-self: center;
 }
+
 /* centers heading text in four col grid on mobile  */
-p.inner-grid-four-column-text{
+p.inner-grid-four-column-text {
     text-align: center;
 }
+
 /*-- creates four col grid on tablet and desktop and left aligns text content --*/
 @media (min-device-width:768px) {
     .inner-grid-four-column {
@@ -741,15 +784,18 @@ p.inner-grid-four-column-text{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         text-align: left;
         justify-content: start;
-        place-items: start stretch; /* align items + justify items */
+        place-items: start stretch;
+        /* align items + justify items */
         width: 100%;
         max-width: 1400px;
     }
+
     .inner-grid-four-column > * {
         text-align: left;
         justify-self: center;
     }
-    p.inner-grid-four-column-text{
+
+    p.inner-grid-four-column-text {
         text-align: left;
     }
 }
@@ -758,6 +804,7 @@ p.inner-grid-four-column-text{
 .hero-medsol {
     background: #263349;
 }
+
 .hero-grid {
     margin: 0;
     padding: 2rem 0;
@@ -767,62 +814,71 @@ p.inner-grid-four-column-text{
 /*-- end grid styles  --*/
 
 /*-------- start flexbox styles --------*/
-.flexbox-img-within-grid{
+.flexbox-img-within-grid {
     display: flex;
     width: 100%;
-    margin: auto;  
+    margin: auto;
     height: 600px;
     max-height: 1000px;
     background-repeat: no-repeat;
-    background-size: cover; 
-    justify-content:  flex-start;
+    background-size: cover;
+    justify-content: flex-start;
 }
+
 /* background images */
 /* MS Design System Audit */
-.imgBG-msds-audit{
+.imgBG-msds-audit {
     background-image: url("../images/msDesignSystemAudit/MSDSAudit-compilation.png");
 }
+
 /*-- start hero flexbox styles --*/
 /* hero flexbox container */
-.hero-flex{
+.hero-flex {
     display: flex;
     width: 100%;
-    margin: auto;  
+    margin: auto;
     height: 200px;
     max-height: 500px;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     padding: 2vw;
-    justify-content:  flex-start;
+    justify-content: flex-start;
 }
-/* hero background images */ 
+
+/* hero background images */
 
 /* MS Design System */
-.heroBG-ms-ds{
+.heroBG-ms-ds {
     background-image: url("../images/ms-designSystem/MSDesignSystemCoverSmall.jpg");
 }
+
 /* larger hero image for display on tablet and desktops */
 @media (min-device-width:768px) {
-    .heroBG-ms-ds{ /* MS Design System */
-    background-image: url("../images/ms-designSystem/MSDesignSystemCoverBackground.jpg");
+    .heroBG-ms-ds {
+        /* MS Design System */
+        background-image: url("../images/ms-designSystem/MSDesignSystemCoverBackground.jpg");
     }
 }
+
 /* Case study title (in hero section) */
-.hero-flex-title{
+.hero-flex-title {
     width: 100%;
     max-width: 300px;
-} 
+}
+
 /*-- for tablet and desktop  --*/
 @media (min-device-width:768px) {
     .hero-flex {
         padding: 10vw;
         height: 520px;
     }
-    .hero-flex-title{
-    width: 100%;
-    max-width: 600px;
-} 
+
+    .hero-flex-title {
+        width: 100%;
+        max-width: 600px;
+    }
 }
+
 /* general flexbox container */
 .flex-container {
     align-items: start;
@@ -833,8 +889,9 @@ p.inner-grid-four-column-text{
     margin: 0;
     padding: 0;
 }
+
 /* flexbox section */
-.flex-section{
+.flex-section {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -846,37 +903,43 @@ p.inner-grid-four-column-text{
     padding: 2rem 4rem;
     width: 100vw;
 }
+
 /* flexbox section item */
-.flex-section-item{ 
-  width: 800px; 
-  margin: .5vw; 
+.flex-section-item {
+    width: 800px;
+    margin: .5vw;
 }
+
 /* flexbox section image item */
- .flex-section-item img{
-     display: flex;
-    width: 100%; 
-     height: auto; 
-     justify-content: flex-end;
-     object-fit: cover;
+.flex-section-item img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    object-fit: cover;
 }
+
 /* adds padding to flexbox section on tablet and desktops */
 @media (min-device-width:768px) {
-    .flex-section{
+    .flex-section {
         align-items: flex-start;
         align-content: flex-start;
     }
-    .flex-text{
-    padding-right: 80px;
+
+    .flex-text {
+        padding-right: 80px;
     }
 }
+
 /* Image in flexbox */
-.flex-image{
+.flex-image {
     max-width: 100%;
     overflow: hidden;
     object-fit: cover;
 }
+
 /* flexbox list section */
-.inner-flex-section{
+.inner-flex-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -884,11 +947,13 @@ p.inner-grid-four-column-text{
     align-content: flex-start;
     justify-content: space-between
 }
-.inner-flex-section div{
-   max-width: 100%;
-     padding-right: 80px;
+
+.inner-flex-section div {
+    max-width: 100%;
+    padding-right: 80px;
 }
-.quoteSection{
+
+.quoteSection {
     display: flex;
     align-content: center;
     justify-items: center;
@@ -897,17 +962,18 @@ p.inner-grid-four-column-text{
     background: blue;
     text-align: center;
 }
+
 /*--- end flexbox styles--*/
 
 /* lozenge used in case studies */
-.lozenge{
+.lozenge {
     display: block;
     padding-bottom: 1rem;
     width: auto;
     font-size: 11px;
     font-weight: 500;
     font-family: 'Open Sans';
-    margin:  0;
+    margin: 0;
     width: fit-content;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -959,27 +1025,31 @@ img.index_image {
     align-content: space-between;
     justify-content: center;
 }
+
 /* three column grid container (mobile) */
-.card_grid_container{
+.card_grid_container {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 2rem 0; /* 32px */
+    margin: 2rem 0;
+    /* 32px */
     grid-gap: 1rem;
     padding: 2vw;
 }
+
 /*-- creates three col grid on tablet and desktop  --*/
 @media (min-device-width:768px) {
     .card_grid_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 0;
-        grid-gap: 2rem ;
-        margin: auto  ;
+        grid-gap: 2rem;
+        margin: auto;
         max-width: 1400px;
         justify-content: center;
         justify-items: center;
     }
 }
+
 /*
 a.card{
     display: grid;
@@ -1024,6 +1094,7 @@ a.card{
     bottom: 0;
     width: 100%;
 }
+
 /* container for image used in case study cards */
 .card_image_div {
     display: block;
@@ -1046,15 +1117,18 @@ a.card{
     position: relative;
     grid-gap: 1rem;
 }
+
 /*-- adds padding to card content on tablet and desktop  --*/
 @media (min-device-width:768px) {
-    .card_content{
+    .card_content {
         padding: 2rem;
         padding-bottom: 5rem;
     }
 }
-button{
-    background: #4db8c7; /* primary brand shade */
+
+button {
+    background: #4db8c7;
+    /* primary brand shade */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -1066,16 +1140,20 @@ button{
     border-radius: 8px;
     text-align: center;
     margin-top: 1rem;
-    color: #002e34; /* dark primary brand shade */
+    color: #002e34;
+    /* dark primary brand shade */
     grid-row-start: 4;
     width: fit-content;
     position: absolute;
     bottom: 1rem;
 }
-button:hover{
-    background: #A2DFE7; /* lighter primary brand shade */
+
+button:hover {
+    background: #A2DFE7;
+    /* lighter primary brand shade */
     cursor: pointer;
 }
+
 /* Unused -- DELETE -- card button */
 .card_button {
     align-content: center;
@@ -1114,10 +1192,12 @@ button:hover{
     color: #009AAF;
     text-decoration: underline;
 }
+
 /* color effect for card text on hover*/
 .card:hover .blueOnHover {
     color: #009AAF;
 }
+
 /*-------- end homepage (index) styles --------*/
 .shapes {
     display: grid;
@@ -1233,8 +1313,8 @@ button:hover{
     max-width: 100%;
 }
 
-.whiteBG{
-    background-color:#FFFFFF;
+.whiteBG {
+    background-color: #FFFFFF;
 }
 
 /* disables parallax image on mobile devices*/
