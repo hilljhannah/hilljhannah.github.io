@@ -70,7 +70,7 @@ header {
     padding: 16px 20px;
     border-right: 1px solid #009AAF;
     text-decoration: none;
-    font-family: 'Lato';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
     font-size: 1rem;
@@ -250,37 +250,39 @@ nav {
 h1 {
     color: #009AAF;
     display: inline-block;
-    font-family: 'Open+Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 3.815rem;
     font-style: normal;
     margin: .5rem;
     vertical-align: middle;
     width: 100%;
+    max-width: 100%;
     text-align: left;
 }
+
 
 /* h2  */
 h2 {
     display: block;
-    font-family: 'Open+Sans', sans-serif;
-    font-size: 3.052rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.441rem;
+    /* 3.052rem on desktop+tablet  */
+    width: 80%;
     text-align: center;
     font-weight: 700;
     color: #009AAF;
-    width: 100%;
+
 }
 
-h2.left {
-    text-align: left;
-}
 
 /* h3  */
 h3 {
     color: #333;
     display: block;
-    font-family: 'Open+Sans', sans-serif;
-    font-size: 2.441rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.953rem;
+    /* 2.441rem on desktop+tablet  */
     font-weight: 400;
     margin: 0 auto;
     padding-bottom: 1rem;
@@ -292,9 +294,10 @@ h3 {
 /*-- h4 --*/
 h4 {
     color: #333;
-    font-family: 'Open+Sans', sans-serif;
-    font-size: 1.953rem;
-    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.563rem;
+    /* 1.953rem on desktop+tablet  */
+    font-weight: 400;
     text-align: left;
     padding-bottom: 1rem;
     margin: 0 auto;
@@ -304,9 +307,22 @@ h4 {
 /*-- h5 --*/
 h5 {
     color: #333;
-    font-family: 'Open+Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.25rem;
+    /*  on desktop+tablet  */
     font-weight: 600;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    max-width: 100%;
+}
+
+.subtext1 {
+    color: #333;
+    font-family: 'Nunito';
+    font-size: 1.25rem;
+    font-weight: 700;
     margin: 0;
     text-align: left;
     padding-bottom: 1rem;
@@ -314,26 +330,30 @@ h5 {
     width: 100%;
 }
 
-/* removes margin */
-.noMargin{
-    margin: 0;
+.subtext2 {
+    color: #333;
+    font-family: 'Nunito';
+    font-size: 1.063rem;
+    font-weight: 500;
 }
 
 /*-- paragraph text --*/
 p {
     color: #333;
-    font-family: 'Open+Sans';
+    font-family: 'Open Sans';
     font-size: 1rem;
     margin: 0 auto;
     padding-bottom: 1em;
     font-style: normal;
     width: 100%;
+    max-width: 100%;
     line-height: 1.6;
 }
+
 /*-- paragraph text --*/
 p.body2 {
     color: #333;
-    font-family: 'Lato';
+    font-family: 'Open Sans';
     font-size: .8rem;
     padding-bottom: 1em;
     font-style: normal;
@@ -341,6 +361,7 @@ p.body2 {
     line-height: 1.6;
     text-align: left;
 }
+
 /* centered p text */
 p.centered,
 #b {
@@ -350,41 +371,54 @@ p.centered,
 /*-- Footer Text ---*/
 p.foot {
     color: white;
-    font-family: 'Lato';
+    font-family: 'Open Sans';
     font-size: .8rem;
     text-align: center;
     margin: 1rem auto;
     line-height: 2rem;
 }
 
+/*-- left aligns text ---*/
+.left {
+    text-align: left;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+/* removes margin */
+.noMargin {
+    margin: 0;
+}
+
 /*--- typeography media queries ----------------------------------------------------*/
-/*-- Mobile screens only -- */
-@media only screen and (min-device-width : 1px) and (max-device-width : 768px) {
+
+/*-- Desktop and tablet typography media queries  -- */
+@media (min-device-width:768px) {
     h1 {
-        font-size: 3.052rem;
-        max-width: 100%;
+        font-size: 3.815rem;
     }
 
     h2 {
-        font-size: 2.441rem;
-        width: 80%;
+        font-size: 3.052rem;
+        width: 100%;
     }
 
-    h3,
-    h3.left {
-        font-size: 1.953rem;
+    h3 {
+        font-size: 2.441rem;
     }
 
     h4 {
-        font-size: 1.563rem;
+        font-size: 1.953rem;
     }
 
-    h5 {
+    h5,
+    p.subtext {
         font-size: 1.25rem;
     }
 
     p {
         font-size: 1rem;
+        max-width: 800px;
     }
 }
 
@@ -402,11 +436,10 @@ p.foot {
     border-bottom: 1px solid #FFFFFF;
     display: block;
     color: #009AAF;
-    font-family: 'Lato';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
-    font-size: 1.6rem;
-    margin: 0 auto;
+    font-size: 1rem;
     justify-content: center;
     padding: 0 0 5px 0;
     transition: .25s;
@@ -414,8 +447,8 @@ p.foot {
 }
 
 .link:hover {
-    border-bottom: 1px dotted #FFFFFF;
-    color: #00FFEB;
+    border-bottom: 2px solid #FFFFFF;
+    color: #009AAF;
 }
 
 .inline-link {
@@ -424,26 +457,70 @@ p.foot {
 
 /*-------- end typography styles --------*/
 /*-------- list styles --------*/
-/* unstlyed list with no decoration or padding */
-ul.unstyled-list{
-    padding: 0;
-    list-style-position: inside;
-    list-style: none;
-}
-
+/* default list  */
 ul.list {
     font-size: 1rem;
     list-style-type: circle;
     margin: 0;
     padding-bottom: 1.5rem;
     width: 100%;
-    
 }
-/*  list item styles */
+
+/* default list item  */
 ul.list li {
     padding-bottom: 1.5rem;
     font-weight: normal;
 }
+
+/* unstlyed list with no decoration or padding */
+ul.unstyled-list {
+    padding: 0;
+    list-style-position: inside;
+    list-style: none;
+    margin: 0;
+}
+
+/* unstlyed list item with no decoration or padding */
+ul.unstyled-list li {
+    margin-bottom: .5rem;
+}
+
+/* list with green checkmark as list marker */
+ul.pros {
+    list-style-image: url('../images/icon-check-bold.svg');
+    list-style-type: image;
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    padding-left: 1.5rem;
+    /* 24px */
+    padding-bottom: 1.5rem;
+    /* 24px */
+}
+
+/* list with red x as list marker */
+ul.cons {
+    list-style-image: url('../images/icon-cancel.svg');
+    list-style-type: image;
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    padding-left: 1.5rem;
+    /* 24px */
+}
+
+/* pros list items  */
+ul.pros li {
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+/* cons list items  */
+ul.cons li {
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
+
 /*-- list with background color --*/
 ul.color {
     font-size: 1.6rem;
@@ -478,33 +555,12 @@ ul.ideals {
     list-style-position: inside;
 }
 
-/* Unused -- DELETE -- list within a list */
-dt {
-    background: rgba(135, 206, 250, .09);
-    font-family: "Open Sans";
-    font-size: 1.4rem;
-    margin: 2rem auto 0 auto;
-    width: 90vw;
-    max-width: 600px;
-    padding: 1rem;
-}
-/* Unused -- DELETE -- list within a list */
-dd {
-    font-size: 1.4rem;
-    width: 90vw;
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(135, 206, 250, .02);
-    padding: 1rem;
-}
 
 /*-- list media queries -------------------*/
 /*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-    ul.color li,
-    dt,
-    dd {
+    ul.color li {
         font-size: 1rem;
     }
 }
@@ -512,9 +568,7 @@ dd {
 /*-- for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
 
-    ul.color li,
-    dt,
-    dd {
+    ul.color li {
         font-size: 1rem;
     }
 }
@@ -528,6 +582,7 @@ a {
     margin: 0 auto;
     color: #333;
 }
+
 /* fixes a styles for card container hover*/
 a.cardHover {
     text-align: left;
@@ -553,7 +608,7 @@ a.button {
     color: white;
     cursor: pointer;
     display: block;
-    font-family: 'Lato';
+    font-family: 'Open+Sans';
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 20px;
@@ -580,132 +635,250 @@ a.button:hover {
     width: 100%;
     max-width: 700px;
 }
+
 /*-------- end button styles --------*/
-.case-study-index{
+.case-study-index {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     max-width: 800px;
 }
+
 .case-study-index > * {
     margin: 2rem 0;
 }
-.case-study-index-list{
+
+.case-study-index-list {
     list-style-type: none;
     margin: 0;
-    padding: 0; 
-}
-.index-link{
-    text-decoration: underline;
-}
-/*-------- start grid styles --------*/
-/* two column grid container (mobile only) */
-.two-col-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    background: white;
-    margin: 2rem 0; /* 32px */
-    grid-gap: 1rem;
-    padding: 2vw;
-}
-/*-- creates two col grid on tablet and desktop  --*/
-@media (min-device-width:768px) {
-    .two-col-grid {
-        display: grid;
-        grid-template-columns:  1fr 1fr;
-        padding: 2vw 8vw; ;
-    }
+    padding: 0;
 }
 
-/* two column grid items */
-.two-col-grid > * {
-    padding: 0 2rem ;
+.index-link {
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    transition: .25s;
 }
-/* two column grid container (mobile only) */
-.one-col-grid{
+
+.index-link:hover {
+    border-bottom: 2px solid #FFFFFF;
+    color: #009AAF;
+}
+
+/*-------- start grid styles --------*/
+/* image in grid item container */
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* or cover*/
+}
+
+/*------ start grid SECTION styles ------*/
+/* one column grid section (mobile) */
+.one-col-grid-section {
     display: grid;
     grid-template-columns: 1fr;
     background: white;
-    margin: 2rem 0; /* 32px */
+    margin: 2rem 0;
+    /* 32px */
     grid-gap: 1rem;
     padding: 2vw;
 }
-/*-- creates two col grid on tablet and desktop  --*/
+
+/* adds padding to one column grid section on tablet and desktop  */
 @media (min-device-width:768px) {
-    .one-col-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 2vw 8vw ;
+    .one-col-grid-section {
+        padding: 2vw 8vw;
         justify-content: center;
         justify-items: center;
     }
 }
 
 /* one column grid items */
-.one-col-grid > * {
-    padding: 0 2rem ;
+.one-col-grid-section > * {
+    padding: 0 2rem;
     max-width: 880px;
 }
 
- /* image in grid container */
-.grid-item img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* or cover*/
+/* two column grid section (mobile ) */
+.two-col-grid-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: white;
+    margin: 2rem 0;
+    /* 32px */
+    grid-gap: 1rem;
+    padding: 2vw;
 }
+
+/*-- creates two col grid section on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .two-col-grid-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2vw 8vw;
+    }
+}
+
+/* two column grid items */
+.two-col-grid-section > * {
+    padding: 0 2rem;
+}
+
+/*---- end ----*/
+/*------ start grid CONTAINER styles ------*/
+/* simple two column grid container (mobile styles) */
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: white;
+    margin: 0;
+    grid-gap: 1rem;
+    padding: 0;
+}
+
+/* creates two col grid container on tablet and desktop  */
+@media (min-device-width:768px) {
+    .two-col-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        grid-gap: 2rem;
+    }
+}
+
+/* four column grid used within another grid section (mobile style) */
+.inner-grid-four-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    justify-content: space-between;
+    margin: .5rem;
+    text-align: center;
+    place-items: center;
+}
+
+/* four column grid items used in summary */
+.inner-grid-four-column > * {
+    /* place-self: center stretch; /* align self + justify self */
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    justify-self: center;
+}
+
+/* centers heading text in four col grid on mobile  */
+p.inner-grid-four-column-text {
+    text-align: center;
+}
+
+/*-- creates four col grid on tablet and desktop and left aligns text content --*/
+@media (min-device-width:768px) {
+    .inner-grid-four-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: left;
+        justify-content: start;
+        place-items: start stretch;
+        /* align items + justify items */
+        width: 100%;
+        max-width: 1400px;
+    }
+
+    .inner-grid-four-column > * {
+        text-align: left;
+        justify-self: center;
+    }
+
+    p.inner-grid-four-column-text {
+        text-align: left;
+    }
+}
+
 
 .hero-medsol {
     background: #263349;
 }
+
 .hero-grid {
     margin: 0;
     padding: 2rem 0;
 }
+
+
 /*-- end grid styles  --*/
 
 /*-------- start flexbox styles --------*/
-/*-- start hero flexbox styles --*/
-/* hero flexbox container */
-.hero-flex{
+.flexbox-img-within-grid {
     display: flex;
     width: 100%;
-    margin: auto;  
+    margin: auto;
+    height: 600px;
+    max-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-start;
+}
+
+/* background images */
+/* MS Design System Audit */
+.imgBG-msds-audit {
+    background-image: url("../images/msDesignSystemAudit/MSDSAudit-compilation.png");
+}
+
+/*-- start hero flexbox styles --*/
+/* hero flexbox container */
+.hero-flex {
+    display: flex;
+    width: 100%;
+    margin: auto;
     height: 200px;
     max-height: 500px;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     padding: 2vw;
-    justify-content:  flex-start;
+    justify-content: flex-start;
 }
-/* hero background images */ 
+
+/* hero background images */
 
 /* MS Design System */
-.heroBG-ms-ds{
+.heroBG-ms-ds {
     background-image: url("../images/ms-designSystem/MSDesignSystemCoverSmall.jpg");
 }
+
 /* larger hero image for display on tablet and desktops */
 @media (min-device-width:768px) {
-    .heroBG-ms-ds{ /* MS Design System */
-    background-image: url("../images/ms-designSystem/MSDesignSystemCoverBackground.jpg");
+    .heroBG-ms-ds {
+        /* MS Design System */
+        background-image: url("../images/ms-designSystem/MSDesignSystemCoverBackground.jpg");
     }
 }
+
 /* Case study title (in hero section) */
-.hero-flex-title{
+.hero-flex-title {
     width: 100%;
     max-width: 300px;
-} 
+}
+
 /*-- for tablet and desktop  --*/
 @media (min-device-width:768px) {
     .hero-flex {
         padding: 10vw;
         height: 520px;
     }
-    .hero-flex-title{
-    width: 100%;
-    max-width: 600px;
-} 
+
+    .hero-flex-title {
+        width: 100%;
+        max-width: 600px;
+    }
 }
+
 /* general flexbox container */
 .flex-container {
     align-items: start;
@@ -716,8 +889,9 @@ a.button:hover {
     margin: 0;
     padding: 0;
 }
+
 /* flexbox section */
-.flex-section{
+.flex-section {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -729,37 +903,43 @@ a.button:hover {
     padding: 2rem 4rem;
     width: 100vw;
 }
+
 /* flexbox section item */
-.flex-section-item{ 
-  width: 800px; 
-  margin: .5vw; 
+.flex-section-item {
+    width: 800px;
+    margin: .5vw;
 }
+
 /* flexbox section image item */
- .flex-section-item img{
-     display: flex;
-    width: 100%; 
-     height: auto; 
-     justify-content: flex-end;
-     object-fit: cover;
+.flex-section-item img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    object-fit: cover;
 }
+
 /* adds padding to flexbox section on tablet and desktops */
 @media (min-device-width:768px) {
-    .flex-section{
+    .flex-section {
         align-items: flex-start;
         align-content: flex-start;
     }
-    .flex-text{
-    padding-right: 80px;
+
+    .flex-text {
+        padding-right: 80px;
     }
 }
+
 /* Image in flexbox */
-.flex-image{
+.flex-image {
     max-width: 100%;
     overflow: hidden;
     object-fit: cover;
 }
+
 /* flexbox list section */
-.inner-flex-section{
+.inner-flex-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -767,25 +947,37 @@ a.button:hover {
     align-content: flex-start;
     justify-content: space-between
 }
-.inner-flex-section div{
-   max-width: 100%;
-     padding-right: 80px;
+
+.inner-flex-section div {
+    max-width: 100%;
+    padding-right: 80px;
 }
+
+.quoteSection {
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    padding: 4rem;
+    margin: auto;
+    background: blue;
+    text-align: center;
+}
+
 /*--- end flexbox styles--*/
 
 /* lozenge used in case studies */
-.lozenge{
+.lozenge {
     display: block;
-    padding: .5rem 1rem;
-    background: #009aaf24;
+    padding-bottom: 1rem;
     width: auto;
     font-size: 11px;
-    font-weight: 800;
-    font-family: 'Lato';
-    margin: 2rem 0;
+    font-weight: 500;
+    font-family: 'Open Sans';
+    margin: 0;
     width: fit-content;
-    border-radius: 2px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #828282;
 }
 
 /*-------- homepage (index) styles --------*/
@@ -833,11 +1025,44 @@ img.index_image {
     align-content: space-between;
     justify-content: center;
 }
+
+/* three column grid container (mobile) */
+.card_grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 0;
+    /* 32px */
+    grid-gap: 1rem;
+    padding: 2vw;
+}
+
+/*-- creates three col grid on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .card_grid_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        grid-gap: 2rem;
+        margin: auto;
+        max-width: 1400px;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+/*
 a.card{
     display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-rows: 200px 280px;
+} */
+/*-- adds column width on tablet and desktop  --*/
+/*@media (min-device-width:768px) {
+    a.card{
     grid-template-columns: 32px auto 32px;
     grid-template-rows: 200px 280px;
-}
+    }
+}*/
 .card {
     background-color: white;
     background-color: #fff;
@@ -849,8 +1074,8 @@ a.card{
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     transition: 0.25s;
-    height: 480px;
-    width: 400px;
+    width: auto;
+    flex-direction: column;
     margin: 1rem;
     overflow: hidden;
     position: relative;
@@ -869,6 +1094,7 @@ a.card{
     bottom: 0;
     width: 100%;
 }
+
 /* container for image used in case study cards */
 .card_image_div {
     display: block;
@@ -881,20 +1107,32 @@ a.card{
 
 /* flexbox container for button and content within cards */
 .card_content {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
     align-content: space-between;
-    height: 280px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-
+    height: auto;
+    width: fit-content;
+    overflow: clip;
+    position: relative;
+    grid-gap: 1rem;
 }
-button{
-    background: #4db8c7; /* primary brand shade */
-    display: block;
-    font-family: 'Lato';
+
+/*-- adds padding to card content on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .card_content {
+        padding: 2rem;
+        padding-bottom: 5rem;
+    }
+}
+
+button {
+    background: #4db8c7;
+    /* primary brand shade */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Open+Sans';
     font-weight: 600;
     font-size: 1rem;
     padding: 1rem;
@@ -902,14 +1140,20 @@ button{
     border-radius: 8px;
     text-align: center;
     margin-top: 1rem;
-    color: #002e34; /* dark primary brand shade */
+    color: #002e34;
+    /* dark primary brand shade */
     grid-row-start: 4;
-    width: auto;
+    width: fit-content;
+    position: absolute;
+    bottom: 1rem;
 }
-button:hover{
-    background: #A2DFE7; /* lighter primary brand shade */
+
+button:hover {
+    background: #A2DFE7;
+    /* lighter primary brand shade */
     cursor: pointer;
 }
+
 /* Unused -- DELETE -- card button */
 .card_button {
     align-content: center;
@@ -924,16 +1168,17 @@ button:hover{
     width: 100%;
 }
 
-/* Unused -- DELETE -- text on card button */
+/*  text on card button */
 .card_button_text {
     color: grey;
     padding: 2rem;
     text-align: left;
     margin: 0;
-    font-family: 'Lato';
+    font-family: 'Open Sans';
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.6;
+    text-decoration: underline;
 }
 
 /* effect on card hover*/
@@ -943,9 +1188,14 @@ button:hover{
 }
 
 /* color effect for card button and text on card hover*/
-.card:Hover .card_button_text {
+.card:hover .card_button_text {
     color: #009AAF;
     text-decoration: underline;
+}
+
+/* color effect for card text on hover*/
+.card:hover .blueOnHover {
+    color: #009AAF;
 }
 
 /*-------- end homepage (index) styles --------*/
@@ -1063,8 +1313,8 @@ button:hover{
     max-width: 100%;
 }
 
-.whiteBG{
-    background-color:#FFFFFF;
+.whiteBG {
+    background-color: #FFFFFF;
 }
 
 /* disables parallax image on mobile devices*/
@@ -1691,7 +1941,7 @@ input[type=submit] {
     color: #333;
     cursor: pointer;
     font-size: 1.6rem;
-    font-family: "Lato";
+    font-family: "Open+Sans";
     font-weight: 700;
     margin: 2rem auto;
     text-transform: uppercase;
