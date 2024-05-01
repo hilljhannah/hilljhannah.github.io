@@ -340,6 +340,7 @@ p {
     padding-bottom: 1em;
     font-style: normal;
     width: 100%;
+    max-width: 100%;
     line-height: 1.6;
 }
 /*-- paragraph text --*/
@@ -406,6 +407,7 @@ p.foot {
 
     p {
         font-size: 1rem;
+        max-width: 800px;
     }
 }
 /*--sets/overrides color of text to white--*/
@@ -714,17 +716,19 @@ a.button:hover {
     grid-template-columns: 1fr ;
     grid-template-rows: auto;
     grid-gap: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: .5rem;
     text-align: center;
     place-items: center;
 }
 /* four column grid items used in summary */
 .inner-grid-four-column > * {
-    align-self: stretch;
+   /* place-self: center stretch; /* align self + justify self */
     width: fit-content;
     max-width: 100%;
     text-align: center;
+    padding-left: 0px;
+    justify-self: center;
 }
 /* centers heading text in four col grid on mobile  */
 p.inner-grid-four-column-text{
@@ -736,15 +740,21 @@ p.inner-grid-four-column-text{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         text-align: left;
+        justify-content: start;
+        place-items: start stretch; /* align items + justify items */
+        width: 100%;
+        max-width: 1400px;
     }
     .inner-grid-four-column > * {
-        justify-self: center;
         text-align: left;
+        justify-self: center;
     }
     p.inner-grid-four-column-text{
-    text-align: left;
+        text-align: left;
     }
 }
+
+
 .hero-medsol {
     background: #263349;
 }
