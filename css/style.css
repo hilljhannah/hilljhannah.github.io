@@ -246,13 +246,14 @@ nav {
 }
 
 /*--- begin typography styles ---*/
+/* mobile first using Minor Third scale */
 /* h1 text */
 h1 {
     color: #009AAF;
     display: inline-block;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 3.815rem;
+    font-size: 2.986rem; 
     font-style: normal;
     margin: .5rem;
     vertical-align: middle;
@@ -266,24 +267,24 @@ h1 {
 h2 {
     display: block;
     font-family: 'Nunito', sans-serif;
-    font-size: 2.441rem;
-    /* 3.052rem on desktop+tablet  */
-    width: 80%;
+    font-size: 2.488rem;
+    width: 100%;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     color: #009AAF;
-
 }
-
+.subtle{
+    color: #333;
+}
 
 /* h3  */
 h3 {
     color: #333;
     display: block;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.953rem;
+    font-size: 2.074rem;
     /* 2.441rem on desktop+tablet  */
-    font-weight: 400;
+    font-weight: 600;
     margin: 0 auto;
     padding-bottom: 1rem;
     text-align: left;
@@ -295,9 +296,9 @@ h3 {
 h4 {
     color: #333;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.563rem;
+    font-size:  1.728rem;
     /* 1.953rem on desktop+tablet  */
-    font-weight: 400;
+    font-weight: 600;
     text-align: left;
     padding-bottom: 1rem;
     margin: 0 auto;
@@ -308,7 +309,7 @@ h4 {
 h5 {
     color: #333;
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.44rem;
     /*  on desktop+tablet  */
     font-weight: 600;
     margin: 0;
@@ -321,7 +322,7 @@ h5 {
 .subtext1 {
     color: #333;
     font-family: 'Nunito';
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin: 0;
     text-align: left;
@@ -330,11 +331,10 @@ h5 {
     width: 100%;
 }
 
-.subtext2 {
+.small-text{
     color: #333;
     font-family: 'Nunito';
-    font-size: 1.063rem;
-    font-weight: 500;
+    font-size: 0.833rem;
 }
 
 /*-- paragraph text --*/
@@ -389,10 +389,12 @@ p.foot {
 .noMargin {
     margin: 0;
 }
-
+strong {
+    color: #009AAF;
+}
 /*--- typeography media queries ----------------------------------------------------*/
 
-/*-- Desktop and tablet typography media queries  -- */
+/*-- Desktop and tablet typography using a major third scale  -- */
 @media (min-device-width:768px) {
     h1 {
         font-size: 3.815rem;
@@ -400,7 +402,6 @@ p.foot {
 
     h2 {
         font-size: 3.052rem;
-        width: 100%;
     }
 
     h3 {
@@ -411,9 +412,15 @@ p.foot {
         font-size: 1.953rem;
     }
 
-    h5,
-    p.subtext {
+    h5 {
+        font-size: 1.563rem;
+    }
+   
+    .subtext1 {
         font-size: 1.25rem;
+    }
+    .small-text {
+        font-size: 0.8rem;
     }
 
     p {
@@ -794,6 +801,7 @@ p.inner-grid-four-column-text {
         text-align: left;
         justify-self: center;
     }
+
 
     p.inner-grid-four-column-text {
         text-align: left;
