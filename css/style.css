@@ -70,7 +70,7 @@ header {
     padding: 16px 20px;
     border-right: 1px solid #009AAF;
     text-decoration: none;
-    font-family: 'Nunito';
+    font-family: 'Lato';
     font-style: normal;
     font-weight: 800;
     font-size: 1rem;
@@ -246,13 +246,14 @@ nav {
 }
 
 /*--- begin typography styles ---*/
+/* mobile first using Minor Third scale */
 /* h1 text */
 h1 {
     color: #009AAF;
     display: inline-block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 3.815rem;
+    font-size: 2.986rem; 
     font-style: normal;
     margin: .5rem;
     vertical-align: middle;
@@ -265,25 +266,25 @@ h1 {
 /* h2  */
 h2 {
     display: block;
-    font-family: 'Nunito', sans-serif;
-    font-size: 2.441rem;
-    /* 3.052rem on desktop+tablet  */
-    width: 80%;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.488rem;
+    width: 100%;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     color: #009AAF;
-
 }
-
+.subtle{
+    color: #333;
+}
 
 /* h3  */
 h3 {
     color: #333;
     display: block;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.953rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.074rem;
     /* 2.441rem on desktop+tablet  */
-    font-weight: 400;
+    font-weight: 600;
     margin: 0 auto;
     padding-bottom: 1rem;
     text-align: left;
@@ -294,10 +295,10 @@ h3 {
 /*-- h4 --*/
 h4 {
     color: #333;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.563rem;
+    font-family: 'Lato', sans-serif;
+    font-size:  1.728rem;
     /* 1.953rem on desktop+tablet  */
-    font-weight: 400;
+    font-weight: 600;
     text-align: left;
     padding-bottom: 1rem;
     margin: 0 auto;
@@ -307,8 +308,8 @@ h4 {
 /*-- h5 --*/
 h5 {
     color: #333;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.44rem;
     /*  on desktop+tablet  */
     font-weight: 600;
     margin: 0;
@@ -320,8 +321,8 @@ h5 {
 
 .subtext1 {
     color: #333;
-    font-family: 'Nunito';
-    font-size: 1.25rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
     font-weight: 700;
     margin: 0;
     text-align: left;
@@ -330,17 +331,16 @@ h5 {
     width: 100%;
 }
 
-.subtext2 {
+.small-text{
     color: #333;
-    font-family: 'Nunito';
-    font-size: 1.063rem;
-    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.833rem;
 }
 
 /*-- paragraph text --*/
 p {
     color: #333;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     margin: 0 auto;
     padding-bottom: 1em;
@@ -353,7 +353,7 @@ p {
 /*-- paragraph text --*/
 p.body2 {
     color: #333;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: .8rem;
     padding-bottom: 1em;
     font-style: normal;
@@ -371,7 +371,7 @@ p.centered,
 /*-- Footer Text ---*/
 p.foot {
     color: white;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: .8rem;
     text-align: center;
     margin: 1rem auto;
@@ -389,10 +389,12 @@ p.foot {
 .noMargin {
     margin: 0;
 }
-
+strong {
+    color: #009AAF;
+}
 /*--- typeography media queries ----------------------------------------------------*/
 
-/*-- Desktop and tablet typography media queries  -- */
+/*-- Desktop and tablet typography using a major third scale  -- */
 @media (min-device-width:768px) {
     h1 {
         font-size: 3.815rem;
@@ -400,7 +402,6 @@ p.foot {
 
     h2 {
         font-size: 3.052rem;
-        width: 100%;
     }
 
     h3 {
@@ -411,9 +412,15 @@ p.foot {
         font-size: 1.953rem;
     }
 
-    h5,
-    p.subtext {
+    h5 {
+        font-size: 1.563rem;
+    }
+   
+    .subtext1 {
         font-size: 1.25rem;
+    }
+    .small-text {
+        font-size: 0.8rem;
     }
 
     p {
@@ -436,7 +443,7 @@ p.foot {
     border-bottom: 1px solid #FFFFFF;
     display: block;
     color: #009AAF;
-    font-family: 'Nunito';
+    font-family: 'Lato';
     font-style: normal;
     font-weight: 800;
     font-size: 1rem;
@@ -795,6 +802,7 @@ p.inner-grid-four-column-text {
         justify-self: center;
     }
 
+
     p.inner-grid-four-column-text {
         text-align: left;
     }
@@ -1026,27 +1034,20 @@ img.index_image {
     justify-content: center;
 }
 
-/* three column grid container (mobile) */
+/* three column grid container on home page (mobile) */
 .card_grid_container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 2rem 0;
     /* 32px */
     grid-gap: 1rem;
-    padding: 2vw;
+    padding: 1rem;
 }
 
-/*-- creates three col grid on tablet and desktop  --*/
+/*-- increases card size on tablet and desktop --*/
 @media (min-device-width:768px) {
     .card_grid_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 0;
-        grid-gap: 2rem;
-        margin: auto;
-        max-width: 1400px;
-        justify-content: center;
-        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
     }
 }
 
@@ -1075,10 +1076,10 @@ a.card{
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
     transition: 0.25s;
     width: auto;
-    flex-direction: column;
     margin: 1rem;
     overflow: hidden;
     position: relative;
+    height: auto;
 }
 
 /* image used in case study cards */
@@ -1098,54 +1099,51 @@ a.card{
 /* container for image used in case study cards */
 .card_image_div {
     display: block;
-    height: 100%;
-    max-height: 200px;
+    height: 100px;
+    max-height: 100%;
     overflow: hidden;
-    grid-column-start: 1;
-    grid-column-end: 4;
 }
 
 /* flexbox container for button and content within cards */
 .card_content {
     display: flex;
+    padding: 2rem;
     flex-direction: column;
-    padding: 1rem;
-    align-content: space-between;
-    height: auto;
-    width: fit-content;
-    overflow: clip;
-    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
     grid-gap: 1rem;
+    align-self: stretch;
+    max-height: 100%;
 }
-
+.inner_card_content{
+    min-height: 128px;
+}
 /*-- adds padding to card content on tablet and desktop  --*/
 @media (min-device-width:768px) {
     .card_content {
         padding: 2rem;
-        padding-bottom: 5rem;
     }
+    .card_image_div {
+        height: 200px;
+        max-height: 100%;
 }
-
+}
+.button{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 button {
     background: #4db8c7;
-    /* primary brand shade */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-family: 'Open+Sans';
-    font-weight: 600;
+    font-family: 'Open Sans';
+    font-weight: 700;
     font-size: 1rem;
-    padding: 1rem;
     border: none;
     border-radius: 8px;
     text-align: center;
-    margin-top: 1rem;
     color: #002e34;
-    /* dark primary brand shade */
-    grid-row-start: 4;
-    width: fit-content;
-    position: absolute;
-    bottom: 1rem;
 }
 
 button:hover {
@@ -1171,7 +1169,7 @@ button:hover {
 /*  text on card button */
 .card_button_text {
     color: grey;
-    padding: 2rem;
+    padding: 1rem;
     text-align: left;
     margin: 0;
     font-family: 'Open Sans';
@@ -1180,7 +1178,12 @@ button:hover {
     line-height: 1.6;
     text-decoration: underline;
 }
-
+/*-- adds padding on tablet and desktop  --*/
+@media (min-device-width:768px) {
+    .card_button_text{
+        padding:2rem;
+    }
+}
 /* effect on card hover*/
 .card:hover {
     box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
