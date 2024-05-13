@@ -259,8 +259,8 @@ h1 {
     color: var(--primary-brand-color);
     display: inline-block;
     font-family: 'Mitr', sans-serif;
-    font-weight: 700;
-    font-size: 2.986rem; 
+    font-weight: 600;
+    font-size: 2.986rem; /*47.78px*/
     font-style: normal;
     margin: .5rem;
     vertical-align: middle;
@@ -274,10 +274,10 @@ h1 {
 h2 {
     display: block;
     font-family: 'Mitr', sans-serif;
-    font-size: 2.488rem;
+    font-weight: 600;
+    font-size: 2.488rem; /*39.81px*/
     width: 100%;
     text-align: center;
-    font-weight: 600;
     color: var(--primary-brand-color);
 }
 .subtle{
@@ -289,9 +289,8 @@ h3 {
     color: #333;
     display: block;
     font-family: 'Mitr', sans-serif;
-    font-size: 2.074rem;
-    /* 2.441rem on desktop+tablet  */
     font-weight: 600;
+    font-size: 2.074rem; /*33.18px*/
     margin: 0 auto;
     padding-bottom: 1rem;
     text-align: left;
@@ -303,9 +302,8 @@ h3 {
 h4 {
     color: #333;
     font-family: 'Mitr', sans-serif;
-    font-size:  1.728rem;
-    /* 1.953rem on desktop+tablet  */
     font-weight: 600;
+    font-size:  1.728rem; /*27.65px*/
     text-align: left;
     padding-bottom: 1rem;
     margin: 0 auto;
@@ -316,9 +314,8 @@ h4 {
 h5 {
     color: #333;
     font-family: 'Mitr', sans-serif;
-    font-size: 1.44rem;
-    /*  on desktop+tablet  */
     font-weight: 600;
+    font-size: 1.44rem; /*23.04px*/
     margin: 0;
     text-align: left;
     padding-bottom: 1rem;
@@ -329,8 +326,8 @@ h5 {
 .subtext1 {
     color: #333;
     font-family: 'Mitr', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 1.2rem;  /*19.2px*/
     margin: 0;
     text-align: left;
     padding-bottom: 1rem;
@@ -340,15 +337,17 @@ h5 {
 
 .small-text{
     color: #333;
-    font-family: 'Mitr', sans-serif;
-    font-size: 0.833rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.833rem;  /*13.33px*/
 }
 
 /*-- paragraph text --*/
 p {
     color: #333;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 1rem;  /*16px*/
     margin: 0 auto;
     padding-bottom: 1em;
     font-style: normal;
