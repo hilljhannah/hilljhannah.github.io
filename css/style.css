@@ -335,12 +335,6 @@ h5 {
     width: 100%;
 }
 
-.small-text{
-    color: var(--main-text-color-dark);
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 500;
-    font-size: 0.833rem;  /*13.33px*/
-}
 
 /*-- paragraph text --*/
 p {
@@ -355,7 +349,14 @@ p {
     max-width: 100%;
     line-height: 1.6;
 }
-
+/*-- caption text -used for images --*/
+p.caption{
+    color: #828282;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.833rem;  /*13.33px*/
+    text-align: center;
+}
 /*-- paragraph text --*/
 p.body2 {
     color: var(--main-text-color-dark);
@@ -425,7 +426,7 @@ strong {
     .subtext1 {
         font-size: 1.25rem;
     }
-    .small-text {
+    p.caption {
         font-size: 0.8rem;
     }
 
@@ -647,6 +648,29 @@ a.button:hover {
     margin: 0 auto;
     width: 100%;
     max-width: 700px;
+}
+.button{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+button {
+    background: var(--primary-brand-color-light);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: #002e34;
+}
+
+button:hover {
+    background: var(--primary-brand-color);
+    /* lighter primary brand shade */
+    cursor: pointer;
 }
 
 /*-------- end button styles --------*/
@@ -1133,29 +1157,6 @@ a.card{
         height: 200px;
         max-height: 100%;
 }
-}
-.button{
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-button {
-    background: #4db8c7;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    color: #002e34;
-}
-
-button:hover {
-    background: #A2DFE7;
-    /* lighter primary brand shade */
-    cursor: pointer;
 }
 
 /* Unused -- DELETE -- card button */
