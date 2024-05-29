@@ -1054,6 +1054,53 @@ img.index_image {
     overflow: hidden;
 }
 
+/*---------------- V2 Card Styles - updated -----------*/
+.cardV2{
+    display: flex;
+        flex-direction: column;
+        width: auto;
+        max-width: 300px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 4px;
+}
+
+@media (min-device-width:768px) {
+    .cardV2{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        max-width: 1000px;
+    }
+}
+/* container for image used in case study cards */
+.cardV2_image_div {
+    display: block;
+    height: 100%;
+    max-height: 320px;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+/* image used in case study cards */
+.cardV2_image {
+    background-color: inherit;
+    height: auto;
+    width: 100%;
+}
+/* flexbox container for button and content within cards */
+.cardV2_content {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: stretch;
+    max-height: 100%;
+}
+/*---------------- V2 Card  END -----------*/
+
+/*--------- Original Card Styles ---------*/
 .card_container {
     display: flex;
     flex-wrap: wrap;
@@ -1094,6 +1141,7 @@ a.card{
     grid-template-rows: 200px 280px;
     }
 }*/
+
 .card {
     background-color: white;
     background-color: #fff;
@@ -1111,13 +1159,7 @@ a.card{
     position: relative;
     height: auto;
 }
-@media (min-device-width:768px) {
-    .card{
-        display: grid;
-        grid-template-columns: 2fr;
-    }
-    
-}
+
 /* image used in case study cards */
 .card_image {
     background-color: inherit;
