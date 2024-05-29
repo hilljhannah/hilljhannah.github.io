@@ -258,8 +258,8 @@ nav {
 h1 {
     color: var(--primary-brand-color);
     display: inline-block;
-    font-family: 'Mitr', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
     font-size: 2.986rem; /*47.78px*/
     font-style: normal;
     margin: .5rem;
@@ -274,8 +274,8 @@ h1 {
 h2 {
     color: var(--primary-brand-color);
     display: block;
-    font-family: 'Mitr', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
     font-size: 2.488rem; /*39.81px*/
     width: 100%;
     text-align: center;
@@ -288,8 +288,8 @@ h2 {
 h3 {
     color: var(--main-text-color-dark);
     display: block;
-    font-family: 'Mitr', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
     font-size: 2.074rem; /*33.18px*/
     margin: 0 auto;
     padding-bottom: 1rem;
@@ -301,8 +301,8 @@ h3 {
 /*-- h4 --*/
 h4 {
     color: var(--main-text-color-dark);
-    font-family: 'Mitr', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
     font-size:  1.728rem; /*27.65px*/
     text-align: left;
     padding-bottom: 1rem;
@@ -313,8 +313,8 @@ h4 {
 /*-- h5 --*/
 h5 {
     color: var(--main-text-color-dark);
-    font-family: 'Mitr', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
     font-size: 1.44rem; /*23.04px*/
     margin: 0;
     text-align: left;
@@ -325,8 +325,8 @@ h5 {
 
 .subtext1 {
     color: var(--main-text-color-dark);
-    font-family: 'Mitr', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
     font-size: 1.2rem;  /*19.2px*/
     margin: 0;
     text-align: left;
@@ -339,7 +339,7 @@ h5 {
 /*-- paragraph text --*/
 p {
     color: var(--main-text-color-dark);
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 1rem;  /*16px*/
     margin: 0 auto;
@@ -352,7 +352,7 @@ p {
 /*-- caption text -used for images --*/
 p.caption{
     color: #828282;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 0.833rem;  /*13.33px*/
     text-align: center;
@@ -360,7 +360,7 @@ p.caption{
 /*-- paragraph text --*/
 p.body2 {
     color: var(--main-text-color-dark);
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: .8rem;
     padding-bottom: 1em;
     font-style: normal;
@@ -378,7 +378,7 @@ p.centered,
 /*-- Footer Text ---*/
 p.foot {
     color: white;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: .8rem;
     text-align: center;
     margin: 1rem auto;
@@ -1111,7 +1111,13 @@ a.card{
     position: relative;
     height: auto;
 }
-
+@media (min-device-width:768px) {
+    .card{
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+    
+}
 /* image used in case study cards */
 .card_image {
     background-color: inherit;
