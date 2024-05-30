@@ -12,7 +12,7 @@
 html {
     background-color: #242424;
     color: #333;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     max-width: 100vw;
     height: 100%;
@@ -651,14 +651,14 @@ a.button:hover {
 }
 .button{
     display: flex;
+    margin-top: 2rem;
     padding: 1rem;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 button {
     background: var(--primary-brand-color-light);
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1rem;
     border: none;
@@ -1010,7 +1010,7 @@ p.inner-grid-four-column-text {
     width: auto;
     font-size: 11px;
     font-weight: 500;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     width: fit-content;
     text-transform: uppercase;
@@ -1067,10 +1067,7 @@ img.index_image {
 @media (min-device-width:768px) {
     .cardV2{
         display: grid;
-        grid-template-columns: 600px minmax(0,800px);
-        height: 400px;
-    /*   width: auto;
-        max-width: 1000px;*/
+        grid-template-columns: minmax(0,600px) 800px;
     }
 }
 .cardV2_img{
@@ -1088,10 +1085,10 @@ img.index_image {
 /* flexbox container for button and content within cards */
 .cardV2_content {
     display: flex;
-    padding: 2rem;
+    padding: 2rem 4rem;;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     align-self: stretch;
     max-height: 100%;
 }
@@ -1224,7 +1221,7 @@ a.card{
     padding: 1rem;
     text-align: left;
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 1rem;
     line-height: 1.6;
