@@ -1068,7 +1068,7 @@ img.index_image {
     .cardV2{
         display: grid;
         grid-template-columns: 600px minmax(0,800px);
-        grid-template-rows: minmax(0,400px;)
+        height: 400px;
     /*   width: auto;
         max-width: 1000px;*/
     }
