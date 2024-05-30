@@ -657,7 +657,7 @@ a.button:hover {
     align-items: center;
 }
 button {
-    background: var(--primary-brand-color-light);
+    background: var(--primary-brand-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -668,7 +668,7 @@ button {
 }
 
 button:hover {
-    background: var(--primary-brand-color);
+    background: var(--primary-brand-color-light);
     /* lighter primary brand shade */
     cursor: pointer;
 }
@@ -1059,7 +1059,7 @@ img.index_image {
     display: grid;
     grid-template-columns: minmax(0,1fr);
     margin: 2rem auto;
-    background: white;
+    background: #333;
     border-radius: 4px;
     overflow: hidden;
 }
