@@ -1056,32 +1056,29 @@ img.index_image {
 
 /*---------------- V2 Card Styles - updated -----------*/
 .cardV2{
-    display: flex;
-        flex-direction: column;
-        width: auto;
-        max-width: 300px;
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
     margin: 2rem auto;
     background: white;
     border-radius: 4px;
+    overflow: hidden;
 }
 
 @media (min-device-width:768px) {
     .cardV2{
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 600px minmax(0,800px);
+        grid-template-rows: minmax(0,400px;)
+    /*   width: auto;
+        max-width: 1000px;*/
     }
 }
-/* container for image used in case study cards */
-.cardV2_image_div {
-    display: block;
-    height: 100%;
-    max-height: 320px;
-    width: 100%;
-    max-width: 400px;
+.cardV2_img{
+    max-height: 100%;
+    max-width: 100%;
     overflow: hidden;
 }
+
 /* image used in case study cards */
 .cardV2_image {
     background-color: inherit;
