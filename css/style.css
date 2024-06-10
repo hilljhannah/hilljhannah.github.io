@@ -4,7 +4,7 @@
 /*  variables  */
 :root{
     --main-bg-color-dark: #242424;
-    --main-bg-color-light: white;
+    --main-bg-color-light: #EFEFEF;
     --primary-brand-color: #009AAF;
     --primary-brand-color-light: #A2DFE7;
     --main-text-color-dark: #333;
@@ -377,7 +377,7 @@ p.centered,
 
 /*-- Footer Text ---*/
 p.foot {
-    color: white;
+    color: #EFEFEF;
     font-family: 'Roboto', sans-serif;
     font-size: .8rem;
     text-align: center;
@@ -718,7 +718,7 @@ button:hover {
 .one-col-grid-section {
     display: grid;
     grid-template-columns: 1fr;
-    background: white;
+    background: inherit;
     margin: 2rem 0;
     /* 32px */
     grid-gap: 1rem;
@@ -744,7 +744,7 @@ button:hover {
 .two-col-grid-section {
     display: grid;
     grid-template-columns: 1fr;
-    background: white;
+    background: inherit;
     margin: 2rem 0;
     /* 32px */
     grid-gap: 1rem;
@@ -771,7 +771,7 @@ button:hover {
 .two-col-grid {
     display: grid;
     grid-template-columns: 1fr;
-    background: white;
+    background: inherit;
     margin: 0;
     grid-gap: 1rem;
     padding: 0;
@@ -934,7 +934,7 @@ p.inner-grid-four-column-text {
     flex-flow: row wrap;
     align-items: center;
     align-content: center;
-    background: white;
+    background: inherit;
     margin: 0;
     justify-content: center;
     justify-items: center;
@@ -1366,7 +1366,7 @@ a.card{
 }
 
 .whiteBG {
-    background-color: #FFFFFF;
+    background-color: #EFEFEF;
 }
 
 /* disables parallax image on mobile devices*/
