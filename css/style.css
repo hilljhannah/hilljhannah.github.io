@@ -707,12 +707,19 @@ button:hover {
 }
 
 /*-------- start grid styles --------*/
-/* image in grid item container */
+/* default styles for image (in grid item) */
 .grid-item img {
     width: 100%;
     height: 100%;
+}
+
+/* image that fills/covers container (grid item)  */
+.grid-item-cover img {
+    object-fit: cover;
+}
+/* image that is contained within container (grid item)  */
+.grid-item-contain img {
     object-fit: contain;
-    /* or cover*/
 }
 
 /*------ start grid SECTION styles ------*/
