@@ -706,6 +706,24 @@ button:hover {
     color: var(--primary-brand-color);
 }
 
+.hero-flex-section{
+    display: flex;
+    flex-direction: column;
+    background: inherit;
+     margin: 2rem auto;
+    /* 32px */
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+/* hero flec items */
+.hero-flex-section > * {
+    padding: 0;
+    max-width: 800px;
+    margin: auto;
+}
+
 /*-------- start grid styles --------*/
 /* default styles for image (in grid item) */
 .grid-item img {
@@ -723,6 +741,7 @@ button:hover {
 }
 
 /*------ start grid SECTION styles ------*/
+
 /* one column grid section (mobile) */
 .one-col-grid-section {
     display: grid;
@@ -807,15 +826,27 @@ button:hover {
     text-align: center;
     place-items: center;
 }
-
+/* four column grid used within another grid section (mobile style) */
+.inner-flex {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 1rem;
+    align-content: space-between;
+    margin: 0;
+    text-align: left;
+    place-items: flex-start;
+    width: 100%;
+   
+}
 /* four column grid items used in summary */
-.inner-grid-four-column > * {
+.inner-flex > * {
     /* place-self: center stretch; /* align self + justify self */
-    width: fit-content;
-    max-width: 100%;
-    text-align: center;
+  
+    width: 100%;
+    max-width: 200px;
+    text-align: left;
     padding-left: 0px;
-    justify-self: center;
+    align-self: left;
 }
 
 /* centers heading text in four col grid on mobile  */
@@ -1026,7 +1057,14 @@ p.inner-grid-four-column-text {
     letter-spacing: 2px;
     color: #828282;
 }
-
+/* lozenge flex container */
+.lozengeContainer{
+    display: flex; 
+    flex-direction: row;
+}
+.lozengeContainer > * {
+    padding-right: 1rem;
+}
 /*-------- homepage (index) styles --------*/
 /* homepage hero section */
 .homeHero {
