@@ -710,7 +710,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     background: inherit;
-     margin: 2rem auto;
+    margin: 4rem auto 1rem auto;
     /* 32px */
     padding: 0;
     height: 100%;
@@ -826,26 +826,25 @@ button:hover {
     text-align: center;
     place-items: center;
 }
-/* four column grid used within another grid section (mobile style) */
+/* inner flex (mobile style) */
 .inner-flex {
     display: flex;
     flex-direction: row;
     grid-gap: 1rem;
     align-content: space-between;
     margin: 0;
-    text-align: left;
+    text-align: center;
     place-items: flex-start;
     width: 100%;
    
 }
-/* four column grid items used in summary */
+/* inner flex items */
 .inner-flex > * {
     /* place-self: center stretch; /* align self + justify self */
-  
     width: 100%;
-    max-width: 200px;
+    text-overflow: wrap;
     text-align: left;
-    padding-left: 0px;
+    padding-right: 4em;
     align-self: left;
 }
 
@@ -1064,6 +1063,10 @@ p.inner-grid-four-column-text {
 }
 .lozengeContainer > * {
     padding-right: 1rem;
+}
+.lozengeContainerVertical{
+    display: flex; 
+    flex-direction: column;
 }
 /*-------- homepage (index) styles --------*/
 /* homepage hero section */
