@@ -717,7 +717,7 @@ button:hover {
     width: 100%;
     justify-content: center;
 }
-/* hero flec items */
+/* hero flex items */
 .hero-flex-section > * {
     padding: 0;
     max-width: 800px;
@@ -814,18 +814,6 @@ button:hover {
         grid-gap: 2rem;
     }
 }
-
-/* four column grid used within another grid section (mobile style) */
-.inner-grid-four-column {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 1rem;
-    justify-content: space-between;
-    margin: .5rem;
-    text-align: center;
-    place-items: center;
-}
 /* inner flex (mobile style) */
 .inner-flex {
     display: flex;
@@ -847,32 +835,45 @@ button:hover {
     padding-right: 4em;
     align-self: left;
 }
+/* four column grid used in case study overview sections */
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(10px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    justify-content: space-between;
+    margin: .5rem auto;
+    text-align: center;
+    place-items: center;
+}
 
-/* centers heading text in four col grid on mobile  */
-p.inner-grid-four-column-text {
+
+/* centers heading text in overview grid on mobile  */
+p.overview-grid-text {
     text-align: center;
 }
 
 /*-- creates four col grid on tablet and desktop and left aligns text content --*/
 @media (min-device-width:768px) {
-    .inner-grid-four-column {
+    .overview-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, minmax(10px, 1fr));
         text-align: left;
         justify-content: start;
         place-items: start stretch;
         /* align items + justify items */
         width: 100%;
-        max-width: 1400px;
+      
     }
 
-    .inner-grid-four-column > * {
+    .overview-grid > * {
         text-align: left;
-        justify-self: center;
+        justify-self: left;
+        padding-right: 2rem;
     }
 
 
-    p.inner-grid-four-column-text {
+    p.overview-grid-text {
         text-align: left;
     }
 }
@@ -1067,6 +1068,10 @@ p.inner-grid-four-column-text {
 .lozengeContainerVertical{
     display: flex; 
     flex-direction: column;
+}
+.lozengeContainerVertical > *{
+    width: auto;
+    max-width: 124px;
 }
 /*-------- homepage (index) styles --------*/
 /* homepage hero section */
