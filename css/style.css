@@ -1204,16 +1204,17 @@ cardButton{
     display: grid;
     grid-template-columns: 1fr;
     flex-wrap: wrap;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1400px;
+    margin: auto;
+    width: auto;
     align-content: space-evenly;
     justify-content: center;
+    grid-gap: 2rem;
+    padding: 0 2rem;
 }
 /*-- increases columns to two on screen sizes 768-1440px --*/
 @media (min-device-width:768px) {
     .card_container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
