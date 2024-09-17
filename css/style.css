@@ -1118,7 +1118,7 @@ img.index_image {
     display: flex;
     min-width: 200px;
     max-width: 600px;
-    height: 720px;
+    height: 680px;
     padding: 16px;
     flex-direction: column;
     align-items: flex-start;
@@ -1149,46 +1149,7 @@ cardButton{
     display: block;
     width: 100%;
 }
-/*---------------- Card V2 -----------*/
-.cardV2{
-    display: grid;
-    grid-template-columns: minmax(0,1fr);
-    margin: 2rem auto;
-    background: #333;
-    border-radius: 4px;
-    overflow: hidden;
-}
 
-@media (min-device-width:768px) {
-    .cardV2{
-        display: grid;
-        grid-template-columns: minmax(0,200px) minmax(0,600px);
-        padding: 1rem;
-    }
-}
-.cardV2_img{
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-/* image used in case study cards */
-.cardV2_image {
-    background-color: inherit;
-    height: auto;
-    width: 100%;
-}
-/* flexbox container for button and content within cards */
-.cardV2_content {
-    display: flex;
-    padding: 2rem;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    max-height: 100%;
-}
-/*---------------- V2 Card  END -----------*/
 .case_study_card_container{
     display: flex;
     width: auto;
