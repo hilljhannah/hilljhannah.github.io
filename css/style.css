@@ -680,6 +680,32 @@ button:hover {
 }
 
 /*-------- end button styles --------*/
+/*-------- shape animation on index page ---*/
+.shapes {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 4fr;
+    height: 100%;
+    justify-items: center;
+    max-width: 1400px;
+    margin: 1rem auto 0 auto;
+    padding: 1rem 0 1rem 0;
+    width: auto;
+    z-index: 999;
+}
+
+.shape,
+.shape1,
+.shape2,
+.shape3 {
+    border-radius: 1px;
+    background-color: var(--primary-brand-color);
+    height: 10px;
+    opacity: 1;
+    width: 10px;
+}
+/*--end shapes --*/
 .case-study-index {
     display: flex;
     flex-direction: column;
@@ -1126,6 +1152,7 @@ img.index_image {
     flex: 1 0 0;
     align-self: stretch;
 }
+
 .cardV3_content{
     display: flex;
     flex-direction: column;
@@ -1221,30 +1248,6 @@ cardButton{
 }
 
 /*-------- end homepage (index) styles --------*/
-.shapes {
-    display: grid;
-    grid-row-gap: 20px;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 4fr;
-    height: 100%;
-    justify-items: center;
-    max-width: 1400px;
-    margin: 1rem auto 0 auto;
-    padding: 1rem 0 1rem 0;
-    width: auto;
-    z-index: 999;
-}
-
-.shape,
-.shape1,
-.shape2,
-.shape3 {
-    border-radius: 1px;
-    background-color: var(--primary-brand-color);
-    height: 10px;
-    opacity: 1;
-    width: 10px;
-}
 
 /*-------- project files hero section styles --------*/
 .hero {
