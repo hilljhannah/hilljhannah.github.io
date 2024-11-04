@@ -605,7 +605,6 @@ a.cardHover {
     margin: 0;
     cursor: pointer;
     display: block;
-    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -755,12 +754,7 @@ button:hover {
 }
 
 /*-------- start grid styles --------*/
-.card-img-container {
-    display: block;
-    height: 100%;
-    max-height: 250px;
-    overflow: hidden;
-}
+
 /* default styles for image (in grid item) */
 .grid-item img {
     width: 100%;
@@ -1145,10 +1139,11 @@ img.index_image {
     overflow: hidden;
 }
 /*---------------- Card Styles  -----------*/
+
 /*---------------- Card V3 - (updated) -----------*/
 .cardV3 {
     display: flex;
-    min-width: auto;
+    min-width: 200px;
     max-width: 100%;
     height: auto;
     padding: 0;
@@ -1192,30 +1187,45 @@ cardButton{
     flex-wrap: wrap;
     margin: 2rem auto;
 }
-
+.card-img-container {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
 /*--------- Container for Case Study Cards ---------*/
 .card_container {
     display: grid;
     grid-template-columns: 1fr;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 0 auto;
     width: auto;
+    max-width: 100%;
     align-content: space-evenly;
     justify-content: center;
     grid-gap: 2rem;
     padding: 0 2rem;
 }
-/*-- increases columns to two on screen sizes 768-1440px --*/
+/*-- media sizes 768-1439px --*/
 @media (min-device-width:768px) {
+    .cardV3{
+        flex-direction: row;
+    }
     .card_container {
-        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 700px;
+        grid-gap: 3rem;
+    }
+    .card-img-container{
+        max-width: 500px;
     }
 }
 
-/*-- increases columns to four on screen sizes larger than 1441px --*/
-@media (min-device-width:1441px) {
+/*--  media sizes larger than 1439px --*/
+@media (min-device-width:1439px) {
     .card_container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 90vw;
+        max-width: 1400px;
     }
 }
 /* three column grid container on home page (mobile) */
