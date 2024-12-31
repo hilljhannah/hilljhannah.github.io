@@ -1085,7 +1085,7 @@ p.overview-grid-text {
     width: fit-content;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #828282;
+    color: #DBDBDB;
 }
 /* lozenge flex container */
 .lozengeContainer{
@@ -1142,6 +1142,7 @@ img.index_image {
 
 /*---------------- Card V3 - (updated) -----------*/
 .cardV3 {
+    background: #21374C;
     display: flex;
     min-width: 200px;
     max-width: 100%;
@@ -1152,7 +1153,7 @@ img.index_image {
     flex: 1 0 0;
     align-self: stretch;
 }
-
+/*-- content within v3 card--*/
 .cardV3_content{
     display: flex;
     flex-direction: column;
@@ -1163,21 +1164,27 @@ img.index_image {
     justify-content: space-between;
     padding: 32px;
 }
-.cardV3_image{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    flex: 1 0 0;
-    align-self: stretch;
-    justify-content: space-between
+/*-- updated container for image in v3 card  --*/
+.card-img-container {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
 }
-/*--button used in case study cards --*/
+/*-- image within v3 card--*/
+.cardV3_image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*-- [old] button used in case study cards --*/
 cardButton{
     display: block;
     width: 100%;
 }
-
+/*-- [old]  --*/
 .case_study_card_container{
     display: flex;
     width: auto;
@@ -1187,28 +1194,22 @@ cardButton{
     flex-wrap: wrap;
     margin: 2rem auto;
 }
-.card-img-container {
-    display: block;
-    height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    width: 100%;
-}
-/*--------- Container for Case Study Cards ---------*/
+
+
+/*--------- current container for case study cards ---------*/
 .card_container {
     display: grid;
     grid-template-columns: 1fr;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     align-content: space-evenly;
     justify-content: center;
     grid-gap: 2rem;
     padding: 0 2rem;
 }
-/*-- media sizes 768-1439px --*/
-@media (min-device-width:768px) {
+/*-- media sizes 974-1439px --*/
+@media (min-device-width:974px) {
     .cardV3{
         flex-direction: row;
     }
@@ -1217,15 +1218,18 @@ cardButton{
         grid-gap: 3rem;
     }
     .card-img-container{
-        max-width: 500px;
+        max-width: 300px;
     }
 }
 
 /*--  media sizes larger than 1439px --*/
 @media (min-device-width:1439px) {
     .card_container {
-        width: 90vw;
+        max-width: 1100px;
         max-width: 1400px;
+    }
+    .card-img-container{
+        max-width: 400px;
     }
 }
 /* three column grid container on home page (mobile) */
