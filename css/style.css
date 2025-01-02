@@ -343,6 +343,7 @@ p {
     font-weight: 500;
     font-size: 1rem;  /*16px*/
     margin: 0;
+    
     padding-bottom: 1em;
     font-style: normal;
     width: 100%;
@@ -352,7 +353,7 @@ p {
 /*-- caption text -used for images --*/
 p.caption{
     color: #828282;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-weight: 500;
     font-size: 0.833rem;  /*13.33px*/
     text-align: center;
@@ -360,7 +361,7 @@ p.caption{
 /*-- paragraph text --*/
 p.body2 {
     color: var(--main-text-color-dark);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: .8rem;
     padding-bottom: 1em;
     font-style: normal;
@@ -378,7 +379,7 @@ p.centered,
 /*-- Footer Text ---*/
 p.foot {
     color: #EFEFEF;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-size: .8rem;
     text-align: center;
     margin: 1rem auto;
@@ -401,7 +402,7 @@ strong {
 }
 /*--- typeography media queries ----------------------------------------------------*/
 
-/*-- Desktop and tablet typography using a major third scale  -- */
+/*-- Desktop and tablet typography using a major third scale  -- 
 @media (min-device-width:768px) {
     h1 {
         font-size: 3.815rem;
@@ -435,7 +436,7 @@ strong {
         max-width: 800px;
     }
 }
-
+*/
 /*--sets/overrides color of text to white--*/
 #white {
     color: white;
@@ -484,7 +485,7 @@ ul.list {
 ul.list li {
     padding-bottom: 1.5rem;
     font-weight: normal;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open+Sans', sans-serif;
     font-weight: 500;
 }
 
@@ -1075,6 +1076,20 @@ p.overview-grid-text {
 
 /* lozenge used in case studies */
 .lozenge {
+    display: block;
+    padding-bottom: 1rem;
+    width: auto;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999898;
+}
+/* lozenge used in case studies */
+.lozengeDark {
     display: block;
     padding-bottom: 1rem;
     width: auto;
