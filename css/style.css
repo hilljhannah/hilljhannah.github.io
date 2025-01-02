@@ -479,6 +479,7 @@ ul.list {
     margin: 0;
     padding-bottom: 1.5rem;
     width: 100%;
+   
 }
 
 /* default list item  */
@@ -487,6 +488,7 @@ ul.list li {
     font-weight: normal;
     font-family: 'Open+Sans', sans-serif;
     font-weight: 500;
+   
 }
 
 /* unstlyed list with no decoration or padding */
@@ -866,6 +868,10 @@ button:hover {
     padding-right: 4em;
     align-self: left;
 }
+.overview-flex{
+    display: flex;
+    flex-direction: column;
+}
 /* four column grid used in case study overview sections */
 .overview-grid {
     display: grid;
@@ -923,6 +929,12 @@ p.overview-grid-text {
 /*-- end grid styles  --*/
 
 /*-------- start flexbox styles --------*/
+/*-- inline flex --*/
+.inline-flex{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
 .flexbox-img-within-grid {
     display: flex;
     width: 100%;
