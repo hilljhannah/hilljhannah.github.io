@@ -742,7 +742,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     background: inherit;
-    margin: 4rem auto 1rem auto;
+    margin: 4rem auto 4rem auto;
     /* 32px */
     padding: 0;
     height: 100%;
@@ -752,14 +752,23 @@ button:hover {
 /* hero flex items */
 .hero-flex-section > * {
     padding: 0;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 
 /*-------- start grid styles --------*/
-
+.grid-content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.grid-image {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
 /* default styles for image (in grid item) */
-.grid-item img {
+.grid-image img {
     width: 100%;
     height: auto;
 }
@@ -797,8 +806,7 @@ button:hover {
 
 /* one column grid items */
 .one-col-grid-section > * {
-    padding: 0 2rem;
-    max-width: 880px;
+
 }
 
 /* two column grid section (mobile ) */
@@ -875,9 +883,12 @@ button:hover {
 /* four column grid used in case study overview sections */
 .overview-grid {
     display: grid;
-    grid-template-columns: repeat(1, minmax(10px, 1fr));
+    grid-template-columns: repeat(4, minmax(10px, 200px));
+    max-width: 900px;
     grid-template-rows: auto;
     grid-gap: 1rem;
+    text-align: center;
+    justify-items: center;
     justify-content: space-between;
     margin: .5rem auto;
     text-align: center;
@@ -904,15 +915,10 @@ p.overview-grid-text {
     }
 
     .overview-grid > * {
-        text-align: left;
-        justify-self: left;
-        padding-right: 2rem;
+        text-align: center;
+        justify-self: center;
     }
 
-
-    p.overview-grid-text {
-        text-align: left;
-    }
 }
 
 
@@ -925,16 +931,17 @@ p.overview-grid-text {
     padding: 2rem 0;
 }
 
-
+/*-- overview item used in case study overview sections--*/
+.overview-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    justify-items: center;
+}
 /*-- end grid styles  --*/
 
 /*-------- start flexbox styles --------*/
-/*-- inline flex --*/
-.inline-flex{
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
+
 .flexbox-img-within-grid {
     display: flex;
     width: 100%;
