@@ -1096,7 +1096,15 @@ p.overview-grid-text {
     background: blue;
     text-align: center;
 }
+/*--- default column flexbox --*/
+.column-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 100%;
+    gap: 2rem;
 
+}
 /*--- end flexbox styles--*/
 
 /* lozenge used in case studies */
