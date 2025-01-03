@@ -757,17 +757,19 @@ button:hover {
 }
 
 /*-------- start grid styles --------*/
+/*----- content container used within sections in case studies -----*/
 .grid-content{
     max-width: 900px;
     margin: 0 auto;
 }
+/*----- image container used within sections in case studies -----*/
 .grid-image {
     width: 100%;
     max-width: 1400px;
     height: auto;
     margin: 0 auto;
 }
-/* default styles for image (in grid item) */
+/*----- styles images used within grid-image -----*/
 .grid-image img {
     width: 100%;
     height: auto;
@@ -841,11 +843,15 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr;
     background: inherit;
-    margin: 0;
+    margin: 0 auto;
     grid-gap: 1rem;
     padding: 0;
 }
-
+/*----- styles images used within two-col-grid-section -----*/
+.two-col-grid img {
+    width: 100%;
+    height: auto;
+}
 /* creates two col grid container on tablet and desktop  */
 @media (min-device-width:768px) {
     .two-col-grid {
