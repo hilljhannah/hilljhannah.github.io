@@ -925,6 +925,7 @@ p.overview-grid-text {
     
     .overview-item-a{
         justify-self: first;
+        max-width: 80px;
     }
     
     .overview-item-d{
