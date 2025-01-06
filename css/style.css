@@ -343,7 +343,6 @@ p {
     font-weight: 500;
     font-size: 1rem;  /*16px*/
     margin: 0;
-    padding-top: 1em;
     padding-bottom: 1em;
     font-style: normal;
     width: 100%;
@@ -389,7 +388,7 @@ p.foot {
 /*-- left aligns text ---*/
 .left {
     text-align: left;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     margin: 0 auto;
 }
 
@@ -759,7 +758,7 @@ button:hover {
 /*-------- start grid styles --------*/
 /*----- content container used within sections in case studies -----*/
 .grid-content{
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
 }
 /*----- image container used within sections in case studies -----*/
@@ -1096,14 +1095,21 @@ p.overview-grid-text {
     background: blue;
     text-align: center;
 }
-/*--- default column flexbox --*/
-.column-flex{
+/*--- flexbox spanning the whole page width --*/
+.full-width-flex{
     display: flex;
     flex-direction: column;
-    margin: 1rem auto;
+    margin: 2rem auto;
     width: 100%;
+    max-width: 100vw;
     gap: 2rem;
 
+}
+/* Image in full width flexbox */
+.full-width-flex img {
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
 }
 /*--- end flexbox styles--*/
 
