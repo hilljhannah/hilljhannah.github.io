@@ -883,12 +883,30 @@ button:hover {
 .overview-flex{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (min-device-width:768px){
+    .overview-flex{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 800px;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-right: 3rem;
+    }
+}
+.overview-flex > *{
+    width: auto;
 }
 /* four column grid used in case study overview sections */
 .overview-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(10px, 200px));
-    max-width: 800px;
+    width: 100%;
+    max-width: 700px;
     grid-template-rows: auto;
     grid-gap: 1rem;
     text-align: center;
@@ -920,16 +938,8 @@ p.overview-grid-text {
 /*-- overview grid items --*/
     .overview-grid > * {
         text-align: center;
+
         
-    }
-    
-    .overview-item-a{
-        justify-self: first;
-        max-width: 80px;
-    }
-    
-    .overview-item-d{
-        justify-self: last;
     }
 
 }
@@ -987,7 +997,10 @@ p.overview-grid-text {
 }
 
 /* hero background images */
-
+#hero{
+    margin-bottom: 0px;
+    padding-bottom: 2vw;
+}
 /* MS Design System */
 .heroBG-ms-ds {
     background-image: url("../images/ms-designSystem/MSDesignSystemCoverSmall.jpg");
@@ -1160,6 +1173,7 @@ p.overview-grid-text {
 .lozengeContainerVertical{
     display: flex; 
     flex-direction: column;
+    text-align: center;
 }
 .lozengeContainerVertical > *{
     width: auto;
