@@ -4,7 +4,7 @@
 /*  variables  */
 :root{
     --main-bg-color-dark: #242424;
-    --main-bg-color-light: #EFEFEF;
+    --main-bg-color-light: #FFFAFA;
     --primary-brand-color: #009AAF;
     --primary-brand-color-light: #A2DFE7;
     --main-text-color-dark: #333;
@@ -259,10 +259,9 @@ h1 {
     color: var(--primary-brand-color);
     display: inline-block;
     font-family: 'Lato', sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 2.986rem; /*47.78px*/
     font-style: normal;
-    margin: .5rem;
     vertical-align: middle;
     width: 100%;
     max-width: 100%;
@@ -889,7 +888,7 @@ button:hover {
 .overview-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(10px, 200px));
-    max-width: 900px;
+    max-width: 800px;
     grid-template-rows: auto;
     grid-gap: 1rem;
     text-align: center;
@@ -918,10 +917,18 @@ p.overview-grid-text {
         width: 100%;
       
     }
-
+/*-- overview grid items --*/
     .overview-grid > * {
         text-align: center;
-        justify-self: center;
+        
+    }
+    
+    .overview-item-a{
+        justify-self: first;
+    }
+    
+    .overview-item-d{
+        justify-self: last;
     }
 
 }
@@ -1155,7 +1162,6 @@ p.overview-grid-text {
 }
 .lozengeContainerVertical > *{
     width: auto;
-    max-width: 124px;
 }
 /*-------- homepage (index) styles --------*/
 /* homepage hero section */
