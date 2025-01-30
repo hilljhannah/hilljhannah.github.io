@@ -288,7 +288,7 @@ h3 {
     color: var(--main-text-color-dark);
     display: block;
     font-family: 'Lato', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 2.074rem; /*33.18px*/
     margin: 0 auto;
     padding-bottom: 1rem;
@@ -1217,6 +1217,7 @@ img.index_image {
 
 /*---------------- Card V3 - (updated) -----------*/
 .cardV3 {
+    /*-- see media queries below --*/
     background: #1C1C1C;
     display: flex;
     min-width: 200px;
@@ -1237,10 +1238,11 @@ img.index_image {
     flex: 1 0 0;
     align-self: stretch;
     justify-content: space-between;
-    padding: 32px;
+    padding: 24px;
 }
 /*-- updated container for image in v3 card  --*/
 .card-img-container {
+    /*-- see media queries below --*/
     display: block;
     height: 100%;
     width: 100%;
@@ -1273,31 +1275,26 @@ cardButton{
 
 /*--------- current container for case study cards ---------*/
 .card_container {
-    display: grid;
-    grid-template-columns: 1fr;
+     /*-- see media queries below --*/
+    display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     width: 100%;
     align-content: space-evenly;
     justify-content: center;
-    justify-items: center;
     grid-gap: 2rem;
-    padding: 0 2rem;
+    padding: 2rem 0;
 }
 /*-- media sizes 974-1439px --*/
 @media (min-device-width:974px) {
     .cardV3{
-        flex-direction: row;
-        max-width: 900px;
-        min-width:800px;
+        max-width: 500px;
+        min-width: 500px;
         
     }
     .card_container {
         max-width: 700px;
-        grid-gap: 3rem;
-    }
-    .card-img-container{
-        max-width: 300px;
+        grid-gap: 4rem 2rem;
     }
 }
 
@@ -1307,7 +1304,7 @@ cardButton{
         max-width: 1700px;
     }
     .card-img-container{
-        max-width: 200px;
+        max-height: 300px;
     }
 }
 /* three column grid container on home page (mobile) */
