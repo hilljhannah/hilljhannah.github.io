@@ -603,9 +603,9 @@ a {
 /* Used as parent container for case study card buttons*/
 a.cardHover {
     text-align: left;
-    margin: 0;
+    margin: 0 auto;
     cursor: pointer;
-    display: block;
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -676,7 +676,7 @@ button:hover {
     display: block;
     width: 100%;
     padding: 1rem;
-    margin: 0;
+    margin: 1rem 0;
 }
 
 /*-------- end button styles --------*/
@@ -1261,30 +1261,27 @@ cardButton{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 100%;
     align-content: space-evenly;
     justify-content: center;
     grid-gap: 2rem;
     padding: 2rem 0;
+    width: 100%;
 }
 /*-- media sizes 974-1439px --*/
-@media (min-device-width:974px) {
+@media (min-device-width:974px)  {
     .cardV3{
         max-width: 500px;
         min-width: 500px;
         
     }
     .card_container {
-        max-width: 700px;
         grid-gap: 4rem 2rem;
     }
 }
 
 /*--  media sizes larger than 1439px --*/
-@media (min-device-width:1439px) {
-    .card_container {
-        max-width: 1700px;
-    }
+@media (min-device-width:1400px) {
+
     .card-img-container{
         max-height: 300px;
     }
