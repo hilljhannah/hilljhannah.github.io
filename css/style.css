@@ -804,9 +804,7 @@ button:hover {
     }
 }
 
-/* one column grid items */
-.one-col-grid-section > * {
-}
+
 /* hero grid section (mobile ) */
 .hero-grid-section {
     display: grid;
@@ -825,12 +823,22 @@ button:hover {
         padding: 2vw 8vw;
         align-items: center;
     }
+    /* hero grid items */
+    .hero-grid-section > * {
+        grid-row-gap: 4rem;
+    }
+}
+/*title in hero section*/
+#title{
+    max-width: 800px;
+    margin: 0 auto;
+}
+#title > p:nth-child(2) {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* hero grid items */
-.hero-grid-section > * {
-    padding: 0px 2rem;
-}
+
 
 /* two column grid section (mobile ) */
 .two-col-grid-section {
@@ -905,17 +913,18 @@ button:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 @media (min-device-width:768px){
     .overview{
-        flex-direction: row;
-        max-width: 800px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        width: 100%;
+        max-width: 1100px;
     }
     .overview > *{
-        align-items: baseline;
-        grid-gap: 1rem;
-        justify-content: flex-start;
         padding: 0px;
         width: auto;
     }
@@ -1018,10 +1027,10 @@ p.overview-grid-text {
     justify-content: flex-start;
 }
 
-/* hero background images */
+/* hero section */
 #hero{
-    margin-bottom: 0px;
-    padding-bottom: 2vw;
+    margin: 5rem 0 5rem 0;
+    padding-bottom: 2rem;
 }
 /* MS Design System */
 .heroBG-ms-ds {
@@ -1393,6 +1402,9 @@ cardButton{
     padding: 0;
 }
 
+#heroImg{
+    width: 100%;
+}
 /* sets hero height on ipads and desktops  ----------- */
 @media only screen and (min-device-width : 768px) {
     .hero_container {
@@ -1402,6 +1414,13 @@ cardButton{
     .hero_container_modified {
         padding: 0;
     }
+}
+/* Hero image container */
+.container > section:nth-child(2) {
+  height: 100%;
+  max-height:550px;
+  padding: 0;
+  margin: 0;
 }
 
 /* hero image in projects*/
