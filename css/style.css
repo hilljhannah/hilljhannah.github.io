@@ -881,43 +881,42 @@ button:hover {
         grid-gap: 2rem;
     }
 }
-/* overview flex container*/
-.overview-flex{
+/* overview container*/
+.overview{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     justify-content: space-between;
     width: 100%;
+    max-width: 400px;
 }
-/* removes padding for p text in overview flex container*/
-p.overview-flex{
-    padding: 0;
-}
-/* first child under overview flex parent*/
-.overview-flex > *{
+
+/* first level nested div within overview flex container*/
+.overview > *{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0px;
     align-items: center;
 }
-/* second child under overview flex parent*/
-.overview-flex > * > *{
+/* first level nested div within overview flex container*/
+.overview > * > *{
     width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 @media (min-device-width:768px){
-    .overview-flex{
-        align-items: flex-start;
-        justify-content: space-between;
-        padding-left: 1rem;
+    .overview{
+        flex-direction: row;
+        max-width: 800px;
     }
-    .overview-flex > *{
+    .overview > *{
         align-items: baseline;
         grid-gap: 1rem;
         justify-content: flex-start;
         padding: 0px;
-        flex-direction: row;
         width: auto;
     }
 }
