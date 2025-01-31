@@ -25,90 +25,55 @@
                     <li><a href="about.html">About Me</a></li>
                 </ul>
             </header>
-             <!-- Hero-->
-            <section style="height: 100%; max-height:30vh; padding: 0; margin: 0;"><!-- Hero image -->
-                <div data-aos="fade-left" class="grid-item grid-item-cover">
-                    <img src="images/ms-designSystem/MSDesignSystemCover.jpg" alt="Design System Cover">
+            <!-- Section - Hero Image -->
+            <section>
+                <div class="hero_container">
+                    <img id="heroImg" src="images/ms-designSystem/MSDesignSystemCover.jpg" alt="examples showing different component documentation used in the Design System.">
                 </div>
             </section>
-                <!-- Section - Hero-->
-            <section id="hero" class="one-col-grid-section">
+            <!-- Section - Hero + overview-->
+            <section id="hero" class="hero-grid-section" data-aos="fade-right">
                 <!-- Page title -->
-                <div id="title" class="grid-content">
-                    <h1 >Medical Solutions 3.0 Design System Case Study</h1>
+                <div id="title">
+                    <h1>Medical Solutions 3.0 Design System Case Study</h1>
                     <p>It was my responsibility to own the Medical Solutions 3.0 Design System as its own product and partner with development to bring our Component Library to life.</p>
                 </div>
-                <!-- overview items  -->
-                <div data-aos="fade-right" class="overview-grid";>
-                    <!-- timeline  -->
+                <!-- overview container  -->
+                <div class="overview">
+                    <!-- disciplines -->
                     <div>
-                        <p class="subtext1 overview-grid-text">Timeline</p>
-                        <div class="lozengeContainerVertical">
-                            <p class="lozenge">8 months</p>
-                            <p class="lozenge">2023-2024</p>
-                         </div>
+                        <p class="subtext1 overview-grid-text">Disciplines</p>
+                        <div>
+                            <p class="lozenge">Design Systems</p>
+                            <p class="lozenge">Product Strategy</p>
+                        </div>
                     </div>
                     <!-- role  -->
                     <div>
                         <p class="subtext1 overview-grid-text">Role</p>
-                        <div class="lozengeContainerVertical">
+                        <div>
                             <p class="lozenge">UI / UX Designer</p>
                             <p class="lozenge">Design System Product Owner</p>
-                         </div>
+                        </div>
                     </div>
-                    <!-- disciplines -->
+                    <!-- timeline  -->
                     <div>
-                        <p class="subtext1 overview-grid-text">Disciplines</p>
-                        <div class="lozengeContainerVertical">
-                            <p class="lozenge">Design Systems</p>
-                            <p class="lozenge">Product Strategy</p>
-                         </div>
-                    </div>
-                    <!-- tools -->
-                    <div>
-                        <p class="subtext1 overview-grid-text">Tools</p>
-                        <div class="lozengeContainerVertical">
-                            <p class="lozenge">Figma</p>
-                            <p class="lozenge">Storybook</p>
-                            <p class="lozenge">Advanced Figma Plugins</p>
-                         </div>
-                    </div>
-                </div>
-            <!--    <div class="inner-flex">
-                   
-                    <div>
-                        <p class="subtext1">Timeline</p>
-                        <div class="lozengeContainerVertical">
+                        <p class="subtext1 overview-grid-text">Timeline</p>
+                        <div>
                             <p class="lozenge">8 months</p>
                             <p class="lozenge">2023-2024</p>
-                         </div>
+                        </div>
                     </div>
-                    
-                    <div>
-                        <p class="subtext1">Role</p>
-                        <div class="lozengeContainerVertical">
-                            <p class="lozenge">UI / UX Designer</p>
-                            <p class="lozenge">Design System Product Owner</p>
-                         </div>
-                    </div>
-          
-                    <div>
-                        <p class="subtext1">Disciplines</p>
-                        <div class="lozengeContainerVertical">
-                            <p class="lozenge">Design Systems</p>
-                            <p class="lozenge">Product Strategy</p>
-                         </div>
-                    </div>
-                  
-                    <div>
-                        <p class="subtext1">Tools</p>
-                        <div class="lozengeContainerVertical">
+                    <!-- tools -->
+                    <div class="overview-item-d">
+                        <p class="subtext1 overview-grid-text">Tools</p>
+                        <div>
                             <p class="lozenge">Figma</p>
                             <p class="lozenge">Storybook</p>
                             <p class="lozenge">Advanced Figma Plugins</p>
-                         </div>
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </section>
 
             <!-- One Col Grid Section Establishing Structure -->
@@ -145,12 +110,12 @@
                     </div>
                 </div>
             </section>
-             <!-- parallax image container -->
+            <!-- parallax image container -->
             <div>
                 <div class="parallax whiteBG" style="background-image: url(images/ms-designSystem/foundation2_MS_DS.jpg);"></div>
             </div>
 
-           <!-- One Col Grid Section - Transitioning to Tokens and Variables -->
+            <!-- One Col Grid Section - Transitioning to Tokens and Variables -->
             <section data-aos="fade-left" id="Transitioning to Tokens and Variables" class="one-col-grid-section">
                 <!-- text -->
                 <div class="grid-content">
@@ -170,7 +135,7 @@
                     <p class="caption">How tokens enable support for multiple products or themes</p>
                 </div>
             </section>
-            
+
             <!-- One Col Grid Section - Need for governance -->
             <section data-aos="fade-right" id="Need for governance" class="one-col-grid-section">
                 <!-- text -->
@@ -181,7 +146,7 @@
                     <div>
                         <h2 class="left">Need for governance</h2>
                         <!-- body copy -->
-                         <p>Establishing a clear governance process that helps users understand what to do when and is essential for a Design System that stands the test of time. However, this process did not yet exist.</p>
+                        <p>Establishing a clear governance process that helps users understand what to do when and is essential for a Design System that stands the test of time. However, this process did not yet exist.</p>
                         <p>Working with UX leads I developed and implemented our Design System Governance Process. This process defined how a component should be added to, updated, or removed from our Design System. To aid users with understanding the process, I created a flow diagram and added it to our system for future reference.</p>
                     </div>
                 </div>
@@ -191,7 +156,7 @@
                     <p class="caption">Example from our governance process decision tree used by designers when determining next steps for their component</p>
                 </div>
             </section>
-            
+
             <!-- One Col Grid Section - Finding sources of feedback -->
             <section data-aos="fade-left" id="Finding sources of feedback" class="one-col-grid-section">
                 <!-- text -->
@@ -202,7 +167,7 @@
                     <div>
                         <h2 class="left">Finding sources of feedback</h2>
                         <!-- body copy -->
-                         <p>Creating a highly flexible system that works for a wide range of use cases is not something that can be done in a vacuum. I needed to facilitate constant feedback from many different sources to validate my work.</p>
+                        <p>Creating a highly flexible system that works for a wide range of use cases is not something that can be done in a vacuum. I needed to facilitate constant feedback from many different sources to validate my work.</p>
                     </div>
                 </div>
                 <div class="grid-content">
@@ -218,7 +183,7 @@
                     <p>On a weekly basis I held a component review, bringing together UX Leads. We discussed new component requests, how the components might be used in their product(s), any concerns, and to review component documentation. This review was invaluable because it allowed me to validate component utility and flexibility cross-functionally.</p>
                 </div>
             </section>
-           
+
             <!-- One Col Grid Section - Creating Component Documentation -->
             <section data-aos="fade-right" id="Creating Component Documentation" class="one-col-grid-section">
                 <!-- text -->
@@ -229,7 +194,7 @@
                     <div>
                         <h2 class="left">Creating Good Documentation</h2>
                         <!-- body copy -->
-                         <p>To help designers when deciding which component to use and when, clear documentation was needed. Unfortunately, due to MS 3.0 being a new library, there was no existing documentation. </p>
+                        <p>To help designers when deciding which component to use and when, clear documentation was needed. Unfortunately, due to MS 3.0 being a new library, there was no existing documentation. </p>
                         <p>Creating good component documentation is essential to any Design System or Component Library. It is extremely helpful for recording design decisions, development specs, micro-interactions, anatomy, and usage standards.</p>
                         <p> Having documentation to reference was an essential tool to create consistency in our products.</p>
                     </div>
@@ -239,7 +204,7 @@
             <div>
                 <div class="parallax audit" style="background-image: url(images/ms-designSystem/documentation_MS_DS.png);"></div>
             </div>
-         
+
             <!-- One Col Grid Section - Recording Changes -->
             <section data-aos="fade-left" id="Recording Changes" class="one-col-grid-section">
                 <!-- text -->
@@ -250,7 +215,7 @@
                     <div>
                         <h2 class="left">Recording Changes for Future Reference</h2>
                         <!-- body copy -->
-                         <p>As time goes on, it becomes more challenging to remember what has changed in a Design System or component. Wanting to avoid this, I documented what changed in every single library update published; using a change log. Over time this evolved to include a detailed change log on each component page; documenting what changed after and what the component looked like before. </p>
+                        <p>As time goes on, it becomes more challenging to remember what has changed in a Design System or component. Wanting to avoid this, I documented what changed in every single library update published; using a change log. Over time this evolved to include a detailed change log on each component page; documenting what changed after and what the component looked like before. </p>
                     </div>
                 </div>
                 <!-- image -->
@@ -259,7 +224,7 @@
                     <p class="caption">Example of the system wide change log and component change log</p>
                 </div>
             </section>
-            
+
             <!-- One Col Grid Section - Results -->
             <section data-aos="fade-right" id="Results" class="one-col-grid-section">
                 <!-- text -->
@@ -270,13 +235,13 @@
                     <div>
                         <h2 class="left">Final Thoughts About the System and Results of the Project</h2>
                         <!-- body copy -->
-                         <p>Due to the complexity, enormity, and ever-changing nature of this project; I found myself tested in ways I have never been. The journey was a challenge but I learned a ton of new things along the way and with the following results:</p>
+                        <p>Due to the complexity, enormity, and ever-changing nature of this project; I found myself tested in ways I have never been. The journey was a challenge but I learned a ton of new things along the way and with the following results:</p>
                         <ul class="list">
-                        <li>By utilizing tokens and variables, I increased system efficiency by over 80%.</li>
-                        <li>MS 3.0 is actively used by designers in their work, leading to an increase in design and development velocity.</li>
-                        <li>Storybook 3.0 Library mirrors MS 3.0 Figma Library, facilitating consistency across our products.</li>
-                        <li>Components continue to be implemented in production, significantly decreasing the time needed to develop new features.</li>
-                    </ul>
+                            <li>By utilizing tokens and variables, I increased system efficiency by over 80%.</li>
+                            <li>MS 3.0 is actively used by designers in their work, leading to an increase in design and development velocity.</li>
+                            <li>Storybook 3.0 Library mirrors MS 3.0 Figma Library, facilitating consistency across our products.</li>
+                            <li>Components continue to be implemented in production, significantly decreasing the time needed to develop new features.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -299,6 +264,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
     </script>
 </body>
 
