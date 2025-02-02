@@ -671,12 +671,17 @@ button:hover {
     /* lighter primary brand shade */
     cursor: pointer;
 }
-/* button class*/
-.button{
+/* my button class*/
+.myBtn{
+    background: var(--primary-brand-color);
     display: block;
+    border: none;
     width: 100%;
     padding: 1rem;
     margin: 0rem auto;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
 }
 
 /*-------- end button styles --------*/
