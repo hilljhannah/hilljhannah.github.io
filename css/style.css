@@ -1298,6 +1298,10 @@ cardButton{
     flex-wrap: wrap;
     margin: 2rem auto;
 }
+/*-- text in v3 card container  --*/
+.cdtxt{
+    min-height: 194px;
+}
 
 
 /*--------- current container for case study cards ---------*/
