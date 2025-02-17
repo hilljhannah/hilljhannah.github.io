@@ -198,8 +198,9 @@ nav {
     align-items: center;
     display: grid;
     justify-content: center;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
     width: 100%;
+    max-width: 220px;
     padding: 0;
 }
 
@@ -219,35 +220,27 @@ nav {
     width: 80%;
     max-width: 800px;
 }
-
-/*------ FLAG ----------- nav + header + logo media queries-----------*/
-/*-- for iPads (portrait and landscape) --*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #hidden {
+        display: none;
+}
+/*------ media queries-----------*/
+/* for 768px and up */
+@media only screen and (min-width: 768px) {
+    #hidden{
+        display: initial;
+    }
+}
+/* for 768-1023 only */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
     nav {
         max-width: 500px;
     }
 }
-/*-- FLAG for mobile --*/
-@media only screen and (max-width: 600px) {
-    #hidden {
-        display: none;
-    }
-
+/* for 1024+ only */
+@media only screen and (min-width: 1024px) {
     nav {
-        grid-template-columns: 50% 50%;
-        width: 100%;
-        max-width: 220px;
-    }
-}
-
-/*-- FLAG hides large links on smallest screens --*/
-@media only screen and (max-width: 1024px) {
-    header {
-        margin: 0 auto;
-    }
-
-    .myLogo {
-        margin: 0;
+        grid-template-columns: 33% 33% 33%;
+        max-width: 100%;
     }
 }
 
