@@ -171,7 +171,7 @@ header {
     top: 0;
 }
 
-/* 48em = 768px */
+/*----------- media quieries 48em = 768px -----------*/
 @media (min-width: 48em) {
     .header li {
         float: left;
@@ -192,7 +192,7 @@ header {
     }
 }
 
-/* menu on mobile responsive styles start ---------*/
+/* menu on mobile responsive styles start --*/
 /*navbar*/
 nav {
     align-items: center;
@@ -220,15 +220,14 @@ nav {
     max-width: 800px;
 }
 
-/*--- nav + header + logo media queries ----------------------------------------------------*/
+/*------ FLAG ----------- nav + header + logo media queries-----------*/
 /*-- for iPads (portrait and landscape) --*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     nav {
         max-width: 500px;
     }
 }
-
-/*-- for mobile --*/
+/*-- FLAG for mobile --*/
 @media only screen and (max-width: 600px) {
     #hidden {
         display: none;
@@ -241,7 +240,7 @@ nav {
     }
 }
 
-/*-- hides large links on smallest screens --*/
+/*-- FLAG hides large links on smallest screens --*/
 @media only screen and (max-width: 1024px) {
     header {
         margin: 0 auto;
@@ -398,6 +397,10 @@ p.foot {
 strong {
     color: var(--primary-brand-color);
 }
+/* center aligns text */
+.centerText{
+    text-align: center;
+}
 /*--- typeography media queries ----------------------------------------------------*/
 
 /*-- Desktop and tablet typography using a major third scale  -- 
@@ -435,7 +438,7 @@ strong {
     }
 }
 */
-/*--sets/overrides color of text to white--*/
+/*-- sets/overrides color of text to white --*/
 #white {
     color: white;
 }
@@ -468,8 +471,8 @@ strong {
     color: var(--primary-brand-color);
 }
 
-/*-------- end typography styles --------*/
-/*-------- list styles --------*/
+/*-- end typography styles --*/
+/*-- list styles --*/
 /* default list  */
 ul.list {
     font-size: 1rem;
@@ -538,7 +541,7 @@ ul.cons li {
     font-weight: normal;
 }
 
-/*-- list with background color --*/
+/* list with background color */
 ul.color {
     font-size: 1.6rem;
     list-style-position: inside;
@@ -573,7 +576,7 @@ ul.ideals {
 }
 
 
-/*-- list media queries -------------------*/
+/*-- list media queries --*/
 /*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
@@ -590,8 +593,8 @@ ul.ideals {
     }
 }
 
-/*-- end list styles ------------------------*/
-/*-- button + link styles -------------------*/
+/*-- end list styles --*/
+/*-- button + link styles --*/
 /* a link styles  */
 a {
     text-align: center;
@@ -654,7 +657,7 @@ a.button:hover {
     max-width: 700px;
 }
 
-/*default button element*/
+/* default button element */
 button {
     background: var(--primary-brand-color);
     font-family: 'Open+Sans', sans-serif;
@@ -684,8 +687,8 @@ button:hover {
     font-size: 1rem;
 }
 
-/*-------- end button styles --------*/
-/*-------- shape animation on index page ---*/
+/*-- end button styles --*/
+/*-- shape animation on index page --*/
 .shapes {
     display: grid;
     grid-row-gap: 20px;
@@ -710,7 +713,7 @@ button:hover {
     opacity: 1;
     width: 10px;
 }
-/*--end shapes --*/
+/*-- end shapes --*/
 .case-study-index {
     display: flex;
     flex-direction: column;
@@ -759,20 +762,20 @@ button:hover {
     margin: auto;
 }
 
-/*-------- start grid styles --------*/
-/*----- content container used within sections in case studies -----*/
+/*-- start grid styles --*/
+/* content container used within sections in case studies */
 .grid-content{
     max-width: 800px;
     margin: 0 auto;
 }
-/*----- image container used within sections in case studies -----*/
+/* image container used within sections in case studies */
 .grid-image {
     width: 100%;
     max-width: 1400px;
     height: auto;
     margin: 0 auto;
 }
-/*----- styles images used within grid-image -----*/
+/* styles images used within grid-image */
 .grid-image img {
     width: 100%;
     height: auto;
@@ -787,9 +790,8 @@ button:hover {
     object-fit: contain;
 }
 
-/*------ start grid SECTION styles ------*/
-
-/* one column grid section (mobile) */
+/*-- start grid SECTION styles --*/
+/* one column grid section (mobile) - media quieres below - */
 .one-col-grid-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -797,20 +799,9 @@ button:hover {
     margin: 2rem 0;
     /* 32px */
     grid-gap: 1rem;
-    padding: 2vw;
+    padding: 2vw 1rem;
 }
-
-/* adds padding to one column grid section on tablet and desktop  */
-@media (min-device-width:768px) {
-    .one-col-grid-section {
-        padding: 2vw 8vw;
-        justify-content: center;
-        justify-items: center;
-    }
-}
-
-
-/* hero grid section (mobile ) */
+/* hero grid section (mobile ) - media quieres below - */
 .hero-grid-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -818,34 +809,15 @@ button:hover {
     margin: 2rem 0;
     /* 32px */
     grid-gap: 1rem;
-    padding: 2vw;
-}
-
-/*-- creates two col grid section on tablet and desktop  --*/
-@media (min-device-width:768px) {
-    .hero-grid-section {
-        grid-template-columns: 1fr;
-        padding: 2vw 8vw;
-        align-items: center;
-    }
-    /* hero grid items */
-    .hero-grid-section > * {
-        grid-row-gap: 4rem;
-    }
+    padding: 2vw 1rem;
 }
 /*title in hero section*/
 #title{
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     padding-bottom: 1.5rem;
+    text-align: center;
 }
-#title > p:nth-child(2) {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
-
 /* two column grid section (mobile ) */
 .two-col-grid-section {
     display: grid;
@@ -856,23 +828,39 @@ button:hover {
     grid-gap: 1rem;
     padding: 2vw;
 }
-
-/*-- creates two col grid section on tablet and desktop  --*/
+/* two column grid items */
+.two-col-grid-section > * {
+    padding: 0 2rem;
+}
+/*----------- media queries for tablet and desktop -----------*/
 @media (min-device-width:768px) {
+    
+    /* adds padding to one column grid section */
+    .one-col-grid-section {
+        padding: 2vw 8vw;
+        justify-content: center;
+        justify-items: center;
+    }
+    /* creates two col grid in hero section */
+    .hero-grid-section {
+        grid-template-columns: 1fr;
+        padding: 2vw 8vw;
+        align-items: center;
+    }
+    /* hero grid items */
+    .hero-grid-section > * {
+        grid-row-gap: 4rem;
+    }
+    /*  two col grid section  */
     .two-col-grid-section {
         grid-template-columns: 1fr 1fr;
         padding: 2vw 8vw;
     }
 }
+/*-- end --*/
 
-/* two column grid items */
-.two-col-grid-section > * {
-    padding: 0 2rem;
-}
-
-/*---- end ----*/
-/*------ start grid CONTAINER styles ------*/
-/* simple two column grid container (mobile styles) */
+/*-- start grid CONTAINER styles --*/
+/* simple two column grid container (mobile styles) - media quieres below -*/
 .two-col-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -881,21 +869,12 @@ button:hover {
     grid-gap: 1rem;
     padding: 0;
 }
-/*----- styles images used within two-col-grid-section -----*/
+/* styles images used within two-col-grid-section  - media quieres below -*/
 .two-col-grid img {
     width: 100%;
     height: auto;
 }
-/* creates two col grid container on tablet and desktop  */
-@media (min-device-width:768px) {
-    .two-col-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 0;
-        grid-gap: 2rem;
-    }
-}
-/* overview container*/
+/* overview container - media quieres below -*/
 .overview{
     display: flex;
     flex-direction: column;
@@ -905,37 +884,23 @@ button:hover {
     max-width: 400px;
 }
 
-/* first level nested div within overview flex container*/
+/* first level nested div within overview flex container - media quieres below -*/
 .overview > *{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0px;
-    align-items: center;
+    align-items: flex-start;
 }
-/* first level nested div within overview flex container*/
+/* first level nested div within overview flex container - media quieres below -*/
 .overview > * > *{
     width: auto;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: flex-start;
 }
-
-@media (min-device-width:768px){
-    .overview{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        width: 100%;
-        max-width: 1100px;
-    }
-    .overview > *{
-        padding: 0px;
-        width: auto;
-    }
-}
-/* four column grid used in case study overview sections */
+/* four column grid used in case study overview sections  - media quieres below -*/
 .overview-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(10px, 200px));
@@ -950,15 +915,40 @@ button:hover {
     text-align: center;
     place-items: center;
 }
-
-
-/* centers heading text in overview grid on mobile  */
+/* centers heading text in overview grid on mobile - media quieres below - */
 p.overview-grid-text {
     text-align: center;
 }
-
-/*-- creates four col grid on tablet and desktop and left aligns text content --*/
-@media (min-device-width:768px) {
+/*-----------media quieres for tablet and desktop-----------*/
+@media (min-device-width:768px){
+    /*--  two col grid container  --*/
+    .two-col-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        grid-gap: 2rem;
+    }
+    /*-- creates four col grid on tablet and desktop and left aligns text content --*/
+    .overview{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        width: 100%;
+        max-width: 1100px;
+    }
+    .overview > *{
+        align-items: center;
+        padding: 0px;
+        width: auto;
+    }
+    .overview > * > *{
+        text-align: center;
+        align-items: center;
+    }
+    /* h1 title text used in hero section */
+    #title{
+        max-width: 900px;
+    }
     .overview-grid {
         display: grid;
         grid-template-columns: repeat(4, minmax(10px, 1fr));
@@ -969,19 +959,15 @@ p.overview-grid-text {
         width: 100%;
       
     }
-/*-- overview grid items --*/
+    /*-- overview grid items --*/
     .overview-grid > * {
-        text-align: center;
-
-        
+        text-align: center;   
     }
+    /*-- p text in overview grid --*/
     p.overview-grid-text {
             text-align: left;
     }
-
 }
-
-
 .hero-medsol {
     background: #263349;
 }
@@ -1316,25 +1302,24 @@ cardButton{
     padding: 2rem 0;
     width: 100%;
 }
-/*-- media sizes 974-1439px --*/
+/*-----------media quieries-----------*/ 
+/* media sizes 974-1439px */
 @media (min-device-width:974px)  {
     .cardV3{
         max-width: 500px;
-        min-width: 500px;
-        
+        min-width: 500px;  
     }
     .card_container {
         max-width: 80vw;
     }
 }
-
 /*--  media sizes larger than 1439px --*/
 @media (min-device-width:1400px) {
-
     .card-img-container{
         max-height: 300px;
     }
 }
+
 /* three column grid container on home page (mobile) */
 .card_grid_container {
     display: grid;
@@ -1345,7 +1330,8 @@ cardButton{
     padding: 1rem;
 }
 
-/*-- increases card size on tablet and desktop --*/
+/*-----------media quieries-----------*/ 
+/*increases card size on tablet and desktop --*/
 @media (min-device-width:768px) {
     .card_grid_container {
         grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
@@ -1453,9 +1439,9 @@ cardButton{
     max-width: 1100px;
     margin: 0 auto;
 }
-
-/* creates two col on ipads and desktops ----------- */
+/*-----------media quieries-----------*/ 
 @media only screen and (min-device-width : 768px) {
+    /* creates two col */
     .solu {
         grid-template-columns: 50% 50%;
     }
@@ -1470,7 +1456,7 @@ cardButton{
     max-width: 600px;
 }
 
-/* general parallax scroll animation styles */
+/* parallax scroll animation container */
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -1486,7 +1472,7 @@ cardButton{
 .whiteBG {
     background-color: #EFEFEF;
 }
-
+/*----------- media quieries-----------*/ 
 /* disables parallax image on mobile devices*/
 @media only screen and (max-width:749px) {
     .parallax {
@@ -1513,7 +1499,6 @@ cardButton{
     max-width: 90vw;
     text-align: center;
 }
-
 .designSystem {
     background-color: #121212;
 }
@@ -1533,7 +1518,7 @@ img.result {
 div.result {
     margin: 0 auto;
 }
-
+/*-----------media quieries-----------*/ 
 /*-- parallax larger resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
     .parallax {
@@ -1554,7 +1539,7 @@ div.result {
 .thumbnail {
     width: 100px;
 }
-
+/*-----------media quieries-----------*/ 
 /*-- parallax resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
     .thumbnail {
