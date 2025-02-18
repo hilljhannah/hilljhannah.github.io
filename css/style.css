@@ -80,7 +80,7 @@ header {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 /*highlights text color to brand color on hover*/
@@ -220,14 +220,14 @@ nav {
     width: 80%;
     max-width: 800px;
 }
-    #hidden {
-        display: none;
+#hidden {
+    display: none;
 }
 /*------ media queries-----------*/
 /* for 768px and up */
 @media only screen and (min-width: 768px) {
     #hidden{
-        display: initial;
+        display: inline;
     }
 }
 /* for 768-1023 only */
@@ -252,7 +252,7 @@ h1 {
     display: inline-block;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 3.815rem; /*76.29px*/
+    font-size: 3.815rem; /*61.04px*/
     font-style: normal;
     vertical-align: middle;
     width: 100%;
@@ -267,7 +267,7 @@ h2 {
     display: block;
     font-family: 'Lato', sans-serif;
     font-weight: 800;
-    font-size: 3.052rem; /*61.04px*/
+    font-size: 3.052rem; /*48.83px*/
     width: 100%;
     text-align: center;
 }
@@ -281,7 +281,7 @@ h3 {
     display: block;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 2.074rem; /*33.18px*/
+    font-size: 2.441rem; /*39.06px*/
     margin: 0 auto;
     padding-bottom: 1rem;
     text-align: left;
@@ -294,7 +294,7 @@ h4 {
     color: var(--main-text-color-dark);
     font-family: 'Lato', sans-serif;
     font-weight: 800;
-    font-size:  1.728rem; /*27.65px*/
+    font-size:  1.953rem; /*31.25px*/
     text-align: left;
     padding-bottom: 1rem;
     margin: 0 auto;
@@ -306,7 +306,7 @@ h5 {
     color: var(--main-text-color-dark);
     font-family: 'Lato', sans-serif;
     font-weight: 800;
-    font-size: 1.44rem; /*23.04px*/
+    font-size: 1.563rem; /*25px*/
     margin: 0;
     text-align: left;
     padding-bottom: 1rem;
@@ -318,7 +318,7 @@ h5 {
     color: var(--main-text-color-dark);
     font-family: 'Lato', sans-serif;
     font-weight: 800;
-    font-size: 1.2rem;  /*19.2px*/
+    font-size: 1.25rem;  /*20px*/
     margin: 0;
     text-align: left;
     padding-bottom: 1rem;
@@ -332,7 +332,7 @@ p {
     color: var(--main-text-color-dark);
     font-family: 'Open+Sans', sans-serif;
     font-weight: 500;
-    font-size: 1.25rem;  /*20px*/
+    font-size: 1rem;  /*16px*/
     margin: 0;
     padding-bottom: 1em;
     font-style: normal;
@@ -344,15 +344,15 @@ p {
 p.caption{
     color: #828282;
     font-family: 'Open+Sans', sans-serif;
-    font-weight: 500;
-    font-size: 0.833rem;  /*13.33px*/
+    font-weight: 600;
+    font-size: 0.8rem; /*12.8px*/
     text-align: center;
 }
 /*-- paragraph text --*/
 p.body2 {
     color: var(--main-text-color-dark);
     font-family: 'Open+Sans', sans-serif;
-    font-size: .8rem;
+    font-size: .8rem; /*12.8px*/
     padding-bottom: 1em;
     font-style: normal;
     width: 100%;
@@ -1163,7 +1163,7 @@ p.overview-grid-text {
     display: block;
     padding-bottom: 1rem;
     width: auto;
-    font-size: 11px;
+    font-size: 0.64rem;
     font-weight: 500;
     font-family: 'Open+Sans', sans-serif;
     margin: 0;
