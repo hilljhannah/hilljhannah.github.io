@@ -963,7 +963,6 @@ p.overview-grid-text {
         text-align: center;
         align-items: center;
     }
-
     .overview-grid {
         display: grid;
         grid-template-columns: repeat(4, minmax(10px, 1fr));
@@ -972,7 +971,6 @@ p.overview-grid-text {
         place-items: start stretch;
         /* align items + justify items */
         width: 100%;
-      
     }
     /*-- overview grid items --*/
     .overview-grid > * {
