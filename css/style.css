@@ -6,6 +6,7 @@
     --main-bg-color-dark: #242424;
     --main-bg-color-light: #FFFAFA;
     --primary-brand-color: #009AAF;
+    --primary-brand-color-medium: #006c7a;
     --primary-brand-color-light: #A2DFE7;
     --main-text-color-dark: #333;
 }
@@ -315,7 +316,7 @@ h5 {
 }
 
 .subtext1 {
-    color: var(--main-text-color-dark);
+    color: var(--primary-brand-color-medium);
     font-family: 'Lato', sans-serif;
     font-weight: 800;
     font-size: 1.25rem;  /*20px*/
@@ -388,7 +389,7 @@ p.foot {
     margin: 0;
 }
 strong {
-    color: var(--primary-brand-color);
+    color: var(--primary-brand-color-medium);
 }
 /* center aligns text */
 .centerText{
@@ -758,8 +759,15 @@ button:hover {
 /*-- start grid styles --*/
 /* content container used within sections in case studies */
 .grid-content{
-    max-width: 800px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     margin: 0 auto;
+}
+@media (min-device-width:768px) {
+    .grid-content{
+        max-width: 800px;
+    }
 }
 /* image container used within sections in case studies */
 .grid-image {
@@ -792,22 +800,21 @@ button:hover {
     margin: 2rem 0;
     /* 32px */
     grid-gap: 1rem;
-    padding: 2vw 1rem;
+    padding: 2vw 2rem;
 }
-/* hero grid section (mobile ) - media quieres below - */
+/* currently used - hero grid section (mobile ) - media quieres below - */
 .hero-grid-section {
     display: grid;
     grid-template-columns: 1fr;
     background: inherit;
     margin: 2rem 0;
-    /* 32px */
-    grid-gap: 1rem;
-    padding: 2vw 1rem;
+    padding: 2vw 2rem;
 }
 /* title container in hero section- media quieres below - */
 #title{
     margin: 0 auto;
     padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
     text-align: left;
 }
 /* h1 text in title container within hero section- media quieres below - */
@@ -839,19 +846,20 @@ button:hover {
 @media (min-device-width:768px) {
     /* h1 title text used in hero section */
     .title{
-        align-content: center;
+        align-content: left;
         max-width: 900px;
         text-align: center;
     }
     /* h1 text in title container within hero section*/
     #title > h1:nth-child(1) {
-        text-align: center;
-        max-width: 1100px;
+        text-align: left;
+        max-width: 800px;
     }
     /* p text in title container within hero section*/
     #title > p:nth-child(2) {
-        padding: 1rem 2rem 0 2rem;
-        text-align: center;
+        padding: 0;
+        text-align: left;
+        margin: 0;
     }
     /* adds padding to one column grid section */
     .one-col-grid-section {
@@ -946,22 +954,22 @@ p.overview-grid-text {
         padding: 0;
         grid-gap: 2rem;
     }
-    /*-- creates four col grid on tablet and desktop and left aligns text content --*/
+    /*-- creates four col grid and left aligns text content --*/
     .overview{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
+        display: flex;
+        flex-direction: row;
         width: 100%;
-        max-width: 1100px;
+        max-width: 800px;
     }
+    /*-- 1st nested --*/
     .overview > *{
-        align-items: center;
+        align-items: left;
         padding: 0px;
         width: auto;
     }
+    /*-- 2nd nested --*/
     .overview > * > *{
-        text-align: center;
-        align-items: center;
+        text-align: left;
     }
     .overview-grid {
         display: grid;
@@ -1034,7 +1042,7 @@ p.overview-grid-text {
 
 /* hero section */
 #hero{
-    margin: 2.5rem 0;
+    margin: 0;
 }
 /* MS Design System */
 .heroBG-ms-ds {
@@ -1396,13 +1404,18 @@ cardButton{
     margin: 0 auto;
     width: 100vw;
 }
-
+/* Hero image section/container */
+.hero-img-section {
+  height: 100%;
+  max-height: 450px;
+  padding: 0;
+  margin: 0 auto;
+}
 .hero_container {
     background-color: inherit;
     display: block;
     margin: 0 auto;
     height: 100%;
-    max-height: 250px;
     overflow: hidden;
 }
 
@@ -1412,7 +1425,9 @@ cardButton{
 
 #heroImg{
     width: 100%;
+    height: auto;
 }
+
 /* sets hero height on ipads and desktops  ----------- */
 @media only screen and (min-device-width : 768px) {
     .hero_container {
@@ -1423,14 +1438,6 @@ cardButton{
         padding: 0;
     }
 }
-/* Hero image section/container */
-.hero-img-section {
-  height: 100%;
-  max-height:450px;
-  padding: 0;
-  margin: 0 auto;
-}
-
 /* hero image in projects*/
 .hero_device {
     display: block;
