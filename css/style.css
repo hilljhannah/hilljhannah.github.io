@@ -1176,7 +1176,7 @@ p.overview-grid-text {
     width: fit-content;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #999898;
+    color: #002e34;
 }
 /* lozenge used in case studies */
 .lozengeDark {
@@ -1309,7 +1309,10 @@ cardButton{
 .cdtxt{
     min-height: 194px;
 }
-
+.cardV3_p{
+    min-height: 98px;
+    height: auto;
+}
 
 /*--------- current container for case study cards ---------*/
 .card_container {
