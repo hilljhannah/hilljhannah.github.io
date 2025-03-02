@@ -179,7 +179,7 @@ header {
     }
 
     .header li a {
-        padding: 20px 30px;
+        padding: 24px 30px;
     }
 
     .header .menu {
@@ -820,7 +820,7 @@ button:hover {
 /* h1 text in title container within hero section- media quieres below - */
 #title > h1:nth-child(1) {
   text-align: left;
-  max-width: 100%;
+  max-width: 700px;
 }
 /* p text in title container within hero section- media quieres below - */
 #title > p:nth-child(2) {
@@ -1255,12 +1255,11 @@ img.index_image {
     background: #1C1C1C;
     display: flex;
     min-width: 325px;
-    max-width: 325px;
+    max-width: 580px;
     height: auto;
     padding: 0;
     flex-direction: column;
     align-items: flex-start;
-    flex: 1 0 0;
     align-self: stretch;
 }
 /*-- content within v3 card--*/
@@ -1323,15 +1322,15 @@ cardButton{
     align-content: space-evenly;
     justify-content: center;
     grid-gap: 2rem;
-    padding: 2rem 0;
+    padding: 2rem;
     width: 100%;
 }
 /*-----------media quieries-----------*/ 
 /* media sizes 974-1439px */
 @media (min-device-width:974px)  {
     .cardV3{
-        max-width: 500px;
-        min-width: 500px;  
+        min-width: 500px;
+        max-width: 580px;
     }
     .card_container {
         max-width: 80vw;
