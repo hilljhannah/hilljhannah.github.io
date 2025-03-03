@@ -682,7 +682,60 @@ button:hover {
 }
 
 /*-- end button styles --*/
-/*-- shape animation on index page --*/
+/*---  animation on about page --*/
+.animation-container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Lato';
+    width: 960px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #009aaf;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #00434d;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #007080;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #009db3;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #00cae6;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+/*----  shape animation on index page --*/
 .shapes {
     display: grid;
     grid-row-gap: 20px;
@@ -1248,11 +1301,25 @@ img.index_image {
     overflow: hidden;
 }
 /*---------------- Card Styles  -----------*/
+/*--------- current container for case study cards ---------*/
+.card_container {
+     /*-- see media queries below --*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: space-evenly;
+    justify-content: center;
+    grid-gap: 2rem;
+    padding: 2rem 2rem;
+    width: 100%;
+}
 
 /*---------------- Card V3 - (updated) -----------*/
 .cardV3 {
     /*-- see media queries below --*/
     background: #1C1C1C;
+    border-radius: 12px;
+    overflow: hidden;
     display: flex;
     min-width: 325px;
     max-width: 580px;
@@ -1267,7 +1334,7 @@ img.index_image {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    grid-gap: 1rem;
     flex: 1 0 0;
     align-self: stretch;
     justify-content: space-between;
@@ -1289,51 +1356,17 @@ img.index_image {
     object-fit: cover;
 }
 
-/*-- [old] button used in case study cards --*/
-cardButton{
-    display: block;
-    width: 100%;
-}
-/*-- [old]  --*/
-.case_study_card_container{
-    display: flex;
-    width: auto;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 32px;
-    flex-wrap: wrap;
-    margin: 2rem auto;
-}
-/*-- text in v3 card container  --*/
-.cdtxt{
-    min-height: 194px;
-}
-.cardV3_p{
-    min-height: 98px;
-    height: auto;
-}
 
-/*--------- current container for case study cards ---------*/
-.card_container {
-     /*-- see media queries below --*/
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    align-content: space-evenly;
-    justify-content: center;
-    grid-gap: 2rem;
-    padding: 2rem;
-    width: 100%;
-}
 /*-----------media quieries-----------*/ 
 /* media sizes 974-1439px */
 @media (min-device-width:974px)  {
     .cardV3{
-        min-width: 500px;
+        min-width: 380px;
         max-width: 580px;
     }
     .card_container {
-        max-width: 80vw;
+        width: 100%;
+        padding: 2rem 4rem;
     }
 }
 /*--  media sizes larger than 1439px --*/
@@ -1391,7 +1424,29 @@ cardButton{
     bottom: 0;
     width: 100%;
 }
-
+/*-- [old] button used in case study cards --*/
+cardButton{
+    display: block;
+    width: 100%;
+}
+/*-- [old]  --*/
+.case_study_card_container{
+    display: flex;
+    width: auto;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+/*-- text in v3 card container  --*/
+.cdtxt{
+    min-height: 194px;
+}
+.cardV3_p{
+    min-height: 98px;
+    height: auto;
+}
 /*-------- end homepage (index) styles --------*/
 
 /*-------- project files hero section styles --------*/
