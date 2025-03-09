@@ -5,9 +5,10 @@
 :root{
     --main-bg-color-dark: #242424;
     --main-bg-color-light: #FFFAFA;
-    --primary-brand-color: #009AAF;
-    --primary-brand-color-medium: #006c7a;
-    --primary-brand-color-light: #A2DFE7;
+    --primary-brand-color: #00b0c9;
+    --primary-brand-color-medium: #009AAF;
+    --primary-brand-color-dark: #006c7a;
+    --primary-brand-color-light: #00c7e2;
     --main-text-color-dark: #333;
 }
 html {
@@ -76,7 +77,6 @@ header {
     display: block;
     color: #FFFFFF;
     padding: 16px 20px;
-    border-right: 1px solid var(--primary-brand-color);
     text-decoration: none;
     font-family: 'Lato';
     font-style: normal;
@@ -88,6 +88,7 @@ header {
 .header li a:hover,
 .header .menu-btn:hover {
     background-color: var(--primary-brand-color);
+    color: var(--primary-text-color);
     cursor: pointer;
 }
 
@@ -316,7 +317,7 @@ h5 {
 }
 
 .subtext1 {
-    color: var(--primary-brand-color-medium);
+    color: var(--primary-brand-color-dark);
     font-family: 'Lato', sans-serif;
     font-weight: 800;
     font-size: 1.25rem;  /*20px*/
@@ -389,7 +390,7 @@ p.foot {
     margin: 0;
 }
 strong {
-    color: var(--primary-brand-color-medium);
+    color: var(--primary-brand-color-dark);
 }
 .strongDarkBg{
     color: var(--primary-brand-color);
@@ -473,16 +474,15 @@ strong {
 /* default list  */
 ul.list {
     font-size: 1rem;
-    list-style-type: circle;
     margin: 0;
-    padding-bottom: 1.5rem;
     width: 100%;
+    padding-top: .8rem;
    
 }
 
 /* default list item  */
 ul.list li {
-    padding-bottom: 1.5rem;
+    padding-bottom: .8rem;
     font-weight: normal;
     font-family: 'Open+Sans', sans-serif;
     font-weight: 500;
@@ -673,12 +673,10 @@ button:hover {
 }
 /* my button class*/
 .myBtn{
-    background: var(--primary-brand-color);
+    background: var(--primary-brand-color-medium);
     display: block;
     border: none;
-    width: 100%;
-    padding: 1rem;
-    margin: 0rem auto;
+    padding: 1rem 1.5rem;
     cursor: pointer;
     text-align: center;
     font-size: 1rem;
@@ -1482,6 +1480,7 @@ cardButton{
     display: block;
     margin: 0 auto;
     height: 100%;
+    max-height: 650px;
     overflow: hidden;
 }
 
