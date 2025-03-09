@@ -1345,7 +1345,7 @@ img.index_image {
     flex: 1 0 0;
     align-self: stretch;
     justify-content: space-between;
-    padding: 24px;
+    padding: 2rem;
 }
 /*-- updated container for image in v3 card  --*/
 .card-img-container {
@@ -1369,7 +1369,7 @@ img.index_image {
 @media (min-device-width:974px)  {
     .cardV3{
         min-width: 380px;
-        max-width: 580px;
+        max-width: 600px;
     }
     .card_container {
         width: 100%;
