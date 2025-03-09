@@ -50,7 +50,7 @@ section {
     display: block;
     font-weight: normal;
     justify-content: center;
-    margin: 40px auto;
+    margin: 4rem auto;
     padding: 0;
     width: 100%;
     overflow: hidden;
@@ -390,6 +390,9 @@ p.foot {
 }
 strong {
     color: var(--primary-brand-color-medium);
+}
+.strongDarkBg{
+    color: var(--primary-brand-color);
 }
 /* center aligns text */
 .centerText{
@@ -850,8 +853,8 @@ svg {
     display: grid;
     grid-template-columns: 1fr;
     background: inherit;
-    margin: 2rem 0;
-    /* 32px */
+    margin: 4rem auto;
+    /* 64px */
     grid-gap: 1rem;
     padding: 2vw 2rem;
 }
@@ -1096,6 +1099,8 @@ p.overview-grid-text {
 /* hero section */
 #hero{
     margin: 0;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 /* MS Design System */
 .heroBG-ms-ds {
@@ -1118,6 +1123,10 @@ p.overview-grid-text {
 
 /*-- for tablet and desktop  --*/
 @media (min-device-width:768px) {
+    /* hero section */
+    #hero{
+        margin: 0;
+}
     .hero-flex {
         padding: 10vw;
         height: 520px;
