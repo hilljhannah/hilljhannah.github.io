@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color:var(--main-bg-color-dark);">
 
 <head>
     <title>Hannah Hill | Portfolio</title>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800Open+Sans:300,400,400i,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -21,15 +21,17 @@
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
+                    <li><a href="mailto:contactme@hannahhill.design">Contact</a></li>
                     <li><a href="work.html">My Work</a></li>
                     <li><a href="about.html">About Me</a></li>
+                    <li><a href="/images/hannahHill-productDesigner-resume.docx" download="hannahHill-productDesigner-resume">Resume</a></li>
                 </ul>
             </header>
             <!-- Homepage Hero section -->
             <section class="homeHero">
                 <div class="hero_content">
-                    <h1>Hello, I am Hannah Hill.</h1>
-                    <p style="color:white; margin: 1rem 0;">A solution-driven UX/UI Designer with a particular passion for visual design and improving user experience in unexpected ways. My designs use a cohesive color palette juxtaposed by a simple and thoughtful layout to provide a unique, yet satisfying and easy to use experience.</p>
+                    <h1 style="color: white;">I am Hannah Hill, a <strong class="strongDarkBg">Product Designer</strong> with a passion for Design Systems, visual design, and accessibility.</h1>
+                   <!-- <p style="color:white; margin: 0 auto; text-align: left;">I specialize in crafting inclusive, accessibility compliant user experiences and have a deep passion for Design Systems and visual design.</p> -->
                 </div>
                 <div class="shapes">
                     <div class="shape"></div>
@@ -72,63 +74,109 @@
                     <div class="shape3"></div>
                     <div class="shape3"></div>
                     <div class="shape3"></div>
-                </div>
+                </div> -->
             </section>
 
             <!-- My work case study preview section -->
             <section class="projects">
                 <h2 data-aos="zoom-in">My Work</h2>
                 <div class="card_container">
-                    <!-- MS Design System Case Study -->
-                    <div data-aos="zoom-in" class="card"><a class="cardHover" href="caseStudyMSDesignSystem.html">
-                            <div class="card_image_div"><img class="card_image designSystem" src=images/ms-designSystem/MSDesignSystemCoverSmall.png alt="MS Design system overview"></div>
-                            <div class="card_content">
-                                <h3 class="left blueOnHover">Creating Medical Solutions 3.0 Design System</h3>
-                                <p>Created the MS 3.0 Design System; responsable for all process and artifacts related to the System.</p>
+                    <!-- MS Design System Audit Case Study -->
+                    <div class="cardV3">
+                        <a href="caseStudyMSDSAudit.html">
+                            <div class="card-img-container designSystem">       <img class="cardV3_image" src="images/msDesignSystemAudit/MSDSAuditCoverSmall.jpg" alt="Design System audit presentation cover">
                             </div>
-                            <div class="card_button">
-                                <p class="card_button_text blueOnHover">View MS 3.0 Design System case study</p>
+                            <div class="cardV3_content">
+                                <div>
+                                    <div class="lozengeContainer">
+                                       <!-- <div class="lozengeDark">Design Systems / Audits </div>-->
+                                    </div>
+                                    <div class="cdtxt">
+                                        <h3 class="left primary">Auditing Medical Solutions 2.0 Design System</h3>
+                                        <p class="white cardV3_p">Auditing Medical Solutions existing design system and presenting recommendations for path(s) forward.</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="myBtn">Discover the MS 2.0 Audit</button>
                             </div>
                         </a>
                     </div>
-                    <!-- FA Design System Case Study -->
-                    <div data-aos="zoom-in" class="card"><a class="cardHover" href="caseStudyDesignSystem.html">
-                            <div class="card_image_div"><img class="card_image designSystem" src=images/designSystem/DS_CaseStudyComponentLibrary.png alt="Design system component overview"></div>
-                            <div class="card_content">
-                                <h3 class="left blueOnHover">FieldAgent Design System</h3>
-                                <p>Created the FieldAgent design system from scratch; owner and maintainer of the system.</p>
+                    <!-- MS Design System Case Study -->
+                    <div class="cardV3">
+                        <a href="caseStudyMSDesignSystem.html">
+                            <div class="card-img-container  designSystem">
+                                <img class="cardV3_image" src="images/ms-designSystem/MSDesignSystemCover-v2.jpg" alt="Component and documentation examples from MS Design System">
                             </div>
-                            <div class="card_button">
-                                <p class="card_button_text blueOnHover">View FA Design System Case Study</p>
+                            <div class="cardV3_content">
+                                <div>
+                                    <div class="lozengeContainer">
+                                       <!-- <div class="lozengeDark">Design Systems / Product Strategy / Accessibility</div>-->
+                                    </div> 
+                                    <div class="cdtxt">
+                                        <h3 class="left primary">Medical Solutions Enterprise 3.0 Design System</h3>
+                                        <p class="white cardV3_p">Implementing Medical Solutions enterprise 3.0 Design System. Supporting the work of 10 designers across five mobile and web applications.</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="myBtn">Discover MS 3.0 Design System</button>
                             </div>
                         </a>
                     </div>
                     <!-- FieldAgent: Field Redesign Case Study -->
-                    <div data-aos="zoom-in" class="card"><a class="cardHover" href="caseStudyFieldAgent.html">
-                            <div class="card_image_div"><img class="card_image fieldAgent" src=images/fieldAgent/FieldAgentSplash.png alt="FieldAgent Field"></div>
-                            <div class="card_content">
-                                <h3 class="left blueOnHover">Sentera FieldAgent</h3>
-                                <p>Sentera delivers next-level insights in real-time with high-resolution imagery for agriscience and crop production.</p>
+                    <div class="cardV3">
+                        <a href="caseStudyFieldAgent.html">
+                            <div class="card-img-container fieldAgent">
+                                <img class="card_image" src=images/fieldAgent/FieldAgentCover-v2-small.jpg alt="FieldAgent Field">
                             </div>
-                            <div class="card_button">
-                                <p class="card_button_text blueOnHover">View FieldAgent case study</p>
+                            <div class="cardV3_content">
+                                <div>
+                                    <!-- <div class="lozengeContainer">
+                                        <div class="lozengeDark">Product Design / UI Design / User Testing</div>
+                                    </div> -->
+                                    <div class="cdtxt">
+                                        <h3 class="left primary">Elevating Sentera's FieldAgent in Mobile and Web</h3>
+                                        <p class="white cardV3_p">Sentera delivers next-level insights in real-time with high-resolution imagery for agriscience and crop production.</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="myBtn">Discover FieldAgent</button>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- FieldAgent: Design System Case Study -->
+                    <div class="cardV3">
+                        <a href="caseStudyDesignSystem.html">
+                            <div class="card-img-container grid-item-cover designSystem">
+                                <img class="card_image" src=images/designSystem/FADesignSystemCoverSmall.jpg alt="Design system component overview">
+                            </div>
+                            <div class="cardV3_content">
+                                <div>
+                                  <!--  <div class="lozengeContainer">
+                                        <div class="lozengeDark">Design Systems  /  Product Design  </div>
+                                    </div> -->
+                                    <div class="cdtxt">
+                                        <h3 class="left primary">Pioneering the FieldAgent Design System</h3>
+                                        <p class="white cardV3_p">Created the FieldAgent design system from scratch; owning and maintaining the system.</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="myBtn">Discover the FA Design System</button>
                             </div>
                         </a>
                     </div>
                     <!-- DailyUI Case Study -->
-                    <div data-aos="zoom-in" class="card"><a class="cardHover" href="caseStudyDailyUI.html">
-                            <div class="card_image_div"><img class="card_image dailyui" src=images/dailyui/dailyui-showcase.jpg alt="dailyui day 001-008 showcase"></div>
-                            <div class="card_content">
-                                <h3 class="left blueOnHover">DailyUI Challenges</h3>
-                                <p>90 different UI challenges completed in a single day</p>
+                    <!--<div class="cardV3">
+                        <div class="card-img-container grid-item-cover designSystem">
+                             <img class="card_image" src=images/dailyui/dailyui-showcase.jpg alt="dailyui day 001-008 showcase">
+                        </div>
+                        <div class="cardV2_content">
+                            <div>
+                                <div>
+                                    <h3 class="left white">DailyUI Challenges</h3>
+                                    <p class="white">90 different UI challenges - each challenge was started and finished in a single   day</p>
+                                </div>
                             </div>
-                            <div class="card_button">
-                                <p class="card_button_text blueOnHover">View Completed Challenges</p>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Slide Deck Examples
-                    <div data-aos="zoom-in" class="card"><a class="cardHover" href="caseStudySlideDeck.html">
+                            <a class="cardHover" href="caseStudyDailyUI.html"><button class="button">View completed challenges</button></a>
+                        </div> 
+                    </div>-->
+                    <!-- Slide Deck Examples -->
+                   <!-- <div data-aos="zoom-in" class="card"><a class="cardHover" href="caseStudySlideDeck.html">
                             <div class="card_image_div"><img class="card_image dailyui" src=images/slideDeckCS/slideDeckHero.jpg alt="Slide Deck Examples"></div>
                             <div class="card_content">
                                 <h3 class="left blueOnHover">Slide Deck Examples</h3>
@@ -138,7 +186,7 @@
                                 <p class="card_button_text blueOnHover">View Slide Examples</p>
                             </div>
                         </a>
-                    </div>  -->
+                    </div>-->
                 </div>
             </section>
         </section>
@@ -146,7 +194,7 @@
     <!-- page footer-->
     <footer>
         <p class="foot"><a id="white" class="inline-link" href="form.html">Hannah Hill</a></p>
-        <p class="foot">UX UI Designer with a passion for Design Systems</p>
+        <p class="foot">Product Designer + Design Systems Specialist</p>
         <div class="social_icon_container">
             <div class="social_icon_div"><a href="https://www.linkedin.com/in/hannah-j-hill/"><img class="social_icon_img" src="images/icons8-linkedin.png" alt="Linkedin icon"></a></div>
             <div class="social_icon_div"><a href="https://github.com/hilljhannah"><img class="social_icon_img" src="images/icons8-github.png" alt="github icon"></a></div>

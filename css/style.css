@@ -1,12 +1,21 @@
 * {
     box-sizing: border-box;
 }
-
+/*  variables  */
+:root{
+    --main-bg-color-dark: #242424;
+    --main-bg-color-light: #FFFAFA;
+    --primary-brand-color: #00b0c9;
+    --primary-brand-color-medium: #009AAF;
+    --primary-brand-color-dark: #006c7a;
+    --primary-brand-color-light: #00c7e2;
+    --main-text-color-dark: #333;
+}
 html {
     background-color: #242424;
     color: #333;
-    font-family: "Open Sans";
-    font-size: 10px;
+    font-family: 'Open+Sans', sans-serif;
+    font-size: 16px;
     max-width: 100vw;
     height: 100%;
     width: 100%;
@@ -35,13 +44,14 @@ body {
     overflow: hidden;
 }
 
+
 /* process sections */
 section {
     align-items: center;
     display: block;
     font-weight: normal;
     justify-content: center;
-    margin: 5rem auto;
+    margin: 4rem auto;
     padding: 0;
     width: 100%;
     overflow: hidden;
@@ -66,19 +76,19 @@ header {
 .header li a {
     display: block;
     color: #FFFFFF;
-    padding: 15px 20px;
-    border-right: 1px solid #009AAF;
+    padding: 16px 20px;
     text-decoration: none;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
 }
 
 /*highlights text color to brand color on hover*/
 .header li a:hover,
 .header .menu-btn:hover {
-    background-color: #009AAF;
+    background-color: var(--primary-brand-color);
+    color: var(--primary-text-color);
     cursor: pointer;
 }
 
@@ -86,7 +96,7 @@ header {
 .header .logo {
     display: block;
     float: left;
-    padding: 15px 20px;
+    padding: 16px 20px;
 }
 
 /* menu on mobile */
@@ -108,7 +118,7 @@ header {
 
 /* menu on mobile responsive styles start ---------*/
 .header .menu-icon .navicon {
-    background: #009AAF;
+    background: var(--primary-brand-color);
     ;
     display: block;
     height: 2px;
@@ -119,7 +129,7 @@ header {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-    background: #009AAF;
+    background: var(--primary-brand-color);
     ;
     content: '';
     display: block;
@@ -163,14 +173,14 @@ header {
     top: 0;
 }
 
-/* 48em = 768px */
+/*----------- media quieries 48em = 768px -----------*/
 @media (min-width: 48em) {
     .header li {
         float: left;
     }
 
     .header li a {
-        padding: 20px 30px;
+        padding: 24px 30px;
     }
 
     .header .menu {
@@ -184,14 +194,15 @@ header {
     }
 }
 
-/* menu on mobile responsive styles start ---------*/
+/* menu on mobile responsive styles start --*/
 /*navbar*/
 nav {
     align-items: center;
     display: grid;
     justify-content: center;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 50% 50%;
     width: 100%;
+    max-width: 220px;
     padding: 0;
 }
 
@@ -207,127 +218,148 @@ nav {
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 2rem;
     width: 80%;
-    max-width: 700px;
+    max-width: 800px;
 }
-
-/*--- nav + header + logo media queries ----------------------------------------------------*/
-/*-- for iPads (portrait and landscape) --*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+#hidden {
+    display: none;
+}
+/*------ media queries-----------*/
+/* for 768px and up */
+@media only screen and (min-width: 768px) {
+    #hidden{
+        display: inline;
+    }
+}
+/* for 768-1023 only */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
     nav {
         max-width: 500px;
     }
 }
-
-/*-- for mobile --*/
-@media only screen and (max-width: 600px) {
-    #hidden {
-        display: none;
-    }
-
+/* for 1024+ only */
+@media only screen and (min-width: 1024px) {
     nav {
-        grid-template-columns: 50% 50%;
-        width: 100%;
-        max-width: 220px;
-    }
-}
-
-/*-- hides large links on smallest screens --*/
-@media only screen and (max-width: 1024px) {
-    header {
-        margin: 0 auto;
-    }
-
-    .myLogo {
-        margin: 0;
+        grid-template-columns: 33% 33% 33%;
+        max-width: 100%;
     }
 }
 
 /*--- begin typography styles ---*/
-/*--- mobile first ---*/
+/* mobile first using Minor Third scale */
 /* h1 text */
 h1 {
-    color: #009AAF;
+    color: var(--primary-brand-color);
     display: inline-block;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 3.8rem;
+    font-weight: 900;
+    font-size: 3.815rem; /*61.04px*/
     font-style: normal;
-    margin: 0 auto;
     vertical-align: middle;
     width: 100%;
+    max-width: 100%;
+    text-align: left;
 }
 
-/* h2 text */
+
+/* h2  */
 h2 {
+    color: var(--primary-brand-color);
     display: block;
     font-family: 'Lato', sans-serif;
-    font-size: 2.8rem;
-    margin: 2rem auto;
+    font-weight: 800;
+    font-size: 3.052rem; /*48.83px*/
+    width: 100%;
     text-align: center;
-    font-weight: 700;
-    color: #009AAF;
-    width: 100%;
 }
-
-h2.left {
-    text-align: left;
-}
-
-/* h3 text */
-h3 {
+.subtle{
     color: #333;
+}
+
+/* h3  */
+h3 {
+    color: var(--main-text-color-dark);
     display: block;
     font-family: 'Lato', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 2rem auto;
+    font-weight: 600;
+    font-size: 2.441rem; /*39.06px*/
+    margin: 0 auto;
+    padding-bottom: 1rem;
     text-align: left;
     width: 100%;
 }
 
-/*left aligned h3*/
-h3.left {
-    margin: 0;
-    width: 100%;
-}
 
-/*-- headers within sections --*/
+/*-- h4 --*/
 h4 {
-    color: #333;
+    color: var(--main-text-color-dark);
     font-family: 'Lato', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 800;
+    font-size:  1.953rem; /*31.25px*/
     text-align: left;
-    padding-top: 1rem;
-    margin: 2rem auto;
+    padding-bottom: 1rem;
+    margin: 0 auto;
     width: 100%;
 }
 
-/*-- headers inside text --*/
+/*-- h5 --*/
 h5 {
-    color: #333;
+    color: var(--main-text-color-dark);
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin: 1rem auto 0 auto;
+    font-weight: 800;
+    font-size: 1.563rem; /*25px*/
+    margin: 0;
     text-align: left;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    max-width: 100%;
+}
+
+.subtext1 {
+    color: var(--primary-brand-color-dark);
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 1.25rem;  /*20px*/
+    margin: 0;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     width: 100%;
 }
+
 
 /*-- paragraph text --*/
 p {
-    color: #333;
-    font-family: 'Open+Sans';
-    font-size: 1.6rem;
-    margin: 0 auto;
-    padding-top: 1em;
+    color: var(--main-text-color-dark);
+    font-family: 'Open+Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;  /*16px*/
+    margin: 0;
     padding-bottom: 1em;
     font-style: normal;
     width: 100%;
-    line-height: 150%;
-    align-items: center;
+    max-width: 100%;
+    line-height: 1.6;
+}
+/*-- caption text -used for images --*/
+p.caption{
+    color: #828282;
+    font-family: 'Open+Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem; /*12.8px*/
+    text-align: center;
+}
+/*-- paragraph text --*/
+p.body2 {
+    color: var(--main-text-color-dark);
+    font-family: 'Open+Sans', sans-serif;
+    font-size: .8rem; /*12.8px*/
+    padding-bottom: 1em;
+    font-style: normal;
+    width: 100%;
+    line-height: 1.6;
+    text-align: left;
 }
 
 /* centered p text */
@@ -338,88 +370,73 @@ p.centered,
 
 /*-- Footer Text ---*/
 p.foot {
-    color: white;
-    font-family: 'Lato';
-    font-size: 1.4rem;
+    color: #EFEFEF;
+    font-family: 'Open+Sans', sans-serif;
+    font-size: .8rem;
     text-align: center;
     margin: 1rem auto;
     line-height: 2rem;
 }
 
+/*-- left aligns text ---*/
+.left {
+    text-align: left;
+    padding-bottom: 1.5rem;
+    margin: 0 auto;
+}
+
+/* removes margin */
+.noMargin {
+    margin: 0;
+}
+strong {
+    color: var(--primary-brand-color-dark);
+}
+.strongDarkBg{
+    color: var(--primary-brand-color);
+}
+/* center aligns text */
+.centerText{
+    text-align: center;
+}
 /*--- typeography media queries ----------------------------------------------------*/
-/*-- iPads (portrait and landscape) -- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+/*-- Desktop and tablet typography using a major third scale  -- 
+@media (min-device-width:768px) {
     h1 {
-        font-size: 4.2rem;
-        max-width: 100%;
+        font-size: 3.815rem;
     }
 
     h2 {
-        font-size: 3.2rem;
+        font-size: 3.052rem;
     }
 
-    h3,
-    h3.left {
-        font-size: 2.4rem;
-    }
-
-    h4 {
-        font-size: 2rem;
-    }
-
-    h5 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 1.6rem;
-    }
-
-    p.centered {
-        font-size: 1.8rem;
-    }
-
-    p.foot {
-        font-size: 1.4rem;
-    }
-}
-
--- Desktops and laptops -- @media only screen and (min-width : 1024px) {
-    h1 {
-        font-size: 4.8rem;
-    }
-
-    h2 {
-        font-size: 3.2rem;
-    }
-
-    h3,
-    h3.left {
-        font-size: 2.8rem;
+    h3 {
+        font-size: 2.441rem;
     }
 
     h4 {
-        font-size: 2.2rem;
+        font-size: 1.953rem;
     }
 
     h5 {
-        font-size: 1.8rem;
+        font-size: 1.563rem;
+    }
+   
+    .subtext1 {
+        font-size: 1.25rem;
+    }
+    p.caption {
+        font-size: 0.8rem;
     }
 
     p {
-        font-size: 1.8rem;
-    }
-
-    p.centered {
-        font-size: 1.8rem;
-    }
-
-    p.foot {
-        font-size: 1.6rem;
+        font-size: 1rem;
+        max-width: 800px;
     }
 }
-
-/*--sets/overrides color of text to white--*/
+*/
+/*-- sets/overrides color of text to white --*/
 #white {
     color: white;
 }
@@ -432,12 +449,11 @@ p.foot {
 .link {
     border-bottom: 1px solid #FFFFFF;
     display: block;
-    color: #009AAF;
+    color: var(--primary-brand-color);
     font-family: 'Lato';
     font-style: normal;
     font-weight: 800;
-    font-size: 1.6rem;
-    margin: 0 auto;
+    font-size: 1rem;
     justify-content: center;
     padding: 0 0 5px 0;
     transition: .25s;
@@ -445,30 +461,84 @@ p.foot {
 }
 
 .link:hover {
-    border-bottom: 1px dotted #FFFFFF;
-    color: #00FFEB;
+    border-bottom: 2px solid #FFFFFF;
+    color: var(--primary-brand-color);
 }
 
 .inline-link {
-    color: #009AAF;
+    color: var(--primary-brand-color);
 }
 
-/*-------- end typography styles --------*/
-/*-------- list styles --------*/
+/*-- end typography styles --*/
+/*-- list styles --*/
+/* default list  */
 ul.list {
-    font-size: 1.6rem;
-    list-style-type: circle;
+    font-size: 1rem;
     margin: 0;
-    padding-bottom: 1.5rem;
     width: 100%;
-    max-width: 600px;
+    padding-top: .8rem;
+   
 }
-/*  list item styles */
+
+/* default list item  */
 ul.list li {
+    padding-bottom: .8rem;
+    font-weight: normal;
+    font-family: 'Open+Sans', sans-serif;
+    font-weight: 500;
+   
+}
+
+/* unstlyed list with no decoration or padding */
+ul.unstyled-list {
+    padding: 0;
+    list-style-position: inside;
+    list-style: none;
+    margin: 0;
+}
+
+/* unstlyed list item with no decoration or padding */
+ul.unstyled-list li {
+    margin-bottom: .5rem;
+}
+
+/* list with green checkmark as list marker */
+ul.pros {
+    list-style-image: url('../images/icon-check-bold.svg');
+    list-style-type: image;
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    padding-left: 1.5rem;
+    /* 24px */
+    padding-bottom: 1.5rem;
+    /* 24px */
+}
+
+/* list with red x as list marker */
+ul.cons {
+    list-style-image: url('../images/icon-cancel.svg');
+    list-style-type: image;
+    font-size: 1rem;
+    margin: 0;
+    width: 100%;
+    padding-left: 1.5rem;
+    /* 24px */
+}
+
+/* pros list items  */
+ul.pros li {
     padding-bottom: 1.5rem;
     font-weight: normal;
 }
-/*-- lists with background color --*/
+
+/* cons list items  */
+ul.cons li {
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+/* list with background color */
 ul.color {
     font-size: 1.6rem;
     list-style-position: inside;
@@ -502,49 +572,26 @@ ul.ideals {
     list-style-position: inside;
 }
 
-/* list within a list */
-dt {
-    background: rgba(135, 206, 250, .09);
-    font-family: "Open Sans";
-    font-size: 1.4rem;
-    margin: 2rem auto 0 auto;
-    width: 90vw;
-    max-width: 600px;
-    padding: 1rem;
-}
 
-dd {
-    font-size: 1.4rem;
-    width: 90vw;
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(135, 206, 250, .02);
-    padding: 1rem;
-}
-
-/*-- list media queries -------------------*/
+/*-- list media queries --*/
 /*-- iPads (portrait and landscape) -- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-    ul.color li,
-    dt,
-    dd {
-        font-size: 1.6rem;
+    ul.color li {
+        font-size: 1rem;
     }
 }
 
 /*-- for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
 
-    ul.color li,
-    dt,
-    dd {
-        font-size: 1.8rem;
+    ul.color li {
+        font-size: 1rem;
     }
 }
 
-/*-- end list styles ------------------------*/
-/*-- button + link styles -------------------*/
+/*-- end list styles --*/
+/*-- button + link styles --*/
 /* a link styles  */
 a {
     text-align: center;
@@ -553,32 +600,33 @@ a {
     color: #333;
 }
 
-/* fixes a styles for card container hover*/
+/* Used as parent container for case study card buttons*/
 a.cardHover {
     text-align: left;
-    margin: 0;
+    margin: 0 auto;
     cursor: pointer;
+    
 }
 
 @media only screen and (max-width: 600px) {
 
     .link,
     .links {
-        font-size: 1.4rem;
+        font-size: 1rem;
         margin: 0 auto;
     }
 }
 
-/* button styles */
+/* remove ** button styles */
 a.button {
     background: inherit;
     border: 2px white;
     border-style: dotted double;
-    border-color: white #009AAF;
+    border-color:  var(--primary-brand-color);
     color: white;
     cursor: pointer;
     display: block;
-    font-family: 'Lato';
+    font-family: 'Open+Sans';
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 20px;
@@ -590,14 +638,14 @@ a.button {
     width: auto;
     max-width: 250px;
 }
-
+/* remove ** */
 a.button:hover {
-    background: #009AAF;
-    border: 2px solid #009AAF;
+    background: var(--primary-brand-color);
+    border: 2px solid var(--primary-brand-color);
     transition: all 0.5s;
 }
 
-/* container for multiple buttons*/
+/* remove ** */
 .button_group {
     display: flex;
     flex-wrap: wrap;
@@ -606,7 +654,624 @@ a.button:hover {
     max-width: 700px;
 }
 
-/*-------- end button styles --------*/
+/* default button element */
+button {
+    background: var(--primary-brand-color);
+    font-family: 'Open+Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: #002e34;
+}
+
+button:hover {
+    background: var(--primary-brand-color-light);
+    /* lighter primary brand shade */
+    cursor: pointer;
+}
+/* my button class*/
+.myBtn{
+    background: var(--primary-brand-color-medium);
+    display: block;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*-- end button styles --*/
+/*---  animation on about page --*/
+.animation-container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Lato';
+    width: 960px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #009aaf;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #00434d;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #007080;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #009db3;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #00cae6;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+/*----  shape animation on index page --*/
+.shapes {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 4fr;
+    height: 100%;
+    justify-items: center;
+    max-width: 1400px;
+    margin: 1rem auto 0 auto;
+    padding: 1rem 0 1rem 0;
+    width: auto;
+    z-index: 999;
+}
+
+.shape,
+.shape1,
+.shape2,
+.shape3 {
+    border-radius: 1px;
+    background-color: var(--primary-brand-color);
+    height: 10px;
+    opacity: 1;
+    width: 10px;
+}
+/*-- end shapes --*/
+.case-study-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+}
+
+.case-study-index > * {
+    margin: 2rem 0;
+}
+
+.case-study-index-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.index-link {
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    transition: .25s;
+}
+
+.index-link:hover {
+    border-bottom: 2px solid #FFFFFF;
+    color: var(--primary-brand-color);
+}
+
+.hero-flex-section{
+    display: flex;
+    flex-direction: column;
+    background: inherit;
+    margin: 4rem auto 4rem auto;
+    /* 32px */
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+/* hero flex items */
+.hero-flex-section > * {
+    padding: 0;
+    max-width: 900px;
+    margin: auto;
+}
+
+/*-- start grid styles --*/
+/* content container used within sections in case studies */
+.grid-content{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+}
+@media (min-device-width:768px) {
+    .grid-content{
+        max-width: 800px;
+    }
+}
+/* image container used within sections in case studies */
+.grid-image {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+/* styles images used within grid-image */
+.grid-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* image that fills/covers container (grid item)  */
+.grid-item-cover img {
+    object-fit: cover;
+}
+/* image that is contained within container (grid item)  */
+.grid-item-contain img {
+    object-fit: contain;
+}
+
+/*-- start grid SECTION styles --*/
+/* one column grid section (mobile) - media quieres below - */
+.one-col-grid-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: inherit;
+    margin: 4rem auto;
+    /* 64px */
+    grid-gap: 1rem;
+    padding: 2vw 2rem;
+}
+/* currently used - hero grid section (mobile ) - media quieres below - */
+.hero-grid-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: inherit;
+    margin: 2rem 0;
+    padding: 2vw 2rem;
+}
+/* title container in hero section- media quieres below - */
+#title{
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: left;
+}
+/* h1 text in title container within hero section- media quieres below - */
+#title > h1:nth-child(1) {
+  text-align: left;
+  max-width: 700px;
+}
+/* p text in title container within hero section- media quieres below - */
+#title > p:nth-child(2) {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* two column grid section (mobile ) */
+.two-col-grid-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: inherit;
+    margin: 2rem 0;
+    /* 32px */
+    grid-gap: 1rem;
+    padding: 2vw;
+}
+/* two column grid items */
+.two-col-grid-section > * {
+    padding: 0 2rem;
+}
+/*----------- media queries for tablet and desktop -----------*/
+@media (min-device-width:768px) {
+    /* h1 title text used in hero section */
+    .title{
+        align-content: left;
+        max-width: 900px;
+        text-align: center;
+    }
+    /* h1 text in title container within hero section*/
+    #title > h1:nth-child(1) {
+        text-align: left;
+        max-width: 800px;
+    }
+    /* p text in title container within hero section*/
+    #title > p:nth-child(2) {
+        padding: 0;
+        text-align: left;
+        margin: 0;
+    }
+    /* adds padding to one column grid section */
+    .one-col-grid-section {
+        padding: 2vw 8vw;
+        justify-content: center;
+        justify-items: center;
+    }
+    /* creates two col grid in hero section */
+    .hero-grid-section {
+        grid-template-columns: 1fr;
+        padding: 2vw 8vw;
+        align-items: center;
+    }
+    /* hero grid items */
+    .hero-grid-section > * {
+        grid-row-gap: 4rem;
+    }
+    /*  two col grid section  */
+    .two-col-grid-section {
+        grid-template-columns: 1fr 1fr;
+        padding: 2vw 8vw;
+    }
+}
+/*-- end --*/
+
+/*-- start grid CONTAINER styles --*/
+/* simple two column grid container (mobile styles) - media quieres below -*/
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: inherit;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    padding: 0;
+}
+/* styles images used within two-col-grid-section  - media quieres below -*/
+.two-col-grid img {
+    width: 100%;
+    height: auto;
+}
+/* overview container - media quieres below -*/
+.overview{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* first level nested div within overview flex container - media quieres below -*/
+.overview > *{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    align-items: flex-start;
+}
+/* first level nested div within overview flex container - media quieres below -*/
+.overview > * > *{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+/* four column grid used in case study overview sections  - media quieres below -*/
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10px, 200px));
+    width: 100%;
+    max-width: 700px;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-between;
+    margin: .5rem auto;
+    text-align: center;
+    place-items: center;
+}
+/* centers heading text in overview grid on mobile - media quieres below - */
+p.overview-grid-text {
+    text-align: center;
+}
+/*-----------media quieres for tablet and desktop-----------*/
+@media (min-device-width:768px){
+    /*--  two col grid container  --*/
+    .two-col-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        grid-gap: 2rem;
+    }
+    /*-- creates four col grid and left aligns text content --*/
+    .overview{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 800px;
+    }
+    /*-- 1st nested --*/
+    .overview > *{
+        align-items: left;
+        padding: 0px;
+        width: auto;
+    }
+    /*-- 2nd nested --*/
+    .overview > * > *{
+        text-align: left;
+    }
+    .overview-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(10px, 1fr));
+        text-align: left;
+        justify-content: start;
+        place-items: start stretch;
+        /* align items + justify items */
+        width: 100%;
+    }
+    /*-- overview grid items --*/
+    .overview-grid > * {
+        text-align: center;   
+    }
+    /*-- p text in overview grid --*/
+    p.overview-grid-text {
+            text-align: left;
+    }
+}
+.hero-medsol {
+    background: #263349;
+}
+
+.hero-grid {
+    margin: 0;
+    padding: 2rem 0;
+}
+
+/*-- overview item used in case study overview sections--*/
+.overview-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    justify-items: center;
+}
+/*-- end grid styles  --*/
+
+/*-------- start flexbox styles --------*/
+
+.flexbox-img-within-grid {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    max-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-start;
+}
+
+/* background images */
+/* MS Design System Audit */
+.imgBG-msds-audit {
+    background-image: url("../images/msDesignSystemAudit/MSDSAudit-compilation.png");
+}
+
+/*-- start hero flexbox styles --*/
+/* hero flexbox container */
+.hero-flex {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    max-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2vw;
+    justify-content: flex-start;
+}
+
+/* hero section */
+#hero{
+    margin: 0;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+/* MS Design System */
+.heroBG-ms-ds {
+    background-image: url("../images/ms-designSystem/MSDesignSystemCoverSmall.jpg");
+}
+
+/* larger hero image for display on tablet and desktops */
+@media (min-device-width:768px) {
+    .heroBG-ms-ds {
+        /* MS Design System */
+        background-image: url("../images/ms-designSystem/MSDesignSystemCoverBackground.jpg");
+    }
+}
+
+/* Case study title (in hero section) */
+.hero-flex-title {
+    width: 100%;
+    max-width: 300px;
+}
+
+/*-- for tablet and desktop  --*/
+@media (min-device-width:768px) {
+    /* hero section */
+    #hero{
+        margin: 0;
+}
+    .hero-flex {
+        padding: 10vw;
+        height: 520px;
+    }
+
+    .hero-flex-title {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+/* general flexbox container */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-color: inherit;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+/* flexbox section */
+.flex-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    background: inherit;
+    margin: 0;
+    justify-content: center;
+    justify-items: center;
+    padding: 2rem 4rem;
+    width: 100vw;
+}
+
+/* flexbox section item */
+.flex-section-item {
+    width: 800px;
+    margin: .5vw;
+}
+
+/* flexbox section image item */
+.flex-section-item img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    object-fit: cover;
+}
+
+/* adds padding to flexbox section on tablet and desktops */
+@media (min-device-width:768px) {
+    .flex-section {
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .flex-text {
+        padding-right: 80px;
+    }
+}
+
+/* Image in flexbox */
+.flex-image {
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+.quoteSection {
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    padding: 4rem;
+    margin: auto;
+    background: blue;
+    text-align: center;
+}
+/*--- flexbox spanning the whole page width --*/
+.full-width-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 100vw;
+    gap: 2rem;
+
+}
+/* Image in full width flexbox */
+.full-width-flex img {
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+/*--- end flexbox styles--*/
+
+/* lozenge used in case studies */
+.lozenge {
+    display: block;
+    padding-bottom: 1rem;
+    width: auto;
+    font-size: 0.64rem;
+    font-weight: 500;
+    font-family: 'Open+Sans', sans-serif;
+    margin: 0;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #002e34;
+}
+/* lozenge used in case studies */
+.lozengeDark {
+    display: block;
+    padding-bottom: 1rem;
+    width: auto;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Open+Sans', sans-serif;
+    margin: 0;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #DBDBDB;
+}
+/* lozenge flex container */
+.lozengeContainer{
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+/* lozenge flex container items */
+.lozengeContainer > * {
+    padding-right: 1rem;
+    width: fit-content;
+}
+.lozengeContainerVertical{
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+}
+.lozengeContainerVertical > *{
+    width: auto;
+}
 /*-------- homepage (index) styles --------*/
 /* homepage hero section */
 .homeHero {
@@ -642,36 +1307,117 @@ img.index_image {
     max-width: 100%;
     overflow: hidden;
 }
-
+/*---------------- Card Styles  -----------*/
+/*--------- current container for case study cards ---------*/
 .card_container {
+     /*-- see media queries below --*/
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 90%;
-    max-width: 100vw;
-    align-content: space-between;
+    align-content: space-evenly;
     justify-content: center;
+    grid-gap: 2rem;
+    padding: 2rem 2rem;
+    width: 100%;
 }
 
-.card {
-    background-color: white;
-    background-color: #fff;
-    -webkit-transition: -webkit-box-shadow .25s;
-    transition: -webkit-box-shadow .25s;
-    transition: box-shadow .25s;
-    transition: box-shadow .25s, -webkit-box-shadow .25s;
-    border-radius: 2px;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.25s;
-    display: block;
-    height: 500px;
-    width: 500px;
-    margin: 1%;
+/*---------------- Card V3 - (updated) -----------*/
+.cardV3 {
+    /*-- see media queries below --*/
+    background: #1C1C1C;
+    border-radius: 12px;
     overflow: hidden;
-    position: relative;
+    display: flex;
+    min-width: 325px;
+    max-width: 580px;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+/*-- content within v3 card--*/
+.cardV3_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 1rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 2rem;
+}
+/*-- updated container for image in v3 card  --*/
+.card-img-container {
+    /*-- see media queries below --*/
+    display: block;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+/*-- image within v3 card--*/
+.cardV3_image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
+
+/*-----------media quieries-----------*/ 
+/* media sizes 974-1439px */
+@media (min-device-width:974px)  {
+    .cardV3{
+        min-width: 380px;
+        max-width: 600px;
+    }
+    .card_container {
+        width: 100%;
+        padding: 2rem 4rem;
+    }
+}
+/*--  media sizes larger than 1439px --*/
+@media (min-device-width:1400px) {
+    .card-img-container{
+        max-height: 300px;
+    }
+}
+
+/* three column grid container on home page (mobile) */
+.card_grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 2rem 0;
+    /* 32px */
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+/*-----------media quieries-----------*/ 
+/*increases card size on tablet and desktop --*/
+@media (min-device-width:768px) {
+    .card_grid_container {
+        grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    }
+}
+
+
+/* effect on card hover*/
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* color effect for card button and text on card hover*/
+.card:hover .card_button_text {
+    color: var(--primary-brand-color);
+    text-decoration: underline;
+}
+
+/* color effect for card text on hover*/
+.card:hover .blueOnHover {
+    color: var(--primary-brand-color);
+}
 /* card image */
 .card_image {
     background-color: inherit;
@@ -685,82 +1431,30 @@ img.index_image {
     bottom: 0;
     width: 100%;
 }
-
-.card_image_div {
+/*-- [old] button used in case study cards --*/
+cardButton{
     display: block;
-    height: 100%;
-    max-height: 250px;
-    overflow: hidden;
-}
-
-/* text content in card */
-.card_content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
-}
-
-/* card button */
-.card_button {
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    background: white;
-    border-top: 1px solid #f5f5f5;
-    border-radius: 0 0 2px 2px;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
     width: 100%;
 }
-
-/* text on card button */
-.card_button_text {
-    color: grey;
-    padding: 2rem;
-    text-align: left;
-    margin: 0;
-    font-family: 'Lato';
-    font-size: 1.6rem;
-}
-
-/* effect on card hover*/
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-/* color effect for card button and text on card hover*/
-.card:Hover .blueOnHover {
-    color: #009AAF;
-}
-
-/*-------- end homepage (index) styles --------*/
-.shapes {
-    display: grid;
-    grid-row-gap: 20px;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 4fr;
-    height: 100%;
-    justify-items: center;
-    max-width: 1400px;
-    margin: 1rem auto 0 auto;
-    padding: 1rem 0 1rem 0;
+/*-- [old]  --*/
+.case_study_card_container{
+    display: flex;
     width: auto;
-    z-index: 999;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 2rem auto;
 }
-
-.shape,
-.shape1,
-.shape2,
-.shape3 {
-    border-radius: 1px;
-    background-color: #009AAF;
-    height: 10px;
-    opacity: 1;
-    width: 10px;
+/*-- text in v3 card container  --*/
+.cdtxt{
+    min-height: 194px;
 }
+.cardV3_p{
+    min-height: 98px;
+    height: auto;
+}
+/*-------- end homepage (index) styles --------*/
 
 /*-------- project files hero section styles --------*/
 .hero {
@@ -774,33 +1468,41 @@ img.index_image {
     margin: 0 auto;
     width: 100vw;
 }
-
+/* Hero image section/container */
+.hero-img-section {
+  height: 100%;
+  max-height: 450px;
+  padding: 0;
+  margin: 0 auto;
+}
 .hero_container {
     background-color: inherit;
     display: block;
     margin: 0 auto;
     height: 100%;
-    max-height: 250px;
+    max-height: 650px;
     overflow: hidden;
-    padding: 3rem 1rem 0 1rem;
 }
 
 .hero_container_modified {
     padding: 0;
 }
 
+#heroImg{
+    width: 100%;
+    height: auto;
+}
+
 /* sets hero height on ipads and desktops  ----------- */
 @media only screen and (min-device-width : 768px) {
     .hero_container {
         max-height: 650px;
-        padding: 5rem 20rem 0 20rem;
     }
 
     .hero_container_modified {
         padding: 0;
     }
 }
-
 /* hero image in projects*/
 .hero_device {
     display: block;
@@ -822,9 +1524,9 @@ img.index_image {
     max-width: 1100px;
     margin: 0 auto;
 }
-
-/* creates two col on ipads and desktops ----------- */
+/*-----------media quieries-----------*/ 
 @media only screen and (min-device-width : 768px) {
+    /* creates two col */
     .solu {
         grid-template-columns: 50% 50%;
     }
@@ -839,23 +1541,23 @@ img.index_image {
     max-width: 600px;
 }
 
-/* general parallax scroll animation styles */
+/* parallax scroll animation container */
 .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #009AAF;
+    background-color: var(--primary-brand-color);
     display: block;
     min-height: 400px;
     margin-top: 1rem;
     max-width: 100%;
 }
 
-.whiteBG{
-    background-color:#FFFFFF;
+.whiteBG {
+    background-color: #EFEFEF;
 }
-
+/*----------- media quieries-----------*/ 
 /* disables parallax image on mobile devices*/
 @media only screen and (max-width:749px) {
     .parallax {
@@ -882,7 +1584,6 @@ img.index_image {
     max-width: 90vw;
     text-align: center;
 }
-
 .designSystem {
     background-color: #121212;
 }
@@ -902,7 +1603,7 @@ img.result {
 div.result {
     margin: 0 auto;
 }
-
+/*-----------media quieries-----------*/ 
 /*-- parallax larger resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
     .parallax {
@@ -923,7 +1624,7 @@ div.result {
 .thumbnail {
     width: 100px;
 }
-
+/*-----------media quieries-----------*/ 
 /*-- parallax resize for Desktops and laptops -- */
 @media only screen and (min-width : 1224px) {
     .thumbnail {
@@ -1237,17 +1938,6 @@ p.img_cap {
     margin: .5rem auto;
 }
 
-/*-- general mobile project/mood flexbox img container--*/
-.flexContainer {
-    align-items: start;
-    background-color: inherit;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 90vw;
-    margin: 0 auto;
-    padding: 0;
-}
 
 .mobileFrames {
     justify-content: center;
@@ -1357,6 +2047,10 @@ p.img_cap {
 .white {
     color: white;
     text-align: left;
+}
+/*--sets/overrides color of text to primary brand color--*/
+.primary {
+    color: var(--primary-brand-color);
 }
 
 /* creates two img columns on desktops and unhides image hover text*/
@@ -1485,13 +2179,13 @@ input[type=email] {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #009AAF;
+    background-color: var(--primary-brand-color);
     border: none;
     border-radius: 4px;
     color: #333;
     cursor: pointer;
     font-size: 1.6rem;
-    font-family: "Lato";
+    font-family: "Open+Sans";
     font-weight: 700;
     margin: 2rem auto;
     text-transform: uppercase;
